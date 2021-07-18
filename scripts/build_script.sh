@@ -1,7 +1,7 @@
 echo "Building"
 
 PROJECTHOME="$HOME/Documents/Universita/Elaborato_finale/"
-NAME="cognome_nome_laurea_aa"
+NAME="fantoni_giacomo_informatica_21"
 
 cd $PROJECTHOME
 pwd
