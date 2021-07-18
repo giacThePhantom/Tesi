@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  18 JUL 2021 19:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  18 JUL 2021 20:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -295,18 +295,6 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 ))
 (./chapters/01/capitolo1.tex
 Capitolo 1.
-
-LaTeX Warning: Citation `coulouris' on page 2 undefined on input line 5.
-
-
-LaTeX Warning: Citation `dalal' on page 2 undefined on input line 8.
-
-
-LaTeX Warning: Citation `ictbusiness' on page 2 undefined on input line 15.
-
-
-LaTeX Warning: Citation `donoho' on page 2 undefined on input line 16.
-
 [2
 
 ]) (./chapters/02/capitolo2.tex
@@ -317,41 +305,39 @@ Capitolo 3.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3])
-No file cognome_nome_laurea_aa.bbl.
-(./chapters/allegati/allegati.tex [4]
-Appendice A.
+(./build/cognome_nome_laurea_aa.bbl [4]) (./chapters/allegati/allegati.tex
 [5
 
 ]
+Appendice A.
+[6
+
+]
 Appendice B.
-) [6
+) [7
 
-] (./build/cognome_nome_laurea_aa.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+] (./build/cognome_nome_laurea_aa.aux) ) 
 Here is how much of TeX's memory you used:
- 4380 strings out of 478994
- 60654 string characters out of 5864751
- 390084 words of memory out of 5000000
- 21788 multiletter control sequences out of 15000+600000
+ 4390 strings out of 478994
+ 60807 string characters out of 5864751
+ 390064 words of memory out of 5000000
+ 21796 multiletter control sequences out of 15000+600000
  410843 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,7n,88p,734b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
-per/sfrm1095.pfb>
-Output written on ./build/cognome_nome_laurea_aa.pdf (8 pages, 297475 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/
+cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10
+.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on ./build/cognome_nome_laurea_aa.pdf (9 pages, 306690 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 79 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
