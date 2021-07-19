@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  18 JUL 2021 20:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  19 JUL 2021 17:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -249,7 +249,7 @@ t_202002-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=prefixes/images/marchio_un
 itrento_colore_it_202002-eps-converted-to.pdf prefixes/images/marchio_unitrento
 _colore_it_202002.eps>
-(epstopdf)             \includegraphics on input line 7.
+(epstopdf)             \includegraphics on input line 8.
 Package epstopdf Info: Output file is already uptodate.
 <prefixes/images/marchio_unitrento_colore_it_202002-eps-converted-to.pdf, id=1,
  369.7815pt x 114.6684pt>
@@ -257,25 +257,26 @@ File: prefixes/images/marchio_unitrento_colore_it_202002-eps-converted-to.pdf G
 raphic file (type pdf)
 <use prefixes/images/marchio_unitrento_colore_it_202002-eps-converted-to.pdf>
 Package pdftex.def Info: prefixes/images/marchio_unitrento_colore_it_202002-eps
--converted-to.pdf  used on input line 7.
+-converted-to.pdf  used on input line 8.
 (pdftex.def)             Requested size: 290.22107pt x 90.00262pt.
 
 (/usr/share/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <24.88> on input line 29.
+(Font)              <24.88> on input line 30.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <20.74> on input line 29.
+(Font)              <20.74> on input line 30.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 29.
-) [1
+(Font)              <17.28> on input line 30.
+ [1
+
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./prefixes/images/marchio_
-unitrento_colore_it_202002-eps-converted-to.pdf>] (./prefixes/ringraziamenti.te
-x) [2
+unitrento_colore_it_202002-eps-converted-to.pdf>]) [2] (./prefixes/ringraziamen
+ti.tex) [2
 
-]
+] [3]
 (./build/fantoni_giacomo_informatica_21.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 5.
@@ -291,7 +292,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 
-]
+] [2]
 (./chapters/sommario/sommario.tex
 (/usr/share/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
@@ -308,7 +309,7 @@ Capitolo 3.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3])
-(./build/fantoni_giacomo_informatica_21.bbl [4])
+(./build/fantoni_giacomo_informatica_21.bbl [4]) [5]
 (./chapters/allegati/allegati.tex [5
 
 ]
@@ -323,7 +324,7 @@ Appendice B.
 Here is how much of TeX's memory you used:
  4394 strings out of 478994
  61026 string characters out of 5864751
- 390080 words of memory out of 5000000
+ 390085 words of memory out of 5000000
  21801 multiletter control sequences out of 15000+600000
  412025 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -336,11 +337,11 @@ hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on ./build/fantoni_giacomo_informatica_21.pdf (9 pages, 300465 b
-ytes).
+Output written on ./build/fantoni_giacomo_informatica_21.pdf (13 pages, 300951 
+bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

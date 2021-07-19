@@ -39,7 +39,7 @@
   \input{prefixes/pagina_iniziale}
 
   \clearpage
- 
+  \shipout\null
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Nota
@@ -49,6 +49,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \input{prefixes/ringraziamenti}
   \clearpage
+  \shipout\null
   \pagestyle{plain} % nessuna intestazione e pie pagina con numero al centro
 
   % inizio numerazione pagine in numeri arabi
@@ -73,6 +74,7 @@
     % indice
     \tableofcontents
     \clearpage
+    \shipout\null
     
     
           
@@ -167,6 +169,7 @@
     \titleformat{\chapter}
         {\normalfont\Huge\bfseries}{Allegato \thechapter}{1em}{}
     % sezione Allegati - opzionale
+    \shipout\null
     \appendix
     \input{chapters/allegati/allegati}
 
