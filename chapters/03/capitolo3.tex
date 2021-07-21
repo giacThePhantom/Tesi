@@ -1,4 +1,69 @@
-\chapter{Conclusioni}
-\label{cha:conclusioni}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nunc orci. Aliquam nec nisl vitae sapien pulvinar dictum quis non urna. Suspendisse at dui a erat aliquam vestibulum. Quisque ultrices pellentesque pellentesque. Pellentesque egestas quam sed blandit tempus. Sed congue nec risus posuere euismod. Maecenas ut lacus id mauris sagittis egestas a eu dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque at ultrices tellus. Ut eu purus eget sem iaculis ultricies sed non lorem. Curabitur gravida dui eget ex vestibulum venenatis. Phasellus gravida tellus velit, non eleifend justo lobortis eget. 
+\chapter{Processamento dei dati}
+\label{cha:processamento}
 
+  \section{Dati disponibili}
+  \label{sec:dati}
+
+    \subsection{Sequenze biologiche}
+    \label{subsec:fastq}
+    Descrizione dei fastq.
+
+    \subsection{Genoma di riferimento}
+    \label{subsec:star-gen}
+    Descrizione del genoma di riferimento.
+
+    \subsection{Variant call}
+    \label{subsec:vcf}
+    Descrizione dei vcf.
+
+    \subsection{Struttura dei geni}
+    \label{subsec:gtf}
+    Descrizione del gtf.
+
+  \section{Troncatura e allinamento}
+  \label{sec:trimm_star}
+  Descrizione del processo e perch\`e viene fatto.
+
+    \subsection{Troncatura}
+    \label{subsec:trimm}
+    Trimmomatic, cosa fa come \`e stato usato.
+
+    \subsection{Allineamento}
+    \label{subsect:star}
+    STAR, cosa fa come \`e stato usato.
+
+    \subsection{Ordinamento}
+    \label{subsec:sorting}
+    SAMTOOLS SORT cosa fa come \`e stato usato.
+
+    \subsection{Indicizzazione}
+    \label{subsec:indexing}
+    SAMTOOLS index cosa fa come \`e stato usato.
+
+  \section{Deduplicazione, riallinamento e recalibrazione}
+  \label{sec:recalibration}
+  Descrizione del processo e perch\`e viene fatto
+
+    \subsection{Deduplicazione}
+    \label{subsec:dedup}
+    Come sopra.
+
+    \subsection{Riallineamento e recalibrazione}
+    \label{subsec:recalibration}
+    Come sopra.
+
+  \section{Ottenere le varianti alleliche}
+  Intersezione tra VCF e GTF.
+
+  \section{Ottenere i dati delle frazioni alleliche}
+  \label{sec:aseq}
+  ASEQ cosa fa come viene usato.
+
+
+    \subsection{Filtrare le frazioni alleliche}
+    \label{subsec:filter}
+    Condizioni di filtraggio per i risultati di ASEQ.
+
+  \section{Ottenere gli SNP nel 3'-UTR}
+  \label{sec:threeprime}
+  Filtraggio del gtf e intersezione con i VCF
