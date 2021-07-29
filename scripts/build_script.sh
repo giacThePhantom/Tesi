@@ -1,6 +1,6 @@
 echo "Building"
 
-PROJECTHOME="$HOME/Documents/Universita/Elaborato_finale/"
+PROJECTHOME="$HOME/Universita/Elaborato_Finale/"
 NAME="fantoni_giacomo_informatica_21"
 
 cd $PROJECTHOME

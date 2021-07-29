@@ -1,3 +1,10 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{ase_pipeline}
+Alessandro Romanel.
+\newblock Allele-specific expressione analysis in cancer using next-generation
+  sequencing data.
+\newblock {\em Krasnitz A. (eds) Cancer Bioinformatics. Methods in Molecular
+  Biology}, 1878:125--137, 2019.
 
 \end{thebibliography}

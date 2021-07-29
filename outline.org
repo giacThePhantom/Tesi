@@ -1,0 +1,59 @@
+#+SEQ_TODO: TODO(t) NEXT(n) WAITING(w) WIP(p) | DONE(d)
+#+STARTUP: indent
+* Organizzazione scrittura tesi
+File con organizzazione delle tempistiche di scrittura della tesi (spero di riuscire a rispettare tutto)
+** TODO Sommario [/]
+- [ ] Raccogli fonti.
+- [ ] Decidi sezioni e sottosezioni.
+- [ ] Prima scrittura.
+- [ ] Controlla riferimenti ad altri capitoli.
+- [ ] Rilettura, correzione e revisione.
+*** Contenuto
+Breve descrizione del progetto, contributi e difficoltà incontrate.
+*** Riferimento ad altri capitoli
+** TODO Capitolo 1 - Descrizione esperimento [0/0]
+- [ ] Raccogli fonti.
+- [ ] Decidi sezioni e sottosezioni.
+- [ ] Prima scrittura.
+- [ ] Controlla riferimenti ad altri capitoli.
+- [ ] Rilettura, correzione e revisione.
+*** Contenuto
+Descrizione delle motivazioni dietro all'esperimento con riferimento al paper transSNP, obiettivi e definizioni.
+*** Riferimento ad altri capitoli
+** TODO Capitolo 2 - Linee cellulari e trattamenti [/]
+- [ ] Raccogli fonti.
+- [ ] Decidi sezioni e sottosezioni.
+- [ ] Prima scrittura.
+- [ ] Controlla riferimenti ad altri capitoli.
+- [ ] Rilettura, correzione e revisione.
+*** Contenuto
+Descrizione della linea cellulare utilizzata e dei trattamenti a cui è stata sottoposta.
+*** Riferimento ad altri capitoli
+** TODO Capitolo 3 - Pipeline di lavoro [1/5]
+- [X] Raccogli fonti.
+- [ ] Decidi sezioni e sottosezioni.
+- [ ] Prima scrittura.
+- [ ] Controlla riferimenti ad altri capitoli.
+- [ ] Rilettura, correzione e revisione.
+*** Contenuto
+Descrizione della pipeline di lavoro, file utilizzati e contesto.
+*** Media
++ Pipeline del lavoro.
+*** Riferimento ad altri capitoli
++ Capitolo 1
+** TODO Capitolo 4 - Discussione risultati [/]
+- [ ] Raccogli fonti.
+- [ ] Decidi sezioni e sottosezioni.
+- [ ] Prima scrittura.
+- [ ] Controlla riferimenti ad altri capitoli.
+- [ ] Rilettura, correzione e revisione.
+*** Contenuto
+Discussione dei risultati ottenuti, pertanto analisi dell'intersezione tra gli SNP trovati nelle varie condizioni per validare le letture e il valore minimo di coverage scelto.
+Correlazione tra valori di AF pre e post recalibrazione con conseguente scelta tra le due.
+*** Media
++ Intersezione tra i campioni.
++ Correlazione pre e post recalibrazione.
++ Distribuzione dell'AF degli SNP.
++ Boxplots degli SNP di interesse.
+*** Riferimento ad altri capitoli
++ Penso più o meno tutti gli altri capitoli.
