@@ -29,19 +29,20 @@ Descrizione delle motivazioni dietro all'esperimento con riferimento al paper tr
 *** Contenuto
 Descrizione della linea cellulare utilizzata e dei trattamenti a cui è stata sottoposta.
 *** Riferimento ad altri capitoli
-** TODO Capitolo 3 - Pipeline di lavoro [1/5]
+** WIP Capitolo 3 - Pipeline di lavoro [1/5]
 - [X] Raccogli fonti.
+  + Mancanti: samtools, bedtools, picard, gatk 
 - [ ] Decidi sezioni e sottosezioni.
 - [ ] Prima scrittura.
 - [ ] Controlla riferimenti ad altri capitoli.
 - [ ] Rilettura, correzione e revisione.
 *** Contenuto
 Descrizione della pipeline di lavoro, file utilizzati e contesto.
-*** Media
-+ Pipeline del lavoro.
+*** Media [1/1]
++ [X] Pipeline del lavoro.
 *** Riferimento ad altri capitoli
 + Capitolo 1
-** TODO Capitolo 4 - Discussione risultati [/]
+** TODO Capitolo 4 - Discussione risultati [0/5]
 - [ ] Raccogli fonti.
 - [ ] Decidi sezioni e sottosezioni.
 - [ ] Prima scrittura.
