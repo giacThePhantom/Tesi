@@ -1,36 +1,55 @@
 \graphicspath{{chapters/03/media/}}
 \chapter{Processamento dei dati}
 \label{cha:processamento}
-Lo scopo dell'analisi \`e quello di individuare SNP che causano un cambio di potenziale di traduzione agli mRNA che li contengono.
-In quanto gli eventi regolatori del processo di traduzione avvengono nella porzione \emph{3'-UTR} del mRNA ci si concentra sull'analisi di SNP presenti in tale luogo.
-Come dettagliato in \cite{trans_snp} per per superare il rumore intrinseco nella chiamata di SNP e per la coverage dei dati di RNA-sequencing viene progettata una pipeline di analisi comparativa di sbilanciamento allelico tra mRNA totali e polisomiali estratti e sequenziati a partire dallo stesso campione cellulare.
-Questo inoltre viene indipendentemente genotipizzato per SNP eterozigoti
-Il processamento dei dati si configura come una pipeline di analisi di espressione allelo specifica nel cancro.
-Ci si basa pertanto sul lavoro sviluppato in \cite{ase_pipeline}, adattandolo in modo da riuscire ad evidenziare un potenziale traduzionale differenziale allelo-specifico.
-Si parte pertanto da letture di sequenziamento del trascrittoma della linea cellulare \emph{TODO inserisci riferimento a sezione con spiegazione linea} \emph{HCT116} con lo scopo ultimo di caratterizzare SNP che causano il cambio di potenziale di traduzione e che potrebbero essere pertanto coinvolti nel cancro.
+Definito in \textbf{CAPITOLO 1} l'obiettivo di questo progetto si deve pertanto definire una pipeline che, da dati di sequenziamento di RNA e di \emph{WES} (\textbf{SEMPRE DEFINITO NEL CAPITOLO 1}) sia in grado di fornire le istanze di espressione allelo-specifica.
+Questa pipeline viene definita basandosi su quella presentata in \cite{ase_pipeline} e si compone pertanto di tre fasi principali:
+\begin{enumerate}
+	\item Pre-processamento e allineamento dei dati di RNA-seq, con eventuale deduplicazione e ricalibrazione.
+	\item Analisi di dati \emph{WES} in modo da ottenere una lista di possibili SNP esonici da considerare.
+	\item Ottenimento dei dati di sbilanciamento allelico.
+\end{enumerate}
+La figura \ref{fig:proj_pipeline} \`e una visualizzazione della pipeline e dei tool utilizzati.\\
+Essendo infine che questo lavoro prevede il processamento di un gran numero di file, unito al fatto che i tool utilizzzati sono stati implementati con una integrazione con le pipe di unix e con la possibilit\`a di essere eseguiti in multi-threading \`e stato di fondamentale importanza l'utility parallel \cite{parallel}.
+In particolare nel caso di STAR\footnote{\S\ref{subsec:star}} \`e stato notato una diminuzione lineare delle performance per thread del tool.
+L'abbassamento delle performance \`e stato risolto grazie a parallel, lanciando pi\`u istanze parallele del tool, ognuna di esse con pochi thread.
+Si nota pertanto che parallel permette non solo un'elegante implementazione della pipeline, ma fornisce un livello di controllo tale da sfruttare completamente la potenza computazionale disponibile, riducendo in questo modo il tempo globale di esecuzione.
 
-  \section{Pipeline}
-  \label{sec:pipeline}
-  La pipeline pertanto si definisce di $n$ fasi:
-  \begin{multicols}{2}
-    \begin{enumerate}
-      \item Preprocessamento e allineamento dei dati di RNA-sequencing.
-      \item Identificazione di SNP informativi dai dati \emph{WES}.
-      \item Analisi di espressione allelo-specifica.
-      \item Identificazione di livelli di traduzione differenziale di mRNA contenenti gli SNP identificati.
-    \end{enumerate}
-  \end{multicols}
-  Il processo computazionale viene descritto visivamente in \emph{Metti immagine}
+
   \begin{figure}[H]
+    \label{fig:proj_pipeline}
     \centering
-    \includegraphics[scale=0.]{pipeline.png}
+    \includegraphics[scale=0.2]{pipeline.png}
     \caption{Pipeline}
   \end{figure}
+
+  \section{Pre-processamento e allineamento dei dati RNA-seq}
+  \label{sec:pre_all_rna_seq}
+  Il primo passo della pipeline appenda definita \`e il pre-processamento e l'allineamento dei dati RNA-seq.
+  L'input della pipeline sono dei file \emph{FASTQ}, ovvero file di testo che contengono i dati di sequenziamento raccolti in laboratorio tipicamente compressi.
+  Questi file vengono modificati dai tool Trimmomatic, Star e Samtools in modo da produrre un output gi\`a utilizzabile per ottenere i dati di sbilanciamento allelico.
+  Opzionalmente l'output pu\`o subire ulteriori modifiche prima di passare alla prossima fase: in particolare pu\`o essere deduplicato e ricalibrato.
+	
+  	\subsection{Trimmomatic}
+	Trimmomatic \cite{trimmomatic} \`e il primo tool ad essere utilizzato.
+	Il suo obiettivo \`e quello di eliminare dalle reads la sequenza adattatrice, o suoi frammenti, utilizzata per rendere possibile il sequenziamento.
+	Essendo le RNA-seq fornite a single-ends\footnote{Spiega cosa sono} viene utilizzata la simple mode del tool.
+	Questa scansiona ogni read\footnote{Non so se metterla in italiano} dalla terminazione $5'$ alla $3'$ per determinare la presenza della sequenza adattatrice.
+	Utilizza il mdetodo ``seed and extend'' per trovare corrispondenze iniziali, anche non perfette, tra la read e la sequenza adattatrice.
+	Successivamente svolge un allineamento locale e se questo ha uno score maggiore di una soglia viene rimosso insieme alla porzione successiva ad esso.
+	Questa modalit\`a permette di identificare ogni sequenza adattatrice in ogni luogo della read a patto che l'allineamento sia abbastanza lungo e la read abbastanza accurata.
+	Si nota per\`o come nelle regioni dove solo una corta corrispondenza parziale \`e possibile come alle estremit\`a della read e pertanto i contaminanti non possono essere identificati attendibilmente.
+	Oltre alla rimozione delle sequenze adattatrici Trimmomatic tronca un'estremit\`a secondo un algoritmo di filtraggio secondo qualit\`a.
+	Tra i metodi forniti dallo strumento \`e stato utilizzato quello del ``sliding window quality filtering'':
+	scansiona la read dal $5'$ e rimuove la terminazione $3'$ quando la qualit\`a media di un gruppo di basi scende sotto una soglia specificata.
+
+
+
   \section{Dati disponibili}
   \label{sec:dati}
 
     \subsection{Sequenze biologiche}
     \label{subsec:fastq}
+
     Descrizione dei fastq.
 
     \subsection{Genoma di riferimento}
@@ -54,7 +73,7 @@ Si parte pertanto da letture di sequenziamento del trascrittoma della linea cell
     Trimmomatic, cosa fa come \`e stato usato.
 
     \subsection{Allineamento}
-    \label{subsect:star}
+    \label{subsec:star}
     STAR, cosa fa come \`e stato usato.
 
     \subsection{Ordinamento}
