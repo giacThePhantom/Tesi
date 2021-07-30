@@ -29,9 +29,20 @@ Descrizione delle motivazioni dietro all'esperimento con riferimento al paper tr
 *** Contenuto
 Descrizione della linea cellulare utilizzata e dei trattamenti a cui è stata sottoposta.
 *** Riferimento ad altri capitoli
-** WIP Capitolo 3 - Pipeline di lavoro [1/5]
-- [X] Raccogli fonti.
-  + Mancanti: samtools, bedtools, picard, gatk 
+** WIP Capitolo 3 - Pipeline di lavoro [0/5]
+- [ ] Raccogli fonti.
+  + Mancanti: samtools, bedtools, picard, gatk
+    ' http://www.htslib.org/doc/samtools-sort.html
+    ' http://www.htslib.org/doc/samtools-index.html
+    ' https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html
+    ' https://bedtools.readthedocs.io/en/latest/content/overview.html
+    ' https://bedtools.readthedocs.io/en/latest/
+    ' https://broadinstitute.github.io/picard/command-line-overview.html#Overview
+    ' https://gatk.broadinstitute.org/hc/en-us/categories/360002310591-Technical-Documentation
+    ' https://gatk.broadinstitute.org/hc/en-us/articles/360037431391-SplitNCigarReads
+    ' https://github.com/broadinstitute/gatk-docs/blob/master/gatk3-tutorials/(howto)_Perform_local_realignment_around_indels.md
+    ' https://gatk.broadinstitute.org/hc/en-us/articles/360036898312-BaseRecalibrator
+    ' https://gatk.broadinstitute.org/hc/en-us/articles/360041849911-PrintReads
 - [ ] Decidi sezioni e sottosezioni.
 - [ ] Prima scrittura.
 - [ ] Controlla riferimenti ad altri capitoli.
@@ -41,7 +52,10 @@ Descrizione della pipeline di lavoro, file utilizzati e contesto.
 *** Media [1/1]
 + [X] Pipeline del lavoro.
 *** Riferimento ad altri capitoli
-+ Capitolo 1
+**** Introduzione del capitolo
++ Capitolo 1 definizione del progetto e di WES.
+*** Varie ed eventuali
+
 ** TODO Capitolo 4 - Discussione risultati [0/5]
 - [ ] Raccogli fonti.
 - [ ] Decidi sezioni e sottosezioni.
