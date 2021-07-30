@@ -41,8 +41,35 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
 	Oltre alla rimozione delle sequenze adattatrici Trimmomatic tronca un'estremit\`a secondo un algoritmo di filtraggio secondo qualit\`a.
 	Tra i metodi forniti dallo strumento \`e stato utilizzato quello del ``sliding window quality filtering'':
 	scansiona la read dal $5'$ e rimuove la terminazione $3'$ quando la qualit\`a media di un gruppo di basi scende sotto una soglia specificata.
+	Il risultato di questo passaggio sar\`a un altro fastq file con le sequenze adattatrici rimosse.
 
+	\subsection{Star}
+	\label{subsec:star}
+	Star (spliced transcript alignment to a reference) \cite{star} \`e il secondo tool della pipeline.
+	Prende come input il file fastq generato da Trimmomatic e un genoma di reference\footnote{Anche qui lo lascio in italiano?} e allineando il primo al secondo.
+	Questo tool \`e stato creato con l'obiettivo di allineare RNA-seq di media-grande lunghezza, a differenza dei suoi competitori che, essendo creati a partire da allineatori per dati di DNA, hanno un maggiore tasso di errore.
+	Questo avviene a causa degli eventi di splicing che avvengono nella creazione delle molecole di mRNA.
+	Star pertanto si prefigge di permettere un allineamento accurato di reads che contengono mal-accoppiamenti, inserzioni o delezioni causati da variazioni genomiche o errori di sequenziamento mappando contemporaneamente sequenze derivate da regioni genomiche non contigue unite da eventi di splicing.
+	Per farlo utilizza un algoritmo in due fasi.
+	La prima fase o \emph{seed search} consiste della ricerca sequenziale di \emph{Maximal Mappable Prefix MMP}.
+	Data una sequenza $R$, una regione $i$ e un genoma di reference $G$, $MMP(R, i, G)$ \`e la pi\`u lunga sottostringa $(R_i, R_{i+1}, \dots, R_{i+MMK-1})$ che corrisponde esattamente a una o pi\`u sottostringhe di $G$.
+	$MML$ \`e la massima lunghezza mappabile.
+	Questo permette un'identificazione di giunzioni di splicing senza nessuna conoscenza a priori.
+	L'implementazione attraverso \emph{Uncompressed suffix arrays} causa alla complessit\`a dell'algoritmo di scalare logaritmicamente con la lunghezza del genoma di reference.
+	Gli array sono non compressi per permettere tempi di ricerca pi\`u veloci, ma causano un aumento del consumo di memoria.
+	La seconda fase o \emph{clustering, stitching and scoring} consiste nel costruire allineamenti dell'intera sequenza di reads unendo tutti i seed allineati al genoma nella prima fase.
+	In primo luogo i seed sono raggruppati insieme secondo la vicinanza a un seed ancora selezionato limitando il numero di loci genomici a cui questo si allinea.
+	Successivamente tutti i seed mappati nella \emph{genomic window} sono uniti insieme assumendo un modello lineare locale di trascrizione.
+	Questo processo di unione viene inoltre guidato da un sistema di punteggi che penalizza mal-accoppiamenti, inserzioni, delezioni e \emph{splice junction gap}.
+	Star ha come output un sam file, un file di testo delimitato da tabulazioni contenente una riga per allineamento con tutte le informazioni necessarie per la sua identificazione.
 
+	\subsection{Samtools}
+
+	\subsection{Deduplicatione e ricalibrazione}
+
+  \section{Analisi dei dati WES}
+
+  	\subsection{Bedtools}
 
   \section{Dati disponibili}
   \label{sec:dati}
@@ -73,7 +100,6 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
     Trimmomatic, cosa fa come \`e stato usato.
 
     \subsection{Allineamento}
-    \label{subsec:star}
     STAR, cosa fa come \`e stato usato.
 
     \subsection{Ordinamento}

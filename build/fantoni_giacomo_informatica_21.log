@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  30 JUL 2021 07:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  30 JUL 2021 09:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -610,9 +610,9 @@ Package pdftex.def Info: chapters/03/media//pipeline.png  used on input line 21
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-[5 <./chapters/03/media//pipeline.png>]) (./chapters/04/capitolo4.tex
+[5 <./chapters/03/media//pipeline.png>] [6]) (./chapters/04/capitolo4.tex
 Capitolo 4.
-[6]) (./build/fantoni_giacomo_informatica_21.bbl [7])
+) (./build/fantoni_giacomo_informatica_21.bbl [7])
 (./chapters/allegati/allegati.tex [8
 
 ]
@@ -630,10 +630,10 @@ LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
 
  (./build/fantoni_giacomo_informatica_21.aux) ) 
 Here is how much of TeX's memory you used:
- 7255 strings out of 478994
- 116987 string characters out of 5864751
- 481209 words of memory out of 5000000
- 24542 multiletter control sequences out of 15000+600000
+ 7256 strings out of 478994
+ 116993 string characters out of 5864751
+ 483336 words of memory out of 5000000
+ 24543 multiletter control sequences out of 15000+600000
  413274 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  97i,8n,102p,405b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -641,19 +641,21 @@ Here is how much of TeX's memory you used:
 /dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
 .pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
-sfrm0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on ./build/fantoni_giacomo_informatica_21.pdf (12 pages, 571227 
+are/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
+/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texm
+f-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on ./build/fantoni_giacomo_informatica_21.pdf (12 pages, 595279 
 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
+ 118 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

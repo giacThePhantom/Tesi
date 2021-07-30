@@ -5,6 +5,12 @@ Anthony~M. Bolger, Marc Lohse, and Bjoern Usadel.
 \newblock {Trimmomatic: a flexible trimmer for Illumina sequence data}.
 \newblock {\em Bioinformatics}, 30(15):2114--2120, 04 2014.
 
+\bibitem{star}
+Alexander Dobin, Carrie~A. Davis, Felix Schlesinger, Jorg Drenkow, Chris
+  Zaleski, Sonali Jha, Philippe Batut, Mark Chaisson, and Thomas~R. Gingeras.
+\newblock {STAR: ultrafast universal RNA-seq aligner}.
+\newblock {\em Bioinformatics}, 29(1):15--21, 10 2012.
+
 \bibitem{ase_pipeline}
 Alessandro Romanel.
 \newblock Allele-specific expressione analysis in cancer using next-generation

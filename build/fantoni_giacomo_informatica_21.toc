@@ -15,6 +15,7 @@
 \contentsline {chapter}{\numberline {3}Processamento dei dati}{4}{}%
 \contentsline {section}{\numberline {3.1}Pre-processamento e allineamento dei dati RNA-seq}{5}{}%
 \contentsline {subsection}{\numberline {3.1.1}Trimmomatic}{5}{}%
+\contentsline {subsection}{\numberline {3.1.2}Star}{6}{}%
 \contentsline {section}{\numberline {3.2}Dati disponibili}{6}{}%
 \contentsline {subsection}{\numberline {3.2.1}Sequenze biologiche}{6}{}%
 \contentsline {subsection}{\numberline {3.2.2}Genoma di riferimento}{6}{}%
@@ -22,15 +23,15 @@
 \contentsline {subsection}{\numberline {3.2.4}Struttura dei geni}{6}{}%
 \contentsline {section}{\numberline {3.3}Troncatura e allinamento}{6}{}%
 \contentsline {subsection}{\numberline {3.3.1}Troncatura}{6}{}%
-\contentsline {subsection}{\numberline {3.3.2}Allineamento}{6}{}%
-\contentsline {subsection}{\numberline {3.3.3}Ordinamento}{6}{}%
-\contentsline {subsection}{\numberline {3.3.4}Indicizzazione}{6}{}%
-\contentsline {section}{\numberline {3.4}Deduplicazione, riallinamento e recalibrazione}{6}{}%
-\contentsline {subsection}{\numberline {3.4.1}Deduplicazione}{6}{}%
-\contentsline {subsection}{\numberline {3.4.2}Riallineamento e recalibrazione}{6}{}%
-\contentsline {section}{\numberline {3.5}Ottenere le varianti alleliche}{6}{}%
-\contentsline {section}{\numberline {3.6}Ottenere i dati delle frazioni alleliche}{6}{}%
-\contentsline {subsection}{\numberline {3.6.1}Filtrare le frazioni alleliche}{6}{}%
+\contentsline {subsection}{\numberline {3.3.2}Allineamento}{7}{}%
+\contentsline {subsection}{\numberline {3.3.3}Ordinamento}{7}{}%
+\contentsline {subsection}{\numberline {3.3.4}Indicizzazione}{7}{}%
+\contentsline {section}{\numberline {3.4}Deduplicazione, riallinamento e recalibrazione}{7}{}%
+\contentsline {subsection}{\numberline {3.4.1}Deduplicazione}{7}{}%
+\contentsline {subsection}{\numberline {3.4.2}Riallineamento e recalibrazione}{7}{}%
+\contentsline {section}{\numberline {3.5}Ottenere le varianti alleliche}{7}{}%
+\contentsline {section}{\numberline {3.6}Ottenere i dati delle frazioni alleliche}{7}{}%
+\contentsline {subsection}{\numberline {3.6.1}Filtrare le frazioni alleliche}{7}{}%
 \contentsline {section}{\numberline {3.7}Ottenere gli SNP nel 3'-UTR}{7}{}%
 \contentsline {chapter}{\numberline {4}Analisi dei dati}{7}{}%
 \contentsline {section}{\numberline {4.1}Conta degli SNP trovati con ASEQ}{7}{}%
