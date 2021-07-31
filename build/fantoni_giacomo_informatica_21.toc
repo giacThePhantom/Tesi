@@ -16,33 +16,38 @@
 \contentsline {section}{\numberline {3.1}Pre-processamento e allineamento dei dati RNA-seq}{5}{}%
 \contentsline {subsection}{\numberline {3.1.1}Trimmomatic}{5}{}%
 \contentsline {subsection}{\numberline {3.1.2}Star}{6}{}%
-\contentsline {section}{\numberline {3.2}Dati disponibili}{6}{}%
-\contentsline {subsection}{\numberline {3.2.1}Sequenze biologiche}{6}{}%
-\contentsline {subsection}{\numberline {3.2.2}Genoma di riferimento}{6}{}%
-\contentsline {subsection}{\numberline {3.2.3}Variant call}{6}{}%
-\contentsline {subsection}{\numberline {3.2.4}Struttura dei geni}{6}{}%
-\contentsline {section}{\numberline {3.3}Troncatura e allinamento}{6}{}%
-\contentsline {subsection}{\numberline {3.3.1}Troncatura}{6}{}%
-\contentsline {subsection}{\numberline {3.3.2}Allineamento}{7}{}%
-\contentsline {subsection}{\numberline {3.3.3}Ordinamento}{7}{}%
-\contentsline {subsection}{\numberline {3.3.4}Indicizzazione}{7}{}%
-\contentsline {section}{\numberline {3.4}Deduplicazione, riallinamento e recalibrazione}{7}{}%
-\contentsline {subsection}{\numberline {3.4.1}Deduplicazione}{7}{}%
-\contentsline {subsection}{\numberline {3.4.2}Riallineamento e recalibrazione}{7}{}%
-\contentsline {section}{\numberline {3.5}Ottenere le varianti alleliche}{7}{}%
-\contentsline {section}{\numberline {3.6}Ottenere i dati delle frazioni alleliche}{7}{}%
-\contentsline {subsection}{\numberline {3.6.1}Filtrare le frazioni alleliche}{7}{}%
-\contentsline {section}{\numberline {3.7}Ottenere gli SNP nel 3'-UTR}{7}{}%
-\contentsline {chapter}{\numberline {4}Analisi dei dati}{7}{}%
-\contentsline {section}{\numberline {4.1}Conta degli SNP trovati con ASEQ}{7}{}%
-\contentsline {section}{\numberline {4.2}Considerazioni sulla recalibrazione}{7}{}%
-\contentsline {section}{\numberline {4.3}Ottenere i dati per gli SNP di interesse}{7}{}%
-\contentsline {section}{\numberline {4.4}Analisi degli sbilanciamenti di frazione allelica}{7}{}%
-\contentsline {section}{\numberline {4.5}Conclusioni}{7}{}%
-\contentsline {chapter}{Bibliografia}{7}{}%
-\contentsline {chapter}{\numberline {A}Titolo primo allegato}{9}{}%
-\contentsline {section}{\numberline {A.1}Titolo}{9}{}%
-\contentsline {subsection}{\numberline {A.1.1}Sottotitolo}{9}{}%
-\contentsline {chapter}{\numberline {B}Titolo secondo allegato}{10}{}%
-\contentsline {section}{\numberline {B.1}Titolo}{10}{}%
-\contentsline {subsection}{\numberline {B.1.1}Sottotitolo}{10}{}%
+\contentsline {subsection}{\numberline {3.1.3}Samtools}{6}{}%
+\contentsline {subsection}{\numberline {3.1.4}Deduplicazione e ricalibrazione}{6}{}%
+\contentsline {subsubsection}{Deduplicazione}{7}{}%
+\contentsline {section}{\numberline {3.2}Analisi dei dati WES}{7}{}%
+\contentsline {subsection}{\numberline {3.2.1}Bedtools}{7}{}%
+\contentsline {section}{\numberline {3.3}Dati disponibili}{7}{}%
+\contentsline {subsection}{\numberline {3.3.1}Sequenze biologiche}{7}{}%
+\contentsline {subsection}{\numberline {3.3.2}Genoma di riferimento}{7}{}%
+\contentsline {subsection}{\numberline {3.3.3}Variant call}{7}{}%
+\contentsline {subsection}{\numberline {3.3.4}Struttura dei geni}{7}{}%
+\contentsline {section}{\numberline {3.4}Troncatura e allinamento}{7}{}%
+\contentsline {subsection}{\numberline {3.4.1}Troncatura}{7}{}%
+\contentsline {subsection}{\numberline {3.4.2}Allineamento}{7}{}%
+\contentsline {subsection}{\numberline {3.4.3}Ordinamento}{7}{}%
+\contentsline {subsection}{\numberline {3.4.4}Indicizzazione}{8}{}%
+\contentsline {section}{\numberline {3.5}Deduplicazione, riallinamento e recalibrazione}{8}{}%
+\contentsline {subsection}{\numberline {3.5.1}Deduplicazione}{8}{}%
+\contentsline {subsection}{\numberline {3.5.2}Riallineamento e recalibrazione}{8}{}%
+\contentsline {section}{\numberline {3.6}Ottenere le varianti alleliche}{8}{}%
+\contentsline {section}{\numberline {3.7}Ottenere i dati delle frazioni alleliche}{8}{}%
+\contentsline {subsection}{\numberline {3.7.1}Filtrare le frazioni alleliche}{8}{}%
+\contentsline {section}{\numberline {3.8}Ottenere gli SNP nel 3'-UTR}{8}{}%
+\contentsline {chapter}{\numberline {4}Analisi dei dati}{8}{}%
+\contentsline {section}{\numberline {4.1}Conta degli SNP trovati con ASEQ}{8}{}%
+\contentsline {section}{\numberline {4.2}Considerazioni sulla recalibrazione}{8}{}%
+\contentsline {section}{\numberline {4.3}Ottenere i dati per gli SNP di interesse}{8}{}%
+\contentsline {section}{\numberline {4.4}Analisi degli sbilanciamenti di frazione allelica}{8}{}%
+\contentsline {section}{\numberline {4.5}Conclusioni}{8}{}%
+\contentsline {chapter}{Bibliografia}{8}{}%
+\contentsline {chapter}{\numberline {A}Titolo primo allegato}{10}{}%
+\contentsline {section}{\numberline {A.1}Titolo}{10}{}%
+\contentsline {subsection}{\numberline {A.1.1}Sottotitolo}{10}{}%
+\contentsline {chapter}{\numberline {B}Titolo secondo allegato}{11}{}%
+\contentsline {section}{\numberline {B.1}Titolo}{11}{}%
+\contentsline {subsection}{\numberline {B.1.1}Sottotitolo}{11}{}%

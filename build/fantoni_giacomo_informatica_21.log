@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  30 JUL 2021 09:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  31 JUL 2021 17:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -531,11 +531,11 @@ italian.ldf    on input line 38.
 (./prefixes/pagina_iniziale.tex
 Package epstopdf Info: Source file: <prefixes/images/marchio_unitrento_colore_i
 t_202002.eps>
-(epstopdf)                    date: 2020-02-12 10:03:21
+(epstopdf)                    date: 2021-07-20 16:48:06
 (epstopdf)                    size: 222744 bytes
 (epstopdf)             Output file: <prefixes/images/marchio_unitrento_colore_i
 t_202002-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-02-12 10:12:41
+(epstopdf)                    date: 2021-07-20 16:48:06
 (epstopdf)                    size: 183512 bytes
 (epstopdf)             Command: <repstopdf --outfile=prefixes/images/marchio_un
 itrento_colore_it_202002-eps-converted-to.pdf prefixes/images/marchio_unitrento
@@ -600,28 +600,35 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 4.
-<chapters/03/media//pipeline.png, id=37, 1573.88pt x 2095.83pt>
+<chapters/03/media//pipeline.png, id=37, 1585.925pt x 2091.815pt>
 File: chapters/03/media//pipeline.png Graphic file (type png)
 <use chapters/03/media//pipeline.png>
 Package pdftex.def Info: chapters/03/media//pipeline.png  used on input line 21
 .
-(pdftex.def)             Requested size: 314.77043pt x 419.15858pt.
+(pdftex.def)             Requested size: 317.17938pt x 418.35559pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-[5 <./chapters/03/media//pipeline.png>] [6]) (./chapters/04/capitolo4.tex
+[5 <./chapters/03/media//pipeline.png>]
+<chapters/03/media//deduprecal.png, id=52, 2774.365pt x 1208.515pt>
+File: chapters/03/media//deduprecal.png Graphic file (type png)
+<use chapters/03/media//deduprecal.png>
+Package pdftex.def Info: chapters/03/media//deduprecal.png  used on input line 
+81.
+(pdftex.def)             Requested size: 471.63582pt x 205.44482pt.
+ [6] [7 <./chapters/03/media//deduprecal.png>]) (./chapters/04/capitolo4.tex
 Capitolo 4.
-) (./build/fantoni_giacomo_informatica_21.bbl [7])
-(./chapters/allegati/allegati.tex [8
+) (./build/fantoni_giacomo_informatica_21.bbl [8])
+(./chapters/allegati/allegati.tex [9
 
 ]
 Appendice A.
-[9
+[10
 
 ]
 Appendice B.
-) [10
+) [11
 
 ]
 
@@ -630,10 +637,10 @@ LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
 
  (./build/fantoni_giacomo_informatica_21.aux) ) 
 Here is how much of TeX's memory you used:
- 7256 strings out of 478994
- 116993 string characters out of 5864751
- 483336 words of memory out of 5000000
- 24543 multiletter control sequences out of 15000+600000
+ 7265 strings out of 478994
+ 117258 string characters out of 5864751
+ 486863 words of memory out of 5000000
+ 24551 multiletter control sequences out of 15000+600000
  413274 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  97i,8n,102p,405b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -651,11 +658,11 @@ public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
 /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texm
 f-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on ./build/fantoni_giacomo_informatica_21.pdf (12 pages, 595279 
+Output written on ./build/fantoni_giacomo_informatica_21.pdf (13 pages, 753915 
 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 124 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

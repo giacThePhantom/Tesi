@@ -19,7 +19,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
     \label{fig:proj_pipeline}
     \centering
     \includegraphics[scale=0.2]{pipeline.png}
-    \caption{Pipeline}
+    \caption{Pipeline per l'ottenimento dei dati di allelic imbalance}
   \end{figure}
 
   \section{Pre-processamento e allineamento dei dati RNA-seq}
@@ -28,7 +28,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   L'input della pipeline sono dei file \emph{FASTQ}, ovvero file di testo che contengono i dati di sequenziamento raccolti in laboratorio tipicamente compressi.
   Questi file vengono modificati dai tool Trimmomatic, Star e Samtools in modo da produrre un output gi\`a utilizzabile per ottenere i dati di sbilanciamento allelico.
   Opzionalmente l'output pu\`o subire ulteriori modifiche prima di passare alla prossima fase: in particolare pu\`o essere deduplicato e ricalibrato.
-	
+
   	\subsection{Trimmomatic}
 	Trimmomatic \cite{trimmomatic} \`e il primo tool ad essere utilizzato.
 	Il suo obiettivo \`e quello di eliminare dalle reads la sequenza adattatrice, o suoi frammenti, utilizzata per rendere possibile il sequenziamento.
@@ -64,8 +64,28 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
 	Star ha come output un sam file, un file di testo delimitato da tabulazioni contenente una riga per allineamento con tutte le informazioni necessarie per la sua identificazione.
 
 	\subsection{Samtools}
+  I samtools\footnote{Necessario citare i siti della documentazione} sono un insieme di programmi necessari per interagire con i dati di sequenziamento.
+  Nella pipeline sono utilizzati per compiere delle operazioni sui sam file generati da Star\footnote{Mettere riferimento a Star} in modo da prepararli prima che possano essere utilizzati successivamente da ASEQ\footnote{Riferimento ad ASEQ}.
+  In particolare svolgono le operazioni di ordinamento, indicizzazione e compressione dei file di input.
+  Questo avviene attraverso due programmi: samtools sort e samtools index.
+  Il primo ordina gli allineamenti secondo le coordinate di inizio e comprime implicitamente l'input in formato bam.
+  Il secondo invece crea, a partire dall'output del programma sort un indice in formato bai di tale file, permettendo efficienti operazioni di accesso casuale al bam file.
+  L'output finale \`e un bam file ordinato e indicizzato che pu\`o essere utilizzato come input di ASEQ\footnote{riferimento ad aseq} per generare i dati di sbilanciamento allelico.
 
-	\subsection{Deduplicatione e ricalibrazione}
+	\subsection{Deduplicazione e ricalibrazione}
+  La deduplicazione e la ricalibrazione sono due processi ulteriori di pre-processamento dei dati che tentano di risolvere errori presenti nei bam file che sono stati allineati attraverso star\footnote{Riferimento a star}.
+  Questi due passaggi vengono svolti attraverso una serie di tools eseguiti sequenzialmente come si nota nella figura \ref{fig:pipeline_deduprecal}.
+  \begin{figure}[H]
+    \label{fig:pipeline_deduprecal}
+    \centering
+    \includegraphics[scale=0.17]{deduprecal.png}
+    \caption{Pipeline di deduplicazione e ricalibrazione}
+  \end{figure}
+
+    \subsubsection{Deduplicazione}
+    Si definiscono come read duplicate in un BAM file delle read che si generano da un singolo frammento di RNA.
+    Possono originarsi durante la preparazione del campione, per esempio durante la costruzione della libreria attravero PCR o risultare da un singolo cluster di amplificazione, identificato incorrettamente come cluster multipli dal sensore ottico dello strumento di sequenziamento.
+
 
   \section{Analisi dei dati WES}
 
