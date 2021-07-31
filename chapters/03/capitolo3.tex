@@ -81,79 +81,58 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
     \includegraphics[scale=0.17]{deduprecal.png}
     \caption{Pipeline di deduplicazione e ricalibrazione}
   \end{figure}
+  Come si nota il primo passaggio viene svolto dal tool \emph{AddOrReplaceReadGroups} di Picard\footnote{metti sito}, un passaggio di preparazione delle read necessario a tutti i tool successivi.
+  Questo assegna tutte le reads in un file a un nuovo read-group settando un campo nel BAM file, in modo da assegnare tutte le reads a un genotipo specifico.
+
 
     \subsubsection{Deduplicazione}
     Si definiscono come read duplicate in un BAM file delle read che si generano da un singolo frammento di RNA.
-    Possono originarsi durante la preparazione del campione, per esempio durante la costruzione della libreria attravero PCR o risultare da un singolo cluster di amplificazione, identificato incorrettamente come cluster multipli dal sensore ottico dello strumento di sequenziamento.
+    Possono originarsi durante la preparazione del campione, per esempio durante la costruzione della libreria attraverso PCR o risultare da un singolo cluster di amplificazione, identificato incorrettamente come cluster multipli dal sensore ottico dello strumento di sequenziamento.
+    Il processo di deduplicazione \`e stato svolto attraverso il \emph{MarkDuplicates} di Picard.
+    Il programma compara le sequenze nelle posizioni $5'$ sia delle reads che dei read-pairs.
+    Dopo che ha trovato tutti le reads duplicata queste vengono ordinate secondo la somma dei punteggi di qualit\`a delle basi.
+    La read con il punteggio pi\`u alto viene considerata primaria, le altre duplicati.
+    Grazie all'opzione \emph{REMOVE\_DUPLICATE=true} tutte le sequenze duplicate vengono rimosse.
+    Viene infine ricreato l'indice del BAM file attraverso \emph{samtools index}.
 
+    \subsubsection{Ricalibrazione}
+    La ricalibrazione viene svolta da una serie di tool facenti parte della suite Gatk\footnote{metti sito}.
+    Il processo si compone di diverse fasi:
+    \begin{multicols}{2}
+      \begin{enumerate}
+        \item Riallineamento degli indels.
+        \item Ricalibrazione delle basi basata sul punteggio di qualtit\`a.
+      \end{enumerate}
+    \end{multicols}
+    Il primo passaggio, svolto dal tool \emph{SplitNCigarReads}, progettato specificatamente per dati di RNA-seq \`e necessario per il corretto funzionamento degli step successivi.
+    In un file BAM di RNA-seq infatti si trovano stringhe \emph{CIGAR} che descrivono come una base in ogni reads \`e mappata.
+    Il valore $N$ corrisponde a una base saltata sul genoma di reference\footnote{Probabilmente in italiano}.
+    Nel caso di RNA-seq tali basi possono corrispondere o a sequence introniche, non presenti nel RNA a causa dello splicing o a sequenze di ``overhang''\footnote{Magari una definizione di overhang}.
+    \emph{SplitNCigarReads} elimina le basi corrispondenti a una $N$ creando dalla reads di partenza due reads, una a sinistra e una a destra della base rimossa.
+    Come risultato gli esoni del RNA vengono separati in segmenti e gli overhang eliminati in modo da non causare falsi positivi.\\
+    Dopo questo lavoro di processamento inizia la fase di riallineamento degli indels.
+    Il riallineamento locale degli indels \`e necessario in quanto permette di correggere errori generati dall'allineatore genomico.
+    Questi errori si generano in quanto gli allineatori genomici considerano ogni read indipendentemente e le strategie di assegnazione dei punteggi limitano la loro abilit\`a di allineare accuratamente nella presenza di indels.
+    Il processo di allineamento locale considera invece tutte le letture che attraversano una posizione in modo da ottenere un consenso di alto punteggio che supporta la presenza di un evento di indel.
+    Il riallineamento viene svolto attraverso l'utilizzo di due tool: \emph{RealignerTargetCreator} e \emph{IndelRealigner}.
+    Il primo prende come input un BAM file ordinato e indicizzato.
+    A partire dal file genera un file di output formato da una lista a una colonna contenente gli intervalli, che rappresentano siti di indel potenziali
+    Se sono prossimali i siti sono uniti in un intervallo unico.
+    Il secondo prende come input lo stesso BAM di \emph{RealignerTargetCreator} e il file di intervalli appena generato e svolge un riallineamento locale sulle reads coincidenti con l'intervallo target usando consensi dagli indel presenti nell'allineamento originale.
+    L'output \`e un BAM ordinato e indicizzato.\\
+    Il processo di ricalibrazione delle basi basato sul punteggio di qualit\`a serve a risolvere errori generati durante il sequenziamento.
+    Si definisce il punteggio di qualit\`a di una base come una stime dell'errore emesso dalla macchina di sequenziamento: esprimono quanto questa \`e confidente che ha chiamato la base corretta ogni volta.
+    Questi punteggi sono soggetti a varie sorgenti di errori tecnici dovuti alla fisica o alla chimica di come una reazione di sequenziamento funziona o a difetti nell'equipaggiamento.
+    Gli errori portano pertanto a una sottostima o sovrastima (tipicamente la seconda) del punteggio di qualit\`a fornito dal macchinario di sequenziamento.
+    Per tentare di risolvere si utilizza machine learning per modellarli empiricamente a modificare i valori di qualit\`a migliorarne la veridicit\`a.
+    La ricalibrazione delle basi avviene attraverso l'utilizzo di due tool.
+    Il primo \emph{BaseRecalibrator} costruisce un modello di covarianza da un BAM e da un insieme di varianti conosciute in un file VCF e lo salva in un file.
+    Le varianti conosciute sono usate per mascherare basi ai siti di variazioni aspettate in modo da non considerarle come errori.
+    Al di fuori di queste eccezioni ogni mal-accoppiamento viene contato come un errore.
+    Per costruire il modello di ricalibrazione il tool tabula i dati del BAM secondo il read group, il punteggio di qualit\`a, il ciclo della macchina che ha prodotto la base, la base corrente e successiva.
+    Successivamente si conta il numero di basi e quanto spesso queste hanno un mal-accoppiamento con la base di reference.
+    Il secondo tool \emph{PrintReads} applica il modello creato dal primo al BAM di input, aggiornando cos\`i ai punteggi di qualit\`a migliorati.
+    Infine viene ricreato l'indice del BAM file attraverso \emph{samtools index}.\\
+    In questo modo si \`e creato un file BAN pronto per essere utilizzato da ASEQ.
 
-  \section{Analisi dei dati WES}
-
-  	\subsection{Bedtools}
-
-  \section{Dati disponibili}
-  \label{sec:dati}
-
-    \subsection{Sequenze biologiche}
-    \label{subsec:fastq}
-
-    Descrizione dei fastq.
-
-    \subsection{Genoma di riferimento}
-    \label{subsec:star-gen}
-    Descrizione del genoma di riferimento.
-
-    \subsection{Variant call}
-    \label{subsec:vcf}
-    Descrizione dei vcf.
-
-    \subsection{Struttura dei geni}
-    \label{subsec:gtf}
-    Descrizione del gtf.
-
-  \section{Troncatura e allinamento}
-  \label{sec:trimm_star}
-  Descrizione del processo e perch\`e viene fatto.
-
-    \subsection{Troncatura}
-    \label{subsec:trimm}
-    Trimmomatic, cosa fa come \`e stato usato.
-
-    \subsection{Allineamento}
-    STAR, cosa fa come \`e stato usato.
-
-    \subsection{Ordinamento}
-    \label{subsec:sorting}
-    SAMTOOLS SORT cosa fa come \`e stato usato.
-
-    \subsection{Indicizzazione}
-    \label{subsec:indexing}
-    SAMTOOLS index cosa fa come \`e stato usato.
-
-  \section{Deduplicazione, riallinamento e recalibrazione}
-  \label{sec:recalibration}
-  Descrizione del processo e perch\`e viene fatto
-
-    \subsection{Deduplicazione}
-    \label{subsec:dedup}
-    Come sopra.
-
-    \subsection{Riallineamento e recalibrazione}
-    \label{subsec:recalibration}
-    Come sopra.
-
-  \section{Ottenere le varianti alleliche}
-  Intersezione tra VCF e GTF.
-
-  \section{Ottenere i dati delle frazioni alleliche}
-  \label{sec:aseq}
-  ASEQ cosa fa come viene usato.
-
-
-    \subsection{Filtrare le frazioni alleliche}
-    \label{subsec:filter}
-    Condizioni di filtraggio per i risultati di ASEQ.
-
-  \section{Ottenere gli SNP nel 3'-UTR}
-  \label{sec:threeprime}
-  Filtraggio del gtf e intersezione con i VCF
+  \section{Ottenimento degli SNP di interesse}

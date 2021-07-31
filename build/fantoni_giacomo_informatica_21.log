@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  31 JUL 2021 17:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  1 AUG 2021 01:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -575,15 +575,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 5.
+)
+\tf@toc=\write4
+\openout4 = `fantoni_giacomo_informatica_21.toc'.
+
  [1
 
 
 
-])
-\tf@toc=\write4
-\openout4 = `fantoni_giacomo_informatica_21.toc'.
-
- [2]
+]
 (./chapters/sommario/sommario.tex
 (/usr/share/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
@@ -592,7 +592,7 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 Capitolo 1.
 ) (./chapters/02/capitolo2.tex
 Capitolo 2.
-[3
+[2
 
 ]) (./chapters/03/capitolo3.tex
 Capitolo 3.
@@ -600,7 +600,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 4.
-<chapters/03/media//pipeline.png, id=37, 1585.925pt x 2091.815pt>
+<chapters/03/media//pipeline.png, id=34, 1585.925pt x 2091.815pt>
 File: chapters/03/media//pipeline.png Graphic file (type png)
 <use chapters/03/media//pipeline.png>
 Package pdftex.def Info: chapters/03/media//pipeline.png  used on input line 21
@@ -609,17 +609,21 @@ Package pdftex.def Info: chapters/03/media//pipeline.png  used on input line 21
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4]
-[5 <./chapters/03/media//pipeline.png>]
-<chapters/03/media//deduprecal.png, id=52, 2774.365pt x 1208.515pt>
+ [3]
+[4 <./chapters/03/media//pipeline.png>]
+<chapters/03/media//deduprecal.png, id=48, 2774.365pt x 1208.515pt>
 File: chapters/03/media//deduprecal.png Graphic file (type png)
 <use chapters/03/media//deduprecal.png>
 Package pdftex.def Info: chapters/03/media//deduprecal.png  used on input line 
 81.
 (pdftex.def)             Requested size: 471.63582pt x 205.44482pt.
- [6] [7 <./chapters/03/media//deduprecal.png>]) (./chapters/04/capitolo4.tex
+ [5] [6 <./chapters/03/media//deduprecal.png>]) (./chapters/04/capitolo4.tex
 Capitolo 4.
-) (./build/fantoni_giacomo_informatica_21.bbl [8])
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7])
+(./build/fantoni_giacomo_informatica_21.bbl [8])
 (./chapters/allegati/allegati.tex [9
 
 ]
@@ -637,10 +641,10 @@ LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
 
  (./build/fantoni_giacomo_informatica_21.aux) ) 
 Here is how much of TeX's memory you used:
- 7265 strings out of 478994
- 117258 string characters out of 5864751
- 486863 words of memory out of 5000000
- 24551 multiletter control sequences out of 15000+600000
+ 7252 strings out of 478994
+ 117061 string characters out of 5864751
+ 486693 words of memory out of 5000000
+ 24538 multiletter control sequences out of 15000+600000
  413274 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  97i,8n,102p,405b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -658,7 +662,7 @@ public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
 /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texm
 f-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on ./build/fantoni_giacomo_informatica_21.pdf (13 pages, 753915 
+Output written on ./build/fantoni_giacomo_informatica_21.pdf (13 pages, 758011 
 bytes).
 PDF statistics:
  124 PDF objects out of 1000 (max. 8388607)
