@@ -1,29 +1,16 @@
 \begin{thebibliography}{1}
 
-\bibitem{samtools-index}
-Documentazione per samtools index.
-\newblock http://www.htslib.org/doc/samtools-index.html.
-\newblock ultimo accesso 01/08/2021.
+\bibitem{ase_pipeline}
+Alessandro Romanel.
+\newblock Allele-specific expressione analysis in cancer using next-generation
+  sequencing data.
+\newblock {\em Krasnitz A. (eds) Cancer Bioinformatics. Methods in Molecular
+  Biology}, 1878:125--137, 2019.
 
-\bibitem{samtools-sort}
-Documentazione per samtools sort.
-\newblock http://www.htslib.org/doc/samtools-sort.html.
-\newblock ultimo accesso 01/08/2021.
-
-\bibitem{gatk}
-Gatk.
-\newblock https://gatk.broadinstitute.org.
-\newblock ultimo accesso 01/08/2021.
-
-\bibitem{picard}
-Picard.
-\newblock https://broadinstitute.github.io/picard/.
-\newblock ultimo accesso 01/08/2021.
-
-\bibitem{samtools}
-Samtools.
-\newblock http://www.htslib.org/.
-\newblock ultimo accesso 01/08/2021.
+\bibitem{parallel}
+O.~Tange.
+\newblock Gnu parallel - the command-line power tool.
+\newblock {\em ;login: The USENIX Magazine}, 36(1):42--47, Feb 2011.
 
 \bibitem{trimmomatic}
 Anthony~M. Bolger, Marc Lohse, and Bjoern Usadel.
@@ -36,16 +23,29 @@ Alexander Dobin, Carrie~A. Davis, Felix Schlesinger, Jorg Drenkow, Chris
 \newblock {STAR: ultrafast universal RNA-seq aligner}.
 \newblock {\em Bioinformatics}, 29(1):15--21, 10 2012.
 
-\bibitem{ase_pipeline}
-Alessandro Romanel.
-\newblock Allele-specific expressione analysis in cancer using next-generation
-  sequencing data.
-\newblock {\em Krasnitz A. (eds) Cancer Bioinformatics. Methods in Molecular
-  Biology}, 1878:125--137, 2019.
+\bibitem{samtools}
+Samtools.
+\newblock http://www.htslib.org/.
+\newblock ultimo accesso 01/08/2021.
 
-\bibitem{parallel}
-O.~Tange.
-\newblock Gnu parallel - the command-line power tool.
-\newblock {\em ;login: The USENIX Magazine}, 36(1):42--47, Feb 2011.
+\bibitem{samtools-sort}
+Documentazione per samtools sort.
+\newblock http://www.htslib.org/doc/samtools-sort.html.
+\newblock ultimo accesso 01/08/2021.
+
+\bibitem{samtools-index}
+Documentazione per samtools index.
+\newblock http://www.htslib.org/doc/samtools-index.html.
+\newblock ultimo accesso 01/08/2021.
+
+\bibitem{picard}
+Picard.
+\newblock https://broadinstitute.github.io/picard/.
+\newblock ultimo accesso 01/08/2021.
+
+\bibitem{gatk}
+Gatk.
+\newblock https://gatk.broadinstitute.org.
+\newblock ultimo accesso 01/08/2021.
 
 \end{thebibliography}
