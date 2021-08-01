@@ -43,24 +43,25 @@ Descrizione della pipeline di lavoro, file utilizzati e contesto.
 **** Introduzione del capitolo
 + Capitolo 1 definizione del progetto e di WES.
 *** Fonti
-- [ ] Trimmomatic: paper fornito
-- [ ] Star: paper fornito
+- [X] Trimmomatic: paper fornito
+- [X] Star: paper fornito
 - [X] Samtools:
   + [X] http://www.htslib.org/doc/samtools-sort.html
   + [X] http://www.htslib.org/doc/samtools-index.html
-- [-] Deduplication e recalibration:
+- [X] Deduplication e recalibration:
   + [X] https://gatk.broadinstitute.org/hc/en-us/articles/360057439771-MarkDuplicates-Picard-
   + [X] https://gatk.broadinstitute.org/hc/en-us/articles/360057440331-AddOrReplaceReadGroups-Picard-
   + [X] http://seqanswers.com/forums/showthread.php?t=11887
   + [X] https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi9l_TLoo7yAhXH-6QKHff2DxoQFjAKegQIGhAD&url=https%3A%2F%2Frepository.tudelft.nl%2Fislandora%2Fobject%2Fuuid%3A871a645a-81e4-4686-abc0-53944366c6a4%2Fdatastream%2FOBJ%2Fdownload&usg=AOvVaw0DD3jze_jHdse38fHSHB9P
   + [X] https://github.com/broadinstitute/gatk-docs/blob/master/gatk3-tutorials/(howto)_Perform_local_realignment_around_indels.md
-  + [ ] https://gatk.broadinstitute.org/hc/en-us/articles/360035890531-Base-Quality-Score-Recalibration-BQSR-
-- [ ] Bedtools:
-  + [ ] https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html
-  + [ ] https://bedtools.readthedocs.io/en/latest/content/overview.html
-  + [ ] https://bedtools.readthedocs.io/en/latest/
-- [ ] Aseq: paper fornito.
-*** Varie ed eventuali
+  + [X] https://gatk.broadinstitute.org/hc/en-us/articles/360035890531-Base-Quality-Score-Recalibration-BQSR-
+- [X] Bedtools:
+  + [X] https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html
+  + [X] https://bedtools.readthedocs.io/en/latest/content/overview.html
+  + [X] https://bedtools.readthedocs.io/en/latest/
+- [X] Aseq: paper fornito.
+*** Varie ed eventualio
+- Aggiungere nel file le citazioni ai tool di gatk e picard, oltre ai post dei blog di gatk
 
 ** TODO Capitolo 4 - Discussione risultati [0/5]
 - [ ] Raccogli fonti.

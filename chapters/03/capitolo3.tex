@@ -1,12 +1,12 @@
 \graphicspath{{chapters/03/media/}}
 \chapter{Processamento dei dati}
 \label{cha:processamento}
-Dopo aver definito in \S\ref{cha:intro} l'obiettivo di questo progetto si deve definire una pipeline che, da dati di sequenziamento di RNA e di \emph{WES}\footnote{SEMPRE DEFINITO NEL CAPITOLO 1} sia in grado di fornire le istanze di espressione allelo-specifica.
+Dopo aver definito in \S\ref{cha:intro} l'obiettivo di questo progetto si deve definire una pipeline che, da dati di sequenziamento di RNA e da una lista di SNP esonici  sia in grado di fornire le istanze di espressione allelo-specifica.
 Questa pipeline viene definita basandosi su quella presentata in \cite{ase_pipeline} e si compone pertanto di tre fasi principali:
 \begin{enumerate}
 	\item Pre-processamento e allineamento dei dati di RNA-seq, con eventuale deduplicazione e ricalibrazione.
 	\item Analisi di dati \emph{WES} in modo da ottenere una lista di possibili SNP esonici da considerare.
-	\item Ottenimento dei dati di sbilanciamento allelico.
+	\item Calcolo dei dati di sbilanciamento allelico.
 \end{enumerate}
 La figura \ref{fig:proj_pipeline} \`e una visualizzazione della pipeline e dei tool utilizzati.\\
 Essendo infine che questo lavoro prevede il processamento di un gran numero di file, unito al fatto che i tool utilizzzati sono stati implementati con una integrazione con le pipe di unix e con la possibilit\`a di essere eseguiti in multi-threading \`e stato di fondamentale importanza l'utility parallel \cite{parallel}.
@@ -32,7 +32,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   	\subsection{Trimmomatic}
 	Trimmomatic \cite{trimmomatic} \`e il primo tool ad essere utilizzato.
 	Il suo obiettivo \`e quello di eliminare dalle reads la sequenza adattatrice, o suoi frammenti, utilizzata per rendere possibile il sequenziamento.
-	Essendo le RNA-seq fornite a single-ends\footnote{Spiega cosa sono} viene utilizzata la simple mode del tool.
+	Essendo le RNA-seq fornite a single-ends\footnote{Punta a spiegazione nel capitolo 1} viene utilizzata la simple mode del tool.
 	Questa scansiona ogni read\footnote{Non so se metterla in italiano} dalla terminazione $5'$ alla $3'$ per determinare la presenza della sequenza adattatrice.
 	Utilizza il mdetodo ``seed and extend'' per trovare corrispondenze iniziali, anche non perfette, tra la read e la sequenza adattatrice.
 	Successivamente svolge un allineamento locale e se questo ha uno score maggiore di una soglia viene rimosso insieme alla porzione successiva ad esso.
@@ -64,16 +64,16 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
 	Star ha come output un sam file, un file di testo delimitato da tabulazioni contenente una riga per allineamento con tutte le informazioni necessarie per la sua identificazione.
 
 	\subsection{Samtools}
-  I samtools\footnote{Necessario citare i siti della documentazione} sono un insieme di programmi necessari per interagire con i dati di sequenziamento.
-  Nella pipeline sono utilizzati per compiere delle operazioni sui sam file generati da Star\footnote{Mettere riferimento a Star} in modo da prepararli prima che possano essere utilizzati successivamente da ASEQ\footnote{Riferimento ad ASEQ}.
+	I samtools \cite{samtools} sono un insieme di programmi necessari per interagire con i dati di sequenziamento.
+	Nella pipeline sono utilizzati per compiere delle operazioni sui sam file generati da Star\footnote{Vedi \S\ref{subsec:star}} in modo da prepararli prima che possano essere utilizzati successivamente per generare i dati di sbilanciamento allelico\footnote{Vedi \S\ref{sec:aseq}}.
   In particolare svolgono le operazioni di ordinamento, indicizzazione e compressione dei file di input.
-  Questo avviene attraverso due programmi: samtools sort e samtools index.
+  Questo avviene attraverso due programmi: samtools sort \cite{samtools-sort} e samtools index \cite{samtools-index}.
   Il primo ordina gli allineamenti secondo le coordinate di inizio e comprime implicitamente l'input in formato bam.
   Il secondo invece crea, a partire dall'output del programma sort un indice in formato bai di tale file, permettendo efficienti operazioni di accesso casuale al bam file.
-  L'output finale \`e un bam file ordinato e indicizzato che pu\`o essere utilizzato come input di ASEQ\footnote{riferimento ad aseq} per generare i dati di sbilanciamento allelico.
+  L'output finale \`e un bam file ordinato e indicizzato che pu\`o essere utilizzato come input di aseq.
 
 	\subsection{Deduplicazione e ricalibrazione}
-  La deduplicazione e la ricalibrazione sono due processi ulteriori di pre-processamento dei dati che tentano di risolvere errori presenti nei bam file che sono stati allineati attraverso star\footnote{Riferimento a star}.
+	La deduplicazione e la ricalibrazione sono due processi ulteriori di pre-processamento dei dati che tentano di risolvere errori presenti nei bam file che sono stati allineati attraverso star\footnote{Vedi \S\ref{subsec:star}}.
   Questi due passaggi vengono svolti attraverso una serie di tools eseguiti sequenzialmente come si nota nella figura \ref{fig:pipeline_deduprecal}.
   \begin{figure}[H]
     \label{fig:pipeline_deduprecal}
@@ -81,7 +81,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
     \includegraphics[scale=0.17]{deduprecal.png}
     \caption{Pipeline di deduplicazione e ricalibrazione}
   \end{figure}
-  Come si nota il primo passaggio viene svolto dal tool \emph{AddOrReplaceReadGroups} di Picard\footnote{metti sito}, un passaggio di preparazione delle read necessario a tutti i tool successivi.
+  Come si nota il primo passaggio viene svolto dal tool \emph{AddOrReplaceReadGroups} di Picard\cite{picard}, un passaggio di preparazione delle read necessario a tutti i tool successivi.
   Questo assegna tutte le reads in un file a un nuovo read-group settando un campo nel BAM file, in modo da assegnare tutte le reads a un genotipo specifico.
 
 
@@ -96,7 +96,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
     Viene infine ricreato l'indice del BAM file attraverso \emph{samtools index}.
 
     \subsubsection{Ricalibrazione}
-    La ricalibrazione viene svolta da una serie di tool facenti parte della suite Gatk\footnote{metti sito}.
+    La ricalibrazione viene svolta da una serie di tool facenti parte della suite Gatk \cite{gatk}.
     Il processo si compone di diverse fasi:
     \begin{multicols}{2}
       \begin{enumerate}
@@ -136,3 +136,14 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
     In questo modo si \`e creato un file BAN pronto per essere utilizzato da ASEQ.
 
   \section{Ottenimento degli SNP di interesse}
+  Una volta ottenuti i file di allineamento si rende necessario ottenere una lista di SNP dei quali si vuole ottenere il valore di sbilanciamento allelico.
+  Per ottenere questi dati sono stati utilizzati un file GTF ottenuto da\footnote{Mettere da dove si \`e ottenuto} contenente informazioni sulla porzione esonica del genoma umano e da un insieme di VCF divisi per cromosoma contenenti le informazioni riguardo le varianti ottenute negli essere umani.
+  Dopo aver ristretto i VCF agli SNP sono stati intersecati con il file GTF.
+  L'intersezione \`e stata volta dal tool \emph{bedtools intersect}, facente parte della suite bedtools\footnote{Inserisci sito}.
+  Questo tool ha permesso di trovare ogni record del VCF presente anche nel GTF.
+  In questo modo \`e stato creato un insieme di file VCF, uno per ogni cromosoma, contenente ogni SNP presente nella parte esonica del genoma.
+  La restrizione alla parte esonica del genoma non causa alcuna perdita di potere predittivo in quanto si stanno considerando dati di RNA-seq e permette una significativa diminuzione del carico computazionale svolto da aseq\emph{riferimento ad aseq}.
+  I VCF risultanti da questo processo sono pronti per essere utilizzati come input di aseq\footnote{riferimento ad aseq}.
+
+  \section{Calcolo dei dati di sbilanciamento allelico}
+  \label{sec:aseq}

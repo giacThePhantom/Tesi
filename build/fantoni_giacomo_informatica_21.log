@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  1 AUG 2021 01:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  1 AUG 2021 02:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -531,11 +531,11 @@ italian.ldf    on input line 38.
 (./prefixes/pagina_iniziale.tex
 Package epstopdf Info: Source file: <prefixes/images/marchio_unitrento_colore_i
 t_202002.eps>
-(epstopdf)                    date: 2021-07-20 16:48:06
+(epstopdf)                    date: 2020-02-12 10:03:21
 (epstopdf)                    size: 222744 bytes
 (epstopdf)             Output file: <prefixes/images/marchio_unitrento_colore_i
 t_202002-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-07-20 16:48:06
+(epstopdf)                    date: 2020-02-12 10:12:41
 (epstopdf)                    size: 183512 bytes
 (epstopdf)             Command: <repstopdf --outfile=prefixes/images/marchio_un
 itrento_colore_it_202002-eps-converted-to.pdf prefixes/images/marchio_unitrento
@@ -597,9 +597,9 @@ Capitolo 2.
 ]) (./chapters/03/capitolo3.tex
 Capitolo 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 4.
+(Font)              <9> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 4.
+(Font)              <5> on input line 13.
 <chapters/03/media//pipeline.png, id=34, 1585.925pt x 2091.815pt>
 File: chapters/03/media//pipeline.png Graphic file (type png)
 <use chapters/03/media//pipeline.png>
@@ -641,10 +641,10 @@ LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
 
  (./build/fantoni_giacomo_informatica_21.aux) ) 
 Here is how much of TeX's memory you used:
- 7252 strings out of 478994
- 117061 string characters out of 5864751
- 486693 words of memory out of 5000000
- 24538 multiletter control sequences out of 15000+600000
+ 7258 strings out of 478994
+ 117126 string characters out of 5864751
+ 485892 words of memory out of 5000000
+ 24544 multiletter control sequences out of 15000+600000
  413274 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  97i,8n,102p,405b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -662,7 +662,7 @@ public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
 /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texm
 f-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on ./build/fantoni_giacomo_informatica_21.pdf (13 pages, 758011 
+Output written on ./build/fantoni_giacomo_informatica_21.pdf (13 pages, 757616 
 bytes).
 PDF statistics:
  124 PDF objects out of 1000 (max. 8388607)

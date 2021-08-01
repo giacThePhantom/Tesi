@@ -21,9 +21,10 @@
 \contentsline {subsubsection}{Deduplicazione}{6}{}%
 \contentsline {subsubsection}{Ricalibrazione}{6}{}%
 \contentsline {section}{\numberline {3.2}Ottenimento degli SNP di interesse}{7}{}%
-\contentsline {chapter}{\numberline {4}Analisi dei dati}{7}{}%
-\contentsline {section}{\numberline {4.1}Conta degli SNP trovati con ASEQ}{7}{}%
-\contentsline {section}{\numberline {4.2}Considerazioni sulla recalibrazione}{7}{}%
+\contentsline {section}{\numberline {3.3}Calcolo dei dati di sbilanciamento allelico}{8}{}%
+\contentsline {chapter}{\numberline {4}Analisi dei dati}{8}{}%
+\contentsline {section}{\numberline {4.1}Conta degli SNP trovati con ASEQ}{8}{}%
+\contentsline {section}{\numberline {4.2}Considerazioni sulla recalibrazione}{8}{}%
 \contentsline {section}{\numberline {4.3}Ottenere i dati per gli SNP di interesse}{8}{}%
 \contentsline {section}{\numberline {4.4}Analisi degli sbilanciamenti di frazione allelica}{8}{}%
 \contentsline {section}{\numberline {4.5}Conclusioni}{8}{}%

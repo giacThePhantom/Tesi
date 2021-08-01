@@ -1,5 +1,30 @@
 \begin{thebibliography}{1}
 
+\bibitem{samtools-index}
+Documentazione per samtools index.
+\newblock http://www.htslib.org/doc/samtools-index.html.
+\newblock ultimo accesso 01/08/2021.
+
+\bibitem{samtools-sort}
+Documentazione per samtools sort.
+\newblock http://www.htslib.org/doc/samtools-sort.html.
+\newblock ultimo accesso 01/08/2021.
+
+\bibitem{gatk}
+Gatk.
+\newblock https://gatk.broadinstitute.org.
+\newblock ultimo accesso 01/08/2021.
+
+\bibitem{picard}
+Picard.
+\newblock https://broadinstitute.github.io/picard/.
+\newblock ultimo accesso 01/08/2021.
+
+\bibitem{samtools}
+Samtools.
+\newblock http://www.htslib.org/.
+\newblock ultimo accesso 01/08/2021.
+
 \bibitem{trimmomatic}
 Anthony~M. Bolger, Marc Lohse, and Bjoern Usadel.
 \newblock {Trimmomatic: a flexible trimmer for Illumina sequence data}.
