@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{ase_pipeline}
 Alessandro Romanel.
@@ -47,5 +47,11 @@ Picard.
 Gatk.
 \newblock https://gatk.broadinstitute.org.
 \newblock ultimo accesso 01/08/2021.
+
+\bibitem{aseq}
+Alessandro Romanel, Sara Lago, D.~Prandi, A.~Sboner, and F.~Demichelis.
+\newblock Aseq: fast allele-specific studies from next-generation sequencing
+  data.
+\newblock {\em BMC Medical Genomics}, 8, 2015.
 
 \end{thebibliography}

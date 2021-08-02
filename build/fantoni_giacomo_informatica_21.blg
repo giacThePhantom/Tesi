@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: ./build/fantoni_giacomo_informatica_21.aux
 The style file: unsrt.bst
 Database file #1: bibliography/biblio.bib
-You've used 9 entries,
+You've used 10 entries,
             1791 wiz_defined-function locations,
-            493 strings with 4640 characters,
-and the built_in function-call counts, 1536 in all, are:
-= -- 130
-> -- 53
+            499 strings with 4818 characters,
+and the built_in function-call counts, 1728 in all, are:
+= -- 143
+> -- 70
 < -- 0
-+ -- 23
-- -- 14
-* -- 89
-:= -- 224
-add.period$ -- 27
-call.type$ -- 9
-change.case$ -- 9
++ -- 29
+- -- 19
+* -- 102
+:= -- 263
+add.period$ -- 30
+call.type$ -- 10
+change.case$ -- 10
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 61
-empty$ -- 184
-format.name$ -- 14
-if$ -- 357
+cite$ -- 10
+duplicate$ -- 69
+empty$ -- 198
+format.name$ -- 19
+if$ -- 396
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 4
-newline$ -- 48
-num.names$ -- 4
-pop$ -- 44
+int.to.str$ -- 10
+missing$ -- 5
+newline$ -- 53
+num.names$ -- 5
+pop$ -- 45
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 27
+skip$ -- 30
 stack$ -- 0
 substring$ -- 78
-swap$ -- 9
+swap$ -- 10
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 8
-width$ -- 10
-write$ -- 91
+while$ -- 9
+width$ -- 12
+write$ -- 102

@@ -147,3 +147,15 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
 
   \section{Calcolo dei dati di sbilanciamento allelico}
   \label{sec:aseq}
+  Per computare i valori di sbilanciamento allelico \`e stato utilizzato aseq \cite{aseq}.
+  Questo tool tenta di risolvere alcune limitazioni di altri programmi di analisi di espressione allelo-specifica.
+  Non richiede infatti informazioni genomiche dei genitori dell'individuo e non si basa unicamente sui dati di RNA-seq.
+  Aseq in particolare utilizza dati di sequenziamento di prossima generazione trascrittomici e genomici accoppiati per superare queste limitazioni.
+  \`E stato implementato sfruttando l'API di samtools, permettendo rapide funzionalit\`a di accesso casuale su file di allineamento indicizzati, combinandolo con il potere di computazione multi-threaded.
+  Delle modalit\`a che aseq fornisce \`e stata utilizzata quella principale di analisi ASE.
+  Il preprocessamento e allineamento dei dati RNA-seq ha portato alla creazione di due insiemi di file di allineamento in formato bam.
+  Ogni campione\footnote{Riferimento a campione} viene rappresentato nei due insiemi da un file in ognuno: uno dalla pipeline che termina con l'utilizzo di star\footnote{riferimento a star}, mentre l'altro ha subito il processo di deduplicazione e ricalibrazione.
+  Inoltre grazie ai file VCF si ha una lista degli SNP esonici nella specie divisi per cromosoma: i $22$ autosomi, $X$ e il DNA mitocondriale.
+  Per ogni file di allineamento e per ogni file VCF si esegue aseq in modo da generare per ogni campione una lista di eventi di sbilanciamento allele-specifico divisi per cromosoma.
+
+  
