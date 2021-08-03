@@ -29,10 +29,10 @@ Descrizione delle motivazioni dietro all'esperimento con riferimento al paper tr
 *** Contenuto
 Descrizione della linea cellulare utilizzata e dei trattamenti a cui è stata sottoposta.
 *** Riferimento ad altri capitoli
-** WIP Capitolo 3 - Pipeline di lavoro [0/4]
+** WIP Capitolo 3 - Pipeline di lavoro [3/5]
 - [X] Raccogli fonti.
 - [X] Decidi sezioni e sottosezioni.
-- [ ] Prima scrittura.
+- [X] Prima scrittura.
 - [ ] Controlla riferimenti ad altri capitoli.
 - [ ] Rilettura, correzione e revisione.
 *** Contenuto
@@ -63,7 +63,7 @@ Descrizione della pipeline di lavoro, file utilizzati e contesto.
 - [X] Aseq: paper fornito.
 *** TODO Varie ed eventuali
 - Aggiungere nel file le citazioni ai tool di gatk e picard, oltre ai post dei blog di gatk
-- Aseq aspettare risposta.
+- Come metto i parametri dei tool? Allegato? Nella discussione?
 
 ** TODO Capitolo 4 - Discussione risultati [0/5]
 - [ ] Raccogli fonti.

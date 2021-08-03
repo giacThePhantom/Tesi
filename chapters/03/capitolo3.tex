@@ -1,7 +1,7 @@
 \graphicspath{{chapters/03/media/}}
 \chapter{Processamento dei dati}
 \label{cha:processamento}
-Dopo aver definito in \S\ref{cha:intro} l'obiettivo di questo progetto si deve definire una pipeline che, da dati di sequenziamento di RNA e da una lista di SNP esonici  sia in grado di fornire le istanze di espressione allelo-specifica.
+Definito in \S\ref{cha:intro} l'obiettivo di questo progetto si deve definire una pipeline che, da dati di sequenziamento di RNA e da una lista di SNP esonici  sia in grado di fornire le istanze di espressione allelo-specifica.
 Questa pipeline viene definita basandosi su quella presentata in \cite{ase_pipeline} e si compone pertanto di tre fasi principali:
 \begin{enumerate}
 	\item Pre-processamento e allineamento dei dati di RNA-seq, con eventuale deduplicazione e ricalibrazione.
@@ -9,11 +9,12 @@ Questa pipeline viene definita basandosi su quella presentata in \cite{ase_pipel
 	\item Calcolo dei dati di sbilanciamento allelico.
 \end{enumerate}
 La figura \ref{fig:proj_pipeline} \`e una visualizzazione della pipeline e dei tool utilizzati.\\
-Essendo infine che questo lavoro prevede il processamento di un gran numero di file, unito al fatto che i tool utilizzzati sono stati implementati con una integrazione con le pipe di unix e con la possibilit\`a di essere eseguiti in multi-threading \`e stato di fondamentale importanza l'utility parallel \cite{parallel}.
-In particolare nel caso di STAR\footnote{\S\ref{subsec:star}} \`e stato notato una diminuzione lineare delle performance per thread del tool.
-L'abbassamento delle performance \`e stato risolto grazie a parallel, lanciando pi\`u istanze parallele del tool, ognuna di esse con pochi thread.
+Essendo che questo lavoro prevede il processamento di un gran numero di file, unito al fatto che l'implementazione dei tool utilizzati pemette lo sfruttamento delle pipe di unix e la possibilit\`a di un esecuzione in multi-threading \`e stato di fondamentale importanza l'utility parallel \cite{parallel}.
+Questo tool permette di trasformare l'output di un programma in parametri per un successivo e consente di decidere quante istanze del secondo possono essere eseguite contemporaneamente.\\
+In particolare nel caso di STAR\footnote{\S\ref{subsec:star}} \`e stata notata una diminuzione lineare delle performance per thread del tool.
+Parallel permette di mitigare questo problema in modo da, invece di eseguire un'unica istanza di star con moltissimi thread, di averne diverse in contemporanea con meno thread.
+In questo modo aumenta il tempo di esecuzione di un'istanza di STAR, ma il tempo di esecuzione globale diminuisce.\\
 Si nota pertanto che parallel permette non solo un'elegante implementazione della pipeline, ma fornisce un livello di controllo tale da sfruttare completamente la potenza computazionale disponibile, riducendo in questo modo il tempo globale di esecuzione.
-
 
   \begin{figure}[H]
     \label{fig:proj_pipeline}
@@ -24,20 +25,22 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
 
   \section{Pre-processamento e allineamento dei dati RNA-seq}
   \label{sec:pre_all_rna_seq}
-  Il primo passo della pipeline appenda definita \`e il pre-processamento e l'allineamento dei dati RNA-seq.
-  L'input della pipeline sono dei file \emph{FASTQ}, ovvero file di testo che contengono i dati di sequenziamento raccolti in laboratorio tipicamente compressi.
-  Questi file vengono modificati dai tool Trimmomatic, Star e Samtools in modo da produrre un output gi\`a utilizzabile per ottenere i dati di sbilanciamento allelico.
-  Opzionalmente l'output pu\`o subire ulteriori modifiche prima di passare alla prossima fase: in particolare pu\`o essere deduplicato e ricalibrato.
+  Il primo passo della pipeline appena definita \`e il pre-processamento e l'allineamento dei dati RNA-seq.
+  L'input della pipeline sono dei \emph{FASTQ}, file di testo che contengono i dati di sequenziamento raccolti in laboratorio. 
+  Questi file subiscono un processo di preparazione in modo da ottenere dei file di allineamento utilizzabileiper ottenere i dati di sbilanciamento allelico.
+  Opzionalmente i file di allineamento possono subire ulteriori modifiche prima di passare alla prossima fase in modo da tentare di migliorare i risultati ottenuti.
+  Tali modifiche sono in particolare deduplicazione e ricalibrazione.
 
   	\subsection{Trimmomatic}
 	Trimmomatic \cite{trimmomatic} \`e il primo tool ad essere utilizzato.
-	Il suo obiettivo \`e quello di eliminare dalle reads la sequenza adattatrice, o suoi frammenti, utilizzata per rendere possibile il sequenziamento.
-	Essendo le RNA-seq fornite a single-ends\footnote{Punta a spiegazione nel capitolo 1} viene utilizzata la simple mode del tool.
+	Il suo obiettivo \`e quello di eliminare dalle reads la sequenza adattatrice, un artificio aggiunto al RNA per rendere possibile il sequenziamento, o suoi frammenti.
+	Essendo le RNA-seq fornite single-ends\footnote{Punta a spiegazione nel capitolo 1} viene utilizzata la simple mode del tool.
 	Questa scansiona ogni read\footnote{Non so se metterla in italiano} dalla terminazione $5'$ alla $3'$ per determinare la presenza della sequenza adattatrice.
-	Utilizza il mdetodo ``seed and extend'' per trovare corrispondenze iniziali, anche non perfette, tra la read e la sequenza adattatrice.
-	Successivamente svolge un allineamento locale e se questo ha uno score maggiore di una soglia viene rimosso insieme alla porzione successiva ad esso.
+        La scansione avviene attraverso il metodo ``seed and extend'' per trovare corrispondenze iniziali, anche non perfette, tra la read e la sequenza adattatrice.
+	Successivamente svolge un allineamento locale a cui assegna uno score.
+        Se lo score \`e maggiore di una soglia predefinita l'allineamento e la porzione che lo segue sono rimossi.
 	Questa modalit\`a permette di identificare ogni sequenza adattatrice in ogni luogo della read a patto che l'allineamento sia abbastanza lungo e la read abbastanza accurata.
-	Si nota per\`o come nelle regioni dove solo una corta corrispondenza parziale \`e possibile come alle estremit\`a della read e pertanto i contaminanti non possono essere identificati attendibilmente.
+	Si nota per\`o come nelle regioni dove solo una corta corrispondenza parziale \`e possibile, come alle estremit\`a della read, i contaminanti non possono essere identificati attendibilmente.
 	Oltre alla rimozione delle sequenze adattatrici Trimmomatic tronca un'estremit\`a secondo un algoritmo di filtraggio secondo qualit\`a.
 	Tra i metodi forniti dallo strumento \`e stato utilizzato quello del ``sliding window quality filtering'':
 	scansiona la read dal $5'$ e rimuove la terminazione $3'$ quando la qualit\`a media di un gruppo di basi scende sotto una soglia specificata.
