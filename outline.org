@@ -1,4 +1,4 @@
-#+SEQ_TODO: TODO(t) NEXT(n) WAITING(w) WIP(p) | DONE(d)
+#+SEQ_TODO: TODO(t) NEXT(n) WAITING(w) WIP(p) WREVISION(r) | DONE(d)
 #+STARTUP: indent
 * Organizzazione scrittura tesi
 File con organizzazione delle tempistiche di scrittura della tesi (spero di riuscire a rispettare tutto)
@@ -29,7 +29,7 @@ Descrizione delle motivazioni dietro all'esperimento con riferimento al paper tr
 *** Contenuto
 Descrizione della linea cellulare utilizzata e dei trattamenti a cui è stata sottoposta.
 *** Riferimento ad altri capitoli
-** WIP Capitolo 3 - Pipeline di lavoro [2/5]
+** WIP Capitolo 3 - Pipeline di lavoro [0/4]
 - [X] Raccogli fonti.
 - [X] Decidi sezioni e sottosezioni.
 - [ ] Prima scrittura.
@@ -37,12 +37,13 @@ Descrizione della linea cellulare utilizzata e dei trattamenti a cui è stata so
 - [ ] Rilettura, correzione e revisione.
 *** Contenuto
 Descrizione della pipeline di lavoro, file utilizzati e contesto.
-*** Media [1/1]
+*** WREVISION Media [2/2]
 + [X] Pipeline del lavoro.
-*** Riferimento ad altri capitoli
++ [X] Pipeline di recalibrazione e deduplicazione
+*** TODO Riferimento ad altri capitoli
 **** Introduzione del capitolo
 + Capitolo 1 definizione del progetto e di WES.
-*** Fonti
+*** WREVISION Fonti
 - [X] Trimmomatic: paper fornito
 - [X] Star: paper fornito
 - [X] Samtools:
@@ -60,8 +61,9 @@ Descrizione della pipeline di lavoro, file utilizzati e contesto.
   + [X] https://bedtools.readthedocs.io/en/latest/content/overview.html
   + [X] https://bedtools.readthedocs.io/en/latest/
 - [X] Aseq: paper fornito.
-*** Varie ed eventualio
+*** TODO Varie ed eventuali
 - Aggiungere nel file le citazioni ai tool di gatk e picard, oltre ai post dei blog di gatk
+- Aseq aspettare risposta.
 
 ** TODO Capitolo 4 - Discussione risultati [0/5]
 - [ ] Raccogli fonti.
