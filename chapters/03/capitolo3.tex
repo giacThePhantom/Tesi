@@ -73,6 +73,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   L'output finale \`e un bam file ordinato e indicizzato che pu\`o essere utilizzato come input di aseq.
 
 	\subsection{Deduplicazione e ricalibrazione}
+        \label{subsec:deduprecab}
 	La deduplicazione e la ricalibrazione sono due processi ulteriori di pre-processamento dei dati che tentano di risolvere errori presenti nei bam file che sono stati allineati attraverso star\footnote{Vedi \S\ref{subsec:star}}.
   Questi due passaggi vengono svolti attraverso una serie di tools eseguiti sequenzialmente come si nota nella figura \ref{fig:pipeline_deduprecal}.
   \begin{figure}[H]
@@ -152,10 +153,13 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   Non richiede infatti informazioni genomiche dei genitori dell'individuo e non si basa unicamente sui dati di RNA-seq.
   Aseq in particolare utilizza dati di sequenziamento di prossima generazione trascrittomici e genomici accoppiati per superare queste limitazioni.
   \`E stato implementato sfruttando l'API di samtools, permettendo rapide funzionalit\`a di accesso casuale su file di allineamento indicizzati, combinandolo con il potere di computazione multi-threaded.
-  Delle modalit\`a che aseq fornisce \`e stata utilizzata quella principale di analisi ASE.
-  Il preprocessamento e allineamento dei dati RNA-seq ha portato alla creazione di due insiemi di file di allineamento in formato bam.
-  Ogni campione\footnote{Riferimento a campione} viene rappresentato nei due insiemi da un file in ognuno: uno dalla pipeline che termina con l'utilizzo di star\footnote{riferimento a star}, mentre l'altro ha subito il processo di deduplicazione e ricalibrazione.
-  Inoltre grazie ai file VCF si ha una lista degli SNP esonici nella specie divisi per cromosoma: i $22$ autosomi, $X$ e il DNA mitocondriale.
-  Per ogni file di allineamento e per ogni file VCF si esegue aseq in modo da generare per ogni campione una lista di eventi di sbilanciamento allele-specifico divisi per cromosoma.
-
+  Delle modalit\`a che aseq fornisce \`e stata utilizzata quella principale di analisi ASE, ponendo limitazioni solo sulla qualit\`a delle basi e la qualit\`a delle letture dei file di allineamento in modo da computare i dati di pileup per tutti gli SNP trovati nel file.
+  Questo permette di applicare diversi tipi di soglie in un secondo momento, evitando di computare continuamente i dati di pileup.
+  Non si sfrutta pertanto il potere di individuazione di eventi di ASE da parte di aseq, ma si sfrutta unicamente il suo veloce engine computazionale che permette di ridurre il carico computazionale della creazione dei dati di pileup per una singola base.
+  Pertanto, una volta prodotti i file di allineamento dai dati di RNA-seq e la lista di SNP esonici si procede all'esecuzione di aseq.
+  In particolare i file di allineamento sono divisi in due insiemi: uno creato dopo l'allineamento con star\footnote{Vedi\S\ref{subse:star}} e l'altro dopo il processo di deduplicazione e ricalibrazione\footnote{Vedi \S\ref{subsec:deduprecab}}.
+  Ognuno di questi insiemi possiede un file per campione\footnote{Riferimento a lista di campioni}.
+  La lista di SNP si trova invece in un insieme di file VCF, un file per ogni autosoma, uno per il cromosoma $X$ e uno per il DNA mitocondriale.
+  Perci\`o per ogni file di allineamento viene eseguito aseq per ogni file VCF, ottenendo in questo modo i dati di pileup di ogni SNP per ogni campione divisi per cromosoma.
+  L'output di aseq \`e un file di testo delimitato da tabulazioni, formato che rende facilmente ottimizzabili le successive analisi attraverso tool come awk, sed o framework come pandas per python o tidyverse per R.
   
