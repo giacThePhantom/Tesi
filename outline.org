@@ -64,6 +64,7 @@ Descrizione della pipeline di lavoro, file utilizzati e contesto.
 *** TODO Varie ed eventuali
 - Aggiungere nel file le citazioni ai tool di gatk e picard, oltre ai post dei blog di gatk
 - Come metto i parametri dei tool? Allegato? Nella discussione?
+- Approfondire aseq.
 
 ** TODO Capitolo 4 - Discussione risultati [0/5]
 - [ ] Raccogli fonti.
