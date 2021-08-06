@@ -17,7 +17,7 @@
 \contentsline {subsection}{\numberline {3.1.1}Trimmomatic}{4}{}%
 \contentsline {subsection}{\numberline {3.1.2}Star}{5}{}%
 \contentsline {subsection}{\numberline {3.1.3}Samtools}{5}{}%
-\contentsline {subsection}{\numberline {3.1.4}Deduplicazione e ricalibrazione}{6}{}%
+\contentsline {subsection}{\numberline {3.1.4}Deduplicazione e ricalibrazione}{5}{}%
 \contentsline {subsubsection}{Deduplicazione}{6}{}%
 \contentsline {subsubsection}{Ricalibrazione}{6}{}%
 \contentsline {paragraph}{Riallineamento locale degl indel}{7}{}%
@@ -28,9 +28,9 @@
 \contentsline {section}{\numberline {4.1}Conta degli SNP trovati con ASEQ}{8}{}%
 \contentsline {section}{\numberline {4.2}Considerazioni sulla recalibrazione}{8}{}%
 \contentsline {section}{\numberline {4.3}Ottenere i dati per gli SNP di interesse}{8}{}%
-\contentsline {section}{\numberline {4.4}Analisi degli sbilanciamenti di frazione allelica}{9}{}%
-\contentsline {section}{\numberline {4.5}Conclusioni}{9}{}%
-\contentsline {chapter}{Bibliografia}{9}{}%
+\contentsline {section}{\numberline {4.4}Analisi degli sbilanciamenti di frazione allelica}{8}{}%
+\contentsline {section}{\numberline {4.5}Conclusioni}{8}{}%
+\contentsline {chapter}{Bibliografia}{8}{}%
 \contentsline {chapter}{\numberline {A}Titolo primo allegato}{11}{}%
 \contentsline {section}{\numberline {A.1}Titolo}{11}{}%
 \contentsline {subsection}{\numberline {A.1.1}Sottotitolo}{11}{}%

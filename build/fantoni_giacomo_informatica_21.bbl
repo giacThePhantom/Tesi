@@ -38,15 +38,68 @@ Documentazione per samtools index.
 \newblock http://www.htslib.org/doc/samtools-index.html.
 \newblock ultimo accesso 01/08/2021.
 
+\bibitem{addorreplacegroup}
+Addorreplacereadgroups.
+\newblock
+  https://gatk.broadinstitute.org/hc/en-us/articles/360057440331-AddOrReplaceReadGroups-Picard-.
+\newblock ultimo accesso 06/08/2021.
+
 \bibitem{picard}
 Picard.
 \newblock https://broadinstitute.github.io/picard/.
 \newblock ultimo accesso 01/08/2021.
 
+\bibitem{dedup}
+Markduplicates.
+\newblock
+  https://gatk.broadinstitute.org/hc/en-us/articles/360057439771-MarkDuplicates-Picard-.
+\newblock ultimo accesso 06/08/2021.
+
 \bibitem{gatk}
 Gatk.
 \newblock https://gatk.broadinstitute.org.
 \newblock ultimo accesso 01/08/2021.
+
+\bibitem{indelrealign}
+Indel realignment.
+\newblock
+  https://github.com/broadinstitute/gatk-docs/blob/master/gatk3-tutorials/(howto)\_Perform\_local\_realignment\_around\_indels.md.
+\newblock ultimo accesso 06/08/2021.
+
+\bibitem{bqsr}
+Base quality score recalibration.
+\newblock
+  https://gatk.broadinstitute.org/hc/en-us/articles/360035890531-Base-Quality-Score-Recalibration-BQSR-.
+\newblock ultimo accesso 06/08/2021.
+
+\bibitem{splitncigarreads}
+Splitncigarreads.
+\newblock
+  https://gatk.broadinstitute.org/hc/en-us/articles/360036734471-SplitNCigarReads.
+\newblock ultimo accesso 06/08/2021.
+
+\bibitem{baserecalibrator}
+Baserecalibrator.
+\newblock
+  https://gatk.broadinstitute.org/hc/en-us/articles/360036898312-BaseRecalibrator.
+\newblock ultimo accesso 06/08/2021.
+
+\bibitem{printreads}
+Printreads.
+\newblock
+  https://gatk.broadinstitute.org/hc/en-us/articles/360036883571-PrintReads.
+\newblock ultimo accesso 06/08/2021.
+
+\bibitem{bedtoolsintersect}
+Bedtools intersect.
+\newblock
+  https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html.
+\newblock ultimo accesso 06/08/2021.
+
+\bibitem{bedtools}
+Bedtools.
+\newblock https://bedtools.readthedocs.io/en/latest/.
+\newblock ultimo accesso 06/08/2021.
 
 \bibitem{aseq}
 Alessandro Romanel, Sara Lago, D.~Prandi, A.~Sboner, and F.~Demichelis.

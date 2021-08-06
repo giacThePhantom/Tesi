@@ -1,0 +1,83 @@
+#+SEQ_TODO: TODO(t) NEXT(n) WAITING(w) WIP(p) WREVISION(r) | DONE(d)
+#+STARTUP: indent
+* Organizzazione scrittura tesi
+File con organizzazione delle tempistiche di scrittura della tesi (spero di riuscire a rispettare tutto)
+** TODO Sommario [/]
+- [ ] Raccogli fonti.
+- [ ] Decidi sezioni e sottosezioni.
+- [ ] Prima scrittura.
+- [ ] Controlla riferimenti ad altri capitoli.
+- [ ] Rilettura, correzione e revisione.
+*** Contenuto
+Breve descrizione del progetto, contributi e difficoltà incontrate.
+*** Riferimento ad altri capitoli
+** TODO Capitolo 1 - Descrizione esperimento [0/0]
+- [ ] Raccogli fonti.
+- [ ] Decidi sezioni e sottosezioni.
+- [ ] Prima scrittura.
+- [ ] Controlla riferimenti ad altri capitoli.
+- [ ] Rilettura, correzione e revisione.
+*** Contenuto
+Descrizione delle motivazioni dietro all'esperimento con riferimento al paper transSNP, obiettivi e definizioni.
+*** Riferimento ad altri capitoli
+** TODO Capitolo 2 - Linee cellulari e trattamenti [/]
+- [ ] Raccogli fonti.
+- [ ] Decidi sezioni e sottosezioni.
+- [ ] Prima scrittura.
+- [ ] Controlla riferimenti ad altri capitoli.
+- [ ] Rilettura, correzione e revisione.
+*** Contenuto
+Descrizione della linea cellulare utilizzata e dei trattamenti a cui è stata sottoposta.
+*** Riferimento ad altri capitoli
+** WIP Capitolo 3 - Pipeline di lavoro [3/5]
+- [X] Raccogli fonti.
+- [X] Decidi sezioni e sottosezioni.
+- [X] Prima scrittura.
+- [ ] Controlla riferimenti ad altri capitoli.
+- [ ] Rilettura, correzione e revisione.
+*** Contenuto
+Descrizione della pipeline di lavoro, file utilizzati e contesto.
+*** WREVISION Media [2/2]
++ [X] Pipeline del lavoro.
++ [X] Pipeline di recalibrazione e deduplicazione
+*** TODO Riferimento ad altri capitoli
+**** Introduzione del capitolo
++ Capitolo 1 definizione del progetto e di WES.
+*** WREVISION Fonti
+- [X] Trimmomatic: paper fornito
+- [X] Star: paper fornito
+- [X] Samtools:
+  + [X] http://www.htslib.org/doc/samtools-sort.html
+  + [X] http://www.htslib.org/doc/samtools-index.html
+- [X] Deduplication e recalibration:
+  + [X] https://gatk.broadinstitute.org/hc/en-us/articles/360057439771-MarkDuplicates-Picard-
+  + [X] https://gatk.broadinstitute.org/hc/en-us/articles/360057440331-AddOrReplaceReadGroups-Picard-
+  + [X] http://seqanswers.com/forums/showthread.php?t=11887
+  + [X] https://github.com/broadinstitute/gatk-docs/blob/master/gatk3-tutorials/(howto)_Perform_local_realignment_around_indels.md
+  + [X] https://gatk.broadinstitute.org/hc/en-us/articles/360035890531-Base-Quality-Score-Recalibration-BQSR-
+- [X] Bedtools:
+  + [X] https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html
+  + [X] https://bedtools.readthedocs.io/en/latest/content/overview.html
+  + [X] https://bedtools.readthedocs.io/en/latest/
+- [X] Aseq: paper fornito.
+*** TODO Varie ed eventuali
+- Aggiungere nel file le citazioni ai tool di gatk e picard, oltre ai post dei blog di gatk
+- Come metto i parametri dei tool? Allegato? Nella discussione?
+- Approfondire aseq.
+
+** TODO Capitolo 4 - Discussione risultati [0/5]
+- [ ] Raccogli fonti.
+- [ ] Decidi sezioni e sottosezioni.
+- [ ] Prima scrittura.
+- [ ] Controlla riferimenti ad altri capitoli.
+- [ ] Rilettura, correzione e revisione.
+*** Contenuto
+Discussione dei risultati ottenuti, pertanto analisi dell'intersezione tra gli SNP trovati nelle varie condizioni per validare le letture e il valore minimo di coverage scelto.
+Correlazione tra valori di AF pre e post recalibrazione con conseguente scelta tra le due.
+*** Media
++ Intersezione tra i campioni.
++ Correlazione pre e post recalibrazione.
++ Distribuzione dell'AF degli SNP.
++ Boxplots degli SNP di interesse.
+*** Riferimento ad altri capitoli
++ Penso più o meno tutti gli altri capitoli.
