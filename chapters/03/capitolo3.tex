@@ -45,6 +45,27 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
 	Tra i metodi forniti dallo strumento \`e stato utilizzato quello del ``sliding window quality filtering'':
 	scansiona la read dal $5'$ e rimuove la terminazione $3'$ quando la qualit\`a media di un gruppo di basi scende sotto una soglia specificata.
 	Il risultato di questo passaggio sar\`a un altro fastq file con le sequenze adattatrici rimosse.
+        \begin{table}[H]
+                \begin{tabular}{|c|c|}
+                        \hline
+                        Parametro & Valore\\
+                        \hline
+                        ILLUMINACLIP: & TruSeq3-SE.fa:2:30:10\\
+                        \hline
+                        phred & $33$\\
+                        \hline
+                        LEADING: & $3$\\
+                        \hline
+                        TRAILING: & $3$\\
+                        \hline
+                        SLIDINGWINDOW: & $4:15$\\
+                        \hline
+                        MINLEN: & $36$\\
+                        \hline
+                 \end{tabular}
+                 \centering
+                 \caption{Parametri utilizzati per trimmomatic}
+        \end{table}
 
 	\subsection{Star}
 	\label{subsec:star}
@@ -67,14 +88,37 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
         Il seed ancora viene scelto limitando il numero di loci genomici a cui si allinea.
         Tutti i seed che sono stati mappato nella \emph{genomic window} sono successivamente uniti insieme assumendo un modello lineare locale di trascrizione.
 	Il processo di unione viene guidato da un sistema di punteggi che penalizza mal-accoppiamenti, inserzioni, delezioni e \emph{splice junction gap}.
-	Star ha come output un sam file, un file di testo delimitato da tabulazioni contenente una riga per allineamento con tutte le informazioni necessarie per la sua identificazione.\footnote{Approfondire}
+	Star ha come output un sam (sequence alignment map) file contenente le sequenze di input allineate rispetto al genoma di riferimento.
+        La sezione di allineamento dell'output \`e formata da record separati da tabulazioni contenenti informazioni sulla sequenza, su dove \`e stata allineata e sulla qualit\`a dell'allineamento.
+        Crea inoltre una stringa \emph{CIGAR} utile a valle della pipeline.
+        \begin{table}[H]
+              \centering
+              \begin{tabular}{|c|c|}
+                      \hline
+                      Parametro & Valore\\
+                      \hline
+                      Genoma di riferimento & GRCh38\\
+                      \hline
+                      outSamstrandField & intronMotif\\
+                      \hline
+                      outSAMunmapped & None\\
+                      \hline
+                      outReadsUnmapped & fastx\\
+                      \hline
+                      outFilterScoreMinOverLread & $0.33$\\
+                      \hline
+                      outFilterMatchNminOverLread & $0.33$\\
+                      \hline
+              \end{tabular}
+              \caption{Parametri utilizzati per star}
+        \end{table}
 
 	\subsection{Samtools}
 	I samtools \cite{samtools} sono un insieme di programmi necessari per interagire con i dati di allineamento.
 	Nella pipeline sono utilizzati per compiere delle operazioni sui sam file generati da star (\S\ref{subsec:star}) in modo da prepararli prima che possano essere utilizzati successivamente per generare i dati di sbilanciamento allelico (\S\ref{sec:aseq}).
         In particolare svolgono le operazioni di ordinamento, indicizzazione e compressione dei file di input.
         Questo avviene attraverso due programmi: samtools sort \cite{samtools-sort} e samtools index \cite{samtools-index}.
-        Il primo ordina gli allineamenti secondo le coordinate di inizio e comprime implicitamente l'input in formato bam.
+        Il primo ordina gli allineamenti secondo le coordinate di inizio e comprime implicitamente l'input in formato bam (binary alignment map).
         Il secondo invece crea, a partire dall'output del programma sort un indice in formato bai di tale file, permettendo efficienti operazioni di accesso casuale al bam file.
         L'output finale \`e un bam file ordinato e indicizzato che pu\`o essere utilizzato come input di aseq.
 
@@ -90,7 +134,25 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   \end{figure}
   Il primo passaggio viene svolto dal tool \emph{AddOrReplaceReadGroups} \cite{addorreplacegroup} di Picard \cite{picard}, un passaggio di preparazione delle read necessario a tutti i tool successivi.
   Questo assegna tutte le read in un file a un nuovo read-group settando un campo nel BAM file, in modo da assegnare tutte le read a un genotipo specifico.
-
+  \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|}
+                \hline
+                Parametro & Valore\\
+                \hline
+                RGID & $1$\\
+                \hline
+                RGLB & lib1\\
+                \hline
+                RGPL & ILLUMINA\\
+                \hline
+                RGPU & unit1\\
+                \hline
+                RGSM & $20$\\
+                \hline
+         \end{tabular}
+         \caption{Parametri utilizzati per AddOrReplaceReadGroups}
+    \end{table}
 
     \subsubsection{Deduplicazione}
     Il processo di deduplicazione e le motivazioni dietro alla sua utilit\`a sono definite in \cite{dedup}
@@ -102,6 +164,23 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
     La read con il punteggio pi\`u alto viene considerata primaria, le altre duplicati.
     Grazie all'opzione \emph{REMOVE\_DUPLICATE=true} tutte le sequenze duplicate vengono rimosse.
     Viene infine ricreato l'indice del BAM file attraverso \emph{samtools index}.
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|}
+                \hline
+                Parametro & Valore\\
+                \hline
+                REMOVE\_DUPLICATES & true\\
+                \hline
+                MAX\_FILE\_HANDLES\_FOR\_READ\_ENDS\_MAP & $1000$\\
+                \hline
+                VALIDATION\_STRINGENCY & LENIENT\\
+                \hline
+                ASSUME\_SORTED & true\\
+                \hline
+         \end{tabular}
+         \caption{Parametri utilizzati per MarkDuplicates}
+    \end{table}
 
     \subsubsection{Ricalibrazione}
     La ricalibrazione viene svolta da una serie di tool facenti parte della suite Gatk \cite{gatk}.
@@ -120,6 +199,20 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
     Il risultato di questo processo \`e la separazione degli esoni in read diverse e un'eliminazione degli overhang.
     Come risultato gli esoni del RNA vengono separati in segmenti e gli overhang eliminati in modo da non causare falsi positivi.\\
     Dopo questo lavoro di processamento inizia la fase di riallineamento degli indels.
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|}
+                \hline
+                Parametro & Valore\\
+                \hline
+                R & Homo\_Sapiens.GRCh38.dna.primary\_assembly.fa\\
+                \hline
+                U & ALLOW\_N\_CIGAR\_READS\\
+                \hline
+         \end{tabular}
+         \caption{Parametri utilizzati per SplitNCigarReads}
+    \end{table}
+    
     \paragraph{Riallineamento locale degl indel}
     Il riallineamento locale degli indels \`e necessario in quanto permette di correggere errori sistematici causati dall'allineatore genomico.
     Una limitazione di questi allineatori infatti \`e che considerano ogni read in maniera indipendente: le strategie di assegnazione dei punteggi limitano la loro abilit\`a di allineare accuratamente in presenza di indel.
@@ -130,6 +223,36 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
     Infine se gli intervalli sono prossimali vengono uniti in un intervallo unico.
     Il secondo tool prende come input lo stesso BAM di \emph{RealignerTargetCreator} e il file di intervalli da esso generato e svolge un riallineamento locale sulle read coincidenti con l'intervallo target usando consensi dagli indel presenti nell'allineamento originale.
     L'output \`e un BAM ordinato e indicizzato.
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|}
+                \hline
+                Parametro & Valore\\
+                \hline
+                S & SILENT\\
+                \hline
+                R & Homo\_Sapiens.GRCh38.dna.primary\_assembly.fa\\
+                \hline
+                nt & $10$\\
+                \hline
+         \end{tabular}
+         \caption{Parametri utilizzati per RealignerTargetCreator}
+    \end{table}
+                
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|}
+                \hline
+                Parametro & Valore\\
+                \hline
+                targetIntervals & file prodotto da RealignerTargetCreator\\
+                \hline
+                R & Homo\_Sapiens.GRCh38.dna.primary\_assembly.fa\\
+                \hline
+         \end{tabular}
+         \caption{Parametri utilizzati per IndelRealigner}
+    \end{table}
+    
     \paragraph{Ricalibazione delle basi basata sul punteggio di qualit\`a}
     Il processo di ricalibrazione delle basi basato sul punteggio di qualit\`a serve a risolvere errori generati durante il sequenziamento.
     Si definisce il punteggio di qualit\`a di una base come una stima dell'errore emesso dalla macchina di sequenziamento: esprimono quanto questa \`e confidente che ha chiamato la base corretta ogni volta.
@@ -145,6 +268,38 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
     Il secondo tool \emph{PrintReads} \cite{printreads} applica il modello creato dal primo al BAM di input, aggiornandolo cos\`i ai punteggi di qualit\`a migliorati.
     Infine viene ricreato l'indice del BAM file attraverso \emph{samtools index}.\\
     In questo modo si \`e creato un file BAM pronto per essere utilizzato da ASEQ.
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|}
+                \hline
+                Parametro & Valore\\
+                \hline
+                knownSites & lista di VCF contenente gli SNP conosciuti\\
+                \hline
+                R & Homo\_Sapiens.GRCh38.dna.primary\_assembly.fa\\
+                \hline
+                nct & $10$\\
+                \hline
+         \end{tabular}
+         \caption{Parametri utilizzati per BaseRecalibrator}
+    \end{table}
+                
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|}
+                \hline
+                Parametro & Valore\\
+                \hline
+                nct & $10$\\
+                \hline
+                R & Homo\_Sapiens.GRCh38.dna.primary\_assembly.fa\\
+                \hline
+                BQSR & Modello output di BaseRecalibrator\\
+                \hline
+         \end{tabular}
+         \caption{Parametri utilizzati per PrintReads}
+    \end{table}
+    
 
   \section{Ottenimento degli SNP di interesse}
   Una volta ottenuti i file di allineamento si rende necessario ottenere una lista di SNP dei quali si vuole ottenere il valore di sbilanciamento allelico.
@@ -155,6 +310,23 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   In questo modo \`e stato creato un insieme di file VCF, uno per ogni cromosoma, contiene ogni SNP presente nella parte esonica del genoma.
   La restrizione alla parte esonica del genoma non causa alcuna perdita di potere predittivo in quanto si stanno considerando dati di RNA-seq, ma permette una significativa diminuzione del carico computazionale svolto da aseq (\S\ref{sec:aseq}).
   I VCF risultanti da questo processo sono pronti per essere utilizzati come input di aseq.
+  \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|}
+                \hline
+                Parametro & Valore\\
+                \hline
+                wa & non richiesto\\
+                \hline
+                u & non richiesto\\
+                \hline
+                a & VCF file\\
+                \hline
+                b & GTF file\\
+                \hline
+         \end{tabular}
+         \caption{Parametri utilizzati per bedtools intersect}
+  \end{table}
 
   \section{Calcolo dei dati di sbilanciamento allelico}
   \label{sec:aseq}
@@ -165,6 +337,8 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   La sua implementazione sfrutta le API di samtools, permettendo rapide funzionalit\`a di accesso casuale su file di allineamento inidicizzate e ne aumenta il potere computazionale attraverso il multi-threading.
   Delle modalit\`a che aseq fornisce \`e stata utilizzata quella principale di analisi ASE, ponendo limitazioni solo sulla qualit\`a delle basi e la qualit\`a delle letture dei file di allineamento.
   In questo modo aseq non restringe l'output agli eventi di ASE che individua ma ritorna il valore del pileup per ogni SNP datogli in input.
+  Il pileup \`e un formato che riassume le chiamate delle basi rispetto a una sequenza di riferimento.
+  Pertanto aseq computa per ogni SNP nella lista, a partire dal nome, dalla base canonica e dalla base alternativa, il coverage per tale SNP, la qualit\`a della chiamata della base e la frazione allelica.
   Questo permette di applicare all'output diversi filtri successivamente durante l'analisi cosicch\`e da poter trovare i valori soglia ottimali per ottenere risultati significativi in un secondo momento senza ripetere continuamente la computazione del pileup e snellendo il carico computazionale dell'analisi.
   Non si sfrutta pertanto il potere di individuazione di eventi di ASE da parte di aseq, ma solo il suo veloce engine computazionale che permette di aumentare l'efficienza della creazione dei dati di pileup per una singola base.
   Ora, dopo aver prodotto i file di allineamento dai dati di RNA-seq dei campioni e la lista di SNP esonici di interesse si pu\`o procedere all'esecuzione di aseq.
@@ -173,4 +347,21 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   La lista di SNP si trova invece in un insieme di file VCF, un file per ogni autosoma, uno per il cromosoma $X$ e uno per il DNA mitocondriale.
   Perci\`o per ogni file di allineamento viene eseguito aseq per ogni file VCF, ottenendo in questo modo i dati di pileup di ogni SNP per ogni campione divisi per cromosoma.
   L'output di aseq \`e un file di testo delimitato da tabulazioni, formato che rende facilmente ottimizzabili le successive analisi attraverso tool come awk, sed o framework come pandas per python o tidyverse per R.
+  \begin{table}[H]
+        \begin{tabular}{|c|c|}
+                \hline
+                Parametro & Valore\\
+                \hline
+                bam & BAM file indicizzato prodotto precedentemente\\
+                \hline
+                vcf & VCF file ottenuto precedentemente\\
+                \hline
+                mbq & $20$\\
+                \hline
+                mrq & $20$\\
+                \hline
+         \end{tabular}
+         \centering
+         \caption{Parametri utilizzati per aseq}
+   \end{table}
   

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  6 AUG 2021 23:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  7 AUG 2021 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -612,16 +612,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 37.
 
 [4 <./chapters/03/media//pipeline.png>]
-<chapters/03/media//deduprecal.png, id=47, 2774.365pt x 1208.515pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+<chapters/03/media//deduprecal.png, id=53, 2774.365pt x 1208.515pt>
 File: chapters/03/media//deduprecal.png Graphic file (type png)
 <use chapters/03/media//deduprecal.png>
 Package pdftex.def Info: chapters/03/media//deduprecal.png  used on input line 
-88.
+132.
 (pdftex.def)             Requested size: 471.63582pt x 205.44482pt.
- [5] [6 <./chapters/03/media//deduprecal.png>] [7]) (./chapters/04/capitolo4.te
-x
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <./chapters/03/media//deduprecal.png>] [7] [8] [9]) (./chapters/04/capitolo
+4.tex
 Capitolo 4.
-) (./build/fantoni_giacomo_informatica_21.bbl [8]
+) (./build/fantoni_giacomo_informatica_21.bbl [10]
 Underfull \hbox (badness 10000) in paragraph at lines 42--46
 []\OT1/cmr/m/n/10.95 Addorreplacereadgroups.  https://gatk.broadinstitute.org/h
 c/en-
@@ -681,15 +687,15 @@ Underfull \hbox (badness 4328) in paragraph at lines 94--98
 latest/content/tools/intersect.html.
  []
 
-[9
-
-]) (./chapters/allegati/allegati.tex [10]
-Appendice A.
 [11
+
+]) (./chapters/allegati/allegati.tex [12]
+Appendice A.
+[13
 
 ]
 Appendice B.
-) [12
+) [14
 
 ]
 
@@ -698,13 +704,13 @@ LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
 
  (./build/fantoni_giacomo_informatica_21.aux) ) 
 Here is how much of TeX's memory you used:
- 7269 strings out of 478994
- 117287 string characters out of 5864751
- 484531 words of memory out of 5000000
- 24556 multiletter control sequences out of 15000+600000
+ 7271 strings out of 478994
+ 117310 string characters out of 5864751
+ 487960 words of memory out of 5000000
+ 24558 multiletter control sequences out of 15000+600000
  412937 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 97i,8n,102p,391b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 97i,10n,102p,391b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc
 /dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
@@ -718,11 +724,11 @@ ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
 /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on ./build/fantoni_giacomo_informatica_21.pdf (14 pages, 755408 
+Output written on ./build/fantoni_giacomo_informatica_21.pdf (16 pages, 760880 
 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 129 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
