@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  7 AUG 2021 14:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  12 AUG 2021 12:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -531,11 +531,11 @@ italian.ldf    on input line 38.
 (./prefixes/pagina_iniziale.tex
 Package epstopdf Info: Source file: <prefixes/images/marchio_unitrento_colore_i
 t_202002.eps>
-(epstopdf)                    date: 2021-07-20 16:48:06
+(epstopdf)                    date: 2020-02-12 10:03:21
 (epstopdf)                    size: 222744 bytes
 (epstopdf)             Output file: <prefixes/images/marchio_unitrento_colore_i
 t_202002-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-07-20 16:48:06
+(epstopdf)                    date: 2020-02-12 10:12:41
 (epstopdf)                    size: 183512 bytes
 (epstopdf)             Command: <repstopdf --outfile=prefixes/images/marchio_un
 itrento_colore_it_202002-eps-converted-to.pdf prefixes/images/marchio_unitrento
@@ -599,7 +599,7 @@ Capitolo 3.
 <chapters/03/media//pipeline.png, id=34, 1585.925pt x 2091.815pt>
 File: chapters/03/media//pipeline.png Graphic file (type png)
 <use chapters/03/media//pipeline.png>
-Package pdftex.def Info: chapters/03/media//pipeline.png  used on input line 22
+Package pdftex.def Info: chapters/03/media//pipeline.png  used on input line 21
 .
 (pdftex.def)             Requested size: 317.17938pt x 418.35559pt.
 
@@ -619,13 +619,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: chapters/03/media//deduprecal.png Graphic file (type png)
 <use chapters/03/media//deduprecal.png>
 Package pdftex.def Info: chapters/03/media//deduprecal.png  used on input line 
-132.
+131.
 (pdftex.def)             Requested size: 471.63582pt x 205.44482pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./chapters/03/media//deduprecal.png>] [7] [8] [9]) (./chapters/04/capitolo
-4.tex
+ [6 <./chapters/03/media//deduprecal.png>] [7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+[9]) (./chapters/04/capitolo4.tex
 Capitolo 4.
 ) (./build/fantoni_giacomo_informatica_21.bbl [10]
 Underfull \hbox (badness 10000) in paragraph at lines 42--46
@@ -706,11 +709,11 @@ LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
 Here is how much of TeX's memory you used:
  7271 strings out of 478994
  117310 string characters out of 5864751
- 487960 words of memory out of 5000000
+ 488795 words of memory out of 5000000
  24558 multiletter control sequences out of 15000+600000
  412937 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 97i,10n,102p,391b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 97i,10n,102p,389b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc
 /dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
@@ -724,7 +727,7 @@ ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
 /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on ./build/fantoni_giacomo_informatica_21.pdf (16 pages, 760880 
+Output written on ./build/fantoni_giacomo_informatica_21.pdf (16 pages, 760599 
 bytes).
 PDF statistics:
  129 PDF objects out of 1000 (max. 8388607)
