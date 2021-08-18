@@ -11,20 +11,58 @@
 
 Il progetto di ricerca presentato in questo elaborato tenta di replicare il processo presentato in \cite{transsnp} su un'altra linea cellulare: \emph{HCT116}\footnote{Riferimento a linea cellulare}.
 Questo viene fatto in modo da eliminare la possibilit\`a che il fenomeno osservato sia specifico a \emph{MCF7}.
-Sempre per determinare se l'evento \`e estensibile al di fuori dell'essere umano il progetto \`e stato replicato in parallelo su una linea cellulare murina \emph{B16-F10}\footnote{Ce lo metto? Devo citare in qualche modo?}.
-In particolare si tenta di determinare una nuova classe di mutazioni dette \emph{transSNP} che potrebbero essere in grado di avere effetto sui livelli di espressione di proteine e che potrebbero essere una fonte potenziale di variazione inter-individuale nel richio di cancro\footnote{Magari qua ci va un termine tecnico?}.
+Sempre per determinare se l'evento \`e estensibile al di fuori dell'essere umano il progetto \`e stato replicato in parallelo sulla linea cellulare murina \emph{B16-F10}\footnote{Ce lo metto? Devo citare in qualche modo?}.
+In particolare si tenta di determinare una nuova classe di mutazioni dette \emph{transSNP} che potrebbero essere in grado di avere effetto sui livelli di espressione di proteine e perci\`o essere una fonte potenziale di variazione inter-individuale nel richio di cancro\footnote{Magari qua ci va un termine tecnico?}.
 
 \section{Polimorfismi a singolo nucleotide}
-I polimorfismi a singolo nucleotide, da qui in avanti denominati \emph{SNP} sono delle mutazioni nel genoma causate dal cambio di un singolo nucleotide nella molecola di DNA.
-Sono una delle classi pi\`u grandi di variabilit\`a genetica che possono sottostare o essere responsabili di variazioni inter-individuali in complessi fenotipi di malattie.
+I polimorfismi a singolo nucleotide, da qui in avanti denominati \emph{SNP} sono delle mutazioni nel genoma causate dal cambio di un singolo nucleotide nella molecola di DNA presenti in almeno $1\%$ della popolazione.
+Sono una delle classi pi\`u grandi di variabilit\`a genetica che possono sottostare o essere responsabili di variazioni inter-individuali in fenotipi complessi di malattie.
 Grazie allo sviluppo tecnologico nelle tecnologie di sequenziamento e alla nascita del next-generation sequencing sono state rese disponibili informazioni a livello della singola base sul genoma umano e sul trascrittoma permettendo l'esplorazione di questioni biologiche prima insondabili.
+Infatti diversi strumenti sono stati implementati per studiare i dati di espressione genica basati su RNA-sequencing in modo da identificare istanze di espressione genica allelo-specifica.
+
+\subsection{Espressione genica allelo-specifica}
+Si intende per espressione genica allelo-specifica \emph{ASE} una condizione per cui alleli diversi di un gene, per lo scopo di questo progetto uno contenente uno SNP e uno no, mostrano un'attivit\`a trascrizionale considerevolmente diversa.
+Un evento di ASE si osserva pertanto nelle cellule uane dove la trascrizione si origina principalmente da un allele.
+Questi fenomeni sono dovuti principalmente a geni imprinted, condizioni fisiologiche come l'inattivazione del cromosoma \emph{X} e contribuiscono alla variabilit\`a fenotipica umana.
+Ulteriori meccanismi comprendono degradazione dei trascritti da pare di miRNA, distruzione monoallelica di regioni regolatorie, pattern di splicing alternativi o fenomeni epigenetici.
+
+\section{TransSNP}
+Una frazione di SNP identificati nella popolazione umana sono locati nelle regioni codificanti o negli \emph{UTR}.
+In questo caso studi guidati da meccanismo e da associazione hanno tentato di studiare SNP funzionali che possono modificare aspetti di regolazione genica post-trascrizionale.
+Non sono per\`o stati ancora esplorati SNP associati con alterazioni nel potenziale di traduzione del mRNA.
+Lo scopo del progetto \`e pertanto identificare questi ultimi, denominati transSNP.
+Si nota infatti come la regolazione traduzionale governa la produzione di proteine in risposta a un gran numero di situazioni fisiologiche e patologiche: circa met\`a della variazione della concentrazione di una proteina \`e dovuta a questo tipo di controllo.
+Per farlo si utilizza un'analisi comparativa di sbilanciamento allelico tra frazioni di mRNA totali e polisomiali estratti dallo stesso campione cellulare in modo da superare il rumore causato dalla chiamata degli SNP e dal coverage derivato dai dati di RNA-seq.
+In questo modo si crea un catalogo di SNP codificanti e negli UTR associati e cause potenziali con alterazioni nel potenziale di traduzione degli mNRA.
+
+\subsection{Profilamento polisomico}
+Il profilamento polisomico \`e il metodo con cui le frazioni di mRNA totali e polisomali vengono separate in un campione e il suo protocollo viene descritto in \cite{polprofiling}
+Permette di determinare il sottoinsieme di mRNA attivamente coinvolti nella traduzione o traduttoma, ritornando una visione funzionale del genoma in un dato momento in una data cellula.
+Questo metodo offre diversi vantaggi rispetto ad altri, per esempio, a differenza del profilamento a ribosomi questa tecnica d\`a accesso all'intera lunghezza degli mRNA, comprese le UTR, le regioni che questo progetto vuole analizzare.
+La separazione delle due frazioni si basa su una centrifugazione con gradiente: i ribosomi hanno un coefficiente di sedimentazione molto maggiore rispetto alle molecole di mRNA e pertanto si troveranno ad altezze diverse della colonna.
+Pertanto le cellule vengono lisate e i lisati citoplasmatici vengono caricati su un gradiente di saccarosio $10-50\%$, ultra-centrifugate e frazionate attraverso un collettore automatico di frazioni che tiene conto dell'assorbanza a $254nm$.
+Tutte le frazioni pi\`u leggere contenenti frazioni subpolisomali presenti dalla cima fino alla frazione corrispondente al monosoma $80\%$ sono assunte non attivamente coinvolte nel processo di traduzione e raccolte in una provetta.
+Le frazioni pi\`u pesanti sono quelle attivamente tradotte e sono raccolte in una seconda provetta\footnote{Provetta \`e il termine giusto? Nel paper si parla di ``tube''}.
+Successivamente le molecole di RNA sono state purificate e sospese in acqua sterile.
+In questo modo la seconda provetta contiene la frazione polisomale di interesse per il progetto.\\
+La frazione totale viene ottenuta attraverso un'estrazione con TRIzol (ThermoFisher) di una popolazione cellulare separata preparata in parallelo\footnote{Sto prendendo dal paper, magari per la mia linea cellulare queste cose sono state fatte in modo diverso}.\\
+In questo modo sono state ottenute tutte le due frazioni di mRNA, prima la polisomale e poi la totale che verranno sequenziate in modo poi da poter studiare lo sbilanciamento allelico al loro interno.
+
+\subsection{Sequenziamento}
+Le frazioni ottenute attraverso il profilamento polisomico vengono poi sequenziate attraverso \emph{HiSeq 2500} di Illumina.
+Le molecole di RNA vengono frammentate e convertite in cDNA a cui viene aggiunta una sequenza adattatrice.
+Successivamente avviene un'amplificazione con \emph{PCR} i cui risultati sono caricati in una \emph{flow cell} dove i frammenti sono catturati da oligonucleotidi legati alla superficie complementari agli adattatori.
+Si formano in questo modo dei cluster di frammenti che presentano la stessa sequenza adattatrice.
+Successivamente i reagenti di sequenziamento, che includono nucleotidi etichettati con un nucleotide fluorescente sono aggiunti in modo da incorporare la prima base.
+La flow cell \`e viene letta dalla macchina che registra la lunghezza d'onda emessa dai cluster.
+La particolare lunghezza d'onda permette di identificare il nucleotide.
+Il ciclo viene poi ripetuto $n$ volte in modo da creare una read lunga $n$ basi.
+In questo modo si ottengono per ogni frazione i file \emph{fastq} poi utilizzati per l'analisi dell'espressione allelo-specifica.
 
 
 
 
 
-Questo capitolo \`e volto a descrivere i processi biologici considerati durante il progetto.
-Cito principalmente dal draft paper sui transSNPS
 
 \section{TransSNPs}
 \label{sec:transsnps}

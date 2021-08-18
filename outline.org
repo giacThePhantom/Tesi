@@ -11,10 +11,10 @@ File con organizzazione delle tempistiche di scrittura della tesi (spero di rius
 *** Contenuto
 Breve descrizione del progetto, contributi e difficoltà incontrate.
 *** Riferimento ad altri capitoli
-** TODO Capitolo 1 - Descrizione esperimento [0/0]
-- [ ] Raccogli fonti.
-- [ ] Decidi sezioni e sottosezioni.
-- [ ] Prima scrittura.
+** TODO Capitolo 1 - Descrizione esperimento [3/5]
+- [X] Raccogli fonti.
+- [X] Decidi sezioni e sottosezioni.
+- [X] Prima scrittura.
 - [ ] Controlla riferimenti ad altri capitoli.
 - [ ] Rilettura, correzione e revisione.
 *** Contenuto
@@ -60,10 +60,6 @@ Descrizione della pipeline di lavoro, file utilizzati e contesto.
   + [X] https://bedtools.readthedocs.io/en/latest/content/overview.html
   + [X] https://bedtools.readthedocs.io/en/latest/
 - [X] Aseq: paper fornito.
-*** TODO Varie ed eventuali
-- Aggiungere nel file le citazioni ai tool di gatk e picard, oltre ai post dei blog di gatk
-- Come metto i parametri dei tool? Allegato? Nella discussione?
-- Approfondire aseq.
 
 ** TODO Capitolo 4 - Discussione risultati [0/5]
 - [ ] Raccogli fonti.

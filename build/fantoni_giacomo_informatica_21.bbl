@@ -1,5 +1,18 @@
 \begin{thebibliography}{10}
 
+\bibitem{transsnp}
+Caterina Marchioretti, Samuel Valentini, Alessandra Bisio, Annalisa Rossi,
+  Allessandro Romanel, and Alberto Inga.
+\newblock {TransSNP: a new class of functional SNPs that affect mRNA
+  translation potential revealed by frac-seq-based allelic imbalance}.
+\newblock {\em Submitted}, 2021.
+
+\bibitem{polprofiling}
+H{\'e}lo{\"i}se Chass{\'e}, Sandrine Boulben, Vlad Costache, Patrick Cormier,
+  and Julia Morales.
+\newblock Analysis of translation using polysome profiling.
+\newblock {\em Nucleic acids research}, 45(3):e15--e15, Feb 2017.
+
 \bibitem{ase_pipeline}
 Alessandro Romanel.
 \newblock Allele-specific expressione analysis in cancer using next-generation
