@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  18 AUG 2021 12:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  19 AUG 2021 19:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -583,7 +583,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 
-] [2]
+]
 (./chapters/sommario/sommario.tex
 (/usr/share/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
@@ -594,13 +594,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 12.
-[3
+[2
 
-] [4]) [5] (./chapters/02/capitolo2.tex
+] [3]) [4] (./chapters/02/capitolo2.tex
 Capitolo 2.
-) [6] (./chapters/03/capitolo3.tex
+) [5] (./chapters/03/capitolo3.tex
 Capitolo 3.
-<chapters/03/media//pipeline.png, id=52, 1585.925pt x 2091.815pt>
+<chapters/03/media//pipeline.png, id=50, 1585.925pt x 2091.815pt>
 File: chapters/03/media//pipeline.png Graphic file (type png)
 <use chapters/03/media//pipeline.png>
 Package pdftex.def Info: chapters/03/media//pipeline.png  used on input line 21
@@ -609,12 +609,12 @@ Package pdftex.def Info: chapters/03/media//pipeline.png  used on input line 21
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
-[8 <./chapters/03/media//pipeline.png>]
+ [6]
+[7 <./chapters/03/media//pipeline.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9]
-<chapters/03/media//deduprecal.png, id=66, 2774.365pt x 1208.515pt>
+ [8]
+<chapters/03/media//deduprecal.png, id=63, 2774.365pt x 1208.515pt>
 File: chapters/03/media//deduprecal.png Graphic file (type png)
 <use chapters/03/media//deduprecal.png>
 Package pdftex.def Info: chapters/03/media//deduprecal.png  used on input line 
@@ -623,81 +623,81 @@ Package pdftex.def Info: chapters/03/media//deduprecal.png  used on input line
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10 <./chapters/03/media//deduprecal.png>] [11]
+ [9 <./chapters/03/media//deduprecal.png>] [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12]
-[13]) [14] (./chapters/04/capitolo4.tex
+ [11]
+[12]) [13] (./chapters/04/capitolo4.tex
 Capitolo 4.
-) (./build/fantoni_giacomo_informatica_21.bbl [15]
-Underfull \hbox (badness 10000) in paragraph at lines 55--59
+) (./build/fantoni_giacomo_informatica_21.bbl [14]
+Underfull \hbox (badness 10000) in paragraph at lines 61--65
 []\OT1/cmr/m/n/10.95 Addorreplacereadgroups.  https://gatk.broadinstitute.org/h
 c/en-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--59
+Underfull \hbox (badness 10000) in paragraph at lines 61--65
 \OT1/cmr/m/n/10.95 us/articles/360057440331-AddOrReplaceReadGroups-Picard-.  ul
 -ti-mo ac-ces-so
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--70
+Underfull \hbox (badness 10000) in paragraph at lines 72--76
 []\OT1/cmr/m/n/10.95 Markduplicates.  https://gatk.broadinstitute.org/hc/en-us/
 articles/360057439771-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--81
+Underfull \hbox (badness 10000) in paragraph at lines 83--87
 []\OT1/cmr/m/n/10.95 Indel rea-li-gn-ment.  https://github.com/broadinstitute/g
 atk-docs/blob/master/gatk3-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--81
+Underfull \hbox (badness 10000) in paragraph at lines 83--87
 \OT1/cmr/m/n/10.95 tutorials/(howto)[]Perform[]local[]realignment[]around[]inde
 ls.md.  ul-ti-mo ac-ces-so
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--87
+Underfull \hbox (badness 10000) in paragraph at lines 89--93
 []\OT1/cmr/m/n/10.95 Base qua-li-ty sco-re re-ca-li-bra-tion.  https://gatk.bro
 adinstitute.org/hc/en-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--87
+Underfull \hbox (badness 10000) in paragraph at lines 89--93
 \OT1/cmr/m/n/10.95 us/articles/360035890531-Base-Quality-Score-Recalibration-BQ
 SR-.  ul-ti-mo ac-ces-so
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--93
+Underfull \hbox (badness 10000) in paragraph at lines 95--99
 []\OT1/cmr/m/n/10.95 Splitncigarreads.  https://gatk.broadinstitute.org/hc/en-u
 s/articles/360036734471-
  []
 
+[15
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--99
+]
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
 []\OT1/cmr/m/n/10.95 Baserecalibrator.  https://gatk.broadinstitute.org/hc/en-u
 s/articles/360036898312-
  []
 
-[16
 
-]
-Underfull \hbox (badness 4328) in paragraph at lines 107--111
+Underfull \hbox (badness 4328) in paragraph at lines 113--117
 []\OT1/cmr/m/n/10.95 Bedtools in-ter-sect.  https://bedtools.readthedocs.io/en/
 latest/content/tools/intersect.html.
  []
 
-) (./chapters/allegati/allegati.tex [17]
+) (./chapters/allegati/allegati.tex [16]
 Appendice A.
-[18
+[17
 
 ]
 Appendice B.
-) [19
+) [18
 
 ]
 
@@ -706,13 +706,13 @@ LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
 
  (./build/fantoni_giacomo_informatica_21.aux) ) 
 Here is how much of TeX's memory you used:
- 7274 strings out of 478994
- 117342 string characters out of 5864751
- 489212 words of memory out of 5000000
- 24561 multiletter control sequences out of 15000+600000
+ 7273 strings out of 478994
+ 117301 string characters out of 5864751
+ 490803 words of memory out of 5000000
+ 24560 multiletter control sequences out of 15000+600000
  412937 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 97i,10n,102p,415b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 97i,10n,102p,409b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc
 /dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
@@ -727,11 +727,11 @@ public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
 /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/tex
 mf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on ./build/fantoni_giacomo_informatica_21.pdf (21 pages, 737310 
+Output written on ./build/fantoni_giacomo_informatica_21.pdf (20 pages, 740937 
 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
+ 147 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
