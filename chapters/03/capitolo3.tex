@@ -26,7 +26,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   \section{Pre-processamento e allineamento dei dati RNA-seq}
   \label{sec:pre_all_rna_seq}
   Il primo passo della pipeline appena definita \`e il pre-processamento e l'allineamento dei dati RNA-seq.
-  L'input della pipeline sono file di testo in formato fastq che contengono i dati di sequenziamento raccolti in laboratorio. 
+  L'input della pipeline sono file di testo in formato fastq che contengono i dati di sequenziamento raccolti in laboratorio.
   Questi file subiscono un processo di preparazione in modo da ottenere dei file di allineamento utilizzabili per ottenere i dati di sbilanciamento allelico.
   Opzionalmente i file di allineamento possono subire ulteriori modifiche prima di passare alla prossima fase in modo da tentare di migliorare i risultati ottenuti.
   Tali modifiche sono in particolare deduplicazione e ricalibrazione.
@@ -211,7 +211,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
          \end{tabular}
          \caption{Parametri utilizzati per SplitNCigarReads}
     \end{table}
-    
+
     \paragraph{Riallineamento locale degl indel}
     Il riallineamento locale degli indels \`e necessario in quanto permette di correggere errori sistematici causati dall'allineatore genomico.
     Una limitazione di questi allineatori infatti \`e che considerano ogni read in maniera indipendente: le strategie di assegnazione dei punteggi limitano la loro abilit\`a di allineare accuratamente in presenza di indel.
@@ -237,7 +237,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
          \end{tabular}
          \caption{Parametri utilizzati per RealignerTargetCreator}
     \end{table}
-                
+
     \begin{table}[H]
         \centering
         \begin{tabular}{|c|c|}
@@ -251,7 +251,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
          \end{tabular}
          \caption{Parametri utilizzati per IndelRealigner}
     \end{table}
-    
+
     \paragraph{Ricalibazione delle basi basata sul punteggio di qualit\`a}
     Il processo di ricalibrazione delle basi basato sul punteggio di qualit\`a serve a risolvere errori generati durante il sequenziamento.
     Si definisce il punteggio di qualit\`a di una base come una stima dell'errore emesso dalla macchina di sequenziamento: esprimono quanto questa \`e confidente che ha chiamato la base corretta ogni volta.
@@ -282,7 +282,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
          \end{tabular}
          \caption{Parametri utilizzati per BaseRecalibrator}
     \end{table}
-                
+
     \begin{table}[H]
         \centering
         \begin{tabular}{|c|c|}
@@ -298,7 +298,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
          \end{tabular}
          \caption{Parametri utilizzati per PrintReads}
     \end{table}
-    
+
 
   \section{Ottenimento degli SNP di interesse}
   Una volta ottenuti i file di allineamento si rende necessario ottenere una lista di SNP dei quali si vuole ottenere il valore di sbilanciamento allelico.
@@ -364,4 +364,3 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
          \centering
          \caption{Parametri utilizzati per aseq}
    \end{table}
-  

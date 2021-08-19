@@ -13,17 +13,13 @@
 \newlabel{cha:intro}{{1}{3}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Polimorfismi a singolo nucleotide}{3}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.1}Espressione genica allelo-specifica}{3}{}\protected@file@percent }
+\citation{tranconcancer}
 \citation{polprofiling}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}TransSNP}{4}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.1}Profilamento polisomico}{4}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.2}Sequenziamento}{4}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {1.3}TransSNPs}{4}{}\protected@file@percent }
-\newlabel{sec:transsnps}{{1.3}{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.4}Sbilanciamento allelico}{5}{}\protected@file@percent }
-\newlabel{sec:allelicimbalance}{{1.4}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.1}Profilamento polisomico}{5}{}\protected@file@percent }
-\newlabel{subsec:polysomalprofiling}{{1.4.1}{5}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Linee cellulari e condizioni}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.1}Cambi nelle regioni UTR nelle cellule di cancro}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.2}Profilamento polisomico}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.3}Sequenziamento}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Linea cellulare e dati di partenza}{6}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{cha:cell_lines}{{2}{6}}
@@ -39,6 +35,9 @@
 \newlabel{subsec:dmso}{{2.2.1}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Nutlin}{6}{}\protected@file@percent }
 \newlabel{subsec:nutlin}{{2.2.2}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Dati di partenza}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Dati di RNA-seq}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Dati WES}{6}{}\protected@file@percent }
 \citation{ase_pipeline}
 \citation{parallel}
 \@writefile{toc}{\contentsline {chapter}{\numberline {3}Processamento dei dati}{7}{}\protected@file@percent }
@@ -46,13 +45,14 @@
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{cha:processamento}{{3}{7}}
 \citation{trimmomatic}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Pipeline per l'ottenimento dei dati di allelic imbalance}}{8}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Pipeline per l'ottenimento dei dati di allelic imbalance\relax }}{8}{}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:proj_pipeline}{{3.1}{8}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Pre-processamento e allineamento dei dati RNA-seq}{8}{}\protected@file@percent }
 \newlabel{sec:pre_all_rna_seq}{{3.1}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Trimmomatic}{8}{}\protected@file@percent }
 \citation{star}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Parametri utilizzati per trimmomatic}}{9}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Parametri utilizzati per trimmomatic\relax }}{9}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Star}{9}{}\protected@file@percent }
 \newlabel{subsec:star}{{3.1.2}{9}}
 \citation{samtools}
@@ -60,85 +60,121 @@
 \citation{samtools-index}
 \citation{addorreplacegroup}
 \citation{picard}
-\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Parametri utilizzati per star}}{10}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Parametri utilizzati per star\relax }}{10}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Samtools}{10}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Deduplicazione e ricalibrazione}{10}{}\protected@file@percent }
 \newlabel{subsec:deduprecab}{{3.1.4}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Pipeline di deduplicazione e ricalibrazione}}{10}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Pipeline di deduplicazione e ricalibrazione\relax }}{10}{}\protected@file@percent }
 \newlabel{fig:pipeline_deduprecal}{{3.2}{10}}
 \citation{dedup}
 \citation{gatk}
 \citation{indelrealign}
 \citation{bqsr}
 \citation{splitncigarreads}
-\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Parametri utilizzati per AddOrReplaceReadGroups}}{11}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Parametri utilizzati per AddOrReplaceReadGroups\relax }}{11}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{Deduplicazione}{11}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Parametri utilizzati per MarkDuplicates}}{11}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Parametri utilizzati per MarkDuplicates\relax }}{11}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{Ricalibrazione}{11}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Parametri utilizzati per SplitNCigarReads}}{11}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Parametri utilizzati per SplitNCigarReads\relax }}{11}{}\protected@file@percent }
 \citation{baserecalibrator}
 \citation{printreads}
 \@writefile{toc}{\contentsline {paragraph}{Riallineamento locale degl indel}{12}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces Parametri utilizzati per RealignerTargetCreator}}{12}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3.7}{\ignorespaces Parametri utilizzati per IndelRealigner}}{12}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces Parametri utilizzati per RealignerTargetCreator\relax }}{12}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.7}{\ignorespaces Parametri utilizzati per IndelRealigner\relax }}{12}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Ricalibazione delle basi basata sul punteggio di qualit\`a}{12}{}\protected@file@percent }
 \citation{bedtoolsintersect}
 \citation{bedtools}
 \citation{aseq}
-\@writefile{lot}{\contentsline {table}{\numberline {3.8}{\ignorespaces Parametri utilizzati per BaseRecalibrator}}{13}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3.9}{\ignorespaces Parametri utilizzati per PrintReads}}{13}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.8}{\ignorespaces Parametri utilizzati per BaseRecalibrator\relax }}{13}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.9}{\ignorespaces Parametri utilizzati per PrintReads\relax }}{13}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Ottenimento degli SNP di interesse}{13}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3.10}{\ignorespaces Parametri utilizzati per bedtools intersect}}{13}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.10}{\ignorespaces Parametri utilizzati per bedtools intersect\relax }}{13}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}Calcolo dei dati di sbilanciamento allelico}{13}{}\protected@file@percent }
 \newlabel{sec:aseq}{{3.3}{13}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.11}{\ignorespaces Parametri utilizzati per aseq}}{14}{}\protected@file@percent }
-\bibstyle{unsrt}
-\bibdata{bibliography/biblio}
+\@writefile{lot}{\contentsline {table}{\numberline {3.11}{\ignorespaces Parametri utilizzati per aseq\relax }}{14}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}Analisi dei dati}{15}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{cha:analisi}{{4}{15}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Conta degli SNP trovati con ASEQ}{15}{}\protected@file@percent }
-\newlabel{sec:snp_count}{{4.1}{15}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Considerazioni sulla recalibrazione}{15}{}\protected@file@percent }
-\newlabel{sec:rec_cons}{{4.2}{15}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Ottenere i dati per gli SNP di interesse}{15}{}\protected@file@percent }
-\newlabel{sec:snp_filter}{{4.3}{15}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Analisi degli sbilanciamenti di frazione allelica}{15}{}\protected@file@percent }
-\newlabel{sec:allelic_frac_cons}{{4.4}{15}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Conclusioni}{15}{}\protected@file@percent }
-\newlabel{sec:ending}{{4.5}{15}}
-\@writefile{toc}{\contentsline {chapter}{Bibliografia}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Identificazione delle varianti}{15}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces SNP mantenuti dopo l'intersezione con i VCF\relax }}{15}{}\protected@file@percent }
+\newlabel{fig:proj_pipeline}{{4.1}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Conta degli SNP trovati con ASEQ}{16}{}\protected@file@percent }
+\newlabel{sec:snp_count}{{4.2}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Conta per campione degli SNP eterozigoti trovati con aseq ($0.2< af < 0.8$ e coverage $\ge 10$)\relax }}{16}{}\protected@file@percent }
+\newlabel{fig:proj_pipeline}{{4.2}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Distrubuzione degli SNP}{17}{}\protected@file@percent }
+\newlabel{fig:proj_pipeline}{{\caption@xref {fig:proj_pipeline}{ on input line 39}}{17}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {scr DMSO}}}{17}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {scr NUTLIN}}}{17}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {shDHX30 DMSO}}}{17}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {shDHX30 NUTLIN}}}{17}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {shPCBP2 DMSO}}}{17}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {shPCBP2 NUTLIN}}}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Qualit\`a dei campioni}{17}{}\protected@file@percent }
+\newlabel{fig:proj_pipeline}{{\caption@xref {fig:proj_pipeline}{ on input line 54}}{17}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(g)}{\ignorespaces {1 - 2}}}{17}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(h)}{\ignorespaces {1 - 3}}}{17}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(i)}{\ignorespaces {1 - 4}}}{17}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(j)}{\ignorespaces {2 - 3}}}{17}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(k)}{\ignorespaces {2 - 4}}}{17}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(l)}{\ignorespaces {3 - 4}}}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Considerazioni sulla recalibrazione}{17}{}\protected@file@percent }
+\newlabel{sec:rec_cons}{{4.4}{17}}
+\newlabel{fig:proj_pipeline}{{\caption@xref {fig:proj_pipeline}{ on input line 76}}{18}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(m)}{\ignorespaces {scr DMSO polisomale}}}{18}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(n)}{\ignorespaces {scr DMSO totale}}}{18}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(o)}{\ignorespaces {scr NUTLIN polisomale}}}{18}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(p)}{\ignorespaces {scr NUTLIN totale}}}{18}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(q)}{\ignorespaces {shDHX30 DMSO polisomale}}}{18}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(r)}{\ignorespaces {shDHX30 DMSO totale}}}{18}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(s)}{\ignorespaces {shDHX30 NUTLIN polisomale}}}{18}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(t)}{\ignorespaces {shDHX30 NUTLIN totale}}}{18}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(u)}{\ignorespaces {shPCBP2 DMSO polisomale}}}{18}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(v)}{\ignorespaces {shPCBP2 DMSO totale}}}{18}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(w)}{\ignorespaces {shPCBP2 NUTLIN polisomale}}}{18}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(x)}{\ignorespaces {shPCBP2 NUTLIN totale}}}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Ottenere i dati per gli SNP di interesse}{18}{}\protected@file@percent }
+\newlabel{sec:snp_filter}{{4.5}{18}}
+\bibstyle{unsrt}
+\bibdata{bibliography/biblio}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Boxplot}{19}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Analisi degli sbilanciamenti di frazione allelica}{19}{}\protected@file@percent }
+\newlabel{sec:allelic_frac_cons}{{4.6}{19}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}Conclusioni}{19}{}\protected@file@percent }
+\newlabel{sec:ending}{{4.7}{19}}
+\@writefile{toc}{\contentsline {chapter}{Bibliografia}{19}{}\protected@file@percent }
 \bibcite{transsnp}{1}
-\bibcite{polprofiling}{2}
-\bibcite{ase_pipeline}{3}
-\bibcite{parallel}{4}
-\bibcite{trimmomatic}{5}
-\bibcite{star}{6}
-\bibcite{samtools}{7}
-\bibcite{samtools-sort}{8}
-\bibcite{samtools-index}{9}
-\bibcite{addorreplacegroup}{10}
-\bibcite{picard}{11}
-\bibcite{dedup}{12}
-\bibcite{gatk}{13}
-\bibcite{indelrealign}{14}
-\bibcite{bqsr}{15}
-\bibcite{splitncigarreads}{16}
-\bibcite{baserecalibrator}{17}
-\bibcite{printreads}{18}
-\bibcite{bedtoolsintersect}{19}
-\bibcite{bedtools}{20}
-\bibcite{aseq}{21}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Titolo primo allegato}{18}{}\protected@file@percent }
+\bibcite{tranconcancer}{2}
+\bibcite{polprofiling}{3}
+\bibcite{ase_pipeline}{4}
+\bibcite{parallel}{5}
+\bibcite{trimmomatic}{6}
+\bibcite{star}{7}
+\bibcite{samtools}{8}
+\bibcite{samtools-sort}{9}
+\bibcite{samtools-index}{10}
+\bibcite{addorreplacegroup}{11}
+\bibcite{picard}{12}
+\bibcite{dedup}{13}
+\bibcite{gatk}{14}
+\bibcite{indelrealign}{15}
+\bibcite{bqsr}{16}
+\bibcite{splitncigarreads}{17}
+\bibcite{baserecalibrator}{18}
+\bibcite{printreads}{19}
+\bibcite{bedtoolsintersect}{20}
+\bibcite{bedtools}{21}
+\bibcite{aseq}{22}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Titolo primo allegato}{22}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}Titolo}{18}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {A.1.1}Sottotitolo}{18}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}Titolo secondo allegato}{19}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Titolo}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1.1}Sottotitolo}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Titolo secondo allegato}{23}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {B.1}Titolo}{19}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.1.1}Sottotitolo}{19}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B.1}Titolo}{23}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.1.1}Sottotitolo}{23}{}\protected@file@percent }
 \gdef\svg@ink@ver@settings{{\m@ne }{inkscape}{\m@ne }}
-\gdef \@abspage@last{21}
+\gdef \@abspage@last{25}

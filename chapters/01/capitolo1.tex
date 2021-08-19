@@ -21,32 +21,51 @@ Grazie allo sviluppo tecnologico nelle tecnologie di sequenziamento e alla nasci
 Infatti diversi strumenti sono stati implementati per studiare i dati di espressione genica basati su RNA-sequencing in modo da identificare istanze di espressione genica allelo-specifica.
 
 \subsection{Espressione genica allelo-specifica}
-Si intende per espressione genica allelo-specifica \emph{ASE} una condizione per cui alleli diversi di un gene, per lo scopo di questo progetto uno contenente uno SNP e uno no, mostrano un'attivit\`a trascrizionale considerevolmente diversa.
-Un evento di ASE si osserva pertanto nelle cellule uane dove la trascrizione si origina principalmente da un allele.
+Si intende per espressione genica allelo-specifica o \emph{ASE} una condizione per cui alleli diversi di un gene, per lo scopo di questo progetto uno contenente uno SNP e uno no, mostrano un'attivit\`a trascrizionale considerevolmente diversa.
+Un evento di ASE si osserva pertanto nelle cellule umane dove la trascrizione si origina principalmente da un allele.
 Questi fenomeni sono dovuti principalmente a geni imprinted, condizioni fisiologiche come l'inattivazione del cromosoma \emph{X} e contribuiscono alla variabilit\`a fenotipica umana.
-Ulteriori meccanismi comprendono degradazione dei trascritti da pare di miRNA, distruzione monoallelica di regioni regolatorie, pattern di splicing alternativi o fenomeni epigenetici.
+Ulteriori meccanismi comprendono degradazione dei trascritti da parte di miRNA, distruzione monoallelica di regioni regolatorie, pattern di splicing alternativi o fenomeni epigenetici.
 
 \section{TransSNP}
 Una frazione di SNP identificati nella popolazione umana sono locati nelle regioni codificanti o negli \emph{UTR}.
 In questo caso studi guidati da meccanismo e da associazione hanno tentato di studiare SNP funzionali che possono modificare aspetti di regolazione genica post-trascrizionale.
-Non sono per\`o stati ancora esplorati SNP associati con alterazioni nel potenziale di traduzione del mRNA.
-Lo scopo del progetto \`e pertanto identificare questi ultimi, denominati transSNP.
+Non sono per\`o stati ancora esplorati SNP associati con alterazioni nel potenziale di traduzione del mRNA, estendendo il concetto di ASE dall'aspetto trascrizionale all'aspetto traduzionale.
+Lo scopo del progetto \`e pertanto identificare questi ultimi, SNP in grado di cambiare l'efficienza della traduzione del mRNA che li contiene, e una loro eventuale correlazione con il cancro, denominati transSNP.
 Si nota infatti come la regolazione traduzionale governa la produzione di proteine in risposta a un gran numero di situazioni fisiologiche e patologiche: circa met\`a della variazione della concentrazione di una proteina \`e dovuta a questo tipo di controllo.
 Per farlo si utilizza un'analisi comparativa di sbilanciamento allelico tra frazioni di mRNA totali e polisomiali estratti dallo stesso campione cellulare in modo da superare il rumore causato dalla chiamata degli SNP e dal coverage derivato dai dati di RNA-seq.
+Questo tipo di analisi viene svolto unicamente su SNP in eterozigosi nella cellula: in questo modo si ottiene la percentuale di allele presente in una frazione rispetto all'altro\footnote{Non riesco a spiegare bene il concetto}.
 In questo modo si crea un catalogo di SNP codificanti e negli UTR associati e cause potenziali con alterazioni nel potenziale di traduzione degli mNRA.
 
+	\subsection{Cambi nelle regioni UTR nelle cellule di cancro}
+	Come evidenziato in \cite{tranconcancer} sequenze e motivi strutturali presenti negli mRNA determinano una loro efficienza traduzionale e la loro abilit\`a di essere regolati da fattori agenti in trans come microRNA, proteine leganti RNA e fattori di iniziazione.
+	Questi elementi si trovano nelle regioni $5'$ e $3'$ UTR e tendono ad essere sovra-rappresentati in mRNA oncogenici garantendo una loro precisa regolazione.
+	\`E stato mostrato come mutazioni come gli SNP in questi motivi non codificanti possono modulare in maniera significativa l'espressione di proto-oncogeni.\\
+	L'aumento di strutture secondarie nel $5'$ UTR ha effetto sul tasso di iniziazione della traduzione di mRNA cap-dipendente.
+	In particolare si nota come mRNA oncogentici possiedono strutture stabili nella $5'$ UTR e hanno una maggiore dipendenza da \emph{eIF4F}.
+	Altri elementi nelle due UTR possono regolare l'efficenza della traduzione: una maggiore dipendenza da \emph{eIF4E} ma non da \emph{eIF4A} \`e stata mostrata per l'elemento iniziatore di traduzione del $5'$ UTR corto di alcuni mRNA.\\
+	In contrasto mRNA contenenti siti di ingresso di ribosomi interni o \emph{IRES} sono altamente dipendenti da \emph{eIF4G} e \emph{eIF4A}.
+	Inoltre gli mRNA possono contenere codoni di iniziaizone alternativi e open reading frames \emph{ORF} inibitori a valle del codone di inizio canonico che possono severamente contrastare la normale identificazione del normale sito di inizio di traduzione.
+	Questi elementi di sequenza sono arricchiti di trascritti oncogenici e in condizioni di stress oncogenico alcuni di questi mRNA mostrano una traduzione aumentata.\\
+	Oltre a questo motivi di sequenza o strutturali in alcune delle $5'$ UTR mediano il reclutamento di proteine leganti RNA che modulano la sua traduzione.
+	Un esempio ben caratterizzato di questo \`e l'elemento ditraduzione attivata dal transforming growth factor $\beta$ \emph{TGF-$\beta$} che regola la traduzione di certi mRNA coinvolti nella transizione da cellula epiteliale a mesenchimale promuovendo la migrazione cellulare.\\
+	Infine un altro elemento da tenere in conto sono i siti di legame per i microRNA, motivi particolarmente comuni con un effetto sulla traduzione e sulla stabilit\`a del mRNA.
+	La maggior parte di questi elementi riduce l'efficienza di traduzione del mRNA e si trovano in varie combinazioni in mRNA oncogenici attenuandone la traduzione in modo da impedire la trasformazione della cellula causata da una loro sovra-espressione.
+	Nonostante tutto questo le cellule di cancro riescono a trovare meccanismi in grado di superare questi controlli.\\
+	Si nota pertanto come nelle regioni non codificanti degli mRNA si trovano motivi e sequenze di fondamentale importanza per il benessere della cellula e mutazioni come gli SNP possono andare a distruggerli o ad intaccarne l'efficacia, rendendola pertanto pi\`u prona a trasformarsi in una cellula di cancro.
+
 \subsection{Profilamento polisomico}
-Il profilamento polisomico \`e il metodo con cui le frazioni di mRNA totali e polisomali vengono separate in un campione e il suo protocollo viene descritto in \cite{polprofiling}
+Il profilamento polisomico \`e il metodo con cui le frazioni di mRNA totali e polisomali vengono separate in un campione e il suo protocollo viene descritto in \cite{polprofiling}.
 Permette di determinare il sottoinsieme di mRNA attivamente coinvolti nella traduzione o traduttoma, ritornando una visione funzionale del genoma in un dato momento in una data cellula.
 Questo metodo offre diversi vantaggi rispetto ad altri, per esempio, a differenza del profilamento a ribosomi questa tecnica d\`a accesso all'intera lunghezza degli mRNA, comprese le UTR, le regioni che questo progetto vuole analizzare.
 La separazione delle due frazioni si basa su una centrifugazione con gradiente: i ribosomi hanno un coefficiente di sedimentazione molto maggiore rispetto alle molecole di mRNA e pertanto si troveranno ad altezze diverse della colonna.
-Pertanto le cellule vengono lisate e i lisati citoplasmatici vengono caricati su un gradiente di saccarosio $10-50\%$, ultra-centrifugate e frazionate attraverso un collettore automatico di frazioni che tiene conto dell'assorbanza a $254nm$.
-Tutte le frazioni pi\`u leggere contenenti frazioni subpolisomali presenti dalla cima fino alla frazione corrispondente al monosoma $80\%$ sono assunte non attivamente coinvolte nel processo di traduzione e raccolte in una provetta.
+Pertanto le cellule vengono lisate e i lisati citoplasmatici vengono caricati su un gradiente di saccarosio lineare $10-50\%$, ultra-centrifugate e frazionate attraverso un collettore automatico di frazioni che tiene conto dell'assorbanza a $254nm$.
+Tutte le parti pi\`u leggere contenenti frazioni subpolisomali presenti dalla cima fino alla frazione corrispondente al monosoma $80S$ sono assunte non attivamente coinvolte nel processo di traduzione e raccolte in una provetta.
 Le frazioni pi\`u pesanti sono quelle attivamente tradotte e sono raccolte in una seconda provetta\footnote{Provetta \`e il termine giusto? Nel paper si parla di ``tube''}.
-Successivamente le molecole di RNA sono state purificate e sospese in acqua sterile.
+Successivamente le molecole di RNA sono purificate e sospese in acqua sterile.
 In questo modo la seconda provetta contiene la frazione polisomale di interesse per il progetto.\\
 La frazione totale viene ottenuta attraverso un'estrazione con TRIzol (ThermoFisher) di una popolazione cellulare separata preparata in parallelo\footnote{Sto prendendo dal paper, magari per la mia linea cellulare queste cose sono state fatte in modo diverso}.\\
 In questo modo sono state ottenute tutte le due frazioni di mRNA, prima la polisomale e poi la totale che verranno sequenziate in modo poi da poter studiare lo sbilanciamento allelico al loro interno.
+Valori diversi di ASE tra le due frazioni indicano un cambio nel potenziale di traduzione causato dallo SNP considerato.
 
 \subsection{Sequenziamento}
 Le frazioni ottenute attraverso il profilamento polisomico vengono poi sequenziate attraverso \emph{HiSeq 2500} di Illumina.
@@ -58,21 +77,3 @@ La flow cell \`e viene letta dalla macchina che registra la lunghezza d'onda eme
 La particolare lunghezza d'onda permette di identificare il nucleotide.
 Il ciclo viene poi ripetuto $n$ volte in modo da creare una read lunga $n$ basi.
 In questo modo si ottengono per ogni frazione i file \emph{fastq} poi utilizzati per l'analisi dell'espressione allelo-specifica.
-
-
-
-
-
-
-\section{TransSNPs}
-\label{sec:transsnps}
-Definizione di SNP e loro impatto.
-Descrizione degli SNP considerati in questo esperimento.
-
-\section{Sbilanciamento allelico}
-\label{sec:allelicimbalance}
-Definizione di sbilanciamento allelico e perch\`e viene considerato.
-
-	\subsection{Profilamento polisomico}
-	\label{subsec:polysomalprofiling}
-	Come si identifica lo sbilanciamento allelico.
