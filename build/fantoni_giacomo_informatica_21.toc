@@ -2,48 +2,59 @@
 \babel@toc {italian}{}
 \contentsline {chapter}{Sommario}{3}{}%
 \contentsline {chapter}{\numberline {1}Introduzione}{3}{}%
-\contentsline {section}{\numberline {1.1}Polimorfismi a singolo nucleotide}{3}{}%
-\contentsline {subsection}{\numberline {1.1.1}Espressione genica allelo-specifica}{3}{}%
-\contentsline {section}{\numberline {1.2}TransSNP}{4}{}%
-\contentsline {subsection}{\numberline {1.2.1}Cambi nelle regioni UTR nelle cellule di cancro}{4}{}%
-\contentsline {subsection}{\numberline {1.2.2}Profilamento polisomico}{5}{}%
-\contentsline {subsection}{\numberline {1.2.3}Sequenziamento}{5}{}%
-\contentsline {chapter}{\numberline {2}Linea cellulare e dati di partenza}{6}{}%
-\contentsline {section}{\numberline {2.1}HCT116}{6}{}%
-\contentsline {subsection}{\numberline {2.1.1}DHX30}{6}{}%
-\contentsline {subsection}{\numberline {2.1.2}PCBP2}{6}{}%
-\contentsline {section}{\numberline {2.2}Trattamenti}{6}{}%
-\contentsline {subsection}{\numberline {2.2.1}DMSO}{6}{}%
-\contentsline {subsection}{\numberline {2.2.2}Nutlin}{6}{}%
-\contentsline {section}{\numberline {2.3}Dati di partenza}{6}{}%
-\contentsline {subsection}{\numberline {2.3.1}Dati di RNA-seq}{6}{}%
-\contentsline {subsection}{\numberline {2.3.2}Dati WES}{6}{}%
-\contentsline {chapter}{\numberline {3}Processamento dei dati}{7}{}%
-\contentsline {section}{\numberline {3.1}Pre-processamento e allineamento dei dati RNA-seq}{8}{}%
-\contentsline {subsection}{\numberline {3.1.1}Trimmomatic}{8}{}%
-\contentsline {subsection}{\numberline {3.1.2}Star}{9}{}%
-\contentsline {subsection}{\numberline {3.1.3}Samtools}{10}{}%
-\contentsline {subsection}{\numberline {3.1.4}Deduplicazione e ricalibrazione}{10}{}%
-\contentsline {subsubsection}{Deduplicazione}{11}{}%
-\contentsline {subsubsection}{Ricalibrazione}{11}{}%
-\contentsline {paragraph}{Riallineamento locale degl indel}{12}{}%
-\contentsline {paragraph}{Ricalibazione delle basi basata sul punteggio di qualit\`a}{12}{}%
-\contentsline {section}{\numberline {3.2}Ottenimento degli SNP di interesse}{13}{}%
-\contentsline {section}{\numberline {3.3}Calcolo dei dati di sbilanciamento allelico}{13}{}%
-\contentsline {chapter}{\numberline {4}Analisi dei dati}{15}{}%
-\contentsline {section}{\numberline {4.1}Identificazione delle varianti}{15}{}%
-\contentsline {section}{\numberline {4.2}Conta degli SNP trovati con ASEQ}{16}{}%
-\contentsline {subsection}{\numberline {4.2.1}Distrubuzione degli SNP}{17}{}%
-\contentsline {section}{\numberline {4.3}Qualit\`a dei campioni}{17}{}%
-\contentsline {section}{\numberline {4.4}Considerazioni sulla recalibrazione}{17}{}%
-\contentsline {section}{\numberline {4.5}Ottenere i dati per gli SNP di interesse}{18}{}%
-\contentsline {subsection}{\numberline {4.5.1}Boxplot}{19}{}%
-\contentsline {section}{\numberline {4.6}Analisi degli sbilanciamenti di frazione allelica}{19}{}%
-\contentsline {section}{\numberline {4.7}Conclusioni}{19}{}%
-\contentsline {chapter}{Bibliografia}{19}{}%
-\contentsline {chapter}{\numberline {A}Titolo primo allegato}{22}{}%
-\contentsline {section}{\numberline {A.1}Titolo}{22}{}%
-\contentsline {subsection}{\numberline {A.1.1}Sottotitolo}{22}{}%
-\contentsline {chapter}{\numberline {B}Titolo secondo allegato}{23}{}%
-\contentsline {section}{\numberline {B.1}Titolo}{23}{}%
-\contentsline {subsection}{\numberline {B.1.1}Sottotitolo}{23}{}%
+\contentsline {section}{\numberline {1.1}Controllo traduzionale nel cancro}{3}{}%
+\contentsline {subsection}{\numberline {1.1.1}Formazione del complesso eIF4F}{4}{}%
+\contentsline {subsection}{\numberline {1.1.2}Formazione del complesso ternario}{4}{}%
+\contentsline {subsection}{\numberline {1.1.3}Connessione di eIF4F e eIF3 e formazione del complesso di pre-iniziazione}{4}{}%
+\contentsline {subsection}{\numberline {1.1.4}Allungamento e terminazione della traduzione}{4}{}%
+\contentsline {subsection}{\numberline {1.1.5}Cambi nelle regioni UTR nelle cellule di cancro}{4}{}%
+\contentsline {subsection}{\numberline {1.1.6}Segnalazione oncogenica}{5}{}%
+\contentsline {subsection}{\numberline {1.1.7}Ribosoma tumorale}{5}{}%
+\contentsline {subsection}{\numberline {1.1.8}Vantaggi oncogenici selettivi di una traduzione deregolata}{5}{}%
+\contentsline {subsubsection}{Proliferazione e apoptosi}{5}{}%
+\contentsline {subsubsection}{Angiogenesi}{5}{}%
+\contentsline {subsubsection}{Risposta allo stress}{5}{}%
+\contentsline {section}{\numberline {1.2}Polimorfismi a singolo nucleotide}{5}{}%
+\contentsline {subsection}{\numberline {1.2.1}Espressione genica allelo-specifica}{5}{}%
+\contentsline {section}{\numberline {1.3}TransSNP}{5}{}%
+\contentsline {subsection}{\numberline {1.3.1}Profilamento polisomico}{6}{}%
+\contentsline {subsection}{\numberline {1.3.2}Sequenziamento}{6}{}%
+\contentsline {chapter}{\numberline {2}Linea cellulare e dati di partenza}{7}{}%
+\contentsline {section}{\numberline {2.1}HCT116}{7}{}%
+\contentsline {subsection}{\numberline {2.1.1}DHX30}{7}{}%
+\contentsline {subsection}{\numberline {2.1.2}PCBP2}{7}{}%
+\contentsline {section}{\numberline {2.2}Trattamenti}{7}{}%
+\contentsline {subsection}{\numberline {2.2.1}DMSO}{7}{}%
+\contentsline {subsection}{\numberline {2.2.2}Nutlin}{7}{}%
+\contentsline {section}{\numberline {2.3}Dati di partenza}{7}{}%
+\contentsline {subsection}{\numberline {2.3.1}Dati di RNA-seq}{7}{}%
+\contentsline {subsection}{\numberline {2.3.2}Dati WES}{7}{}%
+\contentsline {chapter}{\numberline {3}Processamento dei dati}{8}{}%
+\contentsline {section}{\numberline {3.1}Pre-processamento e allineamento dei dati RNA-seq}{9}{}%
+\contentsline {subsection}{\numberline {3.1.1}Trimmomatic}{9}{}%
+\contentsline {subsection}{\numberline {3.1.2}Star}{10}{}%
+\contentsline {subsection}{\numberline {3.1.3}Samtools}{11}{}%
+\contentsline {subsection}{\numberline {3.1.4}Deduplicazione e ricalibrazione}{11}{}%
+\contentsline {subsubsection}{Deduplicazione}{12}{}%
+\contentsline {subsubsection}{Ricalibrazione}{12}{}%
+\contentsline {paragraph}{Riallineamento locale degl indel}{13}{}%
+\contentsline {paragraph}{Ricalibazione delle basi basata sul punteggio di qualit\`a}{13}{}%
+\contentsline {section}{\numberline {3.2}Ottenimento degli SNP di interesse}{14}{}%
+\contentsline {section}{\numberline {3.3}Calcolo dei dati di sbilanciamento allelico}{14}{}%
+\contentsline {chapter}{\numberline {4}Analisi dei dati}{16}{}%
+\contentsline {section}{\numberline {4.1}Identificazione delle varianti}{16}{}%
+\contentsline {section}{\numberline {4.2}Conta degli SNP trovati con ASEQ}{17}{}%
+\contentsline {subsection}{\numberline {4.2.1}Distrubuzione degli SNP}{18}{}%
+\contentsline {section}{\numberline {4.3}Qualit\`a dei campioni}{18}{}%
+\contentsline {section}{\numberline {4.4}Considerazioni sulla recalibrazione}{18}{}%
+\contentsline {section}{\numberline {4.5}Ottenere i dati per gli SNP di interesse}{19}{}%
+\contentsline {subsection}{\numberline {4.5.1}Boxplot}{20}{}%
+\contentsline {section}{\numberline {4.6}Caratterizzazione degli SNP di interesse}{20}{}%
+\contentsline {section}{\numberline {4.7}Conclusioni}{20}{}%
+\contentsline {chapter}{Bibliografia}{20}{}%
+\contentsline {chapter}{\numberline {A}Titolo primo allegato}{23}{}%
+\contentsline {section}{\numberline {A.1}Titolo}{23}{}%
+\contentsline {subsection}{\numberline {A.1.1}Sottotitolo}{23}{}%
+\contentsline {chapter}{\numberline {B}Titolo secondo allegato}{24}{}%
+\contentsline {section}{\numberline {B.1}Titolo}{24}{}%
+\contentsline {subsection}{\numberline {B.1.1}Sottotitolo}{24}{}%

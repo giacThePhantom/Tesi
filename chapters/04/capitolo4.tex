@@ -5,15 +5,16 @@
 %    \centering
 %    \includegraphics[scale=0.2]{pipeline.png}
 %    \caption{Pipeline per l'ottenimento dei dati di allelic imbalance}
-%    \label{fig:proj_pipeline}
+%    \label{fig:}
 %  \end{figure}
 
 \section{Identificazione delle varianti}
+
  \begin{figure}[H]
    \centering
    \includegraphics[scale=1]{scelta_gtf.png}
    \caption{SNP mantenuti dopo l'intersezione con i VCF}
-   \label{fig:proj_pipeline}
+   \label{fig:}
  \end{figure}
 
 \section{Conta degli SNP trovati con ASEQ}
@@ -22,7 +23,7 @@
    \centering
    \includegraphics[scale=1]{aseq_count_2_8_10_pre.png}
 	 \caption{Conta per campione degli SNP eterozigoti trovati con aseq ($0.2< af < 0.8$ e coverage $\ge 10$)}
-   \label{fig:proj_pipeline}
+   \label{fig:}
  \end{figure}
 
  \subsection{Distrubuzione degli SNP}
@@ -36,7 +37,7 @@
       \subfloat[shPCBP2 DMSO]{\includegraphics[width = 0.3\textwidth]{distribution/shPCBP2_DMSO.png}} &
       \subfloat[shPCBP2 NUTLIN]{\includegraphics[width = 0.3\textwidth]{distribution/shPCBP2_NUTLIN.png}} \\
   \end{tabular}
-   \label{fig:proj_pipeline}
+   \label{fig:}
  \end{figure}
 
 \section{Qualit\`a dei campioni}
@@ -51,7 +52,7 @@ Confronto tra replicato di un campione in modo da verificare come cambiano i val
       \subfloat[2 - 4]{\includegraphics[width = 0.3\textwidth]{rep_corr/scr_DMSO_TOT-rep-2-4.post.0.2.0.8.10.png}} &
       \subfloat[3 - 4]{\includegraphics[width = 0.3\textwidth]{rep_corr/scr_DMSO_TOT-rep-3-4.post.0.2.0.8.10.png}} \\
   \end{tabular}
-   \label{fig:proj_pipeline}
+   \label{fig:}
  \end{figure}
 
 \section{Considerazioni sulla recalibrazione}
@@ -73,7 +74,7 @@ Discussione dei risultati di ASEQ prima e dopo la recalibrazione.
       \subfloat[shPCBP2 NUTLIN polisomale]{\includegraphics[width = 0.3\textwidth]{correlation_recal/shPCBP2_NUTLIN_POL_1.png}} &
       \subfloat[shPCBP2 NUTLIN totale]{\includegraphics[width = 0.3\textwidth]{correlation_recal/shPCBP2_NUTLIN_TOT_1.png}} \\
   \end{tabular}
-   \label{fig:proj_pipeline}
+   \label{fig:}
  \end{figure}
 
 \section{Ottenere i dati per gli SNP di interesse}
@@ -84,10 +85,22 @@ Magari qua posso mettere un barplot con la conta degli SNP trovati.
 
    \subsection{Boxplot}
    I boxplot degli SNP trovati.
+ \begin{figure}[H]
+   \centering
+   \begin{tabular}{cc}
+      \subfloat[scr DMSO rs1131941]{\includegraphics[width = 0.5\textwidth]{boxplot/scr_DMSO_rs1131941.png}} &
+      \subfloat[scr DMSO rs2228626]{\includegraphics[width = 0.5\textwidth]{boxplot/scr_DMSO_rs2228626.png}} \\
+      \subfloat[scr DMSO rs2289373]{\includegraphics[width = 0.5\textwidth]{boxplot/scr_DMSO_rs2289373.png}} &
+      \subfloat[shPCBP2 NUTLIN rs9833]{\includegraphics[width = 0.5\textwidth]{boxplot/shPCBP2_NUTLIN_rs9833.png}} \\
+  \end{tabular}
+   \label{fig:}
+ \end{figure}
 
-\section{Analisi degli sbilanciamenti di frazione allelica}
-\label{sec:allelic_frac_cons}
-Analisi finali.
+\section{Caratterizzazione degli SNP di interesse}
+Magari una lista contenente gli SNP caratterizzati con snpEff
+
+
+
 
 \section{Conclusioni}
 \label{sec:ending}
