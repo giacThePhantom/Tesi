@@ -17,72 +17,141 @@ In particolare si tenta di determinare una nuova classe di mutazioni dette \emph
 \section{Controllo traduzionale nel cancro}
 La traduzione di mRNA in proteine \`e un evento chiave nella regolazione dell'espressione genica.
 Questo \`e specialmente vero nel contesto del cancro in quanto molti oncogeni ed eventi di trasformazione sono regolati a questo livello.
-In \cite{transconcancer} vengono esplorati i diversi modi in cui le cellule del cancro deregolano e riprogrammano la traduzione e il loro impatto oncogenico.
+In \cite{tranconcancer} vengono esplorati i diversi modi in cui le cellule del cancro deregolano e riprogrammano la traduzione e il loro impatto oncogenico.
 Risorse considerevoli sono dedicate alla traduzione di mRNA in cellule normali.
 Fino al $20\%$ dell'energia cellulare viene impiegata nella sintesi delle proteine e anche la maggior parte della trascrizione \`e volta alla produzione di RNA ribosomiale e di mRNA codificante proteine ribosomiali.
 La proliferazione di cancri maligni richiede una sintesi continua di proteine e un aumento del contenuto di ribosomi.
 Molte cellule tumorali subiscono stress fisiologico come ipossia o mancanza di nutrienti.
-In queste condizioni l'efficienza della traduzione si riduce, ma i meccanismi id regolazione vengono disaccoppiati dal processo nelle cellule tumorali come conseguenza del processo di trasformazione, aumentando lo stress della cellula.
+In queste condizioni l'efficienza della traduzione si riduce, ma i meccanismi di regolazione vengono disaccoppiati dal processo nelle cellule tumorali come conseguenza del processo di trasformazione, aumentando lo stress della cellula.
 Si nota come le cellule tumorali possono sfruttare il meccanismo di traduzione per sostenere la loro proliferazione, sopravvivenza e metastasi.
 Questo avviene cambiando l'attivit\`a e l'espressione di fattori di traduzione che conferiscono alla cellula una capacit\`a di traduzione di mRNA specifica per il cancro.
-Dati i tassi di allungamento del ribosoma sul RNA costanti e i fattori di iniziazione di tradizione limitati, la traduzione di mRNA specifici per cui il reclutamento del ribosoma \`e inefficiente viene disproporzionalmente affetta da cambi nell'attivit\`a dei fattori di iniziazione.
-Da questo si nota come le cellule tumorali possiedono una variet\`a di complesse alterazioni molecolari che aumentano la traduzione selettiva di mRNA mal tradotti\footnote{Il paper intendeva trascritti?}.
-In particolare aumenta l'espressione o la disponibilit\`a di fattori di iniziazione della traduzione specifici e l'attivit\`a dei pathways di segnalazione che li regolano.
-L'espressione aberrante dei fattori di iniziazione di traduzione \`e il primo meccanismo scoperto attraverso cui le cellule di cancro deregolano la traduzione.
-\`E stato mostrato originariamento dall'abilit\`a di eIF4E sovra-espresso di trasformare le cellule NIH 3T3.
-Ulteriori fattori di iniziazione sono stati scoperti in tumori umani.
 
-	\subsection{Formazione del complesso eIF4F}
-	I ribosomi sono reclutati alla terminazione $5'$ del mRNA attraverso il complesso eIF4F, composto di tre subunit\`a, tra cui eIF4A che fornisce l'attivit\`a elicasica necessaria per svolgere le strutture secondarie presenti nella $5'$-UTR.
-	Questo processo \`e aiutato dalle altre due subunit\`a eIF4G e eIF4E.
-	Considerando che tipicamente tale regione degli mRNA oncogenici \`e lunga e stabile questi sono molto sensibili all'attivit\'a di eIF4A e alla formazione di eIF4F.
-	Tutte e tre le subunit\`a possono essere deregolate nelle cellule cancerogene: i loci genomici sono amplificati in molti tumori umani e sono tutti obiettivi dell'oncoproteina MYC.
-	La sovra-espressione di eIF4E e eIF4G, che agiscono come classici oncogeni, risulta nella trasformazione delle cellule in vitro e in vivo.\\
-	La regolazione dell'iniziazione della traduzione nel cancro pi\`o essere anche regolata alla forsforilazione del complesso eIF4F.
-	La forsforilazione di eIF4E promuove lo sviluppo di tumori e la loro disseminazione ed \`e elevata in tumori umani di polmoni, prostata e seno.
-	Un sito di fosforilazione di eIF4G quando legato promuove la fosforilazione di eIF4E, coinvolta nella riprogrammazione traduzionale che porta alla resistenza al tamoxifene nel cancro al seno.
-	Questo meccanismo \`e poco compreso, ma si pensa coinvolga il riciclo dei fattori di iniziazione.\\
-	Un ulteriore meccanismo di regolazione coinvolge il sequestro dei fattori di iniziazione per impedire la formazione del complesso eIF4F.
-	Questo avviene da parte di PDCD4 (tumor suppressor programmed cell death 4), la cui perdita \`e associata con un invasione della cellula tumorale e un abbassamento della probabilit\`a di sopravvivenza per alcuni tumori.
-	Un meccanismo simile coinvolge 4E-BP, che competono con eIF4G per il legame con eIF4E, inibendo la traduzione dipendente dal cap.
-	La loro espressione pu\`o essere persa o la loro funzione inibita attraverso fosforilazione.
-	4E-BP possono contrastare la metastasi, ma facendolo promuovono lo sviluppo di grandi tumori locali.
+	\subsection{Meccanismi di traduzione deregolati e selettivi nel cancro}
+	Dati i tassi di allungamento del ribosoma sul RNA costanti e i fattori di iniziazione di tradizione limitati, la traduzione di mRNA specifici per cui il reclutamento del ribosoma \`e inefficiente viene disproporzionalmente affetta da cambi nell'attivit\`a dei fattori di iniziazione.
+	Da questo si nota come le cellule tumorali possiedono una variet\`a di complesse alterazioni molecolari che aumentano la traduzione selettiva di mRNA mal tradotti\footnote{Il paper intendeva trascritti?}.
+	In particolare aumenta l'espressione o la disponibilit\`a di fattori di iniziazione della traduzione specifici e l'attivit\`a dei pathways di segnalazione che li regolano.
+	L'espressione aberrante dei fattori di iniziazione di traduzione \`e il primo meccanismo scoperto attraverso cui le cellule di cancro deregolano la traduzione.
+	\`E stato dimostrato originariamente dall'abilit\`a di eIF4E sovra-espresso di trasformare le cellule NIH 3T3.
+	Ulteriori fattori di iniziazione sono stati scoperti in tumori umani.
 
-	\subsection{Formazione del complesso ternario}
+		\subsubsection{Formazione del complesso eIF4F}
+		I ribosomi sono reclutati alla terminazione $5'$ del mRNA attraverso il complesso eIF4F, composto di tre subunit\`a, tra cui eIF4A che fornisce l'attivit\`a elicasica necessaria per svolgere le strutture secondarie presenti nella $5'$-UTR.
+		Questo processo \`e aiutato dalle altre due subunit\`a eIF4G e eIF4E.
+		Considerando che tipicamente tale regione degli mRNA oncogenici \`e lunga e stabile questi sono molto sensibili all'attivit\'a di eIF4A e alla formazione di eIF4F.
+		Tutte e tre le subunit\`a possono essere deregolate nelle cellule cancerogene: i loci genomici sono amplificati in molti tumori umani e sono tutti obiettivi dell'oncoproteina MYC.
+		La sovra-espressione di eIF4E e eIF4G, che agiscono come classici oncogeni, risulta nella trasformazione delle cellule in vitro e in vivo.\\
+		La regolazione dell'iniziazione della traduzione nel cancro pi\`o essere anche regolata alla forsforilazione del complesso eIF4F.
+		La forsforilazione di eIF4E promuove lo sviluppo di tumori e la loro disseminazione ed \`e elevata in tumori umani di polmoni, prostata e seno.
+		Un sito di fosforilazione di eIF4G quando legato promuove la fosforilazione di eIF4E, coinvolta nella riprogrammazione traduzionale che porta alla resistenza al tamoxifene nel cancro al seno.
+		Questo meccanismo \`e poco compreso, ma si pensa coinvolga il riciclo dei fattori di iniziazione.\\
+		Un ulteriore meccanismo di regolazione coinvolge il sequestro dei fattori di iniziazione per impedire la formazione del complesso eIF4F.
+		Questo avviene da parte di PDCD4 (tumor suppressor programmed cell death 4), la cui perdita \`e associata con un invasione della cellula tumorale e un abbassamento della probabilit\`a di sopravvivenza per alcuni tumori.
+		Un meccanismo simile coinvolge 4E-BP, che competono con eIF4G per il legame con eIF4E, inibendo la traduzione dipendente dal cap.
+		La loro espressione pu\`o essere persa o la loro funzione inibita attraverso fosforilazione.
+		4E-BP possono contrastare la metastasi, ma facendolo promuovono lo sviluppo di grandi tumori locali.
 
-	\subsection{Connessione di eIF4F e eIF3 e formazione del complesso di pre-iniziazione}
+		\subsubsection{Formazione del complesso ternario}
+		Il complesso ternario o \emph{TC} \`e composto di eIF2, GTP e dal tRNA con metionina iniziatore.
+		La formazione deregolata del TC \`e un meccanismo complesso, in particolare sono stati trovati risultati contrastanti riguardo il ruolo della fosforilazione di eIF2$\alpha$.
+		Un aumento in questa modifica garantisce alle cellule tumorali un aumento nella loro abiliit\`a di rispondere a condizioni di stress promuovendo la traduzione di open reading frame a valle o \emph{uORF} contenenti mRNA dedicati alla risposta a tale stress.
+		Inoltre una sovra-espressione di eIF2$\alpha$ o di una delle sue chinasi promuove in alcuni contesti la trasformazione.
+		Una fosforilazione di eIF2$\alpha$ a lungo termine, invece, promuove apoptosi e ha permesso lo sviluppo di terapie che promuovono l'attivit\`a delle sue chinasi o un'inibizione delle fosfatasi.
+		Da questi risultati si osserva come il risultato della fosforilazione di eif2$\alpha$ \`e specifica al contesto e potrebbe cambiare con il tempo.\\
+		Altri meccanismi per modulare l'attivit\`a del TC includono la sovra-espressione di eIF5 o delle sue proteine simili \emph{MP} che, quando presenti in eccesso, si leagno a eIF2 sequestrandolo dal ribosoma $40S$.
+		In modo simile alla fosforilazione di eif2$\alpha$ il sequestro riduce la sintesi proteica globale, ma aumenta la traduzione di mRNA contenenti uORF.
+		Questo meccanismo sembra essere rilevante per le propriet\`a maligne di alcuni tipi di cancro.
 
-	\subsection{Allungamento e terminazione della traduzione}
+		\subsubsection{eIF3, connessione di eIF4F e il complesso di pre-iniziazione}
+		eIF3 \`e un complesso che si lega direttamente a eIF4G unendolo al complesso di pre-iniziazione.
+		In questo modo si connettono gli mRNA con la subunit\`a $40S$ del ribosoma.
+		Un aumento dei livelli di eIF3 dovrebbe promuovere l'unione dei due elementi, aumentando il tasso di iniziazione della traduzione.
+		Questo aumenta la traduzione di trascritti oncogenici.
+		Diversi studi hanno notato come quando sovra-espresse alcune subunit\`a di eIF3 mostrano propriet\`a oncogeniche, altre agiscono come soppressori.
+		Questo avviene a causa dei ruoli non traduzionali di alcune subunit\`a, come eIF3a che si lega a componenti del citoscheletro e eIF3f e eIF3i, che regolano pathway di trasduzione del segnale.
+		Sono stati trovati anche altri ruoli regolatori di eIF3 nella traduzione che includono il legame a strutture del mRNA nella $5'$-UTR di trascritti rilevanti per il cancro.
 
+		\subsubsection{Allungamento e terminazione della traduzione}
+		Il processo di traduzione viene regolato anche durante l'allungamento e la terminazione e nuovi studi hanno mostrato cambi oncogenici in questi due processi.
+		Un ruolo dominante \`e stato mostrato per la perita della regolazione inibitoria dell'allungamentro attraverso la fosforilazione di eEF2.
+		Inoltre l'aumento della disponibilit\`a di specie di tRNA iso-accettanti nelle cellule tumorali sembra avere un ruolo nella tumorigenesi.
+		In quanto la velocit\`a di incorporazione degli amminoacidi durante la fase di allungamento \`e dipendente dalla disponibilit\`a dei tRNA carichi corrispondenti, diversi studi hanno mostrato come nelle cellule del cancro il repertorio di tRNA disponibili viene riprogrammato in modo che le specie richieste per la traduzione di mRNA oncogenici siano presenti a livelli sufficienti.
+		Oltre a questo l'allungamento pu\`o essere deregolato attraverso un cambiamento programmato del frame di lettura a $-1$.
+		Lo scivoltamento indietro di una base porta alla creazione di codoni di stop prematuri e a decadimento del mRNA mediato dal non-senso.
+		Questo meccanismo spiega il ruolo oncogenico di mutazioni silenti che inducono frameshift nei soppressori dei tumori.\\
+		La terminazione aberrante o alterata pu\`o portare alla fine della traduzione a codoni di stop prematuri come risultato di mutazioni somatiche e porta al cancro se queste si trovano su geni soppressori del tumore.\\
+		Oltre a questo si trovano due fattori di iniziazione con multipli ruoli nella traduzione del mRNA, che sono associati con regolazione alterata nelle cellule del cancro.
+		eIF6 \`e un fattore anti-associazione ribosomale che impedisce interazioni aberranti tra le subunit\`a $40S$ e $60S$.
+		Deve pertanto essere spostato dal ribosoma nel passo finale della sintesi del ribosoma $60S$ nel nucleo e pu\`o promuovere il disassemblaggio del ribosoma $80S$ nel citosol impedendo la riassociazione dei ribosomi $60S$ post-terminazione.
+		Questo impedisce ulteriori passaggi di iniziazione con un sequestro prolungato.
+		Un'espressione aberrante di eIF6 causa un suo accumulo nel nucleo, con un ruolo in diversi tipi di cancro.
+		Livelli ridotti della sua espressione invece impediscono trasformazioni indotte da oncogeni.\\
+		Il secondo fattore con multiple attivit\`a oncogeniche \`e eIF5A che oltre ad essere un fattore di iniziazione importante per la formazione del primo legame peptidico, ha un ruolo durante l'allungamento di regioni tripeptidiche mal tradotte.
+		Si \`e notato come entrambe le sue isoforme siano sovra-espresse in molti timori e sono state collegate con la capacit\`a metastatica delle cellule tumorali.
 
-	\subsection{Cambi nelle regioni UTR nelle cellule di cancro}
-	Come evidenziato in \cite{tranconcancer} sequenze e motivi strutturali presenti negli mRNA determinano una loro efficienza traduzionale e la loro abilit\`a di essere regolati da fattori agenti in trans come microRNA, proteine leganti RNA e fattori di iniziazione.
-	Questi elementi si trovano nelle regioni $5'$ e $3'$ UTR e tendono ad essere sovra-rappresentati in mRNA oncogenici garantendo una loro precisa regolazione.
-	\`E stato mostrato come mutazioni come gli SNP in questi motivi non codificanti possono modulare in maniera significativa l'espressione di proto-oncogeni.\\
-	L'aumento di strutture secondarie nel $5'$ UTR ha effetto sul tasso di iniziazione della traduzione di mRNA cap-dipendente.
-	In particolare si nota come mRNA oncogentici possiedono strutture stabili nella $5'$ UTR e hanno una maggiore dipendenza da \emph{eIF4F}.
-	Altri elementi nelle due UTR possono regolare l'efficenza della traduzione: una maggiore dipendenza da \emph{eIF4E} ma non da \emph{eIF4A} \`e stata mostrata per l'elemento iniziatore di traduzione del $5'$ UTR corto di alcuni mRNA.\\
-	In contrasto mRNA contenenti siti di ingresso di ribosomi interni o \emph{IRES} sono altamente dipendenti da \emph{eIF4G} e \emph{eIF4A}.
-	Inoltre gli mRNA possono contenere codoni di iniziaizone alternativi e open reading frames \emph{ORF} inibitori a valle del codone di inizio canonico che possono severamente contrastare la normale identificazione del normale sito di inizio di traduzione.
-	Questi elementi di sequenza sono arricchiti di trascritti oncogenici e in condizioni di stress oncogenico alcuni di questi mRNA mostrano una traduzione aumentata.\\
-	Oltre a questo motivi di sequenza o strutturali in alcune delle $5'$ UTR mediano il reclutamento di proteine leganti RNA che modulano la sua traduzione.
-	Un esempio ben caratterizzato di questo \`e l'elemento ditraduzione attivata dal transforming growth factor $\beta$ \emph{TGF-$\beta$} che regola la traduzione di certi mRNA coinvolti nella transizione da cellula epiteliale a mesenchimale promuovendo la migrazione cellulare.\\
-	Infine un altro elemento da tenere in conto sono i siti di legame per i microRNA, motivi particolarmente comuni con un effetto sulla traduzione e sulla stabilit\`a del mRNA.
-	La maggior parte di questi elementi riduce l'efficienza di traduzione del mRNA e si trovano in varie combinazioni in mRNA oncogenici attenuandone la traduzione in modo da impedire la trasformazione della cellula causata da una loro sovra-espressione.
-	Nonostante tutto questo le cellule di cancro riescono a trovare meccanismi in grado di superare questi controlli.\\
-	Si nota pertanto come nelle regioni non codificanti degli mRNA si trovano motivi e sequenze di fondamentale importanza per il benessere della cellula e mutazioni come gli SNP possono andare a distruggerli o ad intaccarne l'efficacia, rendendola pertanto pi\`u prona a trasformarsi in una cellula di cancro.
+		\subsubsection{Cambi nelle regioni UTR nelle cellule di cancro}
+		\label{subsubsec:53UTRcomp}
+		Sequenze e motivi strutturali presenti negli mRNA determinano la loro efficienza traduzionale e la loro abilit\`a di essere regolati da fattori agenti in trans come microRNA, proteine leganti RNA e fattori di iniziazione.
+		Questi elementi si trovano nelle regioni $5'$ e $3'$ UTR e tendono ad essere sovra-rappresentati in mRNA oncogenici garantendo una loro precisa regolazione.
+		\`E stato mostrato come mutazioni come gli SNP in questi motivi non codificanti possono modulare in maniera significativa l'espressione di proto-oncogeni.\\
+		L'aumento di strutture secondarie nel $5'$ UTR ha effetto sul tasso di iniziazione della traduzione di mRNA cap-dipendente.
+		In particolare si nota come mRNA oncogentici possiedono strutture stabili nella $5'$ UTR e hanno una maggiore dipendenza da \emph{eIF4F}.
+		Altri elementi nelle due UTR possono regolare l'efficenza della traduzione: una maggiore dipendenza da \emph{eIF4E} ma non da \emph{eIF4A} \`e stata mostrata per l'elemento iniziatore di traduzione del $5'$ UTR corto di alcuni mRNA.\\
+		In contrasto mRNA contenenti siti di ingresso di ribosomi interni o \emph{IRES} sono altamente dipendenti da \emph{eIF4G} e \emph{eIF4A}.
+		Inoltre gli mRNA possono contenere codoni di iniziaizone alternativi e open reading frames \emph{ORF} inibitori a valle del codone di inizio canonico che possono severamente contrastare la normale identificazione del normale sito di inizio di traduzione.
+		Questi elementi di sequenza sono arricchiti di trascritti oncogenici e in condizioni di stress oncogenico alcuni di questi mRNA mostrano una traduzione aumentata.\\
+		Oltre a questo motivi di sequenza o strutturali in alcune delle $5'$ UTR mediano il reclutamento di proteine leganti RNA che modulano la sua traduzione.
+		Un esempio ben caratterizzato di questo \`e l'elemento ditraduzione attivata dal transforming growth factor $\beta$ \emph{TGF-$\beta$} che regola la traduzione di certi mRNA coinvolti nella transizione da cellula epiteliale a mesenchimale promuovendo la migrazione cellulare.\\
+		Infine un altro elemento da tenere in conto sono i siti di legame per i microRNA, motivi particolarmente comuni con un effetto sulla traduzione e sulla stabilit\`a del mRNA.
+		La maggior parte di questi elementi riduce l'efficienza di traduzione del mRNA e si trovano in varie combinazioni in mRNA oncogenici attenuandone la traduzione in modo da impedire la trasformazione della cellula causata da una loro sovra-espressione.
+		Nonostante tutto questo le cellule di cancro riescono a trovare meccanismi in grado di superare questi controlli.\\
 
-	\subsection{Segnalazione oncogenica}
+		\subsubsection{Segnalazione oncogenica}
+		La maggior parte dei segnali fisiologici, tra cui stimolazione dei fattori di crescita e di stress, funzioni metaboliche e fattori endocrini sono integrati attraverso il macchinario traduzionale.
+		In particolare il target mammifero della rapamicina (\emph{mTOR}) ha un ruolo fondamentale nella segnalazione regolatoria della traduzione: fosforila 4E-BP permettendo la formazione del complesso eIF4F e la proteina chinasi ribosomiale S6.
+		S6K regola altri processi che alleviano l'inibizione della traduzione.
+		Molti dei geni pi\`u comunemente mutati in molti tipi di cancro codificano proteine chiave che regolano pathway di segnalazione riguardanti la traduzione.
+		Questo \`e fondamentale per iniziare e mantenere il fenotipo trasformato.
 
-	\subsection{Ribosoma tumorale}
+		\subsubsection{Ribosoma tumorale}
+		\`E stato a lungo discusso se esistano modifiche specifiche al cancro nei ribosomi che potrebbero promuovere il riprogrammamento della traduzione di mRNA.
+		Questa ipotesi \`e supportata dalla scoperta di ribosomopatie, una famiglia di sindromi causate da mutazioni ereditate nei geni codificanti proteine ribosomiali e i loro regolatori.
+		Sono caratterizzate da difetti iniziali nell'ematopoiesi seguita da un'aumento alla suscettiblit\`a al cancro.
+		Nonostante questo l'effetto oncogenico di questi meccanismi rimane non chiaro.\\
+		Si nota inoltre come la stechiometria delle proteine ribosomiali e le modifiche al rRNA varia nelle cellule tumorali, suggerendo che ribosomi individuali potrebbero possedere modifiche uniche che alterano la loro abilit\`a a tradurre certi mRNA.
+		Non \`e chiaro per\`o se questi ribosomi particolari siano in grado di restringere la sintesi dei soppressori dei tumori o di aumentare la traduzione di mRNA oncogenici.
+		In supporto a questo si \`e trovato che la distruzione della discherina o di piccholi RNA nucleici che la guidano ai siti di rRNA son comuni in molti tumori e possono impedire la traduzione di mRNA codificanti soppressori dei tumori come p53.\\
+		Infine il colligamento tra proteine ribosomiali, ribosomopatie e cancro \`e stato attribuito al ruolo non traduzionale dei componenti del macchinario di traduzione, principalmente la stabilizzazione di p53.
+		Pertanto un complesso sub-ribosomiale composto del rRNA $5S$, da RPL5 e da RPL11 si lega e sequestra MDM2, risultando in una stabilizzazione di p53 e nell'arreesto del ciclo cellulare.
+		Questo complesso si forma quando una biogenesi deregolata dei ribosomi porta a uno sbilanciamento delle componenti ribosomiali.
+		Una perdita somatica di p53 permette alle cellule ematopoietiche di sfuggire all'arresto del ciclo causato dalla biosintesi difettiva del ribosoma, causando la predisposizione al cancro associata con le ribosomopatie.
 
 	\subsection{Vantaggi oncogenici selettivi di una traduzione deregolata}
+	Un gran numero di ricerche ha determinato la regolazione traduzionale di fattori atiapoptotici, cicline e chinasi dipendenti da cicline.
+	Questi fattori sono fondamentali per la proliferazione e l'apoptosi delle cellule e una loro deregolazione pu\`o determinare la trasformazione della cellula in una di cancro.
 
-	\subsubsection{Proliferazione e apoptosi}
+		\subsubsection{Angiogenesi}
+		L'angiogenesi dei tumori \`e un processo di continuo rimodellamento in modo da permettere la crescita del tumore ed \`e promosso da una variet\`a di meccanismi traduzionali.
+		Gli mRNA codificanti i due principali regolatori id angiogenesi, VEGFA e HIF1$\alpha$ sono tradotti grazie a una variet\`a di meccanismi che garantiscono la capacit\`a della cellula tumorale di adattarsi all'ipossia.
+		Pertanto la traduzione di questi due mRNA pu\`o essere promossa da meccanismi sia dipendenti dal cap che indipendenti da esso attraverso l'utilizzo di \emph{IRES} e uORF, oltre a ulteriori meccanismi regolatori non canonici.
+		Nonostante la loro traduzione sia associata con l'aumento dell'espressione di eIF4E nei tumori umani, una loro regolazione traduzionale complessa permette di mantenere la loro traduzione anche in condizioni di profonda ipossia e deprivazione di nutrienti.
+		Si nota come HIF1$\alpha$ si lega al promotore di eIF4E promuovendo la sua trascrizione, suggerendo che in risposta all'ipossia la cellula potrebbe passare da un meccanismo cap-dipendente a uno cap-indipendente di traduzione.
 
-	\subsubsection{Angiogenesi}
+		\subsubsection{Risposta allo stress}
+		Oltre all'ipossia le cellule tumorali devono modulare la traduzione in modo da rispondere a una variet\`a di altri tipi di stress.
+		Si nota come la risposta a diversi agenti di stress condivida meccanismi regolatori comuni: tutti gli mRNA tradotti in condizioni di stress sono regolati dalla fosforilazione di eIF2$\alpha$ e includono uORF.
+		QUesti mRNA codificano proteine coinvolte in pathway che permettono l'adattamento delle cellule tumorali al loro ambiente.
+		Meccanismi di iniziazione della traduzione non canonici, IRES e metilazione di mRNA mantengono la sintesi delle proteine nonostante lo stress che inibisce il processo cap-dipendente.
+		Non \`e chiaro come gli mRNA siano tradotti selettivamente in risposta ad ogni tipo di stress.
+		Inoltre la fosforliazione prolungata di eIF2$\alpha$ porta alla morte cellulare, evento a cui le cellule tumorali potrebbero riuscire a sfuggire in quanto promuove la traduzione di fattori che permettono la sua defosforilazione portando a un feedback loop inibitorio.
 
-	\subsubsection{Risposta allo stress}
+		\subsubsection{Vantaggi oncogenici della traduzione deregolata emergenti}
+		Considerando che la maggior parte delle morti causate dal cancro sono dovute alla disseminazione metastatica, un concetto chiave sotto studio \`e l'abilit\`a delle cellule tumorali di deregolare la traduzione di fattori prometastatici.\\
+		Un altro aspetto sotto studio \`e l'importanza della traduzione nell'aspetto del mantenimento del bilanciamento energetico e come lo stato energetico e la sintesi proteica sono regolate reciprocamente per raggiungere un equilibrio.\\
+		Inoltre si sta analizzando il rapporto tra la traduzione e le specie reattive con l'ossigeno \emph{ROS}: componenti del macchinario di traduzione sono particolarmente sensibili all'ossidazione della cisteina da parte di tali elementi.
+		Gli mRNA codificanti proteine antiossidanti posseggono un motivo ceh conferisce una regolazione traduzionale in risposta all'aumento dei livelli di espressione di eIF4E.\\
+		Infine la traduzione deregolata pu\`o promuovere l'espressione di proteine coinvolte nella riparazione del DNA permettendo la fuga dalla senescenza indotta dagli oncogeni e resistenza agli agenti danneggianti il DNA.\\
+		Si nota come la sintesi delle proteine fornisce alle cellule tumorali un modo cruciale per distruggere una variet\`a di processi importanti per tutti i passaggi nella biologia del cancro.
+
 
 \section{Polimorfismi a singolo nucleotide}
 I polimorfismi a singolo nucleotide, da qui in avanti denominati \emph{SNP} sono delle mutazioni nel genoma causate dal cambio di un singolo nucleotide nella molecola di DNA presenti in almeno $1\%$ della popolazione.
@@ -101,6 +170,7 @@ Una frazione di SNP identificati nella popolazione umana sono locati nelle regio
 In questo caso studi guidati da meccanismo e da associazione hanno tentato di studiare SNP funzionali che possono modificare aspetti di regolazione genica post-trascrizionale.
 Non sono per\`o stati ancora esplorati SNP associati con alterazioni nel potenziale di traduzione del mRNA, estendendo il concetto di ASE dall'aspetto trascrizionale all'aspetto traduzionale.
 Lo scopo del progetto \`e pertanto identificare questi ultimi, SNP in grado di cambiare l'efficienza della traduzione del mRNA che li contiene, e una loro eventuale correlazione con il cancro, denominati transSNP.
+In particolare si tenta di determinare mutazioni in grado di andare a inficiare l'integrit\`a dei motivi presenti nelle UTR, come quelli descritti in \S\ref{subsubsec:53UTRcomp}
 Si nota infatti come la regolazione traduzionale governa la produzione di proteine in risposta a un gran numero di situazioni fisiologiche e patologiche: circa met\`a della variazione della concentrazione di una proteina \`e dovuta a questo tipo di controllo.
 Per farlo si utilizza un'analisi comparativa di sbilanciamento allelico tra frazioni di mRNA totali e polisomiali estratti dallo stesso campione cellulare in modo da superare il rumore causato dalla chiamata degli SNP e dal coverage derivato dai dati di RNA-seq.
 Questo tipo di analisi viene svolto unicamente su SNP in eterozigosi nella cellula: in questo modo si ottiene la percentuale di allele presente in una frazione rispetto all'altro\footnote{Non riesco a spiegare bene il concetto}.

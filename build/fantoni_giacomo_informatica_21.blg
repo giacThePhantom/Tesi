@@ -3,10 +3,9 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: ./build/fantoni_giacomo_informatica_21.aux
 The style file: unsrt.bst
 Database file #1: bibliography/biblio.bib
-Warning--I didn't find a database entry for "transconcancer"
 You've used 22 entries,
             1791 wiz_defined-function locations,
-            550 strings with 6580 characters,
+            549 strings with 6566 characters,
 and the built_in function-call counts, 3434 in all, are:
 = -- 286
 > -- 130
@@ -45,4 +44,3 @@ warning$ -- 0
 while$ -- 14
 width$ -- 24
 write$ -- 215
-(There was 1 warning)
