@@ -306,9 +306,13 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   Dopo aver ristretto i vcf agli SNP sono stati intersecati con il file gtf.
   L'intersezione \`e stata volta dal tool \emph{bedtools intersect} \cite{bedtoolsintersect}, facente parte della suite bedtools \cite{bedtools}.
   Questo tool ha permesso di trovare ogni record del vcf presente anche nel file gtf.
+  L'intersezione \`e stata svota con diversi file gtf in modo da trovare quello che permettesse di conservare pi\`u informazioni.
+  L'origine dei file gtf \`e descritta in \S\ref{sec:datiinput}.
+  I risultati dell'intersezione sono descritti nella figura \ref{fig:intersection}, \`e stato utilizzato pertanto utilizzato il file \emph{Homo\_sapiens.GRCh38.103.exonic.gtf}.
   In questo modo \`e stato creato un insieme di file vcf, uno per ogni cromosoma, contiene ogni SNP presente nella parte esonica del genoma.\\
   La restrizione alla parte esonica del genoma non causa alcuna perdita di potere predittivo in quanto si stanno considerando dati di RNA-seq, ma permette una significativa diminuzione del carico computazionale svolto da aseq (\S\ref{sec:aseq}).
   I VCF risultanti da questo processo sono pronti per essere utilizzati come input di aseq.
+
   \begin{table}[H]
         \centering
         \begin{tabular}{|c|c|}
@@ -326,6 +330,12 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
          \end{tabular}
          \caption{Parametri utilizzati per bedtools intersect}
   \end{table}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{scelta_gtf.png}
+    \caption{Numero di SNP mantenuti dopo l'intersezione}
+    \label{fig:intersection}
+  \end{figure}
 
   \section{Calcolo dei dati di sbilanciamento allelico}
   \label{sec:aseq}

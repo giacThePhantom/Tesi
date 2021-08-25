@@ -9,6 +9,7 @@ Come descritto in \cite{hct116} la linea \`e perfettamente diploide e mostra un'
 Oltre a queste caratteristiche la linea cellulare \`e wild-type per p53, una proteina soppressore dei tumori in grado di regolare la sintesi proteica in modo da inibire la crescita cellulare.
 
   \subsection{Controllo traduzionale da parte di p53}
+  \label{subsec:p53}
   La proteina p53 soppressore dei tumori \`e il fattore di trascrizione mammifero meglio caratterizzato che media diversi processi anti-proliferativi.
   Ha un effetto importante sull'iniziazione della traduzione e una sua caratterizzazione \`e fondamentale per comprendere il ruolo che sue mutazioni o deregolazioni hanno nella biologia del cancro.
   p53, oltre a regolare la trascrizione, controlla la biogenesi dei ribosomi e dei fattori di iniziazione eucarioti.
@@ -73,12 +74,27 @@ Si ottengono infine $6$ condizioni diverse su cui viene svolto il profilamento p
 \end{table}
 
 \section{Apoptosi indotta da Nutlin causata da un processo traduzionale regolato da PCBP2 e DHX30}
+Come descritto in \S\ref{subsec:p53} p53 \`e una proteina strettamente controllata e altamente pleiotropica tipicamente disattivata nelle cellule tumorali umane.
+Tra le varie funzioni svolte da essa quella considerata pi\`u rilevante nel contesto del cancro \`e il controllo della morte cellulare programmata.
+In quanto una funzione di p53 non controllata produrrebbe una morte cellulare massiva esiste un MDM2, una proteina agente come una ubiquitina ligasi E3 che ne inibisce l'attivit\`a.
+Questa proteina inibitrice \`e tipicamente sovra-espressa nella frazione di tumori che mantengono p53 wild-type, come succede per HCT116.
+Un trattamento possibile per questi tipi di tumori va ad attaccare questo meccanismo, in particolare Nutlin inibisce l'interazione tra p53 e MDM2, attivando la prima.
+I risultati di tale trattamento variano in una combinazione di arresto del ciclo cellulare, senescenza e apoptosi, in proporzioni di difficile previsione.
+
 
 
 
 
 \section{Dati di partenza}
+\label{sec:datiinput}
+I dati di partenza necessari per l'analisi di sbilanciamento allelico comprendono:
+\begin{itemize}
+  \item I dati di RNA-seq per ogni condizione della linea cellulare divisi tra frazione allelica e totale.
+  \item I dati di whole exome sequencing contenenti informazioni riguardo agli SNP presenti nella linea cellulare, divisi tra file GTF e VCF.
+\end{itemize}
 
   \subsection{Dati di RNA-seq}
+  Dove sono stati ottenuti i dati di RNA-seq.
 
   \subsection{Dati WES}
+  Dove sono stati ottenuti i dati WES.

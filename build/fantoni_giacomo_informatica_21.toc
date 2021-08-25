@@ -29,35 +29,34 @@
 \contentsline {subsubsection}{p53 regola l'assemblaggio del complesso ternario e di eIF4F}{11}{}%
 \contentsline {section}{\numberline {2.2}Culture cellulari}{11}{}%
 \contentsline {section}{\numberline {2.3}Apoptosi indotta da Nutlin causata da un processo traduzionale regolato da PCBP2 e DHX30}{11}{}%
-\contentsline {section}{\numberline {2.4}Dati di partenza}{11}{}%
-\contentsline {subsection}{\numberline {2.4.1}Dati di RNA-seq}{11}{}%
-\contentsline {subsection}{\numberline {2.4.2}Dati WES}{11}{}%
-\contentsline {chapter}{\numberline {3}Processamento dei dati}{12}{}%
-\contentsline {section}{\numberline {3.1}Pre-processamento e allineamento dei dati RNA-seq}{13}{}%
-\contentsline {subsection}{\numberline {3.1.1}Trimmomatic}{13}{}%
-\contentsline {subsection}{\numberline {3.1.2}Star}{14}{}%
-\contentsline {subsection}{\numberline {3.1.3}Samtools}{15}{}%
-\contentsline {subsection}{\numberline {3.1.4}Deduplicazione e ricalibrazione}{15}{}%
-\contentsline {subsubsection}{Deduplicazione}{16}{}%
-\contentsline {subsubsection}{Ricalibrazione}{16}{}%
-\contentsline {paragraph}{Riallineamento locale degl indel}{17}{}%
-\contentsline {paragraph}{Ricalibazione delle basi basata sul punteggio di qualit\`a}{17}{}%
-\contentsline {section}{\numberline {3.2}Ottenimento degli SNP di interesse}{18}{}%
-\contentsline {section}{\numberline {3.3}Calcolo dei dati di sbilanciamento allelico}{18}{}%
-\contentsline {chapter}{\numberline {4}Analisi dei dati}{20}{}%
-\contentsline {section}{\numberline {4.1}Identificazione delle varianti}{20}{}%
-\contentsline {section}{\numberline {4.2}Conta degli SNP trovati con ASEQ}{21}{}%
-\contentsline {subsection}{\numberline {4.2.1}Distrubuzione degli SNP}{22}{}%
-\contentsline {section}{\numberline {4.3}Qualit\`a dei campioni}{22}{}%
-\contentsline {section}{\numberline {4.4}Considerazioni sulla recalibrazione}{22}{}%
-\contentsline {section}{\numberline {4.5}Ottenere i dati per gli SNP di interesse}{23}{}%
-\contentsline {subsection}{\numberline {4.5.1}Boxplot}{24}{}%
-\contentsline {section}{\numberline {4.6}Caratterizzazione degli SNP di interesse}{24}{}%
-\contentsline {section}{\numberline {4.7}Conclusioni}{24}{}%
-\contentsline {chapter}{Bibliografia}{24}{}%
-\contentsline {chapter}{\numberline {A}Titolo primo allegato}{27}{}%
-\contentsline {section}{\numberline {A.1}Titolo}{27}{}%
-\contentsline {subsection}{\numberline {A.1.1}Sottotitolo}{27}{}%
-\contentsline {chapter}{\numberline {B}Titolo secondo allegato}{28}{}%
-\contentsline {section}{\numberline {B.1}Titolo}{28}{}%
-\contentsline {subsection}{\numberline {B.1.1}Sottotitolo}{28}{}%
+\contentsline {section}{\numberline {2.4}Dati di partenza}{12}{}%
+\contentsline {subsection}{\numberline {2.4.1}Dati di RNA-seq}{12}{}%
+\contentsline {subsection}{\numberline {2.4.2}Dati WES}{12}{}%
+\contentsline {chapter}{\numberline {3}Processamento dei dati}{13}{}%
+\contentsline {section}{\numberline {3.1}Pre-processamento e allineamento dei dati RNA-seq}{14}{}%
+\contentsline {subsection}{\numberline {3.1.1}Trimmomatic}{14}{}%
+\contentsline {subsection}{\numberline {3.1.2}Star}{15}{}%
+\contentsline {subsection}{\numberline {3.1.3}Samtools}{16}{}%
+\contentsline {subsection}{\numberline {3.1.4}Deduplicazione e ricalibrazione}{16}{}%
+\contentsline {subsubsection}{Deduplicazione}{17}{}%
+\contentsline {subsubsection}{Ricalibrazione}{17}{}%
+\contentsline {paragraph}{Riallineamento locale degl indel}{18}{}%
+\contentsline {paragraph}{Ricalibazione delle basi basata sul punteggio di qualit\`a}{18}{}%
+\contentsline {section}{\numberline {3.2}Ottenimento degli SNP di interesse}{19}{}%
+\contentsline {section}{\numberline {3.3}Calcolo dei dati di sbilanciamento allelico}{20}{}%
+\contentsline {chapter}{\numberline {4}Analisi dei dati}{22}{}%
+\contentsline {section}{\numberline {4.1}Conta degli SNP trovati con ASEQ}{22}{}%
+\contentsline {subsection}{\numberline {4.1.1}Distrubuzione degli SNP}{23}{}%
+\contentsline {section}{\numberline {4.2}Qualit\`a dei campioni}{23}{}%
+\contentsline {section}{\numberline {4.3}Considerazioni sulla recalibrazione}{23}{}%
+\contentsline {section}{\numberline {4.4}Ottenere i dati per gli SNP di interesse}{24}{}%
+\contentsline {subsection}{\numberline {4.4.1}Boxplot}{25}{}%
+\contentsline {section}{\numberline {4.5}Caratterizzazione degli SNP di interesse}{25}{}%
+\contentsline {section}{\numberline {4.6}Conclusioni}{25}{}%
+\contentsline {chapter}{Bibliografia}{25}{}%
+\contentsline {chapter}{\numberline {A}Titolo primo allegato}{28}{}%
+\contentsline {section}{\numberline {A.1}Titolo}{28}{}%
+\contentsline {subsection}{\numberline {A.1.1}Sottotitolo}{28}{}%
+\contentsline {chapter}{\numberline {B}Titolo secondo allegato}{29}{}%
+\contentsline {section}{\numberline {B.1}Titolo}{29}{}%
+\contentsline {subsection}{\numberline {B.1.1}Sottotitolo}{29}{}%

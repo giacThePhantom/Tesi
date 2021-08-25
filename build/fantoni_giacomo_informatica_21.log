@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  25 AUG 2021 18:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  25 AUG 2021 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -488,9 +488,6 @@ LaTeX Warning: Label `fig:' multiply defined.
 
 LaTeX Warning: Label `fig:' multiply defined.
 
-
-LaTeX Warning: Label `fig:' multiply defined.
-
 )
 \openout1 = `fantoni_giacomo_informatica_21.aux'.
 
@@ -660,9 +657,9 @@ Underfull \vbox (badness 1320) has occurred while \output is active []
  [6]
 [7] [8]) [9] (./chapters/02/capitolo2.tex
 Capitolo 2.
-[10]) [11] (./chapters/03/capitolo3.tex
+[10] [11]) [12] (./chapters/03/capitolo3.tex
 Capitolo 3.
-<chapters/03/media//pipeline.png, id=69, 1585.925pt x 2091.815pt>
+<chapters/03/media//pipeline.png, id=72, 1585.925pt x 2091.815pt>
 File: chapters/03/media//pipeline.png Graphic file (type png)
 <use chapters/03/media//pipeline.png>
 Package pdftex.def Info: chapters/03/media//pipeline.png  used on input line 21
@@ -671,12 +668,12 @@ Package pdftex.def Info: chapters/03/media//pipeline.png  used on input line 21
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12]
-[13 <./chapters/03/media//pipeline.png>]
+ [13]
+[14 <./chapters/03/media//pipeline.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14]
-<chapters/03/media//deduprecal.png, id=82, 2774.365pt x 1208.515pt>
+ [15]
+<chapters/03/media//deduprecal.png, id=85, 2774.365pt x 1208.515pt>
 File: chapters/03/media//deduprecal.png Graphic file (type png)
 <use chapters/03/media//deduprecal.png>
 Package pdftex.def Info: chapters/03/media//deduprecal.png  used on input line 
@@ -685,225 +682,226 @@ Package pdftex.def Info: chapters/03/media//deduprecal.png  used on input line
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15 <./chapters/03/media//deduprecal.png>] [16]
+ [16 <./chapters/03/media//deduprecal.png>] [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17]
-[18]) [19] (./chapters/04/capitolo4.tex
+ [18]
+<chapters/03/media//scelta_gtf.png, id=97, 481.8pt x 481.8pt>
+File: chapters/03/media//scelta_gtf.png Graphic file (type png)
+<use chapters/03/media//scelta_gtf.png>
+Package pdftex.def Info: chapters/03/media//scelta_gtf.png  used on input line 
+335.
+(pdftex.def)             Requested size: 289.08221pt x 289.08221pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+[20 <./chapters/03/media//scelta_gtf.png (PNG copy)>]) [21]
+(./chapters/04/capitolo4.tex
 Capitolo 4.
-<chapters/04/media//scelta_gtf.png, id=100, 481.8pt x 481.8pt>
-File: chapters/04/media//scelta_gtf.png Graphic file (type png)
-<use chapters/04/media//scelta_gtf.png>
-Package pdftex.def Info: chapters/04/media//scelta_gtf.png  used on input line 
-15.
-(pdftex.def)             Requested size: 481.79881pt x 481.79881pt.
-<chapters/04/media//aseq_count_2_8_10_pre.png, id=101, 505.89pt x 505.89pt>
+<chapters/04/media//aseq_count_2_8_10_pre.png, id=107, 505.89pt x 505.89pt>
 File: chapters/04/media//aseq_count_2_8_10_pre.png Graphic file (type png)
 <use chapters/04/media//aseq_count_2_8_10_pre.png>
 Package pdftex.def Info: chapters/04/media//aseq_count_2_8_10_pre.png  used on 
-input line 24.
+input line 14.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (22.19188pt too wide) in paragraph at lines 24--25
+Overfull \hbox (22.19188pt too wide) in paragraph at lines 14--15
  [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20 <./chapters/04/media//scelta_gtf.png (PNG copy)>]
-<chapters/04/media//distribution/scr_DMSO.png, id=105, 462.528pt x 346.896pt>
+<chapters/04/media//distribution/scr_DMSO.png, id=108, 462.528pt x 346.896pt>
 File: chapters/04/media//distribution/scr_DMSO.png Graphic file (type png)
 <use chapters/04/media//distribution/scr_DMSO.png>
 Package pdftex.def Info: chapters/04/media//distribution/scr_DMSO.png  used on 
-input line 33.
+input line 23.
 (pdftex.def)             Requested size: 145.11053pt x 108.83348pt.
-<chapters/04/media//distribution/scr_NUTLIN.png, id=106, 462.528pt x 346.896pt>
+<chapters/04/media//distribution/scr_NUTLIN.png, id=109, 462.528pt x 346.896pt>
 
 File: chapters/04/media//distribution/scr_NUTLIN.png Graphic file (type png)
 <use chapters/04/media//distribution/scr_NUTLIN.png>
 Package pdftex.def Info: chapters/04/media//distribution/scr_NUTLIN.png  used o
-n input line 34.
+n input line 24.
 (pdftex.def)             Requested size: 145.11053pt x 108.83348pt.
-<chapters/04/media//distribution/shDHX30_DMSO.png, id=107, 462.528pt x 346.896p
+<chapters/04/media//distribution/shDHX30_DMSO.png, id=110, 462.528pt x 346.896p
 t>
 File: chapters/04/media//distribution/shDHX30_DMSO.png Graphic file (type png)
 <use chapters/04/media//distribution/shDHX30_DMSO.png>
 Package pdftex.def Info: chapters/04/media//distribution/shDHX30_DMSO.png  used
- on input line 35.
+ on input line 25.
 (pdftex.def)             Requested size: 145.11053pt x 108.83348pt.
-<chapters/04/media//distribution/shDHX30_NUTLIN.png, id=108, 462.528pt x 346.89
+<chapters/04/media//distribution/shDHX30_NUTLIN.png, id=111, 462.528pt x 346.89
 6pt>
 File: chapters/04/media//distribution/shDHX30_NUTLIN.png Graphic file (type png
 )
 <use chapters/04/media//distribution/shDHX30_NUTLIN.png>
 Package pdftex.def Info: chapters/04/media//distribution/shDHX30_NUTLIN.png  us
-ed on input line 36.
+ed on input line 26.
 (pdftex.def)             Requested size: 145.11053pt x 108.83348pt.
-<chapters/04/media//distribution/shPCBP2_DMSO.png, id=109, 462.528pt x 346.896p
+<chapters/04/media//distribution/shPCBP2_DMSO.png, id=112, 462.528pt x 346.896p
 t>
 File: chapters/04/media//distribution/shPCBP2_DMSO.png Graphic file (type png)
 <use chapters/04/media//distribution/shPCBP2_DMSO.png>
 Package pdftex.def Info: chapters/04/media//distribution/shPCBP2_DMSO.png  used
- on input line 37.
+ on input line 27.
 (pdftex.def)             Requested size: 145.11053pt x 108.83348pt.
-<chapters/04/media//distribution/shPCBP2_NUTLIN.png, id=110, 462.528pt x 346.89
+<chapters/04/media//distribution/shPCBP2_NUTLIN.png, id=113, 462.528pt x 346.89
 6pt>
 File: chapters/04/media//distribution/shPCBP2_NUTLIN.png Graphic file (type png
 )
 <use chapters/04/media//distribution/shPCBP2_NUTLIN.png>
 Package pdftex.def Info: chapters/04/media//distribution/shPCBP2_NUTLIN.png  us
-ed on input line 38.
+ed on input line 28.
 (pdftex.def)             Requested size: 145.11053pt x 108.83348pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21 <./chapters/04/media//aseq_count_2_8_10_pre.png (PNG copy)>]
-<chapters/04/media//rep_corr/scr_DMSO_TOT-rep-1-2.post.0.2.0.8.10.png, id=114, 
+ [22 <./chapters/04/media//aseq_count_2_8_10_pre.png (PNG copy)>]
+<chapters/04/media//rep_corr/scr_DMSO_TOT-rep-1-2.post.0.2.0.8.10.png, id=117, 
 505.89pt x 505.89pt>
 File: chapters/04/media//rep_corr/scr_DMSO_TOT-rep-1-2.post.0.2.0.8.10.png Grap
 hic file (type png)
 <use chapters/04/media//rep_corr/scr_DMSO_TOT-rep-1-2.post.0.2.0.8.10.png>
 Package pdftex.def Info: chapters/04/media//rep_corr/scr_DMSO_TOT-rep-1-2.post.
-0.2.0.8.10.png  used on input line 48.
+0.2.0.8.10.png  used on input line 38.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//rep_corr/scr_DMSO_TOT-rep-1-3.post.0.2.0.8.10.png, id=115, 
+<chapters/04/media//rep_corr/scr_DMSO_TOT-rep-1-3.post.0.2.0.8.10.png, id=118, 
 505.89pt x 505.89pt>
 File: chapters/04/media//rep_corr/scr_DMSO_TOT-rep-1-3.post.0.2.0.8.10.png Grap
 hic file (type png)
 <use chapters/04/media//rep_corr/scr_DMSO_TOT-rep-1-3.post.0.2.0.8.10.png>
 Package pdftex.def Info: chapters/04/media//rep_corr/scr_DMSO_TOT-rep-1-3.post.
-0.2.0.8.10.png  used on input line 49.
+0.2.0.8.10.png  used on input line 39.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//rep_corr/scr_DMSO_TOT-rep-1-4.post.0.2.0.8.10.png, id=116, 
+<chapters/04/media//rep_corr/scr_DMSO_TOT-rep-1-4.post.0.2.0.8.10.png, id=119, 
 505.89pt x 505.89pt>
 File: chapters/04/media//rep_corr/scr_DMSO_TOT-rep-1-4.post.0.2.0.8.10.png Grap
 hic file (type png)
 <use chapters/04/media//rep_corr/scr_DMSO_TOT-rep-1-4.post.0.2.0.8.10.png>
 Package pdftex.def Info: chapters/04/media//rep_corr/scr_DMSO_TOT-rep-1-4.post.
-0.2.0.8.10.png  used on input line 50.
+0.2.0.8.10.png  used on input line 40.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//rep_corr/scr_DMSO_TOT-rep-2-3.post.0.2.0.8.10.png, id=117, 
+<chapters/04/media//rep_corr/scr_DMSO_TOT-rep-2-3.post.0.2.0.8.10.png, id=120, 
 505.89pt x 505.89pt>
 File: chapters/04/media//rep_corr/scr_DMSO_TOT-rep-2-3.post.0.2.0.8.10.png Grap
 hic file (type png)
 <use chapters/04/media//rep_corr/scr_DMSO_TOT-rep-2-3.post.0.2.0.8.10.png>
 Package pdftex.def Info: chapters/04/media//rep_corr/scr_DMSO_TOT-rep-2-3.post.
-0.2.0.8.10.png  used on input line 51.
+0.2.0.8.10.png  used on input line 41.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//rep_corr/scr_DMSO_TOT-rep-2-4.post.0.2.0.8.10.png, id=118, 
+<chapters/04/media//rep_corr/scr_DMSO_TOT-rep-2-4.post.0.2.0.8.10.png, id=121, 
 505.89pt x 505.89pt>
 File: chapters/04/media//rep_corr/scr_DMSO_TOT-rep-2-4.post.0.2.0.8.10.png Grap
 hic file (type png)
 <use chapters/04/media//rep_corr/scr_DMSO_TOT-rep-2-4.post.0.2.0.8.10.png>
 Package pdftex.def Info: chapters/04/media//rep_corr/scr_DMSO_TOT-rep-2-4.post.
-0.2.0.8.10.png  used on input line 52.
+0.2.0.8.10.png  used on input line 42.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//rep_corr/scr_DMSO_TOT-rep-3-4.post.0.2.0.8.10.png, id=119, 
+<chapters/04/media//rep_corr/scr_DMSO_TOT-rep-3-4.post.0.2.0.8.10.png, id=122, 
 505.89pt x 505.89pt>
 File: chapters/04/media//rep_corr/scr_DMSO_TOT-rep-3-4.post.0.2.0.8.10.png Grap
 hic file (type png)
 <use chapters/04/media//rep_corr/scr_DMSO_TOT-rep-3-4.post.0.2.0.8.10.png>
 Package pdftex.def Info: chapters/04/media//rep_corr/scr_DMSO_TOT-rep-3-4.post.
-0.2.0.8.10.png  used on input line 53.
+0.2.0.8.10.png  used on input line 43.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//correlation_recal/scr_DMSO_POL_1.png, id=120, 505.89pt x 50
+<chapters/04/media//correlation_recal/scr_DMSO_POL_1.png, id=123, 505.89pt x 50
 5.89pt>
 File: chapters/04/media//correlation_recal/scr_DMSO_POL_1.png Graphic file (typ
 e png)
 <use chapters/04/media//correlation_recal/scr_DMSO_POL_1.png>
 Package pdftex.def Info: chapters/04/media//correlation_recal/scr_DMSO_POL_1.pn
-g  used on input line 64.
+g  used on input line 54.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//correlation_recal/scr_DMSO_TOT_1.png, id=121, 505.89pt x 50
+<chapters/04/media//correlation_recal/scr_DMSO_TOT_1.png, id=124, 505.89pt x 50
 5.89pt>
 File: chapters/04/media//correlation_recal/scr_DMSO_TOT_1.png Graphic file (typ
 e png)
 <use chapters/04/media//correlation_recal/scr_DMSO_TOT_1.png>
 Package pdftex.def Info: chapters/04/media//correlation_recal/scr_DMSO_TOT_1.pn
-g  used on input line 65.
+g  used on input line 55.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//correlation_recal/scr_NUTLIN_POL_1.png, id=122, 505.89pt x 
+<chapters/04/media//correlation_recal/scr_NUTLIN_POL_1.png, id=125, 505.89pt x 
 505.89pt>
 File: chapters/04/media//correlation_recal/scr_NUTLIN_POL_1.png Graphic file (t
 ype png)
 <use chapters/04/media//correlation_recal/scr_NUTLIN_POL_1.png>
 Package pdftex.def Info: chapters/04/media//correlation_recal/scr_NUTLIN_POL_1.
-png  used on input line 66.
+png  used on input line 56.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//correlation_recal/scr_NUTLIN_TOT_1.png, id=123, 505.89pt x 
+<chapters/04/media//correlation_recal/scr_NUTLIN_TOT_1.png, id=126, 505.89pt x 
 505.89pt>
 File: chapters/04/media//correlation_recal/scr_NUTLIN_TOT_1.png Graphic file (t
 ype png)
 <use chapters/04/media//correlation_recal/scr_NUTLIN_TOT_1.png>
 Package pdftex.def Info: chapters/04/media//correlation_recal/scr_NUTLIN_TOT_1.
-png  used on input line 67.
+png  used on input line 57.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//correlation_recal/shDHX30_DMSO_POL_1.png, id=124, 505.89pt 
+<chapters/04/media//correlation_recal/shDHX30_DMSO_POL_1.png, id=127, 505.89pt 
 x 505.89pt>
 File: chapters/04/media//correlation_recal/shDHX30_DMSO_POL_1.png Graphic file 
 (type png)
 <use chapters/04/media//correlation_recal/shDHX30_DMSO_POL_1.png>
 Package pdftex.def Info: chapters/04/media//correlation_recal/shDHX30_DMSO_POL_
-1.png  used on input line 68.
+1.png  used on input line 58.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//correlation_recal/shDHX30_DMSO_TOT_1.png, id=125, 505.89pt 
+<chapters/04/media//correlation_recal/shDHX30_DMSO_TOT_1.png, id=128, 505.89pt 
 x 505.89pt>
 File: chapters/04/media//correlation_recal/shDHX30_DMSO_TOT_1.png Graphic file 
 (type png)
 <use chapters/04/media//correlation_recal/shDHX30_DMSO_TOT_1.png>
 Package pdftex.def Info: chapters/04/media//correlation_recal/shDHX30_DMSO_TOT_
-1.png  used on input line 69.
+1.png  used on input line 59.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//correlation_recal/shDHX30_NUTLIN_POL_1.png, id=126, 505.89p
+<chapters/04/media//correlation_recal/shDHX30_NUTLIN_POL_1.png, id=129, 505.89p
 t x 505.89pt>
 File: chapters/04/media//correlation_recal/shDHX30_NUTLIN_POL_1.png Graphic fil
 e (type png)
 <use chapters/04/media//correlation_recal/shDHX30_NUTLIN_POL_1.png>
 Package pdftex.def Info: chapters/04/media//correlation_recal/shDHX30_NUTLIN_PO
-L_1.png  used on input line 70.
+L_1.png  used on input line 60.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//correlation_recal/shDHX30_NUTLIN_TOT_1.png, id=127, 505.89p
+<chapters/04/media//correlation_recal/shDHX30_NUTLIN_TOT_1.png, id=130, 505.89p
 t x 505.89pt>
 File: chapters/04/media//correlation_recal/shDHX30_NUTLIN_TOT_1.png Graphic fil
 e (type png)
 <use chapters/04/media//correlation_recal/shDHX30_NUTLIN_TOT_1.png>
 Package pdftex.def Info: chapters/04/media//correlation_recal/shDHX30_NUTLIN_TO
-T_1.png  used on input line 71.
+T_1.png  used on input line 61.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//correlation_recal/shPCBP2_DMSO_POL_1.png, id=128, 505.89pt 
+<chapters/04/media//correlation_recal/shPCBP2_DMSO_POL_1.png, id=131, 505.89pt 
 x 505.89pt>
 File: chapters/04/media//correlation_recal/shPCBP2_DMSO_POL_1.png Graphic file 
 (type png)
 <use chapters/04/media//correlation_recal/shPCBP2_DMSO_POL_1.png>
 Package pdftex.def Info: chapters/04/media//correlation_recal/shPCBP2_DMSO_POL_
-1.png  used on input line 72.
+1.png  used on input line 62.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//correlation_recal/shPCBP2_DMSO_TOT_1.png, id=129, 505.89pt 
+<chapters/04/media//correlation_recal/shPCBP2_DMSO_TOT_1.png, id=132, 505.89pt 
 x 505.89pt>
 File: chapters/04/media//correlation_recal/shPCBP2_DMSO_TOT_1.png Graphic file 
 (type png)
 <use chapters/04/media//correlation_recal/shPCBP2_DMSO_TOT_1.png>
 Package pdftex.def Info: chapters/04/media//correlation_recal/shPCBP2_DMSO_TOT_
-1.png  used on input line 73.
+1.png  used on input line 63.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//correlation_recal/shPCBP2_NUTLIN_POL_1.png, id=130, 505.89p
+<chapters/04/media//correlation_recal/shPCBP2_NUTLIN_POL_1.png, id=133, 505.89p
 t x 505.89pt>
 File: chapters/04/media//correlation_recal/shPCBP2_NUTLIN_POL_1.png Graphic fil
 e (type png)
 <use chapters/04/media//correlation_recal/shPCBP2_NUTLIN_POL_1.png>
 Package pdftex.def Info: chapters/04/media//correlation_recal/shPCBP2_NUTLIN_PO
-L_1.png  used on input line 74.
+L_1.png  used on input line 64.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
-<chapters/04/media//correlation_recal/shPCBP2_NUTLIN_TOT_1.png, id=131, 505.89p
+<chapters/04/media//correlation_recal/shPCBP2_NUTLIN_TOT_1.png, id=134, 505.89p
 t x 505.89pt>
 File: chapters/04/media//correlation_recal/shPCBP2_NUTLIN_TOT_1.png Graphic fil
 e (type png)
 <use chapters/04/media//correlation_recal/shPCBP2_NUTLIN_TOT_1.png>
 Package pdftex.def Info: chapters/04/media//correlation_recal/shPCBP2_NUTLIN_TO
-T_1.png  used on input line 75.
+T_1.png  used on input line 65.
 (pdftex.def)             Requested size: 145.11053pt x 145.11417pt.
- [22 <./chapters/04/media//distribution/scr_DMSO.png> <./chapters/04/media//dis
+ [23 <./chapters/04/media//distribution/scr_DMSO.png> <./chapters/04/media//dis
 tribution/scr_NUTLIN.png> <./chapters/04/media//distribution/shDHX30_DMSO.png> 
 <./chapters/04/media//distribution/shDHX30_NUTLIN.png> <./chapters/04/media//di
 stribution/shPCBP2_DMSO.png> <./chapters/04/media//distribution/shPCBP2_NUTLIN.
@@ -916,7 +914,7 @@ st.0.2.0.8.10.png (PNG copy)> <./chapters/04/media//rep_corr/scr_DMSO_TOT-rep-3
 -4.post.0.2.0.8.10.png (PNG copy)>]
 Underfull \vbox (badness 5652) has occurred while \output is active []
 
- [23 <./chapters/04/media//correlation_recal/scr_DMSO_POL_1.png (PNG copy)> <./
+ [24 <./chapters/04/media//correlation_recal/scr_DMSO_POL_1.png (PNG copy)> <./
 chapters/04/media//correlation_recal/scr_DMSO_TOT_1.png (PNG copy)> <./chapters
 /04/media//correlation_recal/scr_NUTLIN_POL_1.png (PNG copy)> <./chapters/04/me
 dia//correlation_recal/scr_NUTLIN_TOT_1.png (PNG copy)> <./chapters/04/media//c
@@ -928,44 +926,44 @@ ecal/shPCBP2_DMSO_POL_1.png (PNG copy)> <./chapters/04/media//correlation_recal
 /shPCBP2_DMSO_TOT_1.png (PNG copy)> <./chapters/04/media//correlation_recal/shP
 CBP2_NUTLIN_POL_1.png (PNG copy)> <./chapters/04/media//correlation_recal/shPCB
 P2_NUTLIN_TOT_1.png (PNG copy)>]
-<chapters/04/media//boxplot/scr_DMSO_rs1131941.png, id=145, 462.528pt x 346.896
+<chapters/04/media//boxplot/scr_DMSO_rs1131941.png, id=148, 462.528pt x 346.896
 pt>
 File: chapters/04/media//boxplot/scr_DMSO_rs1131941.png Graphic file (type png)
 
 <use chapters/04/media//boxplot/scr_DMSO_rs1131941.png>
 Package pdftex.def Info: chapters/04/media//boxplot/scr_DMSO_rs1131941.png  use
-d on input line 91.
+d on input line 81.
 (pdftex.def)             Requested size: 241.84843pt x 181.38736pt.
-<chapters/04/media//boxplot/scr_DMSO_rs2228626.png, id=146, 462.528pt x 346.896
+<chapters/04/media//boxplot/scr_DMSO_rs2228626.png, id=149, 462.528pt x 346.896
 pt>
 File: chapters/04/media//boxplot/scr_DMSO_rs2228626.png Graphic file (type png)
 
 <use chapters/04/media//boxplot/scr_DMSO_rs2228626.png>
 Package pdftex.def Info: chapters/04/media//boxplot/scr_DMSO_rs2228626.png  use
-d on input line 92.
+d on input line 82.
 (pdftex.def)             Requested size: 241.84843pt x 181.38736pt.
-<chapters/04/media//boxplot/scr_DMSO_rs2289373.png, id=147, 462.528pt x 346.896
+<chapters/04/media//boxplot/scr_DMSO_rs2289373.png, id=150, 462.528pt x 346.896
 pt>
 File: chapters/04/media//boxplot/scr_DMSO_rs2289373.png Graphic file (type png)
 
 <use chapters/04/media//boxplot/scr_DMSO_rs2289373.png>
 Package pdftex.def Info: chapters/04/media//boxplot/scr_DMSO_rs2289373.png  use
-d on input line 93.
+d on input line 83.
 (pdftex.def)             Requested size: 241.84843pt x 181.38736pt.
-<chapters/04/media//boxplot/shPCBP2_NUTLIN_rs9833.png, id=148, 462.528pt x 346.
+<chapters/04/media//boxplot/shPCBP2_NUTLIN_rs9833.png, id=151, 462.528pt x 346.
 896pt>
 File: chapters/04/media//boxplot/shPCBP2_NUTLIN_rs9833.png Graphic file (type p
 ng)
 <use chapters/04/media//boxplot/shPCBP2_NUTLIN_rs9833.png>
 Package pdftex.def Info: chapters/04/media//boxplot/shPCBP2_NUTLIN_rs9833.png  
-used on input line 94.
+used on input line 84.
 (pdftex.def)             Requested size: 241.84843pt x 181.38736pt.
 
-Overfull \hbox (24.00003pt too wide) in paragraph at lines 90--97
+Overfull \hbox (24.00003pt too wide) in paragraph at lines 80--87
  [][] 
  []
 
-) (./build/fantoni_giacomo_informatica_21.bbl [24 <./chapters/04/media//boxplot
+) (./build/fantoni_giacomo_informatica_21.bbl [25 <./chapters/04/media//boxplot
 /scr_DMSO_rs1131941.png> <./chapters/04/media//boxplot/scr_DMSO_rs2228626.png> 
 <./chapters/04/media//boxplot/scr_DMSO_rs2289373.png> <./chapters/04/media//box
 plot/shPCBP2_NUTLIN_rs9833.png>]
@@ -998,7 +996,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--98
 ls.md.  ul-ti-mo ac-ces-so
  []
 
-[25
+[26
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 100--104
@@ -1030,13 +1028,13 @@ Underfull \hbox (badness 4328) in paragraph at lines 124--128
 latest/content/tools/intersect.html.
  []
 
-) (./chapters/allegati/allegati.tex [26]
+) (./chapters/allegati/allegati.tex [27]
 Appendice A.
-[27
+[28
 
 ]
 Appendice B.
-) [28
+) [29
 
 ]
 
@@ -1049,13 +1047,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8830 strings out of 478994
- 153234 string characters out of 5864751
- 510708 words of memory out of 5000000
- 26072 multiletter control sequences out of 15000+600000
+ 8833 strings out of 478994
+ 153279 string characters out of 5864751
+ 509743 words of memory out of 5000000
+ 26075 multiletter control sequences out of 15000+600000
  412937 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 97i,17n,102p,465b,745s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 97i,17n,102p,465b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -1070,11 +1068,11 @@ ts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
 pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.
 pfb>
-Output written on ./build/fantoni_giacomo_informatica_21.pdf (30 pages, 8270686
+Output written on ./build/fantoni_giacomo_informatica_21.pdf (31 pages, 8272492
  bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
+ 222 PDF objects out of 1000 (max. 8388607)
+ 125 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  178 words of extra memory for PDF output out of 10000 (max. 10000000)
 
