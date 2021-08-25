@@ -3,59 +3,61 @@
 \contentsline {chapter}{Sommario}{3}{}%
 \contentsline {chapter}{\numberline {1}Introduzione}{3}{}%
 \contentsline {section}{\numberline {1.1}Controllo traduzionale nel cancro}{3}{}%
-\contentsline {subsection}{\numberline {1.1.1}Meccanismi di traduzione deregolati e selettivi nel cancro}{3}{}%
+\contentsline {subsection}{\numberline {1.1.1}Panonramica dell'iniziazione della traduzione}{3}{}%
+\contentsline {subsection}{\numberline {1.1.2}Meccanismi di traduzione deregolati e selettivi nel cancro}{4}{}%
 \contentsline {subsubsection}{Formazione del complesso eIF4F}{4}{}%
-\contentsline {subsubsection}{Formazione del complesso ternario}{4}{}%
+\contentsline {subsubsection}{Formazione del complesso ternario}{5}{}%
 \contentsline {subsubsection}{eIF3, connessione di eIF4F e il complesso di pre-iniziazione}{5}{}%
 \contentsline {subsubsection}{Allungamento e terminazione della traduzione}{5}{}%
-\contentsline {subsubsection}{Cambi nelle regioni UTR nelle cellule di cancro}{5}{}%
+\contentsline {subsubsection}{Cambi nelle regioni UTR nelle cellule di cancro}{6}{}%
 \contentsline {subsubsection}{Segnalazione oncogenica}{6}{}%
-\contentsline {subsubsection}{Ribosoma tumorale}{6}{}%
-\contentsline {subsection}{\numberline {1.1.2}Vantaggi oncogenici selettivi di una traduzione deregolata}{7}{}%
+\contentsline {subsubsection}{Ribosoma tumorale}{7}{}%
+\contentsline {subsection}{\numberline {1.1.3}Vantaggi oncogenici selettivi di una traduzione deregolata}{7}{}%
 \contentsline {subsubsection}{Angiogenesi}{7}{}%
 \contentsline {subsubsection}{Risposta allo stress}{7}{}%
-\contentsline {subsubsection}{Vantaggi oncogenici della traduzione deregolata emergenti}{7}{}%
-\contentsline {section}{\numberline {1.2}Polimorfismi a singolo nucleotide}{7}{}%
+\contentsline {subsubsection}{Vantaggi oncogenici della traduzione deregolata emergenti}{8}{}%
+\contentsline {section}{\numberline {1.2}Polimorfismi a singolo nucleotide}{8}{}%
 \contentsline {subsection}{\numberline {1.2.1}Espressione genica allelo-specifica}{8}{}%
 \contentsline {section}{\numberline {1.3}TransSNP}{8}{}%
-\contentsline {subsection}{\numberline {1.3.1}Profilamento polisomico}{8}{}%
+\contentsline {subsection}{\numberline {1.3.1}Profilamento polisomico}{9}{}%
 \contentsline {subsection}{\numberline {1.3.2}Sequenziamento}{9}{}%
 \contentsline {chapter}{\numberline {2}Linea cellulare e dati di partenza}{10}{}%
 \contentsline {section}{\numberline {2.1}HCT116}{10}{}%
-\contentsline {subsection}{\numberline {2.1.1}DHX30}{10}{}%
-\contentsline {subsection}{\numberline {2.1.2}PCBP2}{10}{}%
-\contentsline {section}{\numberline {2.2}Trattamenti}{10}{}%
-\contentsline {subsection}{\numberline {2.2.1}DMSO}{10}{}%
-\contentsline {subsection}{\numberline {2.2.2}Nutlin}{10}{}%
-\contentsline {section}{\numberline {2.3}Dati di partenza}{10}{}%
-\contentsline {subsection}{\numberline {2.3.1}Dati di RNA-seq}{10}{}%
-\contentsline {subsection}{\numberline {2.3.2}Dati WES}{10}{}%
-\contentsline {chapter}{\numberline {3}Processamento dei dati}{11}{}%
-\contentsline {section}{\numberline {3.1}Pre-processamento e allineamento dei dati RNA-seq}{12}{}%
-\contentsline {subsection}{\numberline {3.1.1}Trimmomatic}{12}{}%
-\contentsline {subsection}{\numberline {3.1.2}Star}{13}{}%
-\contentsline {subsection}{\numberline {3.1.3}Samtools}{14}{}%
-\contentsline {subsection}{\numberline {3.1.4}Deduplicazione e ricalibrazione}{14}{}%
-\contentsline {subsubsection}{Deduplicazione}{15}{}%
-\contentsline {subsubsection}{Ricalibrazione}{15}{}%
-\contentsline {paragraph}{Riallineamento locale degl indel}{16}{}%
-\contentsline {paragraph}{Ricalibazione delle basi basata sul punteggio di qualit\`a}{16}{}%
-\contentsline {section}{\numberline {3.2}Ottenimento degli SNP di interesse}{17}{}%
-\contentsline {section}{\numberline {3.3}Calcolo dei dati di sbilanciamento allelico}{17}{}%
-\contentsline {chapter}{\numberline {4}Analisi dei dati}{19}{}%
-\contentsline {section}{\numberline {4.1}Identificazione delle varianti}{19}{}%
-\contentsline {section}{\numberline {4.2}Conta degli SNP trovati con ASEQ}{20}{}%
-\contentsline {subsection}{\numberline {4.2.1}Distrubuzione degli SNP}{21}{}%
-\contentsline {section}{\numberline {4.3}Qualit\`a dei campioni}{21}{}%
-\contentsline {section}{\numberline {4.4}Considerazioni sulla recalibrazione}{21}{}%
-\contentsline {section}{\numberline {4.5}Ottenere i dati per gli SNP di interesse}{22}{}%
-\contentsline {subsection}{\numberline {4.5.1}Boxplot}{23}{}%
-\contentsline {section}{\numberline {4.6}Caratterizzazione degli SNP di interesse}{23}{}%
-\contentsline {section}{\numberline {4.7}Conclusioni}{23}{}%
-\contentsline {chapter}{Bibliografia}{23}{}%
-\contentsline {chapter}{\numberline {A}Titolo primo allegato}{26}{}%
-\contentsline {section}{\numberline {A.1}Titolo}{26}{}%
-\contentsline {subsection}{\numberline {A.1.1}Sottotitolo}{26}{}%
-\contentsline {chapter}{\numberline {B}Titolo secondo allegato}{27}{}%
-\contentsline {section}{\numberline {B.1}Titolo}{27}{}%
-\contentsline {subsection}{\numberline {B.1.1}Sottotitolo}{27}{}%
+\contentsline {subsection}{\numberline {2.1.1}Controllo traduzionale da parte di p53}{10}{}%
+\contentsline {subsubsection}{p53 limita la biogenesi dei ribosomi}{10}{}%
+\contentsline {subsubsection}{p53 regola la trascrizione dei geni RP}{10}{}%
+\contentsline {subsubsection}{p53 regola l'assemblaggio del complesso ternario e di eIF4F}{11}{}%
+\contentsline {section}{\numberline {2.2}Culture cellulari}{11}{}%
+\contentsline {section}{\numberline {2.3}Apoptosi indotta da Nutlin causata da un processo traduzionale regolato da PCBP2 e DHX30}{11}{}%
+\contentsline {section}{\numberline {2.4}Dati di partenza}{11}{}%
+\contentsline {subsection}{\numberline {2.4.1}Dati di RNA-seq}{11}{}%
+\contentsline {subsection}{\numberline {2.4.2}Dati WES}{11}{}%
+\contentsline {chapter}{\numberline {3}Processamento dei dati}{12}{}%
+\contentsline {section}{\numberline {3.1}Pre-processamento e allineamento dei dati RNA-seq}{13}{}%
+\contentsline {subsection}{\numberline {3.1.1}Trimmomatic}{13}{}%
+\contentsline {subsection}{\numberline {3.1.2}Star}{14}{}%
+\contentsline {subsection}{\numberline {3.1.3}Samtools}{15}{}%
+\contentsline {subsection}{\numberline {3.1.4}Deduplicazione e ricalibrazione}{15}{}%
+\contentsline {subsubsection}{Deduplicazione}{16}{}%
+\contentsline {subsubsection}{Ricalibrazione}{16}{}%
+\contentsline {paragraph}{Riallineamento locale degl indel}{17}{}%
+\contentsline {paragraph}{Ricalibazione delle basi basata sul punteggio di qualit\`a}{17}{}%
+\contentsline {section}{\numberline {3.2}Ottenimento degli SNP di interesse}{18}{}%
+\contentsline {section}{\numberline {3.3}Calcolo dei dati di sbilanciamento allelico}{18}{}%
+\contentsline {chapter}{\numberline {4}Analisi dei dati}{20}{}%
+\contentsline {section}{\numberline {4.1}Identificazione delle varianti}{20}{}%
+\contentsline {section}{\numberline {4.2}Conta degli SNP trovati con ASEQ}{21}{}%
+\contentsline {subsection}{\numberline {4.2.1}Distrubuzione degli SNP}{22}{}%
+\contentsline {section}{\numberline {4.3}Qualit\`a dei campioni}{22}{}%
+\contentsline {section}{\numberline {4.4}Considerazioni sulla recalibrazione}{22}{}%
+\contentsline {section}{\numberline {4.5}Ottenere i dati per gli SNP di interesse}{23}{}%
+\contentsline {subsection}{\numberline {4.5.1}Boxplot}{24}{}%
+\contentsline {section}{\numberline {4.6}Caratterizzazione degli SNP di interesse}{24}{}%
+\contentsline {section}{\numberline {4.7}Conclusioni}{24}{}%
+\contentsline {chapter}{Bibliografia}{24}{}%
+\contentsline {chapter}{\numberline {A}Titolo primo allegato}{27}{}%
+\contentsline {section}{\numberline {A.1}Titolo}{27}{}%
+\contentsline {subsection}{\numberline {A.1.1}Sottotitolo}{27}{}%
+\contentsline {chapter}{\numberline {B}Titolo secondo allegato}{28}{}%
+\contentsline {section}{\numberline {B.1}Titolo}{28}{}%
+\contentsline {subsection}{\numberline {B.1.1}Sottotitolo}{28}{}%

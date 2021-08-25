@@ -13,11 +13,22 @@ Nathaniel Robichaud, Nahum Sonenberg, Davide Ruggero, and Robert~J. Schneider.
 \newblock {\em Cold Spring Harbor perspectives in biology}, 11(7):a032896, Jul
   2019.
 
+\bibitem{transconp53}
+J.~Kasteri, D.~Das, X.~Zhong, L.~Persaud, A.~Francis, H.~Muharam, and
+  M.~Sauane.
+\newblock {Tranlation Control by p53}.
+\newblock {\em Cancers (Basel)}, 10(5), May 2018.
+
 \bibitem{polprofiling}
 H{\'e}lo{\"i}se Chass{\'e}, Sandrine Boulben, Vlad Costache, Patrick Cormier,
   and Julia Morales.
 \newblock Analysis of translation using polysome profiling.
 \newblock {\em Nucleic acids research}, 45(3):e15--e15, Feb 2017.
+
+\bibitem{hct116}
+M.~G. Brattain, W.~D. Fine, F.~M. Khaled, J.~Thompson, and D.~E. Brattain.
+\newblock {{H}eterogeneity of malignant cells from a human colonic carcinoma}.
+\newblock {\em Cancer Res}, 41(5):1751--1756, May 1981.
 
 \bibitem{ase_pipeline}
 Alessandro Romanel.
