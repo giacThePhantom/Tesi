@@ -80,6 +80,47 @@ In quanto una funzione di p53 non controllata produrrebbe una morte cellulare ma
 Questa proteina inibitrice \`e tipicamente sovra-espressa nella frazione di tumori che mantengono p53 wild-type, come succede per HCT116.
 Un trattamento possibile per questi tipi di tumori va ad attaccare questo meccanismo, in particolare Nutlin inibisce l'interazione tra p53 e MDM2, attivando la prima.
 I risultati di tale trattamento variano in una combinazione di arresto del ciclo cellulare, senescenza e apoptosi, in proporzioni di difficile previsione.
+Lo studio \cite{nutlin} tenta di determinare le cause dietro le diversit\`a fenotipiche a seguito del trattamento con Nutlin.
+Utilizza come modello due linee cellulari: HCT116 e SJSA1, un osteosarcoma maligno.
+Se la prima a seguito del trattamento con Nutlin subisce un arresto del ciclo cellulare, la seconda subisce un'apoptosi massiva.
+
+  \subsection{Gli esiti diversi del trattamento nelle due linee sono riflessi da cambi nel traduttoma}
+  Se i cambi trascrizionali causati dal trattamento con Nutlin contengono invariantemente geni coinvolti in multipli pathway, si analizza il traduttoma in modo da determinare differenze in esso tra le due linee cellulari.
+  Dopo il trattamento per ognuna delle linee cellulari si sono analizzati i dati di RNA-seq frazionati con profilamento polisomico e sono stati identificati diversi geni espressi in maniera diversa rispetto alla condizione di controllo.
+  Questi sono indicati come \emph{DEG} e sono stati divisi in $3$ classi:
+  \begin{itemize}
+    \item Accoppati: DEG in cui cambi nella frazione polisomiale sono accoppiati con cambi nella frazione totale.
+    \item Regolati traduzionalmente: DEG che esibiscono cambi unicamente nella frazione polisomiale.
+    \item Invariati nella traduzione: DEG che esibiscono cambi unicamente nella frazione sub-polisomiale.
+  \end{itemize}
+  Tra questi sono stati presi in analisi i DEG regolati traduzionalmente e si \`e notato come i geni associati con la segnalazione apoptotica sono traduzionalmente potenziati unicamente nelle cellule SJSA1, spiegando la loro abilit\`a di avviare l'apoptosi a seguito del trattamento.
+  Questo mostra come anche se l'attivazione di p53 da parte di Nutlin attivi programmi trascrizionali nelle due linee cellulari, questi causano programmi traduzionali diversi.
+
+  \subsection{Il potenziamento traduzionale dipendente dalla linea cellulare \`e associato con la presenza di un elemento nella 3'-UTR}
+  Data la specificit\`a degli obiettivi regolati traduzionalmente in ogni linea cellulare \`e stato cercato un motivo de novo.
+  Questo ha permesso l'identificazione di un elemento cis-regolatorio specificatamente arricchito nella 3'-UTR di geni potenziati traduzionalmente solo nelle cellule SJSA1.
+  Il motivo, definito come motivo-CGPD corrisponde al consenso $5'$-$CCCC(A/C)(T/G)GGCCCT$-$3'$.
+  Circa il $65\%$ dei geni potenziati traduzionalmente nelle cellule SJSA1 dopo il trattamento presentano almeno una copia del motivo-CGPD.
+  In HCT116 invece l'espressione dei geni contenenti il motivo o geni-CGPD non \`e attivata da p53.\\
+  Ulteriori analisi hanno mostrato come l'effetto maggiore si ottiene quando il motivo-CGPD \`e presente in due copie nel mRNA.
+  Si \`e notato come il motivo-CGPD \`e sufficiente per potenziare la traduzione di un mRNA reporter in cellule SJSA1 e conferisce una tendenza alla repressione traduzionale nelle cellule HCT116.
+
+  \subsection{Le proteine PCBP2 e DHX30 legano il motivo CGPD in maniera dipendente dalla linea cellulare}
+  Per scoprire il meccanismo sottostante il risultato diversificato del trattamento con Nutlin nelle due linee cellulari si analizzano proteine leganti il RNA capaci di riconoscere il motivo-CGPD in maniera dipentente dal ciclo cellulare.
+  Ci si aspetta che queste proteine abbiano modelli di espressioni opposti tra le due linee cellulari.
+  Questo ha portato all'identificazione di DHX30 tra gli estratti di HCT116 che ha mostrato un cambio di espressione tra il mRNA polisomiale e tra i livelli di proteina.
+  Inoltre si \`e analizzata PCBP2, facente parte della famiglia di proteine PCBP, capaci di creare forti legami con lunghezze poli-C come quella presente nel motivo.
+  Quest'ultima presenta maggiori livelli di espressione a livello proteico in HCT116 rispetto a SJSA1, suggerendo un suo ruoo nella regolazione del motivo-CGPD in HCT116.
+  DHX30 e PCBP2 sono state sottoposte ad ulteriori analisi e si \`e notato come gli mRNA che presentano un aumento del potenziale di traduzione in SJSA1 sono obiettivi di queste due proteine.
+  Questo aumento non \`e cos\`i significativo invece in HCT116.
+  Si \`e anche notata una sovrapposizione tra i siti di legame di DHX30, PCBP2 e il motivo-CGPD.
+  Questo suggerisce PCBP2 e DHX30 come probabili candidati capaci di legare il motivo-CGPD in vivo.
+  Inoltre le due proteine sono espresse a diversi livelli nelle due linee cellulari, suggerendo che potrebbero contribuire alla repressione traduzionale di mRNA contenenti il motivo nelle cellule HCT116.
+  Ulteriori anali hanno dimostrato ocme il legame di DHX30 al motivo-CGPD avviene principalmente nelle cellule HCT116, mentre PCBP2 in entrambe.
+  Viene suggerito come PCBP2 agisce come fattore di vincolo al motivo-CGPD in quanto il suo legame \`e dipendente dalla sequenza ma indipendente dalla linea cellulare.
+  L'espressione dipendente dalla linea cellulare di DHX30 potrebbe agire come repressore dell'efficienza di traduzione di mRNA contenenti il motivo in HCT116.
+  Non si pu\`o per\`o escludere che DHX30 sia in grado di legare il motivo indipentemente da PCBP2.
+  Si pu\`o osservare come il legame di queste due proteine \`e potenzialmente coinvolto nel controllo traduzionale di mRNA contenenti il motivo-CGPD.
 
 
 

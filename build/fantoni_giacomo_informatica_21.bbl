@@ -30,6 +30,14 @@ M.~G. Brattain, W.~D. Fine, F.~M. Khaled, J.~Thompson, and D.~E. Brattain.
 \newblock {{H}eterogeneity of malignant cells from a human colonic carcinoma}.
 \newblock {\em Cancer Res}, 41(5):1751--1756, May 1981.
 
+\bibitem{nutlin}
+Dario Rizzotto, Sara Zaccara, Annalisa Rossi, Matthew~D. Galbraith, Zdenek
+  Andrysik, Ahwan Pandey, Kelly~D. Sullivan, Alessandro Quattrone, Joaquín~M.
+  Espinosa, Erik Dassi, and Alberto Inga.
+\newblock Nutlin-induced apoptosis is specified by a translation program
+  regulated by pcbp2 and dhx30.
+\newblock {\em Cell Reports}, 30(13):4355--4369.e6, 2020.
+
 \bibitem{ase_pipeline}
 Alessandro Romanel.
 \newblock Allele-specific expressione analysis in cancer using next-generation
