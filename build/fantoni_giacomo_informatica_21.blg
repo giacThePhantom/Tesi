@@ -1,46 +1,63 @@
 This is BibTeX, Version 0.99d (TeX Live 2021/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: ./build/fantoni_giacomo_informatica_21.aux
-The style file: unsrt.bst
+The style file: acm.bst
 Database file #1: bibliography/biblio.bib
-You've used 25 entries,
-            1791 wiz_defined-function locations,
-            569 strings with 7252 characters,
-and the built_in function-call counts, 4348 in all, are:
-= -- 351
-> -- 205
+Warning--I didn't find a database entry for "cellminer"
+Warning--I didn't find a database entry for "snpeff"
+Warning--to sort, need author or key in samtools
+Warning--to sort, need author or key in samtools-sort
+Warning--to sort, need author or key in samtools-index
+Warning--to sort, need author or key in addorreplacegroup
+Warning--to sort, need author or key in picard
+Warning--to sort, need author or key in dedup
+Warning--to sort, need author or key in gatk
+Warning--to sort, need author or key in indelrealign
+Warning--to sort, need author or key in bqsr
+Warning--to sort, need author or key in splitncigarreads
+Warning--to sort, need author or key in baserecalibrator
+Warning--to sort, need author or key in printreads
+Warning--to sort, need author or key in bedtoolsintersect
+Warning--to sort, need author or key in bedtools
+You've used 26 entries,
+            2253 wiz_defined-function locations,
+            661 strings with 7919 characters,
+and the built_in function-call counts, 7320 in all, are:
+= -- 677
+> -- 373
 < -- 0
-+ -- 82
-- -- 57
-* -- 262
-:= -- 647
-add.period$ -- 75
-call.type$ -- 25
-change.case$ -- 25
++ -- 160
+- -- 134
+* -- 571
+:= -- 1127
+add.period$ -- 78
+call.type$ -- 26
+change.case$ -- 145
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 166
-empty$ -- 492
-format.name$ -- 57
-if$ -- 995
+cite$ -- 40
+duplicate$ -- 206
+empty$ -- 628
+format.name$ -- 134
+if$ -- 1548
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 11
-newline$ -- 128
-num.names$ -- 11
-pop$ -- 125
+int.to.str$ -- 26
+missing$ -- 12
+newline$ -- 133
+num.names$ -- 24
+pop$ -- 222
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 119
 quote$ -- 0
-skip$ -- 76
+skip$ -- 130
 stack$ -- 0
-substring$ -- 187
-swap$ -- 25
+substring$ -- 342
+swap$ -- 38
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 20
-width$ -- 27
-write$ -- 248
+type$ -- 104
+warning$ -- 14
+while$ -- 35
+width$ -- 28
+write$ -- 245
+(There were 16 warnings)
