@@ -52,13 +52,12 @@
 \contentsline {chapter}{\numberline {4}Analisi dei dati}{25}{}%
 \contentsline {section}{\numberline {4.1}Conta degli SNP trovati con aseq}{25}{}%
 \contentsline {section}{\numberline {4.2}Ottenere i dati per gli SNP di interesse}{26}{}%
-\contentsline {subsection}{\numberline {4.2.1}Boxplot}{27}{}%
 \contentsline {section}{\numberline {4.3}Caratterizzazione degli SNP di interesse}{27}{}%
-\contentsline {section}{\numberline {4.4}Conclusioni}{27}{}%
-\contentsline {chapter}{Bibliografia}{27}{}%
-\contentsline {chapter}{\numberline {A}Titolo primo allegato}{30}{}%
-\contentsline {section}{\numberline {A.1}Titolo}{30}{}%
-\contentsline {subsection}{\numberline {A.1.1}Sottotitolo}{30}{}%
-\contentsline {chapter}{\numberline {B}Titolo secondo allegato}{31}{}%
-\contentsline {section}{\numberline {B.1}Titolo}{31}{}%
-\contentsline {subsection}{\numberline {B.1.1}Sottotitolo}{31}{}%
+\contentsline {section}{\numberline {4.4}Conclusioni}{28}{}%
+\contentsline {chapter}{Bibliografia}{28}{}%
+\contentsline {chapter}{\numberline {A}Titolo primo allegato}{31}{}%
+\contentsline {section}{\numberline {A.1}Titolo}{31}{}%
+\contentsline {subsection}{\numberline {A.1.1}Sottotitolo}{31}{}%
+\contentsline {chapter}{\numberline {B}Titolo secondo allegato}{32}{}%
+\contentsline {section}{\numberline {B.1}Titolo}{32}{}%
+\contentsline {subsection}{\numberline {B.1.1}Sottotitolo}{32}{}%

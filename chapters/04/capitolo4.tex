@@ -105,22 +105,34 @@ Come si nota dalla tabella \ref{tab:significativesnp1} gli SNP significativi tro
 	\label{tab:significativesnp1}
 	\caption{SNP significativi per condizione}
 \end{table}
-   \subsection{Boxplot}
-   I boxplot degli SNP trovati.
- \begin{figure}[H]
-   \centering
-   \begin{tabular}{cc}
-      \subfloat[scr DMSO rs1131941]{\includegraphics[width = 0.5\textwidth]{boxplot/scr_DMSO_rs1131941.png}} &
-      \subfloat[scr DMSO rs2228626]{\includegraphics[width = 0.5\textwidth]{boxplot/scr_DMSO_rs2228626.png}} \\
-      \subfloat[scr DMSO rs2289373]{\includegraphics[width = 0.5\textwidth]{boxplot/scr_DMSO_rs2289373.png}} &
-      \subfloat[shPCBP2 NUTLIN rs9833]{\includegraphics[width = 0.5\textwidth]{boxplot/shPCBP2_NUTLIN_rs9833.png}} \\
-  \end{tabular}
-   \label{fig:}
- \end{figure}
 
 \section{Caratterizzazione degli SNP di interesse}
 L'ultimo passo dell'analisi \`e stata l'annotazione degli SNP in modo da determinare quali geni subiscono un cambio nel potenziale di traduzione causato da tali SNP.
-L'annotazione \`e stata svolta grazie al tool snpEff \cite{snpeff}
+L'annotazione \`e stata svolta grazie al tool snpEff \cite{snpeff}.
+Confrontando i risultati dell'annotazione con una lista di geni coinvolti in molti tipi di cancro noti in letteratura si sono notati $14$ SNP che causano una variazione del potenziale di traduzione in $12$ geni.
+In particolare $3$ di questi si trovano nella $3'$-UTR: \emph{rs788023} per il gene \emph{SF3B1}, \emph{rs30386} per \emph{TBC1D9B} e \emph{rs11539713} per \emph{KIF5B}.
+La loro differenza nella frazione polisomiale e totale \`e descritta nei boxplot \ref{fig:SF3B1}, \ref{fig:TBC1D9B} e \ref{fig:KIF5B}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.5]{boxplot/scr_DMSO_rs1131941.png}
+  \caption{Variazione di sbilanciamento allelico tra frazione polisomiale e totale di rs788023}
+  \label{fig:SF3B1}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.5]{boxplot/scr_DMSO_rs1131941.png}
+  \caption{Variazione di sbilanciamento allelico tra frazione polisomiale e totale di rs30386}
+  \label{fig:TBC1D9B}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.5]{boxplot/scr_DMSO_rs1131941.png}
+  \caption{Variazione di sbilanciamento allelico tra frazione polisomiale e totale di rs11539713}
+  \label{fig:KIF5B}
+\end{figure}
 
 
 

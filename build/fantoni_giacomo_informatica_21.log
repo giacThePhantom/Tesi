@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  31 AUG 2021 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  31 AUG 2021 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -475,11 +475,7 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Unused global option(s):
     [epsfig].
 
-(./build/fantoni_giacomo_informatica_21.aux
-
-LaTeX Warning: Label `fig:' multiply defined.
-
-)
+(./build/fantoni_giacomo_informatica_21.aux)
 \openout1 = `fantoni_giacomo_informatica_21.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -496,7 +492,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
- (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count294
 \scratchdimen=\dimen186
@@ -739,50 +736,34 @@ line 85.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26 <./chapters/04/media//aseq_count_2_8_10_pre.png (PNG copy)>]
+
+LaTeX Warning: Citation `snpeff' on page 27 undefined on input line 111.
+
 <chapters/04/media//boxplot/scr_DMSO_rs1131941.png, id=124, 462.528pt x 346.896
 pt>
 File: chapters/04/media//boxplot/scr_DMSO_rs1131941.png Graphic file (type png)
 
 <use chapters/04/media//boxplot/scr_DMSO_rs1131941.png>
 Package pdftex.def Info: chapters/04/media//boxplot/scr_DMSO_rs1131941.png  use
-d on input line 113.
-(pdftex.def)             Requested size: 241.84843pt x 181.38736pt.
-<chapters/04/media//boxplot/scr_DMSO_rs2228626.png, id=125, 462.528pt x 346.896
-pt>
-File: chapters/04/media//boxplot/scr_DMSO_rs2228626.png Graphic file (type png)
+d on input line 118.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+File: chapters/04/media//boxplot/scr_DMSO_rs1131941.png Graphic file (type png)
 
-<use chapters/04/media//boxplot/scr_DMSO_rs2228626.png>
-Package pdftex.def Info: chapters/04/media//boxplot/scr_DMSO_rs2228626.png  use
-d on input line 114.
-(pdftex.def)             Requested size: 241.84843pt x 181.38736pt.
-<chapters/04/media//boxplot/scr_DMSO_rs2289373.png, id=126, 462.528pt x 346.896
-pt>
-File: chapters/04/media//boxplot/scr_DMSO_rs2289373.png Graphic file (type png)
+<use chapters/04/media//boxplot/scr_DMSO_rs1131941.png>
+Package pdftex.def Info: chapters/04/media//boxplot/scr_DMSO_rs1131941.png  use
+d on input line 125.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+File: chapters/04/media//boxplot/scr_DMSO_rs1131941.png Graphic file (type png)
 
-<use chapters/04/media//boxplot/scr_DMSO_rs2289373.png>
-Package pdftex.def Info: chapters/04/media//boxplot/scr_DMSO_rs2289373.png  use
-d on input line 115.
-(pdftex.def)             Requested size: 241.84843pt x 181.38736pt.
-<chapters/04/media//boxplot/shPCBP2_NUTLIN_rs9833.png, id=127, 462.528pt x 346.
-896pt>
-File: chapters/04/media//boxplot/shPCBP2_NUTLIN_rs9833.png Graphic file (type p
-ng)
-<use chapters/04/media//boxplot/shPCBP2_NUTLIN_rs9833.png>
-Package pdftex.def Info: chapters/04/media//boxplot/shPCBP2_NUTLIN_rs9833.png  
-used on input line 116.
-(pdftex.def)             Requested size: 241.84843pt x 181.38736pt.
+<use chapters/04/media//boxplot/scr_DMSO_rs1131941.png>
+Package pdftex.def Info: chapters/04/media//boxplot/scr_DMSO_rs1131941.png  use
+d on input line 132.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-Overfull \hbox (24.00003pt too wide) in paragraph at lines 112--119
- [][] 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-LaTeX Warning: Citation `snpeff' on page 27 undefined on input line 123.
-
-) (./build/fantoni_giacomo_informatica_21.bbl [27 <./chapters/04/media//boxplot
-/scr_DMSO_rs1131941.png> <./chapters/04/media//boxplot/scr_DMSO_rs2228626.png> 
-<./chapters/04/media//boxplot/scr_DMSO_rs2289373.png> <./chapters/04/media//box
-plot/shPCBP2_NUTLIN_rs9833.png>]
+ [27 <./chapters/04/media//boxplot/scr_DMSO_rs1131941.png>])
+(./build/fantoni_giacomo_informatica_21.bbl [28]
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 []\OT1/cmr/m/n/10.95 Addorreplacereadgroups.  https://gatk.broadinstitute.org/h
 c/en-
@@ -842,15 +823,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--80
 s/articles/360036734471-
  []
 
-[28
+[29
 
-]) (./chapters/allegati/allegati.tex [29]
+]) (./chapters/allegati/allegati.tex [30]
 Appendice A.
-[30
+[31
 
 ]
 Appendice B.
-) [31
+) [32
 
 ]
 
@@ -861,18 +842,15 @@ LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 8694 strings out of 478994
- 145270 string characters out of 5864751
- 509806 words of memory out of 5000000
- 25963 multiletter control sequences out of 15000+600000
+ 8677 strings out of 478994
+ 144374 string characters out of 5864751
+ 509776 words of memory out of 5000000
+ 25949 multiletter control sequences out of 15000+600000
  413238 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 97i,17n,102p,465b,753s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 97i,17n,102p,465b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -887,11 +865,11 @@ ts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
 pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.
 pfb>
-Output written on ./build/fantoni_giacomo_informatica_21.pdf (33 pages, 1345871
+Output written on ./build/fantoni_giacomo_informatica_21.pdf (34 pages, 1308626
  bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
+ 195 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
