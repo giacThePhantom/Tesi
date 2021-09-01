@@ -10,7 +10,7 @@ Questa pipeline viene definita basandosi su quella presentata in \cite{ase_pipel
 \end{enumerate}
 La figura \ref{fig:proj_pipeline} \`e una visualizzazione della pipeline e dei tool utilizzati.\\
 Essendo che questo lavoro prevede il processamento di un gran numero di file, unito al fatto che l'implementazione dei tool utilizzati pemette lo sfruttamento delle pipe di unix e la possibilit\`a di un esecuzione in multi-threading \`e stato di fondamentale importanza l'utility parallel \cite{parallel}.
-Questo tool permette di trasformare l'output di un programma in parametri per un successivo e consente di decidere quante istanze del secondo possono essere eseguite contemporaneamente.\\
+Questo tool permette di trasformare l'output di un programma in parametri per un tool successivo e consente di decidere quante istanze del secondo possono essere eseguite contemporaneamente.\\
 In particolare nel caso di star (\S\ref{subsec:star}) \`e stata notata una diminuzione lineare delle performance per thread del tool.
 Parallel permette di mitigare questo problema in modo da, invece di eseguire un'unica istanza di star con molti thread, di averne diverse in contemporanea con meno thread.
 In questo modo aumenta il tempo di esecuzione dell'istanza singola, ma il tempo di esecuzione globale diminuisce.\\
@@ -34,7 +34,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   	\subsection{Trimmomatic}
 	Trimmomatic, presentato in \cite{trimmomatic}, \`e il primo tool ad essere utilizzato.
 	Il suo obiettivo \`e quello di eliminare dalle read la sequenza adattatrice, un artificio aggiunto al RNA per rendere possibile il sequenziamento, o suoi frammenti.
-	Essendo le RNA-seq fornite single-ends\footnote{Punta a spiegazione nel capitolo 1} viene utilizzata la simple mode del tool.
+	Essendo le RNA-seq fornite single-ends viene utilizzata la simple mode del tool.
 	Questa scansiona ogni read dalla terminazione $5'$ alla $3'$ per determinare la presenza della sequenza adattatrice.
         La scansione avviene attraverso il metodo ``seed and extend'' per trovare corrispondenze iniziali, anche non perfette, tra la read e la sequenza adattatrice.
 	Successivamente svolge un allineamento locale a cui assegna uno score.
@@ -302,13 +302,13 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
 
   \section{Ottenimento degli SNP di interesse}
   Una volta ottenuti i file di allineamento si rende necessario ottenere una lista di SNP dei quali si vuole ottenere il valore di sbilanciamento allelico.
-  Per ottenere questi dati sono stati utilizzati il file gtf\footnote{Sezione dati input} contenente informazioni sulla porzione esonica del genoma umano e un insieme di vcf divisi per cromosoma contenenti le informazioni riguardo le varianti presenti negli essere umani.\\
+  Per ottenere questi dati sono stati utilizzati un file gtf e un insieme di vcf divisi per cromosoma contenenti le informazioni riguardo le varianti presenti negli essere umani.\\
   Dopo aver ristretto i vcf agli SNP sono stati intersecati con il file gtf.
   L'intersezione \`e stata volta dal tool \emph{bedtools intersect} \cite{bedtoolsintersect}, facente parte della suite bedtools \cite{bedtools}.
   Questo tool ha permesso di trovare ogni record del vcf presente anche nel file gtf.
-  L'intersezione \`e stata svota con diversi file gtf in modo da trovare quello che permettesse di conservare pi\`u informazioni.
-  L'origine dei file gtf \`e descritta in \S\ref{sec:datiinput}.
+  L'intersezione \`e stata svolta con diversi file gtf in modo da trovare quello che permettesse di conservare pi\`u informazioni, riducendo al contempo al massimo il numero di SNP da considerare in modo da diminuire il carico computazionale.
   I risultati dell'intersezione sono descritti nella figura \ref{fig:intersection}, \`e stato utilizzato pertanto utilizzato il file \emph{Homo\_sapiens.GRCh38.103.exonic.gtf}.
+  Questo infatti riduce gli SNP alla porzione esonica del genoma, diminuendo il carico computazionale senza perdere alcun dato significativo: gli mRNA prima che vengano sequenziati subiscono il processo di splicing che elimina la porzione intronica.
   In questo modo \`e stato creato un insieme di file vcf, uno per ogni cromosoma, contiene ogni SNP presente nella parte esonica del genoma.\\
   La restrizione alla parte esonica del genoma non causa alcuna perdita di potere predittivo in quanto si stanno considerando dati di RNA-seq, ma permette una significativa diminuzione del carico computazionale svolto da aseq (\S\ref{sec:aseq}).
   I VCF risultanti da questo processo sono pronti per essere utilizzati come input di aseq.
@@ -344,7 +344,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   Non richiede infatti informazioni genomiche dei genitori dell'individuo e non si basa unicamente sui dati di RNA-seq.
   Aseq in particolare accoppia dati di sequenziamento trascrittomici di nuova generazione e genomici in modo da superare queste limitazioni.
   La sua implementazione sfrutta le API di samtools, permettendo rapide funzionalit\`a di accesso casuale su file di allineamento inidicizzati e ne aumenta il potere computazionale attraverso il multi-threading.\\
-  Delle modalit\`a che aseq fornisce \`e stata utilizzata quella principale di analisi ASE (alllele-specific expression), ponendo limitazioni solo sulla qualit\`a delle basi e la qualit\`a delle letture dei file di allineamento.
+  Delle modalit\`a che aseq fornisce \`e stata utilizzata quella principale di analisi ASE (allele-specific expression), ponendo limitazioni solo sulla qualit\`a delle basi e la qualit\`a delle letture dei file di allineamento.
   In questo modo aseq non restringe l'output agli eventi di ASE che individua ma ritorna il valore del pileup per ogni SNP datogli in input.
   Il pileup \`e un formato che riassume le chiamate delle basi rispetto a una sequenza di riferimento.
   Pertanto aseq computa per ogni SNP nella lista, a partire dal nome, dalla base canonica e dalla base alternativa, il coverage per tale SNP, la qualit\`a della chiamata della base e la frazione allelica.\\
@@ -352,8 +352,8 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   In questo modo non si ripete continuamente la computazione dei valori di pileup snellendo il carico computazionale dell'analisi.
   Non si sfrutta pertanto il potere di individuazione di eventi di ASE di aseq, ma solo il suo veloce engine computazionale che permette di aumentare l'efficienza della creazione dei dati di pileup per una singola base.
   Ora, dopo aver prodotto i file di allineamento dai dati di RNA-seq dei campioni e la lista di SNP esonici di interesse si pu\`o procedere all'esecuzione di aseq.\\
-  In particolare i file di allineamento sono divisi in due insiemi: uno creato dopo l'allineamento con star (\S\ref{subsec:star}) e l'altro dopo il processo di deduplicazione e ricalibrazione (\S\ref{subsec:deduprecab}).
-  Ognuno di questi insiemi possiede un file per campione\footnote{Riferimento a lista di campioni}.
+  In particolare i file di allineamento sono divisi in due insiemi: uno creato dopo l'allineamento con star (\S\ref{subsec:star}) e l'altro dopo il processo di deduplicazione e ricalibrazione (\S\ref{subsec:deduprecal}).
+  Ognuno di questi insiemi possiede un file per campione (tabella \ref{tab:concolture}).
   La lista di SNP si trova invece in un insieme di file VCF, un file per ogni autosoma, uno per il cromosoma $X$ e uno per il DNA mitocondriale.
   Perci\`o per ogni file di allineamento viene eseguito aseq per ogni file VCF, ottenendo in questo modo i dati di pileup di ogni SNP per ogni campione divisi per cromosoma.
   L'output di aseq \`e un file di testo delimitato da tabulazioni, formato che rende facilmente ottimizzabili le successive analisi attraverso tool come awk, sed o framework come pandas per python o tidyverse per R.
