@@ -210,7 +210,8 @@ Kif5b.
 
 \bibitem{ttest}
 Documentazione del t-test.
-\newblock TO DO.
+\newblock
+  {https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest$\_$rel.html}.
 \newblock ultimo accesso 01/09/2021.
 
 \end{thebibliography}
