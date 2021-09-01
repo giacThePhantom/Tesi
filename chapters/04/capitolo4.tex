@@ -25,10 +25,10 @@ Come aspettato la frazione allelica degli SNP cos\`i trovati \`e distribuita sec
 \section{Ottenere i dati per gli SNP di interesse}
 \label{sec:snp_filter}
 La lista di SNP ottenuta dall'operazione di filtraggio dei risultati di aseq \ref{sec:snpcount} \`e stata ulteriormente confrontata con dati ottenuti da cellminer \cite{cellminer}.
-Quest'ultima contiene $13681$ SNP gi\`a determinati come eterogizoti.
-A partire dalla lista sono stati raccolti i dati di tutti gli SNP che rispettano le condizioni di coverage e frazione allelica in almeno $3$ replicati.
-Questo viene fatto per dare forza statistica ai risultati e ridurre il rumore dovuto a errori nati dalla pipeline di analisi.\\
-Per ognuno di questi SNP \`e stato svolto un t-test \cite{ttest}tra i valori di frazione allelica polisomiale e totale non corretto per test multipli.
+Quest'ultima contiene $13681$ SNP gi\`a determinati come eterozigoti in HCT116.
+A partire dalla lista sono stati raccolti i dati di tutti gli SNP che rispettano le condizioni di coverage e frazione allelica in almeno $3$ replicati biologici dei $4$ per condizione.
+Questo viene fatto per dare forza statistica ai risultati e ridurre il rumore dovuto a errori nati dalla pipeline di analisi o alla variabilit\`a sperimentale della procedura di RNA-seq.\\
+Per ognuno di questi SNP \`e stato svolto un t-test \cite{ttest} tra i valori di frazione allelica polisomiale e totale non corretto per test multipli.
 Sono stati infine considerati significativi gli SNP con risultato del t-test inferiore a $0.05$.\\
 Come si nota dalla tabella \ref{tab:significativesnp} gli SNP significativi trovati sono $161$, dei quali $60$ nella $3'$-UTR e $8$ nella $5'$-UTR.
 \begin{table}[H]
@@ -87,7 +87,7 @@ La loro differenza nella frazione polisomiale e totale \`e descritta nei boxplot
 	\subsection{SF3B1}
 	Lo sbilanciamento nell'espressione traduzionale del gene SF3B1 si verifica in presenza di Nutlin.
 	Descritto in \cite{sf3b1}, questo gene codifica la subunit\`a $1$ del complesso proteico fattore di splicing 3b che insieme al fattore di splicing 3a e all'unit\`a a $12S$ RNA forma il complesso ribonucleoproteico piccolo o U2 snRNP.
-	Il fattore di splicing 3b si lega al pre-mRNA a monte del sito di ramificazione in maniera indipendente dalla sequenza e pu\`o ancorare U2 al pre-mRNA.
+	Il fattore di splicing 3b si lega al pre-mRNA a monte del sito intronico di ramificazione in maniera indipendente dalla sequenza e pu\`o ancorare U2 al pre-mRNA.
 	Sue mutazioni sono state associate con diverse sindromi mielodisplasiche e altri tumori maligni ematologici, cancro al seno e melanoma uveale.
 	Tipicamente \`e associato con dei sottotipi di sindromi mielodisplasiche caratterizzati da sideroblasti ad anello.
 
@@ -107,12 +107,10 @@ La loro differenza nella frazione polisomiale e totale \`e descritta nei boxplot
 
 \section{Conclusioni}
 \label{sec:ending}
-Il progetto presentato in questo elaborato sfrutta la grande quantit\`a di dati messa a disposizione dal next-generation sequencing per identificare SNPs che hanno possibili effetti nella regolazione traduzionale dei geni che li contengono nell’ambito del cancro. 
-L'analisi ha permesso di identificare 3 SNPs, con potenziali effetti di regolazione traduzionale, presenti nella linea cellulare HCT116 localizzati nella 3'-UTR di altrettanti geni coinvolti nello sviluppo e la progressione tumorale.
+Il progetto presentato in questo elaborato sfrutta la grande quantit\`a di dati messa a disposizione dal next-generation sequencing per identificare e analizzare SNPs che hanno possibili effetti nella regolazione traduzionale dei geni che li contengono nell’ambito del cancro. 
+Dei $161$ SNP candidati identificati dall'analisi per HCT116, $60$ sono presenti nelle sequenze trascritte e non tradotte (UTR).
+Tre di questi SNP potrebbero modulare l'efficienza traduzionale di $3$ geni coinvolti nello sviluppo e progressione tumorale.
 Grazie all’analisi della regolazione traduzionale \`e possibile identificare meccanismi di regolazione prima non esplorati, aiutando a determinare quei processi cellulari alla base di eventi evoluzione tumorale, l'identificazione di marker prognostici o di resistenza alle terapie.
 L'analisi, inoltre, evidenzia come Nutlin abbia un ruolo importante nel mettere alla luce questi eventi e come DHX30 sia coinvolta nel processo di regolazione traduzionale dei geni identificati. 
 Questi geni potrebbero aiutare a scoprire i motivi dietro alle differenze di risposta a Nutlin di diversi tipi di cancro, permettendo un utilizzo mirato della molecola in ambito clinico e l'identificazione di nuove molecole attive contro specifici sottotipi tumorali.
-%[La caratterizzazione di questi SNP inoltre potrebbe portare a una migliore comprensione del loro ruolo nella nascita di vari tumori in
-%quanto possono causare una variazione inter-individuale nel rischio di cancro. Possono essere utilizzati
-%pertanto come marcatori utili alla previsione in un individuo del rischio di cancro.] Questo no, se fossero associati sarebbero visti negli studi GWAS (a meno che tu non abbia controllato GWASCatalog ;)
 L'identificazione di varianti ASE permette di generare ipotesi sui meccanismi molecolari coinvolti nell'evoluzione di specifici sottotipi tumorali, nell'aggressivit\`a e nell'evoluzione delle resistenze alle terapie che, se validate, permettono di approfondire il ruolo di specifici geni nel contesto tumorale. 
