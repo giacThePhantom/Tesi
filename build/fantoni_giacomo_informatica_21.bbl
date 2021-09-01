@@ -1,83 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{addorreplacegroup}
-Addorreplacereadgroups.
-\newblock
-  https://gatk.broadinstitute.org/hc/en-us/articles/360057440331-AddOrReplaceReadGroups-Picard-.
-\newblock ultimo accesso 06/08/2021.
-
-\bibitem{bqsr}
-Base quality score recalibration.
-\newblock
-  https://gatk.broadinstitute.org/hc/en-us/articles/360035890531-Base-Quality-Score-Recalibration-BQSR-.
-\newblock ultimo accesso 06/08/2021.
-
-\bibitem{baserecalibrator}
-Baserecalibrator.
-\newblock
-  https://gatk.broadinstitute.org/hc/en-us/articles/360036898312-BaseRecalibrator.
-\newblock ultimo accesso 06/08/2021.
-
-\bibitem{bedtools}
-Bedtools.
-\newblock https://bedtools.readthedocs.io/en/latest/.
-\newblock ultimo accesso 06/08/2021.
-
-\bibitem{bedtoolsintersect}
-Bedtools intersect.
-\newblock
-  https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html.
-\newblock ultimo accesso 06/08/2021.
-
-\bibitem{samtools-index}
-Documentazione per samtools index.
-\newblock http://www.htslib.org/doc/samtools-index.html.
-\newblock ultimo accesso 01/08/2021.
-
-\bibitem{samtools-sort}
-Documentazione per samtools sort.
-\newblock http://www.htslib.org/doc/samtools-sort.html.
-\newblock ultimo accesso 01/08/2021.
-
-\bibitem{gatk}
-Gatk.
-\newblock https://gatk.broadinstitute.org.
-\newblock ultimo accesso 01/08/2021.
-
-\bibitem{indelrealign}
-Indel realignment.
-\newblock
-  https://github.com/broadinstitute/gatk-docs/blob/master/gatk3-tutorials/(howto)\_Perform\_local\_realignment\_around\_indels.md.
-\newblock ultimo accesso 06/08/2021.
-
-\bibitem{dedup}
-Markduplicates.
-\newblock
-  https://gatk.broadinstitute.org/hc/en-us/articles/360057439771-MarkDuplicates-Picard-.
-\newblock ultimo accesso 06/08/2021.
-
-\bibitem{picard}
-Picard.
-\newblock https://broadinstitute.github.io/picard/.
-\newblock ultimo accesso 01/08/2021.
-
-\bibitem{printreads}
-Printreads.
-\newblock
-  https://gatk.broadinstitute.org/hc/en-us/articles/360036883571-PrintReads.
-\newblock ultimo accesso 06/08/2021.
-
-\bibitem{samtools}
-Samtools.
-\newblock http://www.htslib.org/.
-\newblock ultimo accesso 01/08/2021.
-
-\bibitem{splitncigarreads}
-Splitncigarreads.
-\newblock
-  https://gatk.broadinstitute.org/hc/en-us/articles/360036734471-SplitNCigarReads.
-\newblock ultimo accesso 06/08/2021.
-
 \bibitem{trimmomatic}
 {\sc Bolger, A.~M., Lohse, M., and Usadel, B.}
 \newblock {Trimmomatic: a flexible trimmer for Illumina sequence data}.
@@ -101,11 +23,27 @@ Splitncigarreads.
 \newblock Analysis of translation using polysome profiling.
 \newblock {\em Nucleic acids research 45}, 3 (Feb 2017), e15--e15.
 
+\bibitem{snpeff}
+{\sc Cingolani, P., Platts, A., Wang, L.~L., Coon, M., Nguyen, T., Wang, L.,
+  Land, S.~J., Lu, X., and Ruden, D.~M.}
+\newblock A program for annotating and predicting the effects of single
+  nucleotide polymorphisms, snpeff.
+\newblock {\em Fly 6}, 2 (2012), 80--92.
+\newblock PMID: 22728672.
+
 \bibitem{star}
 {\sc Dobin, A., Davis, C.~A., Schlesinger, F., Drenkow, J., Zaleski, C., Jha,
   S., Batut, P., Chaisson, M., and Gingeras, T.~R.}
 \newblock {STAR: ultrafast universal RNA-seq aligner}.
 \newblock {\em Bioinformatics 29}, 1 (10 2012), 15--21.
+
+\bibitem{tamoxifene}
+{\sc Geter, P.~A., Ernlund, A.~W., Bakogianni, S., Alard, A., Arju, R.,
+  Giashuddin, S., Gadi, A., Bromberg, J., and Schneider, R.~J.}
+\newblock {{H}yperactive m{T}{O}{R} and {M}{N}{K}1 phosphorylation of
+  e{I}{F}4{E} confer tamoxifen resistance and estrogen independence through
+  selective m{R}{N}{A} translation reprogramming}.
+\newblock {\em Genes Dev 31}, 22 (11 2017), 2235--2249.
 
 \bibitem{transconp53}
 {\sc Kasteri, J., Das, D., Zhong, X., Persaud, L., Francis, A., Muharam, H.,
@@ -113,12 +51,32 @@ Splitncigarreads.
 \newblock {Tranlation Control by p53}.
 \newblock {\em Cancers (Basel) 10}, 5 (May 2018).
 
+\bibitem{atf8}
+{\sc Liao, Y., Li, M., Chen, X., Jiang, Y., and Yin, X.~M.}
+\newblock {{I}nteraction of {T}{B}{C}1{D}9{B} with {M}ammalian {A}{T}{G}8
+  {H}omologues {R}egulates {A}utophagic {F}lux}.
+\newblock {\em Sci Rep 8}, 1 (09 2018), 13496.
+
 \bibitem{transsnp}
 {\sc Marchioretti, C., Valentini, S., Bisio, A., Rossi, A., Romanel, A., and
   Inga, A.}
 \newblock {TransSNP: a new class of functional SNPs that affect mRNA
   translation potential revealed by frac-seq-based allelic imbalance}.
 \newblock {\em Submitted\/} (2021).
+
+\bibitem{elisa}
+{\sc Pettin\`a, E.}
+\newblock Analysis of rna-seq transcriptomic data from total and polysomal mrna
+  fractions from b16-f10 murine melanoma cell line.
+\newblock {\em Tesi di laurea triennale in informatica, Universit\`a degli
+  studi di Trento\/} (2020/2021).
+\newblock Supervisori : Alberto Inga, Samuel Valentini, Alessandro Romanel.
+
+\bibitem{fosforilazioneeif4e}
+{\sc Proud, C.~G.}
+\newblock {{P}hosphorylation and {S}ignal {T}ransduction {P}athways in
+  {T}ranslational {C}ontrol}.
+\newblock {\em Cold Spring Harb Perspect Biol 11}, 7 (07 2019).
 
 \bibitem{nutlin}
 {\sc Rizzotto, D., Zaccara, S., Rossi, A., Galbraith, M.~D., Andrysik, Z.,
@@ -151,5 +109,108 @@ Splitncigarreads.
 {\sc Tange, O.}
 \newblock Gnu parallel - the command-line power tool.
 \newblock {\em ;login: The USENIX Magazine 36}, 1 (Feb 2011), 42--47.
+
+\bibitem{samtools}
+Samtools.
+\newblock http://www.htslib.org/.
+\newblock ultimo accesso 01/08/2021.
+
+\bibitem{samtools-index}
+Documentazione per samtools index.
+\newblock http://www.htslib.org/doc/samtools-index.html.
+\newblock ultimo accesso 01/08/2021.
+
+\bibitem{samtools-sort}
+Documentazione per samtools sort.
+\newblock http://www.htslib.org/doc/samtools-sort.html.
+\newblock ultimo accesso 01/08/2021.
+
+\bibitem{picard}
+Picard.
+\newblock https://broadinstitute.github.io/picard/.
+\newblock ultimo accesso 01/08/2021.
+
+\bibitem{gatk}
+Gatk.
+\newblock https://gatk.broadinstitute.org.
+\newblock ultimo accesso 01/08/2021.
+
+\bibitem{addorreplacegroup}
+Addorreplacereadgroups.
+\newblock
+  https://gatk.broadinstitute.org/hc/en-us/articles/360057440331-AddOrReplaceReadGroups-Picard-.
+\newblock ultimo accesso 06/08/2021.
+
+\bibitem{dedup}
+Markduplicates.
+\newblock
+  https://gatk.broadinstitute.org/hc/en-us/articles/360057439771-MarkDuplicates-Picard-.
+\newblock ultimo accesso 06/08/2021.
+
+\bibitem{indelrealign}
+Indel realignment.
+\newblock
+  https://github.com/broadinstitute/gatk-docs/blob/master/gatk3-tutorials/(howto)\_Perform\_local\_realignment\_around\_indels.md.
+\newblock ultimo accesso 06/08/2021.
+
+\bibitem{bqsr}
+Base quality score recalibration.
+\newblock
+  https://gatk.broadinstitute.org/hc/en-us/articles/360035890531-Base-Quality-Score-Recalibration-BQSR-.
+\newblock ultimo accesso 06/08/2021.
+
+\bibitem{splitncigarreads}
+Splitncigarreads.
+\newblock
+  https://gatk.broadinstitute.org/hc/en-us/articles/360036734471-SplitNCigarReads.
+\newblock ultimo accesso 06/08/2021.
+
+\bibitem{baserecalibrator}
+Baserecalibrator.
+\newblock
+  https://gatk.broadinstitute.org/hc/en-us/articles/360036898312-BaseRecalibrator.
+\newblock ultimo accesso 06/08/2021.
+
+\bibitem{printreads}
+Printreads.
+\newblock
+  https://gatk.broadinstitute.org/hc/en-us/articles/360036883571-PrintReads.
+\newblock ultimo accesso 06/08/2021.
+
+\bibitem{bedtools}
+Bedtools.
+\newblock https://bedtools.readthedocs.io/en/latest/.
+\newblock ultimo accesso 06/08/2021.
+
+\bibitem{bedtoolsintersect}
+Bedtools intersect.
+\newblock
+  https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html.
+\newblock ultimo accesso 06/08/2021.
+
+\bibitem{cellminer}
+Cellminer.
+\newblock https://discover.nci.nih.gov/cellminer/.
+\newblock ultimo accesso 01/09/2021.
+
+\bibitem{sf3b1}
+Sf3b1.
+\newblock https://www.genecards.org/cgi-bin/carddisp.pl?gene=SF3B1.
+\newblock ultimo accesso 01/09/2021.
+
+\bibitem{tbc1d9b}
+Tbc1d9b.
+\newblock https://www.genecards.org/cgi-bin/carddisp.pl?gene=TBC1D9B.
+\newblock ultimo accesso 01/09/2021.
+
+\bibitem{kif5b}
+Kif5b.
+\newblock https://www.genecards.org/cgi-bin/carddisp.pl?gene=KIF5B.
+\newblock ultimo accesso 01/09/2021.
+
+\bibitem{ttest}
+Documentazione del t-test.
+\newblock TO DO.
+\newblock ultimo accesso 01/09/2021.
 
 \end{thebibliography}

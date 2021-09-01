@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  31 AUG 2021 17:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  1 SEP 2021 13:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -423,10 +423,27 @@ Package caption Info: float package is loaded.
 \sf@top=\skip56
 \sf@bottom=\skip57
 )
+(/usr/share/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen185
+\ar@mcellbox=\box101
+\extrarowheight=\dimen186
+\NC@list=\toks27
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box102
+)
+\rotheadsize=\dimen187
+\c@nlinenum=\count286
+\TeXr@lab=\toks28
+)
 (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks27
-\inpenc@posthook=\toks28
+\inpenc@prehook=\toks29
+\inpenc@posthook=\toks30
 
 (/usr/share/texmf-dist/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
@@ -437,39 +454,39 @@ Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 (/usr/share/texmf-dist/tex/latex/ucs/data/uni-global.def
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
-\uc@secondtry=\count286
-\uc@combtoks=\toks29
-\uc@combtoksb=\toks30
-\uc@temptokena=\toks31
+\uc@secondtry=\count287
+\uc@combtoks=\toks31
+\uc@combtoksb=\toks32
+\uc@temptokena=\toks33
 )
 (/usr/share/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2021/03/24 3.56 The Babel package
 
 (/usr/share/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2021/03/24 3.56 Babel common definitions
-\babel@savecnt=\count287
-\U@D=\dimen185
+\babel@savecnt=\count288
+\U@D=\dimen188
 \l@babelnohyphens=\language87
 
 (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
 )
-\bbl@dirlevel=\count288
+\bbl@dirlevel=\count289
 
 (/usr/share/texmf-dist/tex/generic/babel-italian/italian.ldf
 Language: italian 2020/05/21 v.1.4.04 Italian support for the babel system
-\it@lettering=\count289
-\it@doublequoteactive=\count290
-\it@ISOcompliance=\count291
+\it@lettering=\count290
+\it@doublequoteactive=\count291
+\it@ISOcompliance=\count292
 ))
 (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count292
+\etb@tempcnta=\count293
 )
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count293
-\l__pdf_internal_box=\box101
+\l__color_backend_stack_int=\count294
+\l__pdf_internal_box=\box103
 )
 
 LaTeX Warning: Unused global option(s):
@@ -478,34 +495,34 @@ LaTeX Warning: Unused global option(s):
 (./build/fantoni_giacomo_informatica_21.aux)
 \openout1 = `fantoni_giacomo_informatica_21.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count294
-\scratchdimen=\dimen186
-\scratchbox=\box102
-\nofMPsegments=\count295
-\nofMParguments=\count296
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count297
-\MPscratchDim=\dimen187
-\MPnumerator=\count298
-\makeMPintoPDFobject=\count299
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count295
+\scratchdimen=\dimen189
+\scratchbox=\box104
+\nofMPsegments=\count296
+\nofMParguments=\count297
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count298
+\MPscratchDim=\dimen190
+\MPnumerator=\count299
+\makeMPintoPDFobject=\count300
+\everyMPtoPDFconversion=\toks35
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -555,8 +572,8 @@ Package caption Info: End \AtBeginDocument code.
 (/usr/share/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-LaTeX Info: Redefining \it@ocap on input line 39.
-LaTeX Info: Redefining \it@ccap on input line 39.
+LaTeX Info: Redefining \it@ocap on input line 40.
+LaTeX Info: Redefining \it@ccap on input line 40.
 
 
 File italian.ldf warning: 
@@ -564,7 +581,7 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 39.
+italian.ldf    on input line 40.
 
 (./prefixes/pagina_iniziale.tex
 Package epstopdf Info: Source file: <prefixes/images/marchio_unitrento_colore_i
@@ -630,42 +647,39 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 ]
 (./chapters/01/capitolo1.tex
 Capitolo 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 12.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 12.
 [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 109--123
+Underfull \hbox (badness 10000) in paragraph at lines 97--111
 
  []
 
-[6] [7] [8] [9]) [10] (./chapters/02/capitolo2.tex
+[6]
+Underfull \vbox (badness 1132) has occurred while \output is active []
+
+ [7]
+[8] [9]) [10] (./chapters/02/capitolo2.tex
 Capitolo 2.
-[11] [12]
-
-LaTeX Warning: Reference `subsec:cgpd' on page 13 undefined on input line 107.
-
-[13]
-Overfull \hbox (1.95596pt too wide) in paragraph at lines 148--148
+[11] [12] [13]
+Overfull \hbox (1.95596pt too wide) in paragraph at lines 149--149
 |[]\OT1/cmr/bx/n/12 Apoptosi di-pen-den-te da Nu-tlin con ri-spet-to ai li-vel-
 li di espres-sio-ne di DHX30| 
  []
 
 
-LaTeX Warning: Reference `subsec:cgpd' on page 14 undefined on input line 168.
-
-
 LaTeX Warning: Reference `subsec:profpol' on page 14 undefined on input line 17
-0.
+1.
 
 [14]) [15] (./chapters/03/capitolo3.tex
 Capitolo 3.
-<chapters/03/media//pipeline.png, id=81, 1585.925pt x 2091.815pt>
+<chapters/03/media//pipeline.png, id=79, 1585.925pt x 2091.815pt>
 File: chapters/03/media//pipeline.png Graphic file (type png)
 <use chapters/03/media//pipeline.png>
 Package pdftex.def Info: chapters/03/media//pipeline.png  used on input line 21
 .
 (pdftex.def)             Requested size: 317.17938pt x 418.35559pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 37.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 37.
 [16] [17 <./chapters/03/media//pipeline.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -693,150 +707,126 @@ Package pdftex.def Info: chapters/03/media//scelta_gtf.png  used on input line
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22]
+
+LaTeX Warning: Reference `subsec:deduprecab' on page 23 undefined on input line
+ 355.
+
 [23 <./chapters/03/media//scelta_gtf.png (PNG copy)>]) [24]
 (./chapters/04/capitolo4.tex
 Capitolo 4.
-
-LaTeX Warning: Reference `subsec:deduprecal' on page 25 undefined on input line
- 13.
-
-
-LaTeX Warning: Citation `cellminer' on page 25 undefined on input line 18.
-
 <chapters/04/media//aseq_count_2_8_10_pre.png, id=117, 505.89pt x 505.89pt>
 File: chapters/04/media//aseq_count_2_8_10_pre.png Graphic file (type png)
 <use chapters/04/media//aseq_count_2_8_10_pre.png>
 Package pdftex.def Info: chapters/04/media//aseq_count_2_8_10_pre.png  used on 
-input line 21.
+input line 20.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (22.19188pt too wide) in paragraph at lines 21--22
+Overfull \hbox (22.19188pt too wide) in paragraph at lines 20--21
  [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--23
+
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
-
-LaTeX Warning: Reference `sec:snpcount' on page 26 undefined on input line 79.
-
-
-LaTeX Warning: Citation `cellminer' on page 26 undefined on input line 79.
-
-
-Package caption Warning: \label without proper reference on input line 105.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `tab:significativesnp1' on page 26 undefined on input 
-line 85.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26 <./chapters/04/media//aseq_count_2_8_10_pre.png (PNG copy)>]
-
-LaTeX Warning: Citation `snpeff' on page 27 undefined on input line 111.
-
-<chapters/04/media//boxplot/scr_DMSO_rs1131941.png, id=124, 462.528pt x 346.896
-pt>
-File: chapters/04/media//boxplot/scr_DMSO_rs1131941.png Graphic file (type png)
-
-<use chapters/04/media//boxplot/scr_DMSO_rs1131941.png>
-Package pdftex.def Info: chapters/04/media//boxplot/scr_DMSO_rs1131941.png  use
-d on input line 118.
+<chapters/04/media//scr_NUTLIN_rs788023.png, id=124, 462.528pt x 346.896pt>
+File: chapters/04/media//scr_NUTLIN_rs788023.png Graphic file (type png)
+<use chapters/04/media//scr_NUTLIN_rs788023.png>
+Package pdftex.def Info: chapters/04/media//scr_NUTLIN_rs788023.png  used on in
+put line 66.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-File: chapters/04/media//boxplot/scr_DMSO_rs1131941.png Graphic file (type png)
-
-<use chapters/04/media//boxplot/scr_DMSO_rs1131941.png>
-Package pdftex.def Info: chapters/04/media//boxplot/scr_DMSO_rs1131941.png  use
-d on input line 125.
+<chapters/04/media//scr_NUTLIN_rs30386.png, id=125, 462.528pt x 346.896pt>
+File: chapters/04/media//scr_NUTLIN_rs30386.png Graphic file (type png)
+<use chapters/04/media//scr_NUTLIN_rs30386.png>
+Package pdftex.def Info: chapters/04/media//scr_NUTLIN_rs30386.png  used on inp
+ut line 73.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-File: chapters/04/media//boxplot/scr_DMSO_rs1131941.png Graphic file (type png)
+<chapters/04/media//shDHX30_DMSO_rs11539713.png, id=126, 462.528pt x 346.896pt>
 
-<use chapters/04/media//boxplot/scr_DMSO_rs1131941.png>
-Package pdftex.def Info: chapters/04/media//boxplot/scr_DMSO_rs1131941.png  use
-d on input line 132.
+File: chapters/04/media//shDHX30_DMSO_rs11539713.png Graphic file (type png)
+<use chapters/04/media//shDHX30_DMSO_rs11539713.png>
+Package pdftex.def Info: chapters/04/media//shDHX30_DMSO_rs11539713.png  used o
+n input line 80.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5533) has occurred while \output is active []
 
- [27 <./chapters/04/media//boxplot/scr_DMSO_rs1131941.png>])
-(./build/fantoni_giacomo_informatica_21.bbl [28]
-Underfull \hbox (badness 10000) in paragraph at lines 4--8
+ [27 <./chapters/04/media//scr_NUTLIN_rs788023.png> <./chapters/04/media//scr_N
+UTLIN_rs30386.png> <./chapters/04/media//shDHX30_DMSO_rs11539713.png>])
+(./build/fantoni_giacomo_informatica_21.bbl [28] [29
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 139--143
 []\OT1/cmr/m/n/10.95 Addorreplacereadgroups.  https://gatk.broadinstitute.org/h
 c/en-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--8
+Underfull \hbox (badness 10000) in paragraph at lines 139--143
 \OT1/cmr/m/n/10.95 us/articles/360057440331-AddOrReplaceReadGroups-Picard-.  ul
 -ti-mo ac-ces-so
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--14
-[]\OT1/cmr/m/n/10.95 Base qua-li-ty sco-re re-ca-li-bra-tion.  https://gatk.bro
-adinstitute.org/hc/en-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--14
-\OT1/cmr/m/n/10.95 us/articles/360035890531-Base-Quality-Score-Recalibration-BQ
-SR-.  ul-ti-mo ac-ces-so
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--20
-[]\OT1/cmr/m/n/10.95 Baserecalibrator.  https://gatk.broadinstitute.org/hc/en-u
-s/articles/360036898312-
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 27--31
-[]\OT1/cmr/m/n/10.95 Bedtools in-ter-sect.  https://bedtools.readthedocs.io/en/
-latest/content/tools/intersect.html.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--52
-[]\OT1/cmr/m/n/10.95 Indel rea-li-gn-ment.  https://github.com/broadinstitute/g
-atk-docs/blob/master/gatk3-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--52
-\OT1/cmr/m/n/10.95 tutorials/(howto)[]Perform[]local[]realignment[]around[]inde
-ls.md.  ul-ti-mo ac-ces-so
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--58
+Underfull \hbox (badness 10000) in paragraph at lines 145--149
 []\OT1/cmr/m/n/10.95 Markduplicates.  https://gatk.broadinstitute.org/hc/en-us/
 articles/360057439771-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--80
+Underfull \hbox (badness 10000) in paragraph at lines 151--155
+[]\OT1/cmr/m/n/10.95 Indel rea-li-gn-ment.  https://github.com/broadinstitute/g
+atk-docs/blob/master/gatk3-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--155
+\OT1/cmr/m/n/10.95 tutorials/(howto)[]Perform[]local[]realignment[]around[]inde
+ls.md.  ul-ti-mo ac-ces-so
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--161
+[]\OT1/cmr/m/n/10.95 Base qua-li-ty sco-re re-ca-li-bra-tion.  https://gatk.bro
+adinstitute.org/hc/en-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--161
+\OT1/cmr/m/n/10.95 us/articles/360035890531-Base-Quality-Score-Recalibration-BQ
+SR-.  ul-ti-mo ac-ces-so
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--167
 []\OT1/cmr/m/n/10.95 Splitncigarreads.  https://gatk.broadinstitute.org/hc/en-u
 s/articles/360036734471-
  []
 
-[29
 
-]) (./chapters/allegati/allegati.tex [30]
-Appendice A.
-[31
+Underfull \hbox (badness 10000) in paragraph at lines 169--173
+[]\OT1/cmr/m/n/10.95 Baserecalibrator.  https://gatk.broadinstitute.org/hc/en-u
+s/articles/360036898312-
+ []
 
-]
-Appendice B.
-) [32
 
-]
+Underfull \hbox (badness 4328) in paragraph at lines 186--190
+[]\OT1/cmr/m/n/10.95 Bedtools in-ter-sect.  https://bedtools.readthedocs.io/en/
+latest/content/tools/intersect.html.
+ []
+
+) [30]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     179.
+(LaTeX3)     180.
 
  (./build/fantoni_giacomo_informatica_21.aux)
 
@@ -844,13 +834,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8677 strings out of 478994
- 144374 string characters out of 5864751
- 509776 words of memory out of 5000000
- 25949 multiletter control sequences out of 15000+600000
+ 8898 strings out of 478994
+ 147023 string characters out of 5864751
+ 512453 words of memory out of 5000000
+ 26167 multiletter control sequences out of 15000+600000
  413238 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 97i,17n,102p,465b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 97i,14n,102p,465b,652s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -865,11 +855,11 @@ ts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
 pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.
 pfb>
-Output written on ./build/fantoni_giacomo_informatica_21.pdf (34 pages, 1308626
+Output written on ./build/fantoni_giacomo_informatica_21.pdf (32 pages, 1333046
  bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
+ 193 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

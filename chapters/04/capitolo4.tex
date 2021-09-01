@@ -8,14 +8,13 @@
 %    \label{fig:}
 %  \end{figure}
 \section{Conta degli SNP trovati con aseq}
-\label{sec:snp_count}
+\label{sec:snpcount}
 Dall'esecuzione di aseq (\ref{sec:aseq}) si ottengono i valori di sbilanciamento allelico per tutti gli SNP ottenuti.
 Seguendo le ``best practices'' di Gatk \cite{gatk} l'analisi \`e stata eseguita sui risultati di aseq ottenuti a partire dall'insieme dei file di allineamento generati dal processo di deduplicazione e ricalibrazione (\ref{subsec:deduprecal}).\\
 Volendo considerare unicamente gli SNP presenti in eterozigosi i risultati sono filtrati considerando SNP con frazione allelica compresa tra $0.2$ e $0.8$.
-Inoltre per aumentare il grado di confidenza dei risultati sono stati considerati unicamente gli SNP con un coverage\footnote{Definizione di coverage} maggiore di $10$.
+Inoltre per aumentare il grado di confidenza dei risultati sono stati considerati unicamente gli SNP con un coverage\footnote{Si intende per coverage il numero medio di reads che coprono una regione genomica obiettivo} maggiore di $10$.
 Queste due operazioni di filtraggio hanno portato all'identificazione di $20895$ SNP unici, $587$ dei quali condivisi tra tutte le condizioni e replicati.\\
 Come aspettato la frazione allelica degli SNP cos\`i trovati \`e distribuita secondo una normale con la media centrata a $0.5$.\\
-Questa  SNP sono stati confrontati con una lista di SNP gi\`a conosciuti come eterozigoti ottenuta da cellminer \cite{cellminer}.
  \begin{figure}[H]
    \centering
    \includegraphics[scale=1]{aseq_count_2_8_10_pre.png}
@@ -23,66 +22,15 @@ Questa  SNP sono stati confrontati con una lista di SNP gi\`a conosciuti come et
    \label{fig:}
  \end{figure}
 
- %\subsection{Distribuzione degli SNP}
- %\begin{figure}[H]
-   %\centering
-   %\begin{tabular}{ccc}
-      %\subfloat[scr DMSO]{\includegraphics[width = 0.3\textwidth]{distribution/scr_DMSO.png}} &
-      %\subfloat[scr NUTLIN]{\includegraphics[width = 0.3\textwidth]{distribution/scr_NUTLIN.png}} &
-      %\subfloat[shDHX30 DMSO]{\includegraphics[width = 0.3\textwidth]{distribution/shDHX30_DMSO.png}} \\
-      %\subfloat[shDHX30 NUTLIN]{\includegraphics[width = 0.3\textwidth]{distribution/shDHX30_NUTLIN.png}} &
-      %\subfloat[shPCBP2 DMSO]{\includegraphics[width = 0.3\textwidth]{distribution/shPCBP2_DMSO.png}} &
-      %\subfloat[shPCBP2 NUTLIN]{\includegraphics[width = 0.3\textwidth]{distribution/shPCBP2_NUTLIN.png}} \\
-  %\end{tabular}
-   %\label{fig:}
- %\end{figure}
-%
-%\section{Qualit\`a dei campioni}
-%Confronto tra replicato di un campione in modo da verificare come cambiano i valori di AF tra un replicato e l'altro.
- %\begin{figure}[H]
-   %\centering
-   %\begin{tabular}{ccc}
-      %\subfloat[1 - 2]{\includegraphics[width = 0.3\textwidth]{rep_corr/scr_DMSO_TOT-rep-1-2.post.0.2.0.8.10.png}} &
-      %\subfloat[1 - 3]{\includegraphics[width = 0.3\textwidth]{rep_corr/scr_DMSO_TOT-rep-1-3.post.0.2.0.8.10.png}} &
-      %\subfloat[1 - 4]{\includegraphics[width = 0.3\textwidth]{rep_corr/scr_DMSO_TOT-rep-1-4.post.0.2.0.8.10.png}} \\
-      %\subfloat[2 - 3]{\includegraphics[width = 0.3\textwidth]{rep_corr/scr_DMSO_TOT-rep-2-3.post.0.2.0.8.10.png}} &
-      %\subfloat[2 - 4]{\includegraphics[width = 0.3\textwidth]{rep_corr/scr_DMSO_TOT-rep-2-4.post.0.2.0.8.10.png}} &
-      %\subfloat[3 - 4]{\includegraphics[width = 0.3\textwidth]{rep_corr/scr_DMSO_TOT-rep-3-4.post.0.2.0.8.10.png}} \\
-  %\end{tabular}
-   %\label{fig:}
- %\end{figure}
-%
-%\section{Considerazioni sulla recalibrazione}
-%\label{sec:rec_cons}
-%Discussione dei risultati di ASEQ prima e dopo la recalibrazione.
- %\begin{figure}[H]
-   %\centering
-   %\begin{tabular}{ccc}
-      %\subfloat[scr DMSO polisomale]{\includegraphics[width = 0.3\textwidth]{correlation_recal/scr_DMSO_POL_1.png}} &
-      %\subfloat[scr DMSO totale]{\includegraphics[width = 0.3\textwidth]{correlation_recal/scr_DMSO_TOT_1.png}} &
-      %\subfloat[scr NUTLIN polisomale]{\includegraphics[width = 0.3\textwidth]{correlation_recal/scr_NUTLIN_POL_1.png}} \\
-      %\subfloat[scr NUTLIN totale]{\includegraphics[width = 0.3\textwidth]{correlation_recal/scr_NUTLIN_TOT_1.png}} &
-      %\subfloat[shDHX30 DMSO polisomale]{\includegraphics[width = 0.3\textwidth]{correlation_recal/shDHX30_DMSO_POL_1.png}} &
-      %\subfloat[shDHX30 DMSO totale]{\includegraphics[width = 0.3\textwidth]{correlation_recal/shDHX30_DMSO_TOT_1.png}} \\
-      %\subfloat[shDHX30 NUTLIN polisomale]{\includegraphics[width = 0.3\textwidth]{correlation_recal/shDHX30_NUTLIN_POL_1.png}} &
-      %\subfloat[shDHX30 NUTLIN totale]{\includegraphics[width = 0.3\textwidth]{correlation_recal/shDHX30_NUTLIN_TOT_1.png}} &
-      %\subfloat[shPCBP2 DMSO polisomale]{\includegraphics[width = 0.3\textwidth]{correlation_recal/shPCBP2_DMSO_POL_1.png}} \\
-      %\subfloat[shPCBP2 DMSO totale]{\includegraphics[width = 0.3\textwidth]{correlation_recal/shPCBP2_DMSO_TOT_1.png}} &
-      %\subfloat[shPCBP2 NUTLIN polisomale]{\includegraphics[width = 0.3\textwidth]{correlation_recal/shPCBP2_NUTLIN_POL_1.png}} &
-      %\subfloat[shPCBP2 NUTLIN totale]{\includegraphics[width = 0.3\textwidth]{correlation_recal/shPCBP2_NUTLIN_TOT_1.png}} \\
-  %\end{tabular}
-   %\label{fig:}
- %\end{figure}
-%
 \section{Ottenere i dati per gli SNP di interesse}
 \label{sec:snp_filter}
 La lista di SNP ottenuta dall'operazione di filtraggio dei risultati di aseq \ref{sec:snpcount} \`e stata ulteriormente confrontata con dati ottenuti da cellminer \cite{cellminer}.
 Quest'ultima contiene $13681$ SNP gi\`a determinati come eterogizoti.
 A partire dalla lista sono stati raccolti i dati di tutti gli SNP che rispettano le condizioni di coverage e frazione allelica in almeno $3$ replicati.
 Questo viene fatto per dare forza statistica ai risultati e ridurre il rumore dovuto a errori nati dalla pipeline di analisi.\\
-Per ognuno di questi SNP \`e stato svolto un t-test tra i valori di frazione allelica polisomiale e totale non corretto per test multipli.
+Per ognuno di questi SNP \`e stato svolto un t-test \cite{ttest}tra i valori di frazione allelica polisomiale e totale non corretto per test multipli.
 Sono stati infine considerati significativi gli SNP con risultato del t-test inferiore a $0.05$.\\
-Come si nota dalla tabella \ref{tab:significativesnp1} gli SNP significativi trovati sono $161$, dei quali $60$ nella $3'$-UTR e $8$ nella $5'$-UTR.
+Come si nota dalla tabella \ref{tab:significativesnp} gli SNP significativi trovati sono $161$, dei quali $60$ nella $3'$-UTR e $8$ nella $5'$-UTR.
 \begin{table}[H]
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -102,8 +50,8 @@ Come si nota dalla tabella \ref{tab:significativesnp1} gli SNP significativi tro
 		\hline
 	\end{tabular}
 	\centering
-	\label{tab:significativesnp1}
 	\caption{SNP significativi per condizione}
+	\label{tab:significativesnp}
 \end{table}
 
 \section{Caratterizzazione degli SNP di interesse}
@@ -112,29 +60,59 @@ L'annotazione \`e stata svolta grazie al tool snpEff \cite{snpeff}.
 Confrontando i risultati dell'annotazione con una lista di geni coinvolti in molti tipi di cancro noti in letteratura si sono notati $14$ SNP che causano una variazione del potenziale di traduzione in $12$ geni.
 In particolare $3$ di questi si trovano nella $3'$-UTR: \emph{rs788023} per il gene \emph{SF3B1}, \emph{rs30386} per \emph{TBC1D9B} e \emph{rs11539713} per \emph{KIF5B}.
 La loro differenza nella frazione polisomiale e totale \`e descritta nei boxplot \ref{fig:SF3B1}, \ref{fig:TBC1D9B} e \ref{fig:KIF5B}.
-
+\begin{multicols}{2}
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.5]{boxplot/scr_DMSO_rs1131941.png}
+  \includegraphics[scale=0.5]{scr_NUTLIN_rs788023.png}
   \caption{Variazione di sbilanciamento allelico tra frazione polisomiale e totale di rs788023}
   \label{fig:SF3B1}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.5]{boxplot/scr_DMSO_rs1131941.png}
+  \includegraphics[scale=0.5]{scr_NUTLIN_rs30386.png}
   \caption{Variazione di sbilanciamento allelico tra frazione polisomiale e totale di rs30386}
   \label{fig:TBC1D9B}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.5]{boxplot/scr_DMSO_rs1131941.png}
+  \includegraphics[scale=0.5]{shDHX30_DMSO_rs11539713.png}
   \caption{Variazione di sbilanciamento allelico tra frazione polisomiale e totale di rs11539713}
   \label{fig:KIF5B}
 \end{figure}
 
+\end{multicols}
 
+	\subsection{SF3B1}
+	Lo sbilanciamento nell'espressione traduzionale del gene SF3B1 si verifica in presenza di Nutlin.
+	Descritto in \cite{sf3b1}, questo gene codifica la subunit\`a $1$ del complesso proteico fattore di splicing 3b che insieme al fattore di splicing 3a e all'unit\`a a $12S$ RNA forma il complesso ribonucleoproteico piccolo o U2 snRNP.
+	Il fattore di splicing 3b si lega al pre-mRNA a monte del sito di ramificazione in maniera indipendente dalla sequenza e pu\`o ancorare U2 al pre-mRNA.
+	Sue mutazioni sono state associate con diverse sindromi mielodisplasiche e altri tumori maligni ematologici, cancro al seno e melanoma uveale.
+	Tipicamente \`e associato con dei sottotipi di sindromi mielodisplasiche caratterizzati da sideroblasti ad anello.
+
+	\subsection{TBC1D9B}
+	Lo sbilanciamento nell'espressione traduzionale del gene TBC1D9B (TBC1 domain family member 9b) si verifica in presenza di Nutlin.
+	Descritto in \cite{tbc1d9b}, questo gene codifica una proteina legante lo ione calcio e ha funzione come attivatore di GTPasi.
+	Lo studio \cite{atf8} mostra come la proteina cos\`i prodotta interagisca con ATG8, regolando la formazione del trafficking degli autofagosomi.
+	In particolare la sua capacit\`a di disattivare RAB11A facilita l'arrivo degli autofagosomi alla degradazione.
+
+	\subsection{KIF5B}
+	Lo sbilanciamento nell'espressione traduzionale del gene KIF5B si verifica con knockdown di DHX30.
+	Descritto in \cite{kif5b}, questo gene codifica una proteina motrice dipendente dai microtubuli necessaria per la distribuzione normale di mitocondri e lisosomi.
+	Regola inoltre il posizionamento del nucleo e dei centrosomi durante l'inizio della mitosi.
+	Oltre a ci\`o guida la separazione dei nuclei e dei centrosomi durante la fase $G2$.
+	\`E anche in grado di guidare il movimento dei lisosomi verso la terminazione positiva dei microtubuli.
+	Infine guida la polarizzazione dei granuli citolitici e dei centri organizzatori dei microtubuli.
 
 \section{Conclusioni}
 \label{sec:ending}
+Il progetto presentato in questo elaborato sfrutta la grande quantit\`a di dati messa a disposizione dal next-generation sequencing per analizzare SNP che causano cambi nella regolazione traduzionale dei geni che li contengono nell'ambito del cancro.
+Sono stati trovati in HCT116 $3$ SNP nella $3'$-UTR di $3$ geni coinvolti nel cancro in grado di controllarne il potenziale di traduzione.
+L'analisi della regolazione traduzionale permette di scoprire meccanismi di regolazione prima non esplorati, aiutando a determinare quei processi cellulari alla base di certe trasformazioni cellulari.
+Si evidenzia inoltre come Nutlin abbia un ruolo importante nel mettere alla luce questi eventi e come DHX30 sia coinvolta nel processo di regolazione traduzionale di questi geni.
+Questi geni potrebbero aiutare a scoprire i motivi dietro alle differenze di risposta a Nutlin di diversi tipi di cancro, permettendo un utilizzo mirato della molecola in ambito clinico oltre a scoprire nuove terapie.
+La caratterizzazione di questi SNP inoltre potrebbe portare a una migliore comprensione del loro ruolo nella nascita di vari tumori in quanto possono causare una variazione inter-individuale nel rischio di cancro.
+Possono essere utilizzati pertanto come marcatori utili alla previsione in un individuo del rischio di cancro.
+Una continuazione di questo lavoro pu\`o essere la creazione di una metrica di sbilanciamento allelico specifica ad un gene in modo da raccogliere insieme le informazioni di pi\`u SNP.
+In questo modo si otterrebbero i livelli di espressione di un gene in base a quali SNP contiene, approfondendo ulteriormente la conoscenza del loro ruolo nei meccanismi molecolari coinvolti nel rischio, nascita e aggressivit\`a del cancro e a sue eventuali resistenze a diverse terapie.

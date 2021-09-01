@@ -8,6 +8,37 @@ title = "{TransSNP: a new class of functional SNPs that affect mRNA translation 
 journal = {Submitted},
 year = {2021},
 }
+@article{atf8,
+	Author="Liao, Y.  and Li, M.  and Chen, X.  and Jiang, Y.  and Yin, X. M. ",
+	Title="{{I}nteraction of {T}{B}{C}1{D}9{B} with {M}ammalian {A}{T}{G}8 {H}omologues {R}egulates {A}utophagic {F}lux}",
+	Journal="Sci Rep",
+	Year="2018",
+	Volume="8",
+	Number="1",
+	Pages="13496",
+	Month="09"
+}
+@article{fosforilazioneeif4e,
+	Author="Proud, C. G. ",
+	Title="{{P}hosphorylation and {S}ignal {T}ransduction {P}athways in {T}ranslational {C}ontrol}",
+	Journal="Cold Spring Harb Perspect Biol",
+	Year="2019",
+	Volume="11",
+	Number="7",
+	Month="07"
+}
+
+@article{tamoxifene,
+	Author="Geter, P. A.  and Ernlund, A. W.  and Bakogianni, S.  and Alard, A.  and Arju, R.  and Giashuddin, S.  and Gadi, A.  and Bromberg, J.  and Schneider, R. J. ",
+	Title="{{H}yperactive m{T}{O}{R} and {M}{N}{K}1 phosphorylation of e{I}{F}4{E} confer tamoxifen resistance and estrogen independence through selective m{R}{N}{A} translation reprogramming}",
+	Journal="Genes Dev",
+	Year="2017",
+	Volume="31",
+	Number="22",
+	Pages="2235--2249",
+	Month="11"
+}
+
 @article{nutlin,
 title = {Nutlin-Induced Apoptosis Is Specified by a Translation Program Regulated by PCBP2 and DHX30},
 journal = {Cell Reports},
@@ -148,6 +179,23 @@ language={eng}
  pages = {42-47}
 }
 
+@article{snpeff,
+author = {Pablo Cingolani and Adrian Platts and Le Lily Wang and Melissa Coon and Tung Nguyen and Luan Wang and Susan J. Land and Xiangyi Lu and Douglas M. Ruden},
+title = {A program for annotating and predicting the effects of single nucleotide polymorphisms, SnpEff},
+journal = {Fly},
+volume = {6},
+number = {2},
+pages = {80-92},
+year  = {2012},
+publisher = {Taylor & Francis},
+doi = {10.4161/fly.19695},
+    note ={PMID: 22728672},
+URL = {https://doi.org/10.4161/fly.19695},
+eprint = {https://doi.org/10.4161/fly.19695}
+}
+
+
+
 % website
 % as misc
 % Required fields: none.
@@ -155,83 +203,144 @@ language={eng}
 @misc{samtools,
   title = {Samtools},
   howpublished = {http://www.htslib.org/},
-  note = {ultimo accesso 01/08/2021}
+  note = {ultimo accesso 01/08/2021},
+  key = {z01}
 }
 
 @misc{samtools-index,
   title = {Documentazione per samtools index},
   howpublished = {http://www.htslib.org/doc/samtools-index.html},
-  note = {ultimo accesso 01/08/2021}
+  note = {ultimo accesso 01/08/2021},
+  key = {z02}
 }
 
 @misc{samtools-sort,
   title = {Documentazione per samtools sort},
   howpublished = {http://www.htslib.org/doc/samtools-sort.html},
-  note = {ultimo accesso 01/08/2021}
+  note = {ultimo accesso 01/08/2021},
+  key = {z03}
 }
 
 @misc{picard,
   title = {Picard},
   howpublished = {https://broadinstitute.github.io/picard/},
-  note = {ultimo accesso 01/08/2021}
+  note = {ultimo accesso 01/08/2021},
+  key = {z04}
 }
 
 @misc{gatk,
   title = {Gatk},
   howpublished = {https://gatk.broadinstitute.org},
-  note = {ultimo accesso 01/08/2021}
+  note = {ultimo accesso 01/08/2021},
+  key = {z05}
 }
 
 @misc{addorreplacegroup,
   title = {AddOrReplaceReadGroups},
   howpublished = {https://gatk.broadinstitute.org/hc/en-us/articles/360057440331-AddOrReplaceReadGroups-Picard-},
-  note = {ultimo accesso 06/08/2021}
+  note = {ultimo accesso 06/08/2021},
+  key = {z06}
 }
 
 @misc{dedup,
   title = {MarkDuplicates},
   howpublished = {https://gatk.broadinstitute.org/hc/en-us/articles/360057439771-MarkDuplicates-Picard-},
-  note = {ultimo accesso 06/08/2021}
+  note = {ultimo accesso 06/08/2021},
+  key = {z07}
 }
 
 @misc{indelrealign,
   title = {Indel realignment},
   howpublished = {https://github.com/broadinstitute/gatk-docs/blob/master/gatk3-tutorials/(howto)\_Perform\_local\_realignment\_around\_indels.md},
-  note = {ultimo accesso 06/08/2021}
+  note = {ultimo accesso 06/08/2021},
+  key = {z08}
 }
 
 @misc{bqsr,
   title = {Base quality score recalibration},
   howpublished = {https://gatk.broadinstitute.org/hc/en-us/articles/360035890531-Base-Quality-Score-Recalibration-BQSR-},
-  note = {ultimo accesso 06/08/2021}
+  note = {ultimo accesso 06/08/2021},
+  key = {z09}
 }
 
 @misc{splitncigarreads,
   title = {SplitNCigarReads},
   howpublished = {https://gatk.broadinstitute.org/hc/en-us/articles/360036734471-SplitNCigarReads},
-  note = {ultimo accesso 06/08/2021}
+  note = {ultimo accesso 06/08/2021},
+  key = {z10}
 }
 
 @misc{baserecalibrator,
   title = {BaseRecalibrator},
   howpublished = {https://gatk.broadinstitute.org/hc/en-us/articles/360036898312-BaseRecalibrator},
-  note = {ultimo accesso 06/08/2021}
+  note = {ultimo accesso 06/08/2021},
+  key = {z11}
 }
 
 @misc{printreads,
   title = {PrintReads},
   howpublished = {https://gatk.broadinstitute.org/hc/en-us/articles/360036883571-PrintReads},
-  note = {ultimo accesso 06/08/2021}
+  note = {ultimo accesso 06/08/2021},
+  key = {z12}
 }
 
 @misc{bedtools,
   title = {Bedtools},
   howpublished = {https://bedtools.readthedocs.io/en/latest/},
-  note = {ultimo accesso 06/08/2021}
+  note = {ultimo accesso 06/08/2021},
+  key = {z13}
 }
 
 @misc{bedtoolsintersect,
   title = {Bedtools intersect},
   howpublished = {https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html},
-  note = {ultimo accesso 06/08/2021}
+  note = {ultimo accesso 06/08/2021},
+  key = {z14}
+}
+
+@misc{cellminer,
+  title = {Cellminer},
+  howpublished = {https://discover.nci.nih.gov/cellminer/},
+  note = {ultimo accesso 01/09/2021},
+  key = {z15}
+}
+
+@misc{sf3b1,
+  title = {SF3B1},
+  howpublished = {https://www.genecards.org/cgi-bin/carddisp.pl?gene=SF3B1},
+  note = {ultimo accesso 01/09/2021},
+  key = {z16}
+}
+
+@misc{tbc1d9b,
+  title = {TBC1D9B},
+  howpublished = {https://www.genecards.org/cgi-bin/carddisp.pl?gene=TBC1D9B},
+  note = {ultimo accesso 01/09/2021},
+  key = {z17}
+}
+
+@misc{kif5b,
+  title = {KIF5B},
+  howpublished = {https://www.genecards.org/cgi-bin/carddisp.pl?gene=KIF5B},
+  note = {ultimo accesso 01/09/2021},
+  key = {z18}
+}
+
+
+@misc{ttest,
+  title = {Documentazione del t-test},
+  howpublished = {TO DO},
+  note = {ultimo accesso 01/09/2021},
+  key = {z19}
+}
+
+% article
+% Required fields: author, title, journal, year.
+% Optional fields: volume, number, pages, month, note.
+@article{elisa,
+	title = {Analysis of RNA-seq transcriptomic data from total and polysomal mRNA fractions from B16-F10 murine melanoma cell line},
+	author = {Elisa Pettin\`a},
+	note = {Supervisori : Alberto Inga, Samuel Valentini, Alessandro Romanel},
+	journal = {Tesi di laurea triennale in informatica, Universit\`a degli studi di Trento},
+	year = {2020/2021},
 }
