@@ -2,20 +2,29 @@
 \label{sommario}
 
 \addcontentsline{toc}{chapter}{Sommario} % da aggiungere comunque all'indice
-L'avvento del next-generation sequencing ha portato alla luce una grande mole di nuove informazioni riguardo il genoma umano.
+L'avvento del next-generation sequencing ha portato alla luce una grande mole di nuove informazioni a livello della singola base riguardo il genoma e il trascrittoma umano.
 Questo ha permesso di esplorare questioni biologiche prima inaccessibili.
-In particolare questi dati permettono cose.\\
+Questi nuovi dati permettono per esempio, di dedurre l'evoluzione dei umori, descrivere eventi di mosaicismo.
+In particolare i dati messi a disposizione dal next-generation sequencing permettono di studiare fenomeni di espressione allelo-specifica da una prospettiva agnostica e genomica.
+Nonostante l'espressione allelo-specifica sia stata dimostrata rilevante per la tumorigenesi, in particolare con rispetto ai geni soppressori dei tumori, pochi studi hanno esplorato il suo ruolo e il suo impatto nella genesi del cancro e nella sua progressione.\\[12pt]
 Il progetto di ricerca qui presentato tenta di svelare meccanismi di regolazione traduzionale e di come questi siano fondamentali nella nascita e nella progressione del cancro.
 Per raggiungere questo obiettivo ci si avvale di dati di RNA-seq di una linea cellulare tumorale ben caratterizzata: HCT116.
 A differenza di studi precedenti tenta inoltre di definire una pipeline di analisi volta a determinare eventi di espressione allelo-specifica regolati a livello traduzionale.
 A partire dai dati di sequenziamento pertanto vengono utilizzati diversi tool creati con lo scopo di analizzarli in modo da ottenere i dati di sbilanciamento per gli SNP presenti in eterozigosi nella linea cellulare.
 Volendo tentare di determinare l'effetto di questi SNP sulla regolazione traduzionale del mRNA che li contiene si restringe il campo di osservazione: vengono infatti considerati unicamente gli SNP presenti nelle regioni trascritte ma non tradotte, la $3'$ e la $5'$ UTR.
 In queste porzioni del mRNA avviene infatti tipicamente il legame, oltre che con il ribosoma responsabile della traduzione, con diverse proteine regolatorie.
-La presenza degli SNP in tali regioni potrebbe andare a distruggere i siti di legame dei fattori di traduzione con l'mRNA di interesse, modificando l'efficienza con cui questi vengono tradotti.
+La presenza degli SNP in tali regioni potrebbe andare a distruggere i siti di legame dei fattori di traduzione con l'mRNA di interesse, modificando l'efficienza con cui questi vengono tradotti.\\
 Per approfondire ulteriormente questo processo regolatorio la linea cellulare viene analizzata in diverse condizioni.
 In particolare la si studia in presenza della molecola Nutlin, capace di attivare p53 producendo o un arresto del ciclo cellulare o apoptosi massiva in maniera dipendente dalla tipologia di cancro esposta ad essa.
 La diversit\`a nel risultato dell'esposizione del cancro a questa molecola ha reso difficile un suo utilizzo in ambito clinico e questo studio potrebbe aiutare a determinare i motivi dietro alla variet\`a dei suoi effetti.
 Questo permetterebbe un suo utilizzo pi\`u mirato ed efficace.\\
+Oltre ad analizzare la linea cellulare in presenza di un attivatore di p53, viene svolto il knockdown di DH30 e PCBP2, geni coinvolti nei processi di regolazione traduzionale e responsabili, almeno in parte nella variazione della risposta della linea cellulare a Nutlin.\\[12pt]
+Questo elaborato si propone pertanto di stabilire una pipeline in grado di individuare nella linea cellulare in esame SNP capaci di modificare il potenziale di traduzione degli mRNA che li contengono.
+Dopo aver individuato gli SNP eterozigoti si stabilisce quali tra questi causino un evento di espressione allelo-specifica del mRNA che li contiene.
+Di questi SNP identificati si osserva quali, tra quelli presenti nelle UTR causano una variazione del potenziale di traduzione indicata da una variazione nel valore di ASE tra le frazioni polisomiale e totale del campione.\\
+Gli SNP cos\`i trovati vengono caratterizzati e i geni cos\`i trovati sono confrontati con una lista di geni noti in letteratura coinvolti nel cancro.
+Questo ha permesso l'identificazione di $3$ geni il cui potenziale di traduzione viene modificato dalla presenza di SNP: SF3B1, TBC1D9B e KIF5B.
+
 
 %Sommario è un breve riassunto del lavoro svolto dove si descrive l'obiettivo, l'oggetto della tesi, le
 %metodologie e le tecniche usate, i dati elaborati e la spiegazione delle conclusioni alle quali siete arrivati.
