@@ -122,7 +122,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
         Il secondo invece crea, a partire dall'output del programma sort un indice in formato bai di tale file, permettendo efficienti operazioni di accesso casuale al file bam.
         L'output finale \`e un file bam ordinato e indicizzato che pu\`o essere utilizzato come input di aseq.
 
-	\subsection{Deduplicazione e ricalibrazione}
+	\subsection{Deduplicazione, riallineamento e ricalibrazione}
         \label{subsec:deduprecal}
 	La deduplicazione e la ricalibrazione sono due processi di elaborazione dei dati di RNA-seq che tentano di risolvere errori presenti nei file bam che sono stati allineati attraverso star (\S\ref{subsec:star}).
   Questi due passaggi vengono svolti attraverso una serie di tools eseguiti sequenzialmente come si nota nella figura \ref{fig:pipeline_deduprecal}.
@@ -163,7 +163,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
     Dopo che ha trovato tutte le read duplicate queste vengono ordinate secondo la somma dei punteggi di qualit\`a delle basi.
     La read con il punteggio pi\`u alto viene considerata primaria, le altre duplicati.
     Grazie all'opzione \emph{REMOVE\_DUPLICATE=true} tutte le sequenze duplicate vengono rimosse.
-    Viene infine ricreato l'indice del file bam attraverso \emph{samtools index}.
+    Viene ricreato l'indice del file bam attraverso \emph{samtools index}.
     \begin{table}[H]
         \centering
         \begin{tabular}{|c|c|}
@@ -181,23 +181,12 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
          \end{tabular}
          \caption{Parametri utilizzati per MarkDuplicates}
     \end{table}
-
-    \subsubsection{Ricalibrazione}
-    La ricalibrazione viene svolta da una serie di tool facenti parte della suite Gatk \cite{gatk}.
-    Il processo si compone di due fasi:
-    \begin{multicols}{2}
-      \begin{enumerate}
-        \item Riallineamento degli indels definito in \cite{indelrealign}.
-        \item Ricalibrazione delle basi basata sul punteggio di qualtit\`a definito in \cite{bqsr}.
-      \end{enumerate}
-    \end{multicols}
-    Il primo passaggio, svolto dal tool \emph{SplitNCigarReads} \cite{splitncigarreads}, progettato specificatamente per dati di RNA-seq, \`e necessario per il corretto funzionamento degli step successivi.
+    Infine in modo da preparare i dati per permettere il corretto funzionamento degli step successivi viene utilizzato sui dati di RNA-seq il tool \emph{SplitNCigarReads} \cite{splitncigarreads}.
     L'esecuzione di star ha generato nel file bam per ogni record una stringa  \emph{CIGAR} che descrive come una base in ogni read \`e mappata rispetto al genoma di riferimento.
     Il valore $N$ corrisponde a una base saltata sul genoma di riferimento.
     Nel caso di RNA-seq tali basi possono corrispondere o a sequence introniche, non presenti nel RNA a causa dello splicing o a sequenze di ``overhang'' che potrebbero portare a falsi positivi.
     \emph{SplitNCigarReads} elimina le basi corrispondenti a una $N$ da una read separandola in due: una che finisce a sinistra e l'altra che inizia a destra della base rimossa.
     Come risultato gli esoni del RNA vengono separati in segmenti diversi e gli overhang eliminati in modo da non causare falsi positivi.\\
-    Dopo questo lavoro di processamento inizia la fase di riallineamento degli indels.
     \begin{table}[H]
         \centering
         \begin{tabular}{|c|c|}
@@ -212,8 +201,9 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
          \caption{Parametri utilizzati per SplitNCigarReads}
     \end{table}
 
-    \paragraph{Riallineamento locale degl indel}
-    Il riallineamento locale degli indels \`e necessario in quanto permette di correggere errori sistematici causati dall'allineatore genomico.
+    \subsubsection{Riallineamento}
+    Dopo la deduplicazione viene eseguito il riallineamento locale degli indel, svolto da una serie di tool facenti parte della suite Gatk \cite{gatk}.
+    \`E necessario in quanto permette di correggere errori sistematici causati dall'allineatore genomico.
     Una limitazione di questi allineatori infatti \`e che considerano ogni read in maniera indipendente: le strategie di assegnazione dei punteggi limitano la loro abilit\`a di allineare accuratamente in presenza di indel.
     Il processo di allineamento locale considera invece tutte le read che attraversano una posizione in modo da ottenere un consenso di alto punteggio che supporta la presenza di un evento di indel.
     Il riallineamento viene svolto attraverso l'utilizzo di due tool: \emph{RealignerTargetCreator} e \emph{IndelRealigner}.
@@ -251,8 +241,8 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
          \end{tabular}
          \caption{Parametri utilizzati per IndelRealigner}
     \end{table}
-
-    \paragraph{Ricalibazione delle basi basata sul punteggio di qualit\`a}
+    \subsubsection{Ricalibrazione}
+    Come per il riallineamento, la ricalibrazione viene svolta da una serie di tool facenti parte della suite Gatk \cite{gatk}.
     Il processo di ricalibrazione delle basi basato sul punteggio di qualit\`a serve a risolvere errori generati durante il sequenziamento.
     Si definisce il punteggio di qualit\`a di una base come una stima dell'errore emesso dalla macchina di sequenziamento: esprimono quanto questa \`e confidente che ha chiamato la base corretta ogni volta.
     Questi punteggi sono soggetti a varie sorgenti di errori tecnici dovuti alla fisica o alla chimica di come una reazione di sequenziamento funziona o a difetti nell'equipaggiamento.
@@ -299,15 +289,14 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
          \caption{Parametri utilizzati per PrintReads}
     \end{table}
 
-
   \section{Ottenimento degli SNP di interesse}
   Una volta ottenuti i file di allineamento si rende necessario ottenere una lista di SNP dei quali si vuole ottenere il valore di sbilanciamento allelico.
-  Per ottenere questi dati sono stati utilizzati un file gtf e un insieme di vcf divisi per cromosoma contenenti le informazioni riguardo le varianti presenti negli essere umani.\\
+  Per ottenere questi dati sono stati utilizzati un file gtf, contenente la struttura dei trascritti, e un insieme di vcf divisi per cromosoma contenenti le informazioni riguardo le varianti presenti negli essere umani.\\
   Dopo aver ristretto i vcf agli SNP sono stati intersecati con il file gtf.
   L'intersezione \`e stata volta dal tool \emph{bedtools intersect} \cite{bedtoolsintersect}, facente parte della suite bedtools \cite{bedtools}.
   Questo tool ha permesso di trovare ogni record del vcf presente anche nel file gtf.
-  L'intersezione \`e stata svolta con diversi file gtf in modo da trovare quello che permettesse di conservare pi\`u informazioni, riducendo al contempo al massimo il numero di SNP da considerare in modo da diminuire il carico computazionale.
-  I risultati dell'intersezione sono descritti nella figura \ref{fig:intersection}, \`e stato utilizzato pertanto utilizzato il file \emph{Homo\_sapiens.GRCh38.103.exonic.gtf}.
+  L'intersezione \`e stata svolta con diversi file gtf recuperati da diversi database in modo da trovare quello che permettesse di conservare pi\`u informazioni, riducendo al contempo al massimo il numero di SNP da considerare in modo da diminuire il carico computazionale.
+  In particolare \`e stato utilizzato alla fine il file gtf ottenuto da Ensembl \cite{ensembl}.
   Questo infatti riduce gli SNP alla porzione esonica del genoma, diminuendo il carico computazionale senza perdere alcun dato significativo: gli mRNA prima che vengano sequenziati subiscono il processo di splicing che elimina la porzione intronica.
   In questo modo \`e stato creato un insieme di file vcf, uno per ogni cromosoma, contiene ogni SNP presente nella parte esonica del genoma.\\
   La restrizione alla parte esonica del genoma non causa alcuna perdita di potere predittivo in quanto si stanno considerando dati di RNA-seq, ma permette una significativa diminuzione del carico computazionale svolto da aseq (\S\ref{sec:aseq}).
@@ -330,12 +319,6 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
          \end{tabular}
          \caption{Parametri utilizzati per bedtools intersect}
   \end{table}
-  \begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.6]{scelta_gtf.png}
-    \caption{Numero di SNP mantenuti dopo l'intersezione}
-    \label{fig:intersection}
-  \end{figure}
 
   \section{Calcolo dei dati di sbilanciamento allelico}
   \label{sec:aseq}
@@ -344,8 +327,8 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   Non richiede infatti informazioni genomiche dei genitori dell'individuo e non si basa unicamente sui dati di RNA-seq.
   Aseq in particolare accoppia dati di sequenziamento trascrittomici di nuova generazione e genomici in modo da superare queste limitazioni.
   La sua implementazione sfrutta le API di samtools, permettendo rapide funzionalit\`a di accesso casuale su file di allineamento inidicizzati e ne aumenta il potere computazionale attraverso il multi-threading.\\
-  Delle modalit\`a che aseq fornisce \`e stata utilizzata quella principale di analisi ASE (allele-specific expression), ponendo limitazioni solo sulla qualit\`a delle basi e la qualit\`a delle letture dei file di allineamento.
-  In questo modo aseq non restringe l'output agli eventi di ASE che individua ma ritorna il valore del pileup per ogni SNP datogli in input.
+  Delle modalit\`a che aseq fornisce \`e stata utilizzata quella di pileup, ponendo limitazioni solo sulla qualit\`a delle basi e la qualit\`a delle letture dei file di allineamento.
+  In questo modo aseq ritorna il valore del pileup per ogni SNP datogli in input.
   Il pileup \`e un formato che riassume le chiamate delle basi rispetto a una sequenza di riferimento.
   Pertanto aseq computa per ogni SNP nella lista, a partire dal nome, dalla base canonica e dalla base alternativa, il coverage per tale SNP, la qualit\`a della chiamata della base e la frazione allelica.\\
   Questo permette di applicare all'output diversi filtri durante l'analisi cosicch\`e da poter trovare i valori soglia ottimali per ottenere risultati significativi in un secondo momento.

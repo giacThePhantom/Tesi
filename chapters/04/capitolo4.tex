@@ -28,8 +28,8 @@ La lista di SNP ottenuta dall'operazione di filtraggio dei risultati di aseq \re
 Quest'ultima contiene $13681$ SNP gi\`a determinati come eterozigoti in HCT116.
 A partire dalla lista sono stati raccolti i dati di tutti gli SNP che rispettano le condizioni di coverage e frazione allelica in almeno $3$ replicati biologici dei $4$ per condizione.
 Questo viene fatto per dare forza statistica ai risultati e ridurre il rumore dovuto a errori nati dalla pipeline di analisi o alla variabilit\`a sperimentale della procedura di RNA-seq.\\
-Per ognuno di questi SNP \`e stato svolto un t-test \cite{ttest} tra i valori di frazione allelica polisomiale e totale non corretto per test multipli.
-Sono stati infine considerati significativi gli SNP con risultato del t-test inferiore a $0.05$.\\
+Per ognuno di questi SNP \`e stato svolto un t-test \cite{ttest} tra i valori di frazione allelica polisomiale e totale.
+Sono stati infine considerati significativi gli SNP con p-value nominale risultato dal t-test inferiore a $0.05$.\\
 Come si nota dalla tabella \ref{tab:significativesnp} gli SNP significativi trovati sono $161$, dei quali $60$ nella $3'$-UTR e $8$ nella $5'$-UTR.
 \begin{table}[H]
 	\begin{tabular}{|c|c|c|c|}
@@ -64,41 +64,41 @@ La loro differenza nella frazione polisomiale e totale \`e descritta nei boxplot
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.5]{scr_NUTLIN_rs788023.png}
-  \caption{Variazione di sbilanciamento allelico tra frazione polisomiale e totale di rs788023}
+  \caption{Variazione di sbilanciamento allelico tra frazione polisomiale e totale di rs788023 (p-value $0.0487$)}
   \label{fig:SF3B1}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.5]{scr_NUTLIN_rs30386.png}
-  \caption{Variazione di sbilanciamento allelico tra frazione polisomiale e totale di rs30386}
+  \caption{Variazione di sbilanciamento allelico tra frazione polisomiale e totale di rs30386 (p-value $0.0424$)}
   \label{fig:TBC1D9B}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.5]{shDHX30_DMSO_rs11539713.png}
-  \caption{Variazione di sbilanciamento allelico tra frazione polisomiale e totale di rs11539713}
+  \caption{Variazione di sbilanciamento allelico tra frazione polisomiale e totale di rs11539713 (p-value $0.00099$)}
   \label{fig:KIF5B}
 \end{figure}
 
 \end{multicols}
 
 	\subsection{SF3B1}
-	Lo sbilanciamento nell'espressione traduzionale del gene SF3B1 si verifica in presenza di Nutlin.
+	Lo sbilanciamento nell'espressione traduzionale del gene SF3B1 si verifica in presenza di Nutlin e con stato genetico normale.
 	Descritto in \cite{sf3b1}, questo gene codifica la subunit\`a $1$ del complesso proteico fattore di splicing 3b che insieme al fattore di splicing 3a e all'unit\`a a $12S$ RNA forma il complesso ribonucleoproteico piccolo o U2 snRNP.
 	Il fattore di splicing 3b si lega al pre-mRNA a monte del sito intronico di ramificazione in maniera indipendente dalla sequenza e pu\`o ancorare U2 al pre-mRNA.
 	Sue mutazioni sono state associate con diverse sindromi mielodisplasiche e altri tumori maligni ematologici, cancro al seno e melanoma uveale.
 	Tipicamente \`e associato con dei sottotipi di sindromi mielodisplasiche caratterizzati da sideroblasti ad anello.
 
 	\subsection{TBC1D9B}
-	Lo sbilanciamento nell'espressione traduzionale del gene TBC1D9B (TBC1 domain family member 9b) si verifica in presenza di Nutlin.
+	Lo sbilanciamento nell'espressione traduzionale del gene TBC1D9B (TBC1 domain family member 9b) si verifica in presenza di Nutlin e con stato genetico normale.
 	Descritto in \cite{tbc1d9b}, questo gene codifica una proteina legante lo ione calcio e ha funzione come attivatore di GTPasi.
 	Lo studio \cite{atf8} mostra come la proteina cos\`i prodotta interagisca con ATG8, regolando la formazione del trafficking degli autofagosomi.
 	In particolare la sua capacit\`a di disattivare RAB11A facilita l'arrivo degli autofagosomi alla degradazione.
 
 	\subsection{KIF5B}
-	Lo sbilanciamento nell'espressione traduzionale del gene KIF5B si verifica con knockdown di DHX30.
+	Lo sbilanciamento nell'espressione traduzionale del gene KIF5B si verifica in assenza di Nutlin e con knockdown di DHX30.
 	Descritto in \cite{kif5b}, questo gene codifica una proteina motrice dipendente dai microtubuli necessaria per la distribuzione normale di mitocondri e lisosomi.
 	Regola inoltre il posizionamento del nucleo e dei centrosomi durante l'inizio della mitosi.
 	Oltre a ci\`o guida la separazione dei nuclei e dei centrosomi durante la fase $G2$.
@@ -107,7 +107,7 @@ La loro differenza nella frazione polisomiale e totale \`e descritta nei boxplot
 
 \section{Conclusioni}
 \label{sec:ending}
-Il progetto presentato in questo elaborato sfrutta la grande quantit\`a di dati messa a disposizione dal next-generation sequencing per identificare e analizzare SNPs che hanno possibili effetti nella regolazione traduzionale dei geni che li contengono nell’ambito del cancro. 
+Il progetto presentato in questo elaborato sfrutta la grande quantit\`a di dati messa a disposizione dal next-generation sequencing per identificare e analizzare SNP che hanno possibili effetti nella regolazione traduzionale dei geni che li contengono nell’ambito del cancro. 
 Dei $161$ SNP candidati identificati dall'analisi per HCT116, $60$ sono presenti nelle sequenze trascritte e non tradotte (UTR).
 Tre di questi SNP potrebbero modulare l'efficienza traduzionale di $3$ geni coinvolti nello sviluppo e progressione tumorale.
 Grazie all’analisi della regolazione traduzionale \`e possibile identificare meccanismi di regolazione prima non esplorati, aiutando a determinare quei processi cellulari alla base di eventi evoluzione tumorale, l'identificazione di marker prognostici o di resistenza alle terapie.

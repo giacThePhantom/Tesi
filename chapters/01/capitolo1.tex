@@ -159,10 +159,10 @@ Questo avviene cambiando l'attivit\`a e l'espressione di fattori di traduzione c
 
 
 \section{Polimorfismi a singolo nucleotide}
-I polimorfismi a singolo nucleotide, da qui in avanti denominati \emph{SNP} sono delle mutazioni nel genoma causate dal cambio di un singolo nucleotide nella molecola di DNA presenti in almeno $1\%$ della popolazione.
+I polimorfismi a singolo nucleotide, da qui in avanti denominati \emph{SNP}, sono delle mutazioni nel genoma causate dal cambio di un singolo nucleotide nella molecola di DNA presenti in almeno $1\%$ della popolazione.
 Sono una delle classi pi\`u grandi di variabilit\`a genetica che possono sottostare o essere responsabili di variazioni inter-individuali in fenotipi complessi di malattie.
 Grazie agli sviluppi nelle tecnologie di sequenziamento e alla nascita del next-generation sequencing sono state rese disponibili informazioni a livello della singola base sul genoma umano e sul trascrittoma permettendo l'esplorazione di questioni biologiche prima insondabili.
-Infatti diversi strumenti sono stati implementati per studiare i dati di espressione genica basati su RNA-sequencing in modo da identificare istanze di espressione genica allelo-specifica.
+Infatti diversi strumenti sono stati implementati per studiare i dati di espressione genica basati su RNA-sequencing in modo da identificare istanze di espressione genica allele-specifica.
 
 \subsection{Espressione genica allelo-specifica}
 Si intende per espressione genica allelo-specifica o \emph{ASE} una condizione per cui alleli diversi di un gene in eterozigosi, per lo scopo di questo progetto uno contenente uno SNP e uno no, mostrano un'attivit\`a trascrizionale considerevolmente diversa.
@@ -180,7 +180,7 @@ In particolare si tenta di determinare mutazioni in grado di andare a inficiare 
 Si nota infatti come la regolazione traduzionale governa la produzione di proteine in risposta a un gran numero di situazioni fisiologiche e patologiche: circa met\`a della variazione della concentrazione di una proteina \`e dovuta a questo tipo di controllo.
 Per farlo si utilizza un'analisi comparativa di sbilanciamento allelico tra frazioni di mRNA totali e polisomiali.
 Le due frazioni vengono estratte dallo stesso campione cellulare in modo da rendere non significativo il rumore causato dalla chiamata degli SNP e dal coverage derivato dai dati di RNA-seq.
-Questo tipo di analisi viene svolto unicamente su SNP in eterozigosi nella cellula per poter misurare e confrontare le frequenze alleliche in mRNA totale e polisomiale. .
+Questo tipo di analisi viene svolto unicamente su SNP in eterozigosi nella cellula per poter misurare e confrontare le frequenze alleliche in mRNA totale e polisomiale.
 L'analisi permetter\`a  la creazione di un catalogo di SNP codificanti e negli UTR associati ad alterazioni nel potenziale di traduzione degli mRNA.
 
 
@@ -204,7 +204,7 @@ Le molecole di RNA vengono frammentate e convertite in cDNA a cui viene aggiunta
 Successivamente avviene un'amplificazione con \emph{PCR} i cui risultati sono caricati in una \emph{flow cell} dove i frammenti sono catturati da oligonucleotidi legati alla superficie complementari agli adattatori.
 Si formano in questo modo dei cluster di frammenti che presentano la stessa sequenza adattatrice.
 Successivamente i reagenti di sequenziamento, che includono nucleotidi etichettati con un nucleotide fluorescente sono aggiunti in modo da incorporare la prima base.
-La flow cell \`e viene letta dalla macchina che registra la lunghezza d'onda emessa dai cluster.
+La flow cell viene letta dalla macchina che registra la lunghezza d'onda emessa dai cluster.
 La particolare lunghezza d'onda permette di identificare il nucleotide.
 Il ciclo viene poi ripetuto $n$ volte in modo da creare una read lunga $n$ basi.
 In questo modo si ottengono per ogni frazione i file \emph{fastq} poi utilizzati per l'analisi dell'espressione allelo-specifica.
