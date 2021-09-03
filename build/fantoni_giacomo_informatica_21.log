@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  3 SEP 2021 02:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  3 SEP 2021 18:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -679,7 +679,7 @@ Package pdftex.def Info: chapters/03/media//deduprecal.png  used on input line
 131.
 (pdftex.def)             Requested size: 478.46123pt x 232.74648pt.
 
-Underfull \vbox (badness 7576) has occurred while \output is active []
+Underfull \vbox (badness 6575) has occurred while \output is active []
 
  [19 <./chapters/03/media//deduprecal.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 184--202
@@ -712,9 +712,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--23
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
-Underfull \vbox (badness 1253) has occurred while \output is active []
-
- [25 <./chapters/04/media//aseq_count_2_8_10_pre.png (PNG copy)>]
+[25 <./chapters/04/media//aseq_count_2_8_10_pre.png (PNG copy)>]
 <chapters/04/media//scr_NUTLIN_rs788023.png, id=120, 462.528pt x 346.896pt>
 File: chapters/04/media//scr_NUTLIN_rs788023.png Graphic file (type png)
 <use chapters/04/media//scr_NUTLIN_rs788023.png>
@@ -812,7 +810,7 @@ public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
 /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/tex
 mf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on ./build/fantoni_giacomo_informatica_21.pdf (31 pages, 1384448
+Output written on ./build/fantoni_giacomo_informatica_21.pdf (31 pages, 1384184
  bytes).
 PDF statistics:
  189 PDF objects out of 1000 (max. 8388607)

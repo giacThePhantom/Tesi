@@ -30,7 +30,7 @@
 \contentsline {section}{\numberline {2.2}Colture cellulari}{12}{}%
 \contentsline {section}{\numberline {2.3}Apoptosi indotta da Nutlin causata da un processo traduzionale regolato da PCBP2 e DHX30}{12}{}%
 \contentsline {subsection}{\numberline {2.3.1}Gli esiti diversi del trattamento nelle due linee sono riflessi da cambi nel traduttoma}{13}{}%
-\contentsline {subsection}{\numberline {2.3.2}Il potenziamento traduzionale dipendente dalla linea cellulare \`e associato con la presenza di un elemento nella 3'-UTR}{13}{}%
+\contentsline {subsection}{\numberline {2.3.2}Il potenziamento traduzionale dipendente dalla linea cellulare \`e associato con la presenza di un elemento nella 3'-UTR di RNA messaggero}{13}{}%
 \contentsline {subsection}{\numberline {2.3.3}Le proteine PCBP2 e DHX30 legano il motivo CGPD in maniera dipendente dalla linea cellulare}{13}{}%
 \contentsline {subsection}{\numberline {2.3.4}Cooperazione dipendente da RNA di PCBP2 e DHX30 sul motivo-CGPD nelle cellule HCT116}{14}{}%
 \contentsline {subsection}{\numberline {2.3.5}Apoptosi dipendente da Nutlin con rispetto ai livelli di espressione di DHX30}{14}{}%
@@ -50,7 +50,7 @@
 \contentsline {section}{\numberline {3.3}Calcolo dei dati di sbilanciamento allelico}{22}{}%
 \contentsline {chapter}{\numberline {4}Analisi dei dati}{24}{}%
 \contentsline {section}{\numberline {4.1}Conta degli SNP trovati con aseq}{24}{}%
-\contentsline {section}{\numberline {4.2}Ottenere i dati per gli SNP di interesse}{25}{}%
+\contentsline {section}{\numberline {4.2}Identificare gli SNP di interesse}{25}{}%
 \contentsline {section}{\numberline {4.3}Caratterizzazione degli SNP di interesse}{26}{}%
 \contentsline {subsection}{\numberline {4.3.1}SF3B1}{27}{}%
 \contentsline {subsection}{\numberline {4.3.2}TBC1D9B}{27}{}%

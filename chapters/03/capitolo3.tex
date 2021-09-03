@@ -11,7 +11,7 @@ Questa pipeline viene definita basandosi su quella presentata in \cite{ase_pipel
 La figura \ref{fig:proj_pipeline} \`e una visualizzazione della pipeline e dei tool utilizzati.\\
 Essendo che questo lavoro prevede il processamento di un gran numero di file, unito al fatto che l'implementazione dei tool utilizzati pemette lo sfruttamento delle pipe di unix e la possibilit\`a di un esecuzione in multi-threading \`e stato di fondamentale importanza l'utility parallel \cite{parallel}.
 Questo tool permette di trasformare l'output di un programma in parametri per un tool successivo e consente di decidere quante istanze del secondo possono essere eseguite contemporaneamente.\\
-In particolare nel caso di star (\S\ref{subsec:star}) \`e stata notata una diminuzione lineare delle performance per thread del tool.
+In particolare nel caso di star (\S\ref{subsec:star}) le performance per thread diminuivano linearmente con il numero di thread utilizzati dall'istanza.
 Parallel permette di mitigare questo problema in modo da, invece di eseguire un'unica istanza di star con molti thread, di averne diverse in contemporanea con meno thread.
 In questo modo aumenta il tempo di esecuzione dell'istanza singola, ma il tempo di esecuzione globale diminuisce.\\
 Si nota pertanto che parallel permette non solo un'elegante implementazione della pipeline, ma fornisce un livello di controllo tale da sfruttare completamente la potenza computazionale disponibile, riducendo in questo modo il tempo globale di esecuzione.
@@ -29,7 +29,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   L'input della pipeline sono file di testo in formato fastq che contengono i dati di sequenziamento raccolti in laboratorio.
   Questi file subiscono un processo di preparazione in modo da ottenere dei file di allineamento utilizzabili per ottenere i dati di sbilanciamento allelico.
   Opzionalmente i file di allineamento possono subire ulteriori modifiche prima di passare alla prossima fase in modo da tentare di migliorare i risultati ottenuti.
-  Tali modifiche sono in particolare deduplicazione e ricalibrazione.
+  Tali modifiche sono in particolare deduplicazione, riallineamento e ricalibrazione.
 
   	\subsection{Trimmomatic}
 	Trimmomatic, presentato in \cite{trimmomatic}, \`e il primo tool ad essere utilizzato.
@@ -124,8 +124,8 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
 
 	\subsection{Deduplicazione, riallineamento e ricalibrazione}
         \label{subsec:deduprecal}
-	La deduplicazione e la ricalibrazione sono due processi di elaborazione dei dati di RNA-seq che tentano di risolvere errori presenti nei file bam che sono stati allineati attraverso star (\S\ref{subsec:star}).
-  Questi due passaggi vengono svolti attraverso una serie di tools eseguiti sequenzialmente come si nota nella figura \ref{fig:pipeline_deduprecal}.
+	La deduplicazione, il riallineamento e la ricalibrazione sono tre processi di elaborazione dei dati di RNA-seq che tentano di risolvere errori presenti nei file bam che sono stati allineati attraverso star (\S\ref{subsec:star}).
+  Questi tre passaggi vengono svolti attraverso una serie di tools eseguiti sequenzialmente come si nota nella figura \ref{fig:pipeline_deduprecal}.
   \begin{figure}[H]
     \centering
     \includegraphics[scale=0.17]{deduprecal.png}
@@ -207,7 +207,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
     Una limitazione di questi allineatori infatti \`e che considerano ogni read in maniera indipendente: le strategie di assegnazione dei punteggi limitano la loro abilit\`a di allineare accuratamente in presenza di indel.
     Il processo di allineamento locale considera invece tutte le read che attraversano una posizione in modo da ottenere un consenso di alto punteggio che supporta la presenza di un evento di indel.
     Il riallineamento viene svolto attraverso l'utilizzo di due tool: \emph{RealignerTargetCreator} e \emph{IndelRealigner}.
-    Il primo prende come input un file bamordinato e indicizzato e a partire da esso genera un file di output formato da una lista a una colonna contenente gli intervalli.
+    Il primo prende come input un file bam ordinato e indicizzato e a partire da esso genera un file di output formato da una lista a una colonna contenente gli intervalli.
     Ogni reecord di questo file degli intervalli rappresenta un potenziale sito dove \`e avvenuto un indel.
     Infine se gli intervalli sono prossimali vengono uniti in un intervallo unico.
     Il secondo tool prende come input lo stesso bam di \emph{RealignerTargetCreator} e il file di intervalli da esso generato e svolge un riallineamento locale sulle read coincidenti con l'intervallo target usando consensi dagli indel presenti nell'allineamento originale.
@@ -291,7 +291,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
 
   \section{Ottenimento degli SNP di interesse}
   Una volta ottenuti i file di allineamento si rende necessario ottenere una lista di SNP dei quali si vuole ottenere il valore di sbilanciamento allelico.
-  Per ottenere questi dati sono stati utilizzati un file gtf, contenente la struttura dei trascritti, e un insieme di vcf divisi per cromosoma contenenti le informazioni riguardo le varianti presenti negli essere umani.\\
+  Per ottenere questi dati sono stati utilizzati un file gtf (gene transfer format), contenente la struttura dei trascritti, e un insieme di vcf divisi per cromosoma contenenti le informazioni riguardo le varianti presenti negli essere umani.\\
   Dopo aver ristretto i vcf agli SNP sono stati intersecati con il file gtf.
   L'intersezione \`e stata volta dal tool \emph{bedtools intersect} \cite{bedtoolsintersect}, facente parte della suite bedtools \cite{bedtools}.
   Questo tool ha permesso di trovare ogni record del vcf presente anche nel file gtf.

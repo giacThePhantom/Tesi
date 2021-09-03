@@ -7,10 +7,10 @@ La linea cellulare analizzata \`e HCT116.
 \`E una linea cellulare di un carcinoma colon-rettale umano presente nel pannello originale delle $60$ linee caratterizzate a fondo dall'iniziativa del National Cancer Institute statunitense (NCI-$60$).
 \`E una delle linee cellulari di cancro pi\`u studiate ed \`e stata derivata da un carcinoma del colon primario di un maschio di $48$ anni.
 Questa linea cellulare \`e la prima in cui si \`e riusciti ad ottenere inattivazione mirata di un gene obiettivo endogeno.
-Un esempio \`e la distruzione di p53 che ha mostrato un cambio nella risposta a sostanze chemioterapeutiche.\cite{p53disruption}
-Recentemente cellule di HCT1116 parentali e cloni derivativi in cui l'espressione di DHX30 e PCBP2 \`e stata repressa sono stati utilizzati per svolgere profilamento polisomiale seguito da RNA-seq di mRNA totali e associati a polisomi.\\
+Un esempio \`e la distruzione di p53 che ha mostrato un cambio nella risposta a sostanze chemioterapeutiche\cite{p53disruption}.
+Recentemente cellule di HCT116 parentali e cloni derivativi in cui l'espressione di DHX30 e PCBP2 \`e stata repressa sono stati utilizzati per svolgere profilamento polisomiale seguito da RNA-seq di mRNA totali e associati a polisomi.\\
 Come descritto in \cite{hct116} la linea \`e diploide e mostra un'abilit\`a tumorigenica intermedia: se vengono iniettate in una popolazione di topi nudi atimici $5\cdot 10^6$ cellule il $50\%$ di questi sviluppano un tumore dopo un periodo di latenza di $16$ giorni.
-Oltre a queste caratteristiche la linea cellulare \`e wild-type per p53, una proteina soppressore dei tumori in grado di regolare la trascrizione ma anche sintesi proteica in modo da inibire la crescita cellulare.
+Oltre a queste caratteristiche la linea cellulare \`e wild-type per p53, una proteina soppressore dei tumori in grado di regolare la trascrizione ma anche lala  sintesi proteica in modo da inibire la crescita cellulare.
 
   \subsection{Controllo traduzionale da parte di p53}
   \label{subsec:p53}
@@ -25,8 +25,8 @@ Oltre a queste caratteristiche la linea cellulare \`e wild-type per p53, una pro
     La loro biogenesi ha luogo nel nucleolo, in cui il DNA ribosomiale \`e organizzato.
     La subunit\`a $60S$ \`e una molecola complessa composta di $3$ RNA ribosomiali e $47$ proteine.
     Questo complesso \`e responsabile della la formazione del legame peptidico e del controllo della qualit\`a del peptide nascente.
-    La subunit\`a $40S$ invece \`e responsabile per lo svolgimento e la scansione del mRNA ed \`e composta da $1$ rRNA e $33$ proteine.
-    Disturbi nel processo di biosintesi delle componenti del ribosoma ha un ruolo centrale nella tumorigenesi.\\
+    La subunit\`a $40S$ invece \`e responsabile dello svolgimento e della scansione del mRNA ed \`e composta da $1$ rRNA e $33$ proteine.
+    Disturbi nel processo di biosintesi delle componenti del ribosoma hanno un ruolo centrale nella tumorigenesi.\\
     p53 limita questo processo: regola infatti la RNA polimerasi $I$, che sintetizza gli RNA ribosomiali, inibendola.
     Questo processo coinvolge l'interferenza di p53 con un insieme di proteine richieste per l'assemblaggio e l'iniziazione del macchinario trascrizionale sul promotore del gene del rRNA.
     p53 Si lega alla proteina legante la TATA-box e ai suoi fattori associati impedendo la loro interazione con fattori di legame a monte e reprimendo la trascrizione di parti dell'RNA polimerasi $I$.\\
@@ -42,7 +42,7 @@ Oltre a queste caratteristiche la linea cellulare \`e wild-type per p53, una pro
 
     \subsubsection{p53 regola l'assemblaggio del complesso ternario e di eIF4F}
     p53 \`e in grado di attenuare la sintesi globale di proteine grazie all'inibizione della proteina ribosomiale S6 chinasi, una chinasi a monte di 4E-BP1.
-    Inoltre un gene bersaglio di p53, TRIM22 inibisce il legame di eIF4E a eIF4G.
+    Inoltre un gene bersaglio di p53, TRIM22, inibisce il legame di eIF4E a eIF4G.
     p53 causa anche defosforilazione e rottura del fattore di iniziazione eIF4GI e di 4E-BP1.
     Si \`e dimostrato come gli effetti combinati dell'assenza delle 4E-BP e di p53 aumentano sinergisticamente la proliferazione cellulare e la tumorigenesi.
     p53 pertanto inibisce la sintesi proteica attraverso l'inibizione di eIF4E e l'assemblaggio del complesso eIF4F aumendando la de-fosforilazione di 4E-BP1.
@@ -55,7 +55,7 @@ Oltre a queste caratteristiche la linea cellulare \`e wild-type per p53, una pro
 \section{Colture cellulari}
 I dati di RNA-seq sono stati ottenuti per colture di HCT116 in diverse condizioni.
 Oltre a un ambiente di controllo in presenza di \emph{DMSO} \`e stata utilizzata anche \emph{Nutlin}, una piccola molecola in grado di attivare p53 e pertanto indurre arresto del ciclo cellulare e apoptosi.
-Anche lo stato genetico \`e stato modificato dalla condizione di controllo denominata \emph{scr} \`e stato svolto il knockout di due geni: \emph{PCBP2} e \emph{DHX30}, coinvolti nel processo traduzionale attivato da p53 che porta all'apoptosi.
+Anche lo stato genetico \`e stato modificato dalla condizione di controllo denominata \emph{scr} \`e stato svolto il knockdown di due geni: \emph{PCBP2} e \emph{DHX30}, coinvolti nel processo traduzionale attivato da p53 che porta all'apoptosi.
 Si ottengono infine $6$ condizioni diverse su cui viene svolto il profilamento polisomico e da cui si ottengono i dati di RNA-seq:
 \begin{table}[H]
   \begin{tabular}{|c|c|c|}
@@ -97,7 +97,7 @@ Se la prima a seguito del trattamento con Nutlin subisce un arresto del ciclo ce
   Dopo il trattamento per ognuna delle linee cellulari si sono analizzati i dati di RNA-seq frazionati con profilamento polisomico e sono stati identificati diversi geni espressi in maniera diversa rispetto alla condizione di controllo.
   Questi sono indicati come \emph{DEG} (differently expressed genes) e sono stati divisi in $3$ classi:
   \begin{itemize}
-    \item Accoppati: DEG in cui cambi nella frazione polisomiale sono accoppiati con cambi nella frazione totale.
+    \item Accoppiati: DEG in cui cambi nella frazione polisomiale sono accoppiati con cambi nella frazione totale.
     \item Regolati traduzionalmente: DEG che esibiscono cambi unicamente nella frazione polisomiale.
     \item Invariati nella traduzione: DEG che esibiscono cambi unicamente nella frazione sub-polisomiale.
   \end{itemize}
@@ -142,7 +142,7 @@ Se la prima a seguito del trattamento con Nutlin subisce un arresto del ciclo ce
   Per farlo si studiano i cambi nell'associazione polisomiale degli mRNA indotti da Nutlin nelle condizioni di controllo e con deplezione di ognuna delle due proteine.
   Il trattamento con Nutlin causa una riduzione della traduzione globale in tutti e tre le condizioni, mentre la deplezione delle proteine porta a un aumento nel numero di DEG rispetto alla condizione di controllo.
   Un grande insieme di questi DEG sono comuni ai due cloni e sono arricchiti per ontologie coinvolte con p53, in particolare per geni apoptotici.
-  Questo suggerisce come il trattamento con Nutlin, specialmente con il silenziamento di DHX30 pu\`o modificare il traduttoma di HCT116 verso l'espressione dei geni con il motivo CGPD.
+  Questo suggerisce come il trattamento con Nutlin, specialmente con il silenziamento di DHX30, pu\`o modificare il traduttoma di HCT116 verso l'espressione dei geni con il motivo CGPD.
   Pertanto DHX30 viene considerata come inibitore traduzionale di trascritti contenenti il motivo CGPD.
 
   \subsection{Apoptosi dipendente da Nutlin con rispetto ai livelli di espressione di DHX30}
