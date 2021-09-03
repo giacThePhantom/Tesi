@@ -263,7 +263,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
                 \hline
                 Parametro & Valore\\
                 \hline
-                knownSites & lista di VCF contenente gli SNP conosciuti\\
+                knownSites & lista di vcf contenente gli SNP conosciuti\\
                 \hline
                 R & Homo\_Sapiens.GRCh38.dna.primary\_assembly.fa\\
                 \hline
@@ -300,7 +300,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   Questo infatti riduce gli SNP alla porzione esonica del genoma, diminuendo il carico computazionale senza perdere alcun dato significativo: gli mRNA prima che vengano sequenziati subiscono il processo di splicing che elimina la porzione intronica.
   In questo modo \`e stato creato un insieme di file vcf, uno per ogni cromosoma, contiene ogni SNP presente nella parte esonica del genoma.\\
   La restrizione alla parte esonica del genoma non causa alcuna perdita di potere predittivo in quanto si stanno considerando dati di RNA-seq, ma permette una significativa diminuzione del carico computazionale svolto da aseq (\S\ref{sec:aseq}).
-  I VCF risultanti da questo processo sono pronti per essere utilizzati come input di aseq.
+  I vcf risultanti da questo processo sono pronti per essere utilizzati come input di aseq.
 
   \begin{table}[H]
         \centering
@@ -312,9 +312,9 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
                 \hline
                 u & non richiesto\\
                 \hline
-                a & VCF file\\
+                a & vcf file\\
                 \hline
-                b & GTF file\\
+                b & gtf file\\
                 \hline
          \end{tabular}
          \caption{Parametri utilizzati per bedtools intersect}
@@ -337,8 +337,8 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   Ora, dopo aver prodotto i file di allineamento dai dati di RNA-seq dei campioni e la lista di SNP esonici di interesse si pu\`o procedere all'esecuzione di aseq.\\
   In particolare i file di allineamento sono divisi in due insiemi: uno creato dopo l'allineamento con star (\S\ref{subsec:star}) e l'altro dopo il processo di deduplicazione e ricalibrazione (\S\ref{subsec:deduprecal}).
   Ognuno di questi insiemi possiede un file per campione (tabella \ref{tab:concolture}).
-  La lista di SNP si trova invece in un insieme di file VCF, un file per ogni autosoma, uno per il cromosoma $X$ e uno per il DNA mitocondriale.
-  Perci\`o per ogni file di allineamento viene eseguito aseq per ogni file VCF, ottenendo in questo modo i dati di pileup di ogni SNP per ogni campione divisi per cromosoma.
+  La lista di SNP si trova invece in un insieme di file vcf, un file per ogni autosoma, uno per il cromosoma $X$ e uno per il DNA mitocondriale.
+  Perci\`o per ogni file di allineamento viene eseguito aseq per ogni file vcf, ottenendo in questo modo i dati di pileup di ogni SNP per ogni campione divisi per cromosoma.
   L'output di aseq \`e un file di testo delimitato da tabulazioni, formato che rende facilmente ottimizzabili le successive analisi attraverso tool come awk, sed o framework come pandas per python o tidyverse per R.
   \begin{table}[H]
         \begin{tabular}{|c|c|}
