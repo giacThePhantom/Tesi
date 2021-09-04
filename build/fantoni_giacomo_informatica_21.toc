@@ -17,7 +17,7 @@
 \contentsline {subsubsection}{Risposta allo stress}{8}{}%
 \contentsline {subsubsection}{Vantaggi oncogenici emergenti della traduzione deregolata}{8}{}%
 \contentsline {section}{\numberline {1.2}Polimorfismi a singolo nucleotide}{8}{}%
-\contentsline {subsection}{\numberline {1.2.1}Espressione genica allelo-specifica}{9}{}%
+\contentsline {subsection}{\numberline {1.2.1}Espressione genica allele-specifica}{9}{}%
 \contentsline {section}{\numberline {1.3}TransSNP}{9}{}%
 \contentsline {subsection}{\numberline {1.3.1}Profilamento polisomiale}{9}{}%
 \contentsline {subsection}{\numberline {1.3.2}Sequenziamento dell'RNA messaggero}{10}{}%
@@ -50,10 +50,10 @@
 \contentsline {section}{\numberline {3.3}Calcolo dei dati di sbilanciamento allelico}{22}{}%
 \contentsline {chapter}{\numberline {4}Analisi dei dati}{24}{}%
 \contentsline {section}{\numberline {4.1}Conta degli SNP trovati con aseq}{24}{}%
-\contentsline {section}{\numberline {4.2}Identificare gli SNP di interesse}{25}{}%
-\contentsline {section}{\numberline {4.3}Caratterizzazione degli SNP di interesse}{26}{}%
-\contentsline {subsection}{\numberline {4.3.1}SF3B1}{27}{}%
-\contentsline {subsection}{\numberline {4.3.2}TBC1D9B}{27}{}%
+\contentsline {section}{\numberline {4.2}Identificare gli SNP di interesse}{24}{}%
+\contentsline {section}{\numberline {4.3}Caratterizzazione degli SNP di interesse}{24}{}%
+\contentsline {subsection}{\numberline {4.3.1}SF3B1}{26}{}%
+\contentsline {subsection}{\numberline {4.3.2}TBC1D9B}{26}{}%
 \contentsline {subsection}{\numberline {4.3.3}KIF5B}{27}{}%
 \contentsline {section}{\numberline {4.4}Conclusioni}{27}{}%
 \contentsline {chapter}{Bibliografia}{27}{}%

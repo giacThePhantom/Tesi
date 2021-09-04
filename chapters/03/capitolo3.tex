@@ -1,7 +1,7 @@
 \graphicspath{{chapters/03/media/}}
 \chapter{Processamento dei dati}
 \label{cha:processamento}
-Definito in \S\ref{cha:intro} l'obiettivo di questo progetto si deve implementare una pipeline che, da dati di sequenziamento di RNA e da una lista di SNP esonici  sia in grado di fornire le istanze di espressione allelo-specifica.
+Definito in \S\ref{cha:intro} l'obiettivo di questo progetto si deve implementare una pipeline che, da dati di sequenziamento di RNA e da una lista di SNP esonici  sia in grado di fornire le istanze di espressione allele-specifica.
 Questa pipeline viene definita basandosi su quella presentata in \cite{ase_pipeline} e si compone pertanto di tre fasi principali:
 \begin{enumerate}
 	\item Pre-processamento e allineamento dei dati di RNA-seq, con eventuale deduplicazione e ricalibrazione.
@@ -19,7 +19,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   \begin{figure}%[H]
     \centering
     \includegraphics[scale=0.2]{pipeline.png}
-    \caption{Pipeline per l'ottenimento dei dati di allelic imbalance}
+    \caption{Pipeline per l'ottenimento dei dati di sbilanciamento allelico}
     \label{fig:proj_pipeline}
   \end{figure}
 
@@ -323,7 +323,7 @@ Si nota pertanto che parallel permette non solo un'elegante implementazione dell
   \section{Calcolo dei dati di sbilanciamento allelico}
   \label{sec:aseq}
   Per computare i valori di sbilanciamento allelico \`e stato utilizzato aseq \cite{aseq}.
-  Questo tool tenta di risolvere alcune limitazioni di altri programmi di analisi di espressione allelo-specifica.
+  Questo tool tenta di risolvere alcune limitazioni di altri programmi di analisi di espressione allele-specifica.
   Non richiede infatti informazioni genomiche dei genitori dell'individuo e non si basa unicamente sui dati di RNA-seq.
   Aseq in particolare accoppia dati di sequenziamento trascrittomici di nuova generazione e genomici in modo da superare queste limitazioni.
   La sua implementazione sfrutta le API di samtools, permettendo rapide funzionalit\`a di accesso casuale su file di allineamento inidicizzati e ne aumenta il potere computazionale attraverso il multi-threading.\\

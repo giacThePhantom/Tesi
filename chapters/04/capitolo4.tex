@@ -13,13 +13,13 @@ Dall'esecuzione di aseq (\ref{sec:aseq}) si ottengono i valori di sbilanciamento
 Seguendo le ``best practices'' di Gatk \cite{gatk} l'analisi \`e stata eseguita sui risultati di aseq ottenuti a partire dall'insieme dei file di allineamento generati dal processo di deduplicazione e ricalibrazione (\ref{subsec:deduprecal}).\\
 Volendo considerare unicamente gli SNP presenti in eterozigosi i risultati sono filtrati considerando SNP con frazione allelica compresa tra $0.2$ e $0.8$.
 Inoltre per aumentare il grado di confidenza dei risultati sono stati considerati unicamente gli SNP con un coverage\footnote{Si intende per coverage il numero medio di reads che coprono una regione genomica obiettivo} maggiore di $10$.
-Queste due operazioni di filtraggio hanno portato all'identificazione di $20895$ SNP unici, $587$ dei quali condivisi tra tutte le condizioni e replicati.\\
+Osservando i risultati nella figura \ref{fig:aseqcount}, si nota come queste due operazioni di filtraggio hanno portato all'identificazione di $20895$ SNP unici, $587$ dei quali condivisi tra tutte le condizioni e replicati.\\
 Come aspettato la frazione allelica degli SNP cos\`i trovati \`e distribuita secondo una normale con la media centrata a $0.5$.\\
- \begin{figure}[H]
+ \begin{figure}%[H]
    \centering
    \includegraphics[scale=1]{aseq_count_2_8_10_pre.png}
 	 \caption{Conta per campione degli SNP eterozigoti trovati con aseq ($0.2< af < 0.8$ e coverage $\ge 10$)}
-   \label{fig:}
+   \label{fig:aseqcount}
  \end{figure}
 
 \section{Identificare gli SNP di interesse}
