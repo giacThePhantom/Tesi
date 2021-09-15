@@ -1,9 +1,10 @@
 \documentclass{beamer}
+\usepackage{multicol}
 \usepackage{makecell}
 \usepackage{float}
 \usepackage{epsfig}
-\usepackage{caption}
-\usepackage{subcaption}
+\usepackage[font=tiny,skip=0pt]{subcaption}
+\usepackage[font=tiny,skip=0pt]{caption}
 \usetheme{Berlin}
 \colorlet{beamer@blendedblue}{green!50!black}
 \title{Analisi di dati trascrittomici di RNA-seq da frazioni polisomiale e totale da una linea cellulare epiteliale tumorale}
@@ -30,21 +31,15 @@
 	\frame{\titlepage}
 	\section{Introduzione}
 	\begin{frame}
-		\frametitle{Controllo traduzionale nel cancro}
-		\begin{center}
-			\includegraphics[width=\textwidth]{media/transcontrol.png}
-		\end{center}
-	\end{frame}
-	\begin{frame}
 		\frametitle{TransSNP}
 		\begin{center}
-		\includegraphics[height=0.8\textheight]{media/snp.png}
+			\includegraphics[width=0.8\textwidth]{media/SNP.png}
 		\end{center}
 	\end{frame}
 	\begin{frame}
 		\frametitle{Individuare transSNP}
 		\begin{center}
-			\includegraphics[height=0.8\textheight]{media/polprof.png}
+		\includegraphics[height=0.75\textheight]{media/ASE.png}
 		\end{center}
 	\end{frame}
 	\begin{frame}
@@ -119,22 +114,21 @@
 		\end{table}
 	\end{frame}
 	\begin{frame}
-			\frametitle{TBC1D9B - scr\_NUTLIN}
-		\begin{figure}
-			\includegraphics[width=0.84\textwidth]{media/scr_NUTLIN_rs30386.png}
-		\end{figure}
-	\end{frame}
-	\begin{frame}
-		\frametitle{SF3B1 - scr\_NUTLIN}
-		\begin{figure}
-			\includegraphics[width=0.84\textwidth]{media/scr_NUTLIN_rs788023.png}
-		\end{figure}
-	\end{frame}
-	\begin{frame}
-		\frametitle{KIF5B - shDHX30\_DMSO}
-		\begin{figure}
-			\includegraphics[width=0.84\textwidth]{media/shDHX30_DMSO_rs11539713.png}
-		\end{figure}
-	\end{frame}
-
+		\frametitle{Geni individuati}
+			\begin{figure}
+				\begin{subfigure}[b]{0.33\textwidth}
+					\caption{TBC1D9B - scr\_NUTLIN}
+					\includegraphics[width=\textwidth]{media/scr_NUTLIN_rs30386.png}
+				\end{subfigure}
+				\hfill
+				\begin{subfigure}[b]{0.33\textwidth}
+					\caption{SF3B1 - scr\_NUTLIN}
+					\includegraphics[width=\textwidth]{media/scr_NUTLIN_rs788023.png}
+				\end{subfigure}
+				\begin{subfigure}{0.33\textwidth}
+			 	\caption{KIF5B - shDHX30\_DMSO}
+			 	\includegraphics[width=\textwidth]{media/shDHX30_DMSO_rs11539713.png}
+			 \end{subfigure}
+			\end{figure}
+		 \end{frame}
 \end{document}

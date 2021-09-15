@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  14 SEP 2021 17:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  15 SEP 2021 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -899,7 +899,7 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count328
 \l__pdf_internal_box=\box76
 )
-No file principal.aux.
+(./principal.aux)
 \openout1 = `principal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -920,6 +920,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -992,6 +993,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
 LaTeX Info: Redefining \nameref on input line 29.
+
+(./principal.out) (./principal.out)
 \@outlinefile=\write5
 \openout5 = `principal.out'.
 
@@ -1074,11 +1077,10 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-
-No file principal.nav.
+ (./principal.nav)
 LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
 
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
@@ -1108,7 +1110,7 @@ trento_colore_it_202002.eps>
 (epstopdf)             \includegraphics on input line 30.
 Package epstopdf Info: Output file is already uptodate.
 <../prefixes/images/marchio_unitrento_colore_it_202002-eps-converted-to.pdf, id
-=14, 369.7815pt x 114.6684pt>
+=43, 369.7815pt x 114.6684pt>
 File: ../prefixes/images/marchio_unitrento_colore_it_202002-eps-converted-to.pd
 f Graphic file (type pdf)
 <use ../prefixes/images/marchio_unitrento_colore_it_202002-eps-converted-to.pdf
@@ -1117,42 +1119,162 @@ Package pdftex.def Info: ../prefixes/images/marchio_unitrento_colore_it_202002-
 eps-converted-to.pdf  used on input line 30.
 (pdftex.def)             Requested size: 122.91406pt x 38.11539pt.
 
-Overfull \vbox (43.52696pt too high) detected at line 30
+Overfull \vbox (40.2866pt too high) detected at line 30
  []
 
-[1
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../prefixes/images/marchio
-_unitrento_colore_it_202002-eps-converted-to.pdf>]
+ <../prefixes/images/marchio_unitrento_colore_it_202002-eps-converted-to.pdf>]
+<media/SNP.png, id=112, 2794.44pt x 1790.69pt>
+File: media/SNP.png Graphic file (type png)
+<use media/SNP.png>
+Package pdftex.def Info: media/SNP.png  used on input line 37.
+(pdftex.def)             Requested size: 307.28987pt x 196.89453pt.
 
-LaTeX Warning: File `media/transcontrol.png' not found on input line 37.
+Overfull \vbox (13.41682pt too high) detected at line 37
+ []
 
+[2
 
-! Package pdftex.def Error: File `media/transcontrol.png' not found: using draf
-t setting.
+ <./media/SNP.png>]
+<media/snp.png, id=157, 642.4pt x 424.58624pt>
+File: media/snp.png Graphic file (type png)
+<use media/snp.png>
+Package pdftex.def Info: media/snp.png  used on input line 43.
+(pdftex.def)             Requested size: 269.78656pt x 178.31036pt.
+ [3
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 	\end{frame}
-                 
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.37 	\end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ <./media/snp.png>]
+<media/polprof.png, id=202, 365.365pt x 273.02pt>
+File: media/polprof.png Graphic file (type png)
+<use media/polprof.png>
+Package pdftex.def Info: media/polprof.png  used on input line 49.
+(pdftex.def)             Requested size: 238.62173pt x 178.31036pt.
+ [4
 
- 
+ <./media/polprof.png>] [5
+
+]
+<media/allineamento.png, id=289, 1774.63pt x 726.715pt>
+File: media/allineamento.png Graphic file (type png)
+<use media/allineamento.png>
+Package pdftex.def Info: media/allineamento.png  used on input line 76.
+(pdftex.def)             Requested size: 307.28987pt x 125.83528pt.
+
+[6
+
+ <./media/allineamento.png>]
+<media/dedup.png, id=333, 1802.735pt x 646.415pt>
+File: media/dedup.png Graphic file (type png)
+<use media/dedup.png>
+Package pdftex.def Info: media/dedup.png  used on input line 80.
+(pdftex.def)             Requested size: 307.28987pt x 110.185pt.
+ [7
+
+ <./media/dedup.png>]
+<media/riall.png, id=379, 1802.735pt x 646.415pt>
+File: media/riall.png Graphic file (type png)
+<use media/riall.png>
+Package pdftex.def Info: media/riall.png  used on input line 84.
+(pdftex.def)             Requested size: 307.28987pt x 110.185pt.
+ [8
+
+ <./media/riall.png>]
+<media/recab.png, id=423, 2111.89pt x 967.615pt>
+File: media/recab.png Graphic file (type png)
+<use media/recab.png>
+Package pdftex.def Info: media/recab.png  used on input line 88.
+(pdftex.def)             Requested size: 307.28987pt x 140.78043pt.
+
+[9
+
+ <./media/recab.png>]
+<media/wes.png, id=467, 1288.815pt x 485.815pt>
+File: media/wes.png Graphic file (type png)
+<use media/wes.png>
+Package pdftex.def Info: media/wes.png  used on input line 92.
+(pdftex.def)             Requested size: 307.28987pt x 115.83444pt.
+ [10
+
+ <./media/wes.png>]
+<media/aseq.png, id=512, 1288.815pt x 485.815pt>
+File: media/aseq.png Graphic file (type png)
+<use media/aseq.png>
+Package pdftex.def Info: media/aseq.png  used on input line 96.
+(pdftex.def)             Requested size: 307.28987pt x 115.83444pt.
+ [11
+
+ <./media/aseq.png>] [12
+
+]
+<media/scr_NUTLIN_rs30386.png, id=601, 462.528pt x 346.896pt>
+File: media/scr_NUTLIN_rs30386.png Graphic file (type png)
+<use media/scr_NUTLIN_rs30386.png>
+Package pdftex.def Info: media/scr_NUTLIN_rs30386.png  used on input line 126.
+(pdftex.def)             Requested size: 258.12236pt x 193.59877pt.
+
+Overfull \vbox (10.12106pt too high) detected at line 126
+ []
+
+[13
+
+ <./media/scr_NUTLIN_rs30386.png>]
+<media/scr_NUTLIN_rs788023.png, id=646, 462.528pt x 346.896pt>
+File: media/scr_NUTLIN_rs788023.png Graphic file (type png)
+<use media/scr_NUTLIN_rs788023.png>
+Package pdftex.def Info: media/scr_NUTLIN_rs788023.png  used on input line 132.
+
+(pdftex.def)             Requested size: 258.12236pt x 193.59877pt.
+
+Overfull \vbox (10.12106pt too high) detected at line 132
+ []
+
+[14
+
+ <./media/scr_NUTLIN_rs788023.png>]
+<media/shDHX30_DMSO_rs11539713.png, id=691, 462.528pt x 346.896pt>
+File: media/shDHX30_DMSO_rs11539713.png Graphic file (type png)
+<use media/shDHX30_DMSO_rs11539713.png>
+Package pdftex.def Info: media/shDHX30_DMSO_rs11539713.png  used on input line 
+138.
+(pdftex.def)             Requested size: 258.12236pt x 193.59877pt.
+
+Overfull \vbox (10.12106pt too high) detected at line 138
+ []
+
+[15
+
+ <./media/shDHX30_DMSO_rs11539713.png>]
+\tf@nav=\write6
+\openout6 = `principal.nav'.
+
+\tf@toc=\write7
+\openout7 = `principal.toc'.
+
+\tf@snm=\write8
+\openout8 = `principal.snm'.
+
+ (./principal.aux)
+Package rerunfilecheck Info: File `principal.out' has not changed.
+(rerunfilecheck)             Checksum: 5E47CDC1D87581EE7E4EF13C37B62CD7;383.
+ ) 
 Here is how much of TeX's memory you used:
- 22081 strings out of 478994
- 406940 string characters out of 5864751
- 703829 words of memory out of 5000000
- 39087 multiletter control sequences out of 15000+600000
- 408538 words of font info for 45 fonts, out of 8000000 for 9000
+ 22299 strings out of 478994
+ 410318 string characters out of 5864751
+ 713933 words of memory out of 5000000
+ 39258 multiletter control sequences out of 15000+600000
+ 413974 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,16n,132p,434b,552s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 131i,19n,132p,434b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy8.pfb>
+Output written on principal.pdf (15 pages, 1067153 bytes).
+PDF statistics:
+ 762 PDF objects out of 1000 (max. 8388607)
+ 682 compressed objects within 7 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 132 words of extra memory for PDF output out of 10000 (max. 10000000)
+
