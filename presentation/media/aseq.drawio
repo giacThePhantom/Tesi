@@ -1,0 +1,31 @@
+<mxfile host="Electron" modified="2021-09-09T01:12:25.056Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.6.13 Chrome/91.0.4472.164 Electron/13.1.9 Safari/537.36" etag="sgBAaGtClxy3S5dKYMsL" compressed="false" version="14.6.13" type="device">
+  <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
+    <mxGraphModel dx="1390" dy="330" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t7R82DjfFmLjzyTqErUw-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="fNoOviHElrBXO7P96PJo-37" target="fNoOviHElrBXO7P96PJo-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fNoOviHElrBXO7P96PJo-37" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;Aseq&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="80" y="480" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fNoOviHElrBXO7P96PJo-40" value="Dati di pileup" style="ellipse;whiteSpace=wrap;html=1;rounded=1;fontSize=10;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="200" y="480" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t7R82DjfFmLjzyTqErUw-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t7R82DjfFmLjzyTqErUw-1" target="fNoOviHElrBXO7P96PJo-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t7R82DjfFmLjzyTqErUw-1" value="File di allineamento" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;gradientColor=#ffffff;fillColor=#CCFF99;strokeColor=#CCFF99;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="440" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t7R82DjfFmLjzyTqErUw-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="t7R82DjfFmLjzyTqErUw-2" target="fNoOviHElrBXO7P96PJo-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t7R82DjfFmLjzyTqErUw-2" value="File vcf" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;gradientColor=#ffffff;fillColor=#CCFF99;strokeColor=#CCFF99;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="520" width="80" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
