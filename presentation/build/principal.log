@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  13 SEP 2021 12:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  15 SEP 2021 11:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -899,7 +899,7 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count328
 \l__pdf_internal_box=\box76
 )
-(./principal.aux)
+(./build/principal.aux)
 \openout1 = `principal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -994,7 +994,7 @@ LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
 LaTeX Info: Redefining \nameref on input line 29.
 
-(./principal.out) (./principal.out)
+(./build/principal.out) (./build/principal.out)
 \@outlinefile=\write5
 \openout5 = `principal.out'.
 
@@ -1077,10 +1077,11 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (./principal.nav)
+ (./build/principal.nav)
 LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
 
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
@@ -1254,13 +1255,13 @@ Overfull \vbox (10.12106pt too high) detected at line 138
 \tf@snm=\write8
 \openout8 = `principal.snm'.
 
- (./principal.aux)
+ (./build/principal.aux)
 Package rerunfilecheck Info: File `principal.out' has not changed.
 (rerunfilecheck)             Checksum: 5E47CDC1D87581EE7E4EF13C37B62CD7;383.
  ) 
 Here is how much of TeX's memory you used:
- 22299 strings out of 478994
- 410372 string characters out of 5864751
+ 22300 strings out of 478994
+ 410466 string characters out of 5864751
  713933 words of memory out of 5000000
  39258 multiletter control sequences out of 15000+600000
  413974 words of font info for 65 fonts, out of 8000000 for 9000
@@ -1271,7 +1272,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy8.pfb>
-Output written on principal.pdf (15 pages, 812501 bytes).
+Output written on ./build/principal.pdf (15 pages, 813643 bytes).
 PDF statistics:
  762 PDF objects out of 1000 (max. 8388607)
  682 compressed objects within 7 object streams
