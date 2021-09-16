@@ -43,8 +43,7 @@ Per farlo si intersecano i file vcf contenenti una lista di SNP con un file gtf 
 
 # 9
 Avendo ora una lista di SNP e i file di allineamento si possono computare i dati di pileup grazie ad aseq.
-Questi conterranno la frazione allelica, ovvero quanti tra le reads nei file di allineamento contengono gli SNP e una misura di confidence, il coverage.
-Il coverage indica invece il numero medio di
+Questi conterranno la frazione allelica, ovvero il rapporto tra il numero di reads che contengono la base mutata e qualsiasi altra base e il coverage, il numero di reads che si allineano alle basi di riferimento note.
 
 # 10
 Volendo analizzare eventi di ASE si sono considerati unicamente SNP eterozigoti con un valore di frazione allelica compreso tra 0.2 e 0.8.
