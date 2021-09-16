@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  16 SEP 2021 09:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  17 SEP 2021 01:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1182,7 +1182,7 @@ trento_colore_it_202002.eps>
 (epstopdf)             \includegraphics on input line 31.
 Package epstopdf Info: Output file is already uptodate.
 <../prefixes/images/marchio_unitrento_colore_it_202002-eps-converted-to.pdf, id
-=41, 369.7815pt x 114.6684pt>
+=42, 369.7815pt x 114.6684pt>
 File: ../prefixes/images/marchio_unitrento_colore_it_202002-eps-converted-to.pd
 f Graphic file (type pdf)
 <use ../prefixes/images/marchio_unitrento_colore_it_202002-eps-converted-to.pdf
@@ -1197,7 +1197,7 @@ Overfull \vbox (40.2866pt too high) detected at line 31
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <../prefixes/images/marchio_unitrento_colore_it_202002-eps-converted-to.pdf>]
-<media/SNP.png, id=106, 2794.44pt x 1790.69pt>
+<media/SNP.png, id=109, 2794.44pt x 1790.69pt>
 File: media/SNP.png Graphic file (type png)
 <use media/SNP.png>
 Package pdftex.def Info: media/SNP.png  used on input line 38.
@@ -1205,18 +1205,21 @@ Package pdftex.def Info: media/SNP.png  used on input line 38.
  [2
 
  <./media/SNP.png>]
-<media/ASE.png, id=149, 3248.135pt x 1842.885pt>
+<media/ASE.png, id=153, 2657.93pt x 1991.44pt>
 File: media/ASE.png Graphic file (type png)
 <use media/ASE.png>
 Package pdftex.def Info: media/ASE.png  used on input line 44.
-(pdftex.def)             Requested size: 294.59941pt x 167.16533pt.
+(pdftex.def)             Requested size: 261.19826pt x 195.69156pt.
+
+Overfull \vbox (12.21385pt too high) detected at line 44
+ []
 
 [3
 
  <./media/ASE.png>] [4
 
 ]
-<media/allineamento.png, id=232, 1774.63pt x 726.715pt>
+<media/allineamento.png, id=238, 1774.63pt x 726.715pt>
 File: media/allineamento.png Graphic file (type png)
 <use media/allineamento.png>
 Package pdftex.def Info: media/allineamento.png  used on input line 71.
@@ -1224,7 +1227,7 @@ Package pdftex.def Info: media/allineamento.png  used on input line 71.
  [5
 
  <./media/allineamento.png>]
-<media/dedup.png, id=275, 1802.735pt x 646.415pt>
+<media/dedup.png, id=282, 1802.735pt x 646.415pt>
 File: media/dedup.png Graphic file (type png)
 <use media/dedup.png>
 Package pdftex.def Info: media/dedup.png  used on input line 75.
@@ -1232,7 +1235,7 @@ Package pdftex.def Info: media/dedup.png  used on input line 75.
  [6
 
  <./media/dedup.png>]
-<media/riall.png, id=317, 1802.735pt x 646.415pt>
+<media/riall.png, id=325, 1802.735pt x 646.415pt>
 File: media/riall.png Graphic file (type png)
 <use media/riall.png>
 Package pdftex.def Info: media/riall.png  used on input line 79.
@@ -1240,7 +1243,7 @@ Package pdftex.def Info: media/riall.png  used on input line 79.
  [7
 
  <./media/riall.png>]
-<media/recab.png, id=360, 2111.89pt x 967.615pt>
+<media/recab.png, id=370, 2111.89pt x 967.615pt>
 File: media/recab.png Graphic file (type png)
 <use media/recab.png>
 Package pdftex.def Info: media/recab.png  used on input line 83.
@@ -1248,7 +1251,7 @@ Package pdftex.def Info: media/recab.png  used on input line 83.
  [8
 
  <./media/recab.png>]
-<media/wes.png, id=403, 1288.815pt x 485.815pt>
+<media/wes.png, id=413, 1288.815pt x 485.815pt>
 File: media/wes.png Graphic file (type png)
 <use media/wes.png>
 Package pdftex.def Info: media/wes.png  used on input line 87.
@@ -1256,7 +1259,7 @@ Package pdftex.def Info: media/wes.png  used on input line 87.
  [9
 
  <./media/wes.png>]
-<media/aseq.png, id=445, 1288.815pt x 485.815pt>
+<media/aseq.png, id=456, 1288.815pt x 485.815pt>
 File: media/aseq.png Graphic file (type png)
 <use media/aseq.png>
 Package pdftex.def Info: media/aseq.png  used on input line 91.
@@ -1264,34 +1267,47 @@ Package pdftex.def Info: media/aseq.png  used on input line 91.
 
 [10
 
- <./media/aseq.png>] [11
+ <./media/aseq.png>]
+<media/distribution.png, id=500, 456.0237pt x 307.1475pt>
+File: media/distribution.png Graphic file (type png)
+<use media/distribution.png>
+Package pdftex.def Info: media/distribution.png  used on input line 132.
+(pdftex.def)             Requested size: 165.46266pt x 111.44356pt.
+
+Overfull \hbox (16.81773pt too wide) in paragraph at lines 132--132
+ [] 
+ []
+
+[11
+
+ <./media/distribution.png>] [12
 
 ]
-<media/scr_NUTLIN_rs30386.png, id=530, 403.9893pt x 315.8199pt>
+<media/scr_NUTLIN_rs30386.png, id=589, 403.9893pt x 315.8199pt>
 File: media/scr_NUTLIN_rs30386.png Graphic file (type png)
 <use media/scr_NUTLIN_rs30386.png>
-Package pdftex.def Info: media/scr_NUTLIN_rs30386.png  used on input line 133.
+Package pdftex.def Info: media/scr_NUTLIN_rs30386.png  used on input line 174.
 (pdftex.def)             Requested size: 101.40622pt x 79.27283pt.
-<media/scr_NUTLIN_rs788023.png, id=531, 406.1574pt x 315.8199pt>
+<media/scr_NUTLIN_rs788023.png, id=590, 406.1574pt x 315.8199pt>
 File: media/scr_NUTLIN_rs788023.png Graphic file (type png)
 <use media/scr_NUTLIN_rs788023.png>
-Package pdftex.def Info: media/scr_NUTLIN_rs788023.png  used on input line 133.
+Package pdftex.def Info: media/scr_NUTLIN_rs788023.png  used on input line 174.
 
 (pdftex.def)             Requested size: 101.40622pt x 78.84875pt.
-<media/shDHX30_DMSO_rs11539713.png, id=532, 400.3758pt x 315.0972pt>
+<media/shDHX30_DMSO_rs11539713.png, id=591, 400.3758pt x 315.0972pt>
 File: media/shDHX30_DMSO_rs11539713.png Graphic file (type png)
 <use media/shDHX30_DMSO_rs11539713.png>
 Package pdftex.def Info: media/shDHX30_DMSO_rs11539713.png  used on input line 
-133.
+174.
 (pdftex.def)             Requested size: 101.40622pt x 79.80782pt.
 
-Overfull \vbox (4.60294pt too high) detected at line 133
+Overfull \vbox (4.60294pt too high) detected at line 174
  []
 
-[12
+[13
 
  <./media/scr_NUTLIN_rs30386.png> <./media/scr_NUTLIN_rs788023.png> <./media/sh
-DHX30_DMSO_rs11539713.png>] [13
+DHX30_DMSO_rs11539713.png>] [14
 
 ]
 \tf@nav=\write6
@@ -1308,10 +1324,10 @@ Package rerunfilecheck Info: File `principal.out' has not changed.
 (rerunfilecheck)             Checksum: 5E47CDC1D87581EE7E4EF13C37B62CD7;383.
  ) 
 Here is how much of TeX's memory you used:
- 22410 strings out of 478994
- 412139 string characters out of 5864751
- 717767 words of memory out of 5000000
- 39368 multiletter control sequences out of 15000+600000
+ 22421 strings out of 478994
+ 412341 string characters out of 5864751
+ 720776 words of memory out of 5000000
+ 39376 multiletter control sequences out of 15000+600000
  411826 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  131i,19n,132p,434b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1319,11 +1335,13 @@ Here is how much of TeX's memory you used:
 exmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmss17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on ./build/principal.pdf (13 pages, 1212208 bytes).
+mss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on ./build/principal.pdf (14 pages, 1225070 bytes).
 PDF statistics:
- 648 PDF objects out of 1000 (max. 8388607)
- 574 compressed objects within 6 object streams
- 30 named destinations out of 1000 (max. 500000)
- 127 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 716 PDF objects out of 1000 (max. 8388607)
+ 635 compressed objects within 7 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 132 words of extra memory for PDF output out of 10000 (max. 10000000)
 

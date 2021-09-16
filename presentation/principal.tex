@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[aspectration=1610]{beamer}
 \usepackage{multicol}
 \usepackage{makecell}
 \usepackage{float}
@@ -39,7 +39,7 @@
 	\begin{frame}
 		\frametitle{Individuare transSNP}
 		\begin{center}
-		\includegraphics[height=0.75\textheight]{media/ASE.png}
+		\includegraphics[width=0.85\textwidth]{media/ASE.png}
 		\end{center}
 	\end{frame}
 	\begin{frame}
@@ -90,6 +90,47 @@
 		\includegraphics[width=\textwidth]{media/aseq.png}
 	\end{frame}
 	\section{Risultati ottenuti}
+	\begin{frame}
+		\frametitle{Analisi dati di pileup}
+		\begin{table}
+			\begin{tiny}
+			\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+				\hline
+				dbsnp & ref & alt & A & C & G & T & af & cov \\
+				\hline
+				rs1423991279 & G & A & 6 & 0 & 5 & 0 & 0.545455 & 11 \\
+				\hline
+				rs2272757 & G & A & 118 & 0 & 128 & 0 & 0.479675 & 246 \\
+				\hline
+				rs975483396 & G & A & 6 & 0 & 6 & 0 & 0.500000 & 12 \\
+				\hline
+			\end{tabular}
+		\end{tiny}
+		\end{table}
+			\begin{multicols}{2}
+			\begin{figure}
+					\includegraphics[height=0.5\textheight]{media/distribution.png}
+			\end{figure}
+			\mbox{}\\
+			\mbox{}\\
+			\begin{table}
+			\begin{tiny}
+				\begin{tabular}{|c|c|}
+					\hline
+					Filtri sugli SNP & SNP individuati\\
+					\hline
+					Input di ASEQ & $40418219$\\
+					\hline
+					$cov \ge 10$ e $0.2\le af\le 0.8$ & $13681$\\
+					\hline
+					Dati per $3$ replicati & $851$\\
+					\hline
+				\end{tabular}
+			\end{tiny}
+			\end{table}
+		\end{multicols}
+	\end{frame}
+
 	\begin{frame}
 		\frametitle{Analisi dei risultati}
 		\begin{table}[H]
