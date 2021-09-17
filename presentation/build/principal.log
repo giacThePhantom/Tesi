@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  17 SEP 2021 01:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  17 SEP 2021 12:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -856,6 +856,62 @@ Package caption Info: Hyperref support is turned off
 \c@subfigure=\count336
 \c@subtable=\count337
 )
+(/usr/share/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks48
+\XKV@tempa@toks=\toks49
+)
+\XKV@depth=\count338
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(/usr/share/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box122
+)
+\tc@llx=\dimen305
+\tc@lly=\dimen306
+\tc@urx=\dimen307
+\tc@ury=\dimen308
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen309
+\adjbox@Height=\dimen310
+\adjbox@Depth=\dimen311
+\adjbox@Totalheight=\dimen312
+\adjbox@pwidth=\dimen313
+\adjbox@pheight=\dimen314
+\adjbox@pdepth=\dimen315
+\adjbox@ptotalheight=\dimen316
+
+(/usr/share/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count339
+)
+(/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box123
+\sift@deathcycles=\count340
+\@vwid@loff=\dimen317
+\@vwid@roff=\dimen318
+))
+LaTeX Info: Redefining \# on input line 10.
+
 (/usr/share/texmf-dist/tex/latex/beamer/beamerthemeBerlin.sty
 (/usr/share/texmf-dist/tex/latex/beamer/beamerouterthememiniframes.sty)
 (/usr/share/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)
@@ -863,134 +919,134 @@ Package caption Info: Hyperref support is turned off
 (/usr/share/texmf-dist/tex/latex/beamer/beamerinnerthemerectangles.sty))
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 18.
+(hyperref)                removing `\<def>-command' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@halignto' on input line 18.
+(hyperref)                removing `\@halignto' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 18.
+(hyperref)                removing `\hbox' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 18.
+(hyperref)                removing `math shift' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\col@sep' on input line 18.
+(hyperref)                removing `\col@sep' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\tabcolsep' on input line 18.
+(hyperref)                removing `\tabcolsep' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 18.
+(hyperref)                removing `\<let>-command' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\d@llarbegin' on input line 18.
+(hyperref)                removing `\d@llarbegin' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 18.
+(hyperref)                removing `\begingroup' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 18.
+(hyperref)                removing `\<let>-command' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\d@llarend' on input line 18.
+(hyperref)                removing `\d@llarend' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgroup' on input line 18.
+(hyperref)                removing `\endgroup' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 18.
+(hyperref)                removing `\@ifnextchar' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `alignment tab' on input line 18.
+(hyperref)                removing `alignment tab' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `alignment tab' on input line 18.
+(hyperref)                removing `alignment tab' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 18.
+(hyperref)                removing `\\' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `alignment tab' on input line 18.
+(hyperref)                removing `alignment tab' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 18.
+(hyperref)                removing `\new@ifnextchar' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 18.
+(hyperref)                removing `\\' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `alignment tab' on input line 18.
+(hyperref)                removing `alignment tab' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 18.
+(hyperref)                removing `\\' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\crcr' on input line 18.
+(hyperref)                removing `\crcr' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 18.
+(hyperref)                removing `\<def>-command' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@preamble' on input line 18.
+(hyperref)                removing `\@preamble' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 18.
+(hyperref)                removing `math shift' on input line 22.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endtiny' on input line 18.
+(hyperref)                removing `\endtiny' on input line 22.
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count338
-\l__pdf_internal_box=\box122
+\l__color_backend_stack_int=\count341
+\l__pdf_internal_box=\box124
 )
 (./build/principal.aux)
 \openout1 = `principal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1028,17 +1084,17 @@ LaTeX Font Info:    ... okay on input line 30.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count339
-\scratchdimen=\dimen305
-\scratchbox=\box123
-\nofMPsegments=\count340
-\nofMParguments=\count341
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count342
-\MPscratchDim=\dimen306
-\MPnumerator=\count343
-\makeMPintoPDFobject=\count344
-\everyMPtoPDFconversion=\toks49
+\scratchcounter=\count342
+\scratchdimen=\dimen319
+\scratchbox=\box125
+\nofMPsegments=\count343
+\nofMParguments=\count344
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count345
+\MPscratchDim=\dimen320
+\MPnumerator=\count346
+\makeMPintoPDFobject=\count347
+\everyMPtoPDFconversion=\toks51
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1048,7 +1104,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 30.
+Package hyperref Info: Link coloring OFF on input line 34.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1059,68 +1115,68 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count345
+\c@section@level=\count348
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
 
 (./build/principal.out) (./build/principal.out)
 \@outlinefile=\write5
 \openout5 = `principal.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 30.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 34.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 30.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 34.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 30.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 30.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 30.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 30.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 30.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 30.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 30.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 30.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 30.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 30.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 30.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 34.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 30.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 34.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 30.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 30.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 30.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 30.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 30.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 30.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 30.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 34.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 34.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 3
-0.
+4.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 3
-0.
+4.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 30.
+ut line 34.
 
 (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English
 .dict
@@ -1149,20 +1205,20 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./build/principal.nav)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 31.
+ut line 35.
 
 (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -1170,48 +1226,48 @@ thkerncmss.
 )
 Package epstopdf Info: Source file: <../prefixes/images/marchio_unitrento_color
 e_it_202002.eps>
-(epstopdf)                    date: 2021-07-20 16:48:06
+(epstopdf)                    date: 2020-02-12 10:03:21
 (epstopdf)                    size: 222744 bytes
 (epstopdf)             Output file: <../prefixes/images/marchio_unitrento_color
 e_it_202002-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-07-20 16:48:06
+(epstopdf)                    date: 2020-02-12 10:12:41
 (epstopdf)                    size: 183512 bytes
 (epstopdf)             Command: <repstopdf --outfile=../prefixes/images/marchio
 _unitrento_colore_it_202002-eps-converted-to.pdf ../prefixes/images/marchio_uni
 trento_colore_it_202002.eps>
-(epstopdf)             \includegraphics on input line 31.
+(epstopdf)             \includegraphics on input line 35.
 Package epstopdf Info: Output file is already uptodate.
 <../prefixes/images/marchio_unitrento_colore_it_202002-eps-converted-to.pdf, id
-=42, 369.7815pt x 114.6684pt>
+=48, 369.7815pt x 114.6684pt>
 File: ../prefixes/images/marchio_unitrento_colore_it_202002-eps-converted-to.pd
 f Graphic file (type pdf)
 <use ../prefixes/images/marchio_unitrento_colore_it_202002-eps-converted-to.pdf
 >
 Package pdftex.def Info: ../prefixes/images/marchio_unitrento_colore_it_202002-
-eps-converted-to.pdf  used on input line 31.
+eps-converted-to.pdf  used on input line 35.
 (pdftex.def)             Requested size: 122.91406pt x 38.11539pt.
 
-Overfull \vbox (40.2866pt too high) detected at line 31
+Overfull \vbox (40.2866pt too high) detected at line 35
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <../prefixes/images/marchio_unitrento_colore_it_202002-eps-converted-to.pdf>]
-<media/SNP.png, id=109, 2794.44pt x 1790.69pt>
+<media/SNP.png, id=118, 2794.44pt x 1790.69pt>
 File: media/SNP.png Graphic file (type png)
 <use media/SNP.png>
-Package pdftex.def Info: media/SNP.png  used on input line 38.
+Package pdftex.def Info: media/SNP.png  used on input line 42.
 (pdftex.def)             Requested size: 245.83282pt x 157.52109pt.
  [2
 
  <./media/SNP.png>]
-<media/ASE.png, id=153, 2657.93pt x 1991.44pt>
+<media/ASE.png, id=165, 2657.93pt x 1991.44pt>
 File: media/ASE.png Graphic file (type png)
 <use media/ASE.png>
-Package pdftex.def Info: media/ASE.png  used on input line 44.
+Package pdftex.def Info: media/ASE.png  used on input line 48.
 (pdftex.def)             Requested size: 261.19826pt x 195.69156pt.
 
-Overfull \vbox (12.21385pt too high) detected at line 44
+Overfull \vbox (12.21385pt too high) detected at line 48
  []
 
 [3
@@ -1219,62 +1275,62 @@ Overfull \vbox (12.21385pt too high) detected at line 44
  <./media/ASE.png>] [4
 
 ]
-<media/allineamento.png, id=238, 1774.63pt x 726.715pt>
+<media/allineamento.png, id=253, 1774.63pt x 726.715pt>
 File: media/allineamento.png Graphic file (type png)
 <use media/allineamento.png>
-Package pdftex.def Info: media/allineamento.png  used on input line 71.
+Package pdftex.def Info: media/allineamento.png  used on input line 75.
 (pdftex.def)             Requested size: 307.28987pt x 125.83528pt.
  [5
 
  <./media/allineamento.png>]
-<media/dedup.png, id=282, 1802.735pt x 646.415pt>
+<media/dedup.png, id=299, 1802.735pt x 646.415pt>
 File: media/dedup.png Graphic file (type png)
 <use media/dedup.png>
-Package pdftex.def Info: media/dedup.png  used on input line 75.
+Package pdftex.def Info: media/dedup.png  used on input line 79.
 (pdftex.def)             Requested size: 307.28987pt x 110.185pt.
  [6
 
  <./media/dedup.png>]
-<media/riall.png, id=325, 1802.735pt x 646.415pt>
+<media/riall.png, id=344, 1802.735pt x 646.415pt>
 File: media/riall.png Graphic file (type png)
 <use media/riall.png>
-Package pdftex.def Info: media/riall.png  used on input line 79.
+Package pdftex.def Info: media/riall.png  used on input line 83.
 (pdftex.def)             Requested size: 307.28987pt x 110.185pt.
  [7
 
  <./media/riall.png>]
-<media/recab.png, id=370, 2111.89pt x 967.615pt>
+<media/recab.png, id=391, 2111.89pt x 967.615pt>
 File: media/recab.png Graphic file (type png)
 <use media/recab.png>
-Package pdftex.def Info: media/recab.png  used on input line 83.
+Package pdftex.def Info: media/recab.png  used on input line 87.
 (pdftex.def)             Requested size: 307.28987pt x 140.78043pt.
  [8
 
  <./media/recab.png>]
-<media/wes.png, id=413, 1288.815pt x 485.815pt>
+<media/wes.png, id=436, 1288.815pt x 485.815pt>
 File: media/wes.png Graphic file (type png)
 <use media/wes.png>
-Package pdftex.def Info: media/wes.png  used on input line 87.
+Package pdftex.def Info: media/wes.png  used on input line 91.
 (pdftex.def)             Requested size: 307.28987pt x 115.83444pt.
  [9
 
  <./media/wes.png>]
-<media/aseq.png, id=456, 1288.815pt x 485.815pt>
+<media/aseq.png, id=482, 1288.815pt x 485.815pt>
 File: media/aseq.png Graphic file (type png)
 <use media/aseq.png>
-Package pdftex.def Info: media/aseq.png  used on input line 91.
+Package pdftex.def Info: media/aseq.png  used on input line 95.
 (pdftex.def)             Requested size: 307.28987pt x 115.83444pt.
 
 [10
 
  <./media/aseq.png>]
-<media/distribution.png, id=500, 456.0237pt x 307.1475pt>
+<media/distribution.png, id=527, 456.0237pt x 307.1475pt>
 File: media/distribution.png Graphic file (type png)
 <use media/distribution.png>
-Package pdftex.def Info: media/distribution.png  used on input line 132.
+Package pdftex.def Info: media/distribution.png  used on input line 140.
 (pdftex.def)             Requested size: 165.46266pt x 111.44356pt.
 
-Overfull \hbox (16.81773pt too wide) in paragraph at lines 132--132
+Overfull \hbox (16.81773pt too wide) in paragraph at lines 140--140
  [] 
  []
 
@@ -1283,31 +1339,33 @@ Overfull \hbox (16.81773pt too wide) in paragraph at lines 132--132
  <./media/distribution.png>] [12
 
 ]
-<media/scr_NUTLIN_rs30386.png, id=589, 403.9893pt x 315.8199pt>
+<media/scr_NUTLIN_rs30386.png, id=621, 403.9893pt x 315.8199pt>
 File: media/scr_NUTLIN_rs30386.png Graphic file (type png)
 <use media/scr_NUTLIN_rs30386.png>
-Package pdftex.def Info: media/scr_NUTLIN_rs30386.png  used on input line 174.
+Package pdftex.def Info: media/scr_NUTLIN_rs30386.png  used on input line 181.
 (pdftex.def)             Requested size: 101.40622pt x 79.27283pt.
-<media/scr_NUTLIN_rs788023.png, id=590, 406.1574pt x 315.8199pt>
+<media/scr_NUTLIN_rs788023.png, id=622, 406.1574pt x 315.8199pt>
 File: media/scr_NUTLIN_rs788023.png Graphic file (type png)
 <use media/scr_NUTLIN_rs788023.png>
-Package pdftex.def Info: media/scr_NUTLIN_rs788023.png  used on input line 174.
+Package pdftex.def Info: media/scr_NUTLIN_rs788023.png  used on input line 181.
 
 (pdftex.def)             Requested size: 101.40622pt x 78.84875pt.
-<media/shDHX30_DMSO_rs11539713.png, id=591, 400.3758pt x 315.0972pt>
+<media/shDHX30_DMSO_rs11539713.png, id=623, 400.3758pt x 315.0972pt>
 File: media/shDHX30_DMSO_rs11539713.png Graphic file (type png)
 <use media/shDHX30_DMSO_rs11539713.png>
 Package pdftex.def Info: media/shDHX30_DMSO_rs11539713.png  used on input line 
-174.
+181.
 (pdftex.def)             Requested size: 101.40622pt x 79.80782pt.
 
-Overfull \vbox (4.60294pt too high) detected at line 174
+Overfull \vbox (4.60294pt too high) detected at line 181
  []
 
 [13
 
  <./media/scr_NUTLIN_rs30386.png> <./media/scr_NUTLIN_rs788023.png> <./media/sh
 DHX30_DMSO_rs11539713.png>] [14
+
+] [15
 
 ]
 \tf@nav=\write6
@@ -1321,27 +1379,28 @@ DHX30_DMSO_rs11539713.png>] [14
 
  (./build/principal.aux)
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 5E47CDC1D87581EE7E4EF13C37B62CD7;383.
+(rerunfilecheck)             Checksum: B2215A62EC88657BDEFDC6A65E839964;481.
  ) 
 Here is how much of TeX's memory you used:
- 22421 strings out of 478994
- 412341 string characters out of 5864751
- 720776 words of memory out of 5000000
- 39376 multiletter control sequences out of 15000+600000
+ 23517 strings out of 478994
+ 431006 string characters out of 5864751
+ 743247 words of memory out of 5000000
+ 40435 multiletter control sequences out of 15000+600000
  411826 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,19n,132p,434b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 131i,19n,132p,434b,799s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmss17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on ./build/principal.pdf (14 pages, 1225070 bytes).
+mss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb>
+Output written on ./build/principal.pdf (15 pages, 1238595 bytes).
 PDF statistics:
- 716 PDF objects out of 1000 (max. 8388607)
- 635 compressed objects within 7 object streams
- 32 named destinations out of 1000 (max. 500000)
- 132 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 799 PDF objects out of 1000 (max. 8388607)
+ 713 compressed objects within 8 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 140 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,3 +1,4 @@
 \beamer@sectionintoc {1}{Introduzione}{2}{0}{1}
 \beamer@sectionintoc {2}{Pipeline di analisi}{5}{0}{2}
 \beamer@sectionintoc {3}{Risultati ottenuti}{11}{0}{3}
+\beamer@sectionintoc {4}{Conclusioni}{14}{0}{4}

@@ -5,6 +5,10 @@
 \usepackage{epsfig}
 \usepackage[font=tiny,skip=0pt]{subcaption}
 \usepackage[font=tiny,skip=0pt]{caption}
+\usepackage{adjustbox}
+\let\oldhash\#%
+\DeclareRobustCommand{\#}{\adjustbox{valign=B,totalheight=.57\baselineskip}{\oldhash}}
+
 \usetheme{Berlin}
 \colorlet{beamer@blendedblue}{green!50!black}
 \title{Analisi di dati trascrittomici di RNA-seq da frazioni polisomiale e totale da una linea cellulare epiteliale tumorale}
@@ -111,9 +115,8 @@
 			\begin{figure}
 					\includegraphics[height=0.5\textheight]{media/distribution.png}
 			\end{figure}
-			\mbox{}\\
-			\mbox{}\\
-			\begin{table}
+			\columnbreak
+		\begin{table}[H]
 			\begin{tiny}
 				\begin{tabular}{|c|c|}
 					\hline
@@ -128,9 +131,13 @@
 				\end{tabular}
 			\end{tiny}
 			\end{table}
+			\vspace*{-1mm}
+			\begin{align*}
+				af=\dfrac{\#alt}{\#ref + \#alt}\\
+				cov = \#ref + \#alt
+			\end{align*}
 		\end{multicols}
 	\end{frame}
-
 	\begin{frame}
 		\frametitle{Analisi dei risultati}
 		\begin{table}[H]
@@ -172,8 +179,16 @@
 			 \end{subfigure}
 			\end{figure}
 		 \end{frame}
-		 \setbeamercolor{background canvas}{bg=green!40!black}
-		 \begin{frame}
-			 \Huge{\textcolor{white}{Grazie per l'attenzione.}}
-		 \end{frame}
+	\section{Conclusioni}
+	\begin{frame}
+		\frametitle{Sviluppi futuri}
+		\begin{itemize}
+			\item Validazione dei risultati trovati.
+			\item Analisi di linkage.
+		\end{itemize}
+	\end{frame}
+	\setbeamercolor{background canvas}{bg=green!40!black}
+	\begin{frame}
+		\Huge{\textcolor{white}{Grazie per l'attenzione.}}
+	\end{frame}
 \end{document}
